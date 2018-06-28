@@ -1,0 +1,42 @@
+header {
+  @extend .fixed;
+  top: 0;
+  z-index: 100;
+}
+.Nav-container {
+  @extend .absolute;
+  z-index: 100;
+  width: 100vw;
+  height: $navbargap;
+  background: $navbarcolor;
+  padding: 0 5%;
+  .Nav-image-holder {
+    height: 80%;
+    .image {
+      max-height: 100%;
+    }
+  }
+}
+
+.Nav-menu {
+  margin-top: -100px;
+  height: 0vh;
+  width: 100vw;
+  background: $navbarcolor;
+  flex-direction: column;
+  transition: all 0.3s ease-in;
+  .Nav-item {
+    font-size: 1.5rem;
+    height: 2.3rem;
+    transition: all 0.3s ease-in-out;
+    color: white;
+  }
+  @include tabtop {
+    flex-direction: row;
+  }
+}
+.Nav-menu-open {
+  margin-top: 0;
+  padding-top: $navbargap + 1em;
+  height: 120vh;
+}

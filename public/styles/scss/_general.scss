@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  &:link,
+  &:hover,
+  &:visited {
+    color: inherit;
+    text-decoration: none;
+  }
+}
+ul {
+  li {
+    list-style: none;
+  }
+}
+.border {
+  border: solid 1px black;
+}
+.image {
+  max-width: 100%;
+}
+
+#root,
+body {
+  width: 100%;
+  overflow-x: hidden !important;
+  display: flex;
+  font-size: 62.5%;
+  font-family: "geomanist-thin", helvetica, sans-serif;
+  width: 100vw;
+}
+.App {
+  padding-top: $navbargap;
+}
+main {
+  position: relative;
+  width: 100vw;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "geomanist-bold", helvetica, sans-serif;
+}
+
+.vh {
+  min-height: 100vh;
+}
+.container {
+  width: 100%;
+}
+.flex-column {
+  @extend .flex;
+  flex-direction: column;
+}
+.flex {
+  display: flex;
+}
+.flex-1 {
+  flex: 1;
+}
+.flex-space-between {
+  justify-content: space-between;
+}
+.flex-center-vertical {
+  align-items: center;
+}
+.flex-center-horizontal {
+  justify-content: center;
+}
+.flex-content-center {
+  @extend .flex;
+  justify-content: center;
+  align-items: center;
+}
+.relative {
+  position: relative;
+}
+.absolute {
+  position: absolute;
+}
+.fixed {
+  position: fixed;
+}
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.mw-100 {
+  max-width: 100%;
+}
+.logo {
+  @extend .mw-100;
+}
+.space-10 {
+  margin: 7em 0;
+  @include desktop {
+    margin: 9em 0;
+  }
+  @include tablet {
+    margin: 8em 0;
+  }
+}
+.collapse-row-column {
+  display: flex;
+  flex-direction: column;
+  @extend .flex-content-center;
+  @include tablet {
+    flex-direction: row;
+  }
+}
+.text-white {
+  color: white;
+}

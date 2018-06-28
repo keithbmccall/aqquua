@@ -1,0 +1,76 @@
+.Big-section {
+  justify-content: space-between;
+}
+
+.Section-title {
+  font-size: 2em;
+}
+.Section-text {
+  h4 {
+    font-size: 1.2rem;
+    text-align: right;
+    margin-bottom: 1.5rem;
+    font-family: "geomanist-bold-italics", helvetica, sans-serif;
+  }
+  font-size: 0.8rem;
+  max-width: 70%;
+  line-height: 22px;
+  letter-spacing: 0.8px;
+  text-align: justify;
+  margin-bottom: 4rem;
+}
+.Products-fish-holder {
+  margin: 10rem 0;
+  @include tabtop {
+    margin: inherit;
+  }
+}
+.Products-fish {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25%;
+  .image {
+    height: 100%;
+    margin-bottom: 2.5rem;
+  }
+  @include tabtop {
+    flex-direction: row;
+    padding: auto;
+    .image {
+      height: auto;
+      margin: auto;
+    }
+  }
+}
+.Big-section-1 {
+  background: $cockatoocolor;
+}
+.Big-section-2 {
+  background: $poppycolor;
+}
+.Big-section-6 {
+  background: $fuschiacolor;
+}
+.Big-section-4 {
+  background: $libertycolor;
+}
+.Big-section-5 {
+  background: $tigercolor;
+}
+.Big-section-7 {
+  background: $greenflash;
+}
+.Big-section-3 {
+  background: white;
+  .content {
+    max-width: 200px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    @include tablet {
+      flex-direction: row;
+    }
+    @include desktop {
+      flex-direction: row;
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "aqquua",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-css": "^0.1.0",
+    "lodash": "^4.17.10",
+    "radium": "^0.24.0",
+    "react": "^16.4.1",
+    "react-animations": "^1.0.0",
+    "react-dom": "^16.4.1",
+    "react-icons": "^2.2.7",
+    "react-imation": "^0.5.3",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "^1.1.4",
+    "react-svg": "^4.0.17",
+    "react-track": "^0.4.4",
+    "react-waypoint": "^8.0.2"
+  },
+  "scripts": {
+    "sass": "sass --watch public/styles/scss:public/styles/css",
+    "start": "react-scripts start; gulp",
+    "build": "gulp && react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  }
+}

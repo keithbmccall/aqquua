@@ -1,0 +1,35 @@
+.Header-band {
+  @extend .mw-100;
+  border-bottom: solid 5px black;
+}
+.Header-section {
+  font-family: didot, geomanist;
+  background-color: $dandelioncolor;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 10% 0 10%;
+  height: 130vh;
+  .logo {
+    max-width: 70%;
+    @include tabtop {
+      max-width: 100%;
+    }
+  }
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: white;
+    line-height: 40px;
+    letter-spacing: 2px;
+    span {
+      font-size: 2rem;
+      display: inline-block;
+    }
+  }
+  .absolute {
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+}
