@@ -111,8 +111,7 @@ h6 {
 .collapse-row-column {
   display: flex;
   flex-direction: column;
-  @extend .flex-content-center;
-  @include tablet {
+  @include tabtop {
     flex-direction: row;
   }
 }

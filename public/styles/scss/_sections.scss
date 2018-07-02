@@ -3,10 +3,10 @@
   .Section-number {
     font-size: 12rem;
     font-family: "geomanist-ultra", Arial, Helvetica, sans-serif;
-  }
-
-  .collapse-row-column {
-    padding: 0 10%;
+    margin: 0 0 -3.5rem 0;
+    @include tabtop {
+      margin-right: 4rem;
+    }
   }
 }
 

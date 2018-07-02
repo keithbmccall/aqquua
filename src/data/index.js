@@ -90,6 +90,7 @@ export const sectionData = [
   },
   {
     title: "Our Products",
+    number: 1,
     headline: "WE TAKE OUR JOB SERIOUSLY",
     caption:
       "We work day in and day out making sure all of our operations are properly executed and managed to bring you a first rate high quality product, free of antibiotics and hormones. We deliver 100% pure healthy, fresh and tasty fish."
@@ -103,6 +104,7 @@ export const sectionData = [
   },
   {
     id: "Farm",
+    number: 2,
     title: "Farm",
     headline: "WE ARE NON CONFORMISTS",
     caption:
@@ -110,12 +112,14 @@ export const sectionData = [
   },
   {
     id: "RD",
+    number: 3,
     title: "R&D",
     headline: "WE ARE INNOVATORS",
     caption:
       "IP technology and methodology that we gather from brood-stock, eggs, larval rearing techniques and genetics for optimum fingerling production are immensely important. By using best practices conditions for the grow-out of this sustainable protein source,we further our objective of making a significant contribution in supplying scientific and operational training. It will allow us to produce the highest quality fin fish product and help us to make definitive contributions to the restocking of our oceans.",
 
     content: {
+      number: 4,
       headline: "NURTURING LEADERS",
       text:
         "Helping to educate the next leaders in aquaculture is something we take very seriously. The only way to succeed at getting to food security for this and future generations, is to bring academic knowledge together with commercial aquaculture experience. We currently offer scholarships in the advancement of aquaculture studies.",
@@ -136,6 +140,7 @@ export const sectionData = [
   {
     id: "Eat-fish",
     title: "Eat Fish",
+    number: 6,
     headline: "DOING IT IN STYLE",
     caption:
       "Showing our true colors in the way we raise our fish is the way to be 100% transparent, sustainable and traceabe. That’s why we have become proud members of the Eat Fish platform, whose sole purpose is to efficiently track fish from our farm to your table. To learn more visit EAT FISH",
@@ -145,6 +150,7 @@ export const sectionData = [
   {
     id: "Sustainability",
     title: "Sustainability",
+    number: 7,
     headline: "WE PLANT THE SEED",
     caption:
       "Seasonal and climate changes are a challenge to the “fish food” industry whether out to sea or on land. Global warming is growing at an alarming rate. We know how important is to be respectful of our planet. That’s why we take it to heart when tackling issues of sustainability and conservation and why we prepare ahead to meet whatever challenges may come our way in order to keep our fish home, a happy one. We know that happy fish make for great tasting fish, and that a happy planet will only come if we take appropriate action now.",

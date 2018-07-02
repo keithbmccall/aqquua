@@ -1,9 +1,6 @@
 import React, { Component } from "react";
 import { TrackDocument, TrackedDiv } from "react-track";
-import {
-  topTop,
-  calculateScrollY,
-} from "react-track/tracking-formulas";
+import { topTop, calculateScrollY } from "react-track/tracking-formulas";
 import { tween } from "react-imation";
 
 export default class TrackingFade extends Component {
@@ -14,7 +11,7 @@ export default class TrackingFade extends Component {
           <TrackedDiv formulas={[topTop]}>
             {posTopTop => (
               <div
-                className="flex-content-center"
+                className="flex-content-center collapse-row-column"
                 style={tween(scrollY, [
                   [posTopTop - 150, { opacity: 1 }],
                   [posTopTop + 100, { opacity: 0 }]

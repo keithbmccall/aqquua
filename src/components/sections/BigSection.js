@@ -24,16 +24,17 @@ const BigSection = props => {
               src={item.centerImage.img}
               alt={item.centerImage.alt}
             /> */}
-          <div className="collapse-row-column">
-            <TrackingFade>
-              <div className="Section-number text-white">3</div>
-              <SectionText
-                text={item.caption}
-                headline={item.headline}
-                className={`${!item.fish && "text-white"}`}
-              />
-            </TrackingFade>
-          </div>
+
+          <TrackingFade>
+            {item.number && (
+              <div className="Section-number text-white">{item.number}</div>
+            )}
+            <SectionText
+              text={item.caption}
+              headline={item.headline}
+              className={`${!item.fish && "text-white"}`}
+            />
+          </TrackingFade>
           {item.fish && (
             <div className="Products-fish">
               <ProductsCircleMap fish={item.fish} />
