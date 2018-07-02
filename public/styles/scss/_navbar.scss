@@ -11,13 +11,25 @@ header {
   background: $navbarcolor;
   padding: 0 5%;
   .Nav-image-holder {
-    height: 80%;
-    .image {
-      max-height: 100%;
+    width: 20%;
+  }
+  .Nav-menu-spread {
+    display: none;
+    @include tabtop {
+      display: block;
+      display: flex;
+      .Nav-item {
+        font-size: 1rem;
+      }
+    }
+  }
+  .Nav-menu,
+  .Nav-burger {
+    @include tabtop {
+      display: none;
     }
   }
 }
-
 .Nav-menu {
   margin-top: -100px;
   height: 0vh;
@@ -29,12 +41,17 @@ header {
     font-size: 1.5rem;
     height: 2.3rem;
     transition: all 0.3s ease-in-out;
-    color: white;
   }
   @include tabtop {
     flex-direction: row;
   }
 }
+.Nav-item {
+  color: white;
+  padding: 0 1%;
+  white-space: nowrap;
+}
+
 .Nav-menu-open {
   margin-top: 0;
   padding-top: $navbargap + 1em;

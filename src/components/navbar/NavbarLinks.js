@@ -3,7 +3,6 @@ import { Link } from "react-router-dom";
 import Radium from "radium";
 
 const NavbarLinks = props => {
-  console.log(props);
   const styles = {
     navItem: {
       ":hover": { backgroundColor: props.link.color }

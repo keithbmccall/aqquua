@@ -39,13 +39,13 @@ export const navbarLinks = [
     id: "About"
   },
   {
-    title: "Our Products",
+    title: "Products",
     color: "#5ad0ba",
     id: "Products"
   },
 
   {
-    title: "Our Farm",
+    title: "Farm",
     color: "#e15d44",
     id: "Farm"
   },

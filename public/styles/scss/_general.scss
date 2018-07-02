@@ -25,11 +25,10 @@ ul {
 
 #root,
 body {
-  // width: 100%;
+  @extend .geo-light;
   overflow-x: hidden !important;
   display: flex;
   font-size: 62.5%;
-  font-family: "geomanist-thin", helvetica, sans-serif;
   width: 100vw;
 }
 .App {
@@ -45,7 +44,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "geomanist-bold", helvetica, sans-serif;
+  @extend .geo-bold;
 }
 
 .vh {

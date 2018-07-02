@@ -16,24 +16,21 @@ const BigSection = props => {
     >
       <div className="flex-1 flex-content-center">
         <div
-          className={`flex-content-center flex-column ${item.fish &&
-            "Products-fish-holder"}`}
+          className={`flex-content-center flex-column ${
+            item.fish ? "Products-fish-holder" : ""
+          }`}
         >
-          {/* <SectionTitleImage
-              title={item.title}
-              src={item.centerImage.img}
-              alt={item.centerImage.alt}
-            /> */}
-
           <TrackingFade>
-            {item.number && (
-              <div className="Section-number text-white">{item.number}</div>
-            )}
-            <SectionText
-              text={item.caption}
-              headline={item.headline}
-              className={`${!item.fish && "text-white"}`}
-            />
+            <div className="collapse-row-column flex-content-center">
+              {item.number && (
+                <div className="Section-number text-white">{item.number}</div>
+              )}
+              <SectionText
+                text={item.caption}
+                headline={item.headline}
+                className={`${!item.fish && "text-white"}`}
+              />
+            </div>
           </TrackingFade>
           {item.fish && (
             <div className="Products-fish">

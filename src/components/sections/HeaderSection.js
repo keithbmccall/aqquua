@@ -6,7 +6,6 @@ const HeaderSection = props => {
   const { content } = props;
   return (
     <div className="vh flex-column Big-section">
-      
       <div
         className="flex-1 Header-section relative"
         style={{ backgroundImage: `url(${content.background})` }}

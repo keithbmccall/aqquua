@@ -2,6 +2,7 @@ import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import FaBars from "react-icons/lib/fa/bars";
 import NavbarLinks from "./NavbarLinks";
+import SVG from "../tools/images/SVG";
 
 const Navbar = props => {
   const renderNavbarLinks = (link, key) => {
@@ -12,22 +13,20 @@ const Navbar = props => {
   return (
     <header>
       <div className="container Nav-container flex flex-space-between">
-        <div className="flex flex-center-vertical">
-          <div className="Nav-image-holder">
-            <Link to="/">
-              <img
-                src={props.aqquuaHead}
-                alt={props.aqquuaHead}
-                className="image"
-              />
-            </Link>
-          </div>
+        <div className="Nav-image-holder flex flex-center-vertical">
+          <Link to="/">
+            <SVG path={props.aqquuaHead} className="image" fill="white" />
+          </Link>
         </div>
-        <div className="flex flex-center-vertical" onClick={props.toggleMenu}>
+
+        <nav className="Nav-menu-spread flex">{navLinks}</nav>
+        <div
+          className="flex flex-center-vertical Nav-burger"
+          onClick={props.toggleMenu}
+        >
           <FaBars size={30} color="white" />
         </div>
       </div>
-
       <nav
         className={`Nav-menu flex ${navMenuOpen}`}
         onClick={props.toggleMenu}

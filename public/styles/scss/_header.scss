@@ -3,7 +3,7 @@
   border-bottom: solid 5px black;
 }
 .Header-section {
-  font-family: didot, geomanist;
+  @extend .geo-light;
   background-color: $dandelioncolor;
   background-size: cover;
   background-repeat: no-repeat;
