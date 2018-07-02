@@ -1,12 +1,13 @@
 import React, { Fragment } from "react";
-import SVG from "../../tools/images/SVG";
 import ProductsAnimation from "../../animations/ProductsAnimation";
 
 const ProductsCircleMap = props => {
   const content = props.fish.map((item, key) => (
-    <ProductsAnimation key={key}>
-      <SVG path={item.fish} fill={item.color} className="image" />
-    </ProductsAnimation>
+    <div className="Products-fish-square" key={key}>
+      <ProductsAnimation>
+        <img src={item.fish} className="image" />
+      </ProductsAnimation>
+    </div>
   ));
   return <Fragment>{content}</Fragment>;
 };

@@ -1,10 +1,13 @@
 .Products-animation {
-  transform: translateX(0%) !important;
+  transform: rotate(2turn) translateX(0) !important;
 }
-.Products {
-  transform: translateX(-300%);
+.Products,
+.Products-roll {
   -webkit-transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
-  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+}
+.Products-roll {
+  transform: translateX(-1000%);
 }
 .Tracking-fade-in {
   opacity: 0;
@@ -16,7 +19,7 @@
   25% {
     margin-left: inherit;
   }
-  75%{
+  75% {
     margin-left: inherit;
   }
   100% {
@@ -25,14 +28,20 @@
 }
 
 .We-are-animation {
+  @extend .relative;
+  height: 500px;
+  flex: 1;
   font-size: 1.6rem;
-  margin-bottom: 50px;
+  padding: 0 10%;
+  margin: 50px 0;
   text-align: center;
-  -webkit-transition: all 1s ease-in;
-  transition: opacity 1s ease-in, visibility 1s ease-in;
-  animation: slideright 10s ease-in-out infinite;
+  // -webkit-transition: all 1s ease-in;
+  // transition: opacity 1s ease-in, visibility 1s ease-in;
+  // animation: slideright 10s ease-in-out infinite;
+  h3 {
+    @extend .absolute;
+  }
   .We-are {
-    // display: block;
     font-family: "geomanist-thin", helvetica, sans-serif;
     @include tablet {
       display: inline;

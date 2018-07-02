@@ -17,11 +17,12 @@
     "react-scripts": "^1.1.4",
     "react-svg": "^4.0.17",
     "react-track": "^0.4.4",
+    "react-transition-group": "^2.4.0",
     "react-waypoint": "^8.0.2"
   },
   "scripts": {
     "sass": "sass --watch public/styles/scss:public/styles/css",
-    "start": "react-scripts start; gulp",
+    "start": "gulp;react-scripts start;gulp",
     "build": "gulp && react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

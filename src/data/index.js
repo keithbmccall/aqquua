@@ -70,9 +70,9 @@ export const navbarLinks = [
     id: "Contact"
   }
 ];
-export const aqquuaHead = images.aqquuaHead;
+export const aqquuaHead = images.logo;
 export const headerContent = {
-  title: "Sea Food for What it is",
+  title: "We do fish right",
   caption: "We are Aqquua",
   logo: images.logo,
   background: images.fishPrint
@@ -99,10 +99,7 @@ export const sectionData = [
     title: "Our Products",
     caption:
       "Our products are fresh, authentic, traceable and sustainable. The collaboration between scientists, farmers and individuals who work in our farms is imperative in this effort. It is from this connection that we are always trying to push the boundaries of what is possible in aquaculture to bring the best tasting fish to the market and families around the globe.",
-    fish: images.productsFish.map((x, i) => {
-      let colors = ["#4D448A", "#e15d44", "#ffc702", "#f32e37", "#5ad0ba"];
-      return { fish: x, color: colors[i] };
-    })
+    fish: images.productsFish
   },
   {
     id: "Farm",

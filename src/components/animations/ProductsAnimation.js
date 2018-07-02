@@ -9,15 +9,18 @@ export default class ProductsAnimation extends Component {
     };
   }
   bounceIn = () => {
+    console.log("enter");
     this.setState({
       className: "Products-animation"
     });
   };
   render() {
     return (
-      <Waypoint onEnter={this.bounceIn}>
-        <div className={`Products ${this.state.className}`}>
-          {this.props.children}
+      <Waypoint onEnter={this.bounceIn} scrollableAncestor={window}>
+        <div className={`Products-roll ${this.state.className}`}>
+          <div className={`Products ${this.state.className}`}>
+            {this.props.children}
+          </div>
         </div>
       </Waypoint>
     );

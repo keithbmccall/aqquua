@@ -3,57 +3,29 @@ import React, { Component } from "react";
 export default class WeAreCarousel extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      counter: 0,
-      opacity: 0,
-      visibility: "hidden",
-      width: "343px"
-    };
   }
-  carousel = (array, callback) => {
-    setTimeout(() => callback(), 2500); //opacitychanger
-    setTimeout(() => this.rotaryText(array, callback), 10000);
+  renderContentBricks = (item, key) => {
+    const leftRight =
+      key < 8
+        ? { top: key * 6.67 + "%", left: key * 6.67 + "%" }
+        : { top: key * 6.67 + "%", right: (key - 8) * 6.67 + "%" };
+    return (
+      <h3 key={key} style={leftRight}>
+        <span
+          className="We-are-rotary"
+          style={{
+            color: item.color
+          }}
+        >
+          {item.content.toUpperCase()}
+        </span>
+      </h3>
+    );
   };
-  rotaryText = (array, callback) =>
-    this.setState(
-      {
-        counter:
-          this.state.counter === array.length - 1 ? 0 : this.state.counter + 1
-      },
-      callback()
-    );
 
-  opacityChanger = () =>
-    this.setState({
-      opacity: this.state.opacity === 1 ? 0 : 1,
-      visibility: this.state.visibility === "inherit" ? "hidden" : "inherit"
-    });
-
-  componentDidMount() {
-    this.carousel(this.props.weAreContent, this.opacityChanger);
-    setInterval(
-      () => this.carousel(this.props.weAreContent, this.opacityChanger),
-      10000
-    );
-  }
   render() {
     const { weAreContent } = this.props;
-    return (
-      <div className="We-are-animation" style={{ width: this.state.width }}>
-        <h3>
-          <span className="We-are">{`${this.props.title.toUpperCase()} `}</span>
-          <span
-            className="We-are-rotary"
-            style={{
-              opacity: this.state.opacity,
-              visibility: this.state.visibility,
-              color: weAreContent[this.state.counter].color
-            }}
-          >
-            {weAreContent[this.state.counter].content.toUpperCase()}
-          </span>
-        </h3>
-      </div>
-    );
+    const content = weAreContent.map(this.renderContentBricks);
+    return <div className="We-are-animation">{content}</div>;
   }
 }

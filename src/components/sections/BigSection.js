@@ -15,7 +15,10 @@ const BigSection = props => {
       id={item.id}
     >
       <div className="flex-1 flex-content-center">
-        <div className={`flex-content-center flex-column ${item.fish &&"Products-fish-holder"}`}>
+        <div
+          className={`flex-content-center flex-column ${item.fish &&
+            "Products-fish-holder"}`}
+        >
           {/* <SectionTitleImage
               title={item.title}
               src={item.centerImage.img}
@@ -23,6 +26,7 @@ const BigSection = props => {
             /> */}
           <div className="collapse-row-column">
             <TrackingFade>
+              <div className="Section-number text-white">3</div>
               <SectionText
                 text={item.caption}
                 headline={item.headline}

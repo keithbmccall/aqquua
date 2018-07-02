@@ -4,7 +4,6 @@ import SVG from "../tools/images/SVG";
 
 const HeaderSection = props => {
   const { content } = props;
-  console.log(content);
   return (
     <div className="vh flex-column Big-section">
       
@@ -40,7 +39,7 @@ const HeaderSection = props => {
                   .toUpperCase()}
               </h1>
               <div className="logo">
-                <SVG fill="white" path={content.logo} className="image" />
+                <SVG fill="black" path={content.logo} className="image" />
               </div>
             </div>
           </TrackingFadeIn>
