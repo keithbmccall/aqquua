@@ -3,8 +3,8 @@
 }
 .Products,
 .Products-roll {
-  -webkit-transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
-  transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  -webkit-transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
 }
 .Products-roll {
   transform: translateX(-1000%);

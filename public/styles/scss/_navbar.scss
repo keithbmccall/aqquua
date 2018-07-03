@@ -20,6 +20,8 @@ header {
       display: flex;
       .Nav-item {
         font-size: 1rem;
+        transition: all 0.3s ease-in-out;
+
       }
     }
   }

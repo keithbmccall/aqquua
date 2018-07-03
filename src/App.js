@@ -3,7 +3,8 @@ import { BrowserRouter, Switch, Route, Redirect } from "react-router-dom";
 import Layout from "./hoc/layouts/Layout";
 import LandingContainer from "./containers/landing/LandingContainer";
 import NavbarContainer from "./containers/navbar/NavbarContainer";
-import { sectionData, headerContent, aqquuaHead, navbarLinks } from "./data";
+import ResearchContainer from "./containers/research/ResearchContainer";
+import ProductsContainer from "./containers/products/ProductsContainer";
 
 class App extends Component {
   render() {
@@ -14,19 +15,19 @@ class App extends Component {
           path="/"
           render={props => (
             <LandingContainer
-              sectionData={sectionData}
-              headerContent={headerContent}
-              aqquuaHead={aqquuaHead}
+              
             />
           )}
         />
+        <Route path="/products" render={props => <ProductsContainer />} />
+        <Route exact path="/research" render={props => <ResearchContainer />} />
         <Route path="/" render={() => <Redirect to="/" />} />
       </Switch>
     );
     return (
       <BrowserRouter>
         <Layout>
-          <NavbarContainer aqquuaHead={aqquuaHead} navbarLinks={navbarLinks} />
+          <NavbarContainer  />
           <div className="App">{routes}</div>
         </Layout>
       </BrowserRouter>

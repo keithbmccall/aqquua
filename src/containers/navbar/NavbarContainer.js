@@ -1,5 +1,7 @@
 import React, { Component } from "react";
 import Navbar from "../../components/navbar/Navbar";
+import { sectionData, headerContent, aqquuaHead, navbarLinks } from "../../data";
+
 
 export default class NavbarContainer extends Component {
   constructor() {
@@ -16,9 +18,9 @@ export default class NavbarContainer extends Component {
   render() {
     return (
       <Navbar
-        aqquuaHead={this.props.aqquuaHead}
+        aqquuaHead={aqquuaHead}
         menuOpen={this.state.menuOpen}
-        navbarLinks={this.props.navbarLinks}
+        navbarLinks={navbarLinks}
         toggleMenu={this.toggleMenu}
       />
     );

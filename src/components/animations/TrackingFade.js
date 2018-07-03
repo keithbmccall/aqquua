@@ -13,7 +13,7 @@ export default class TrackingFade extends Component {
               <div
                 className="flex-content-center"
                 style={tween(scrollY, [
-                  [posTopTop - 0, { opacity: 1 }],
+                  [posTopTop - 150, { opacity: 1 }],
                   [posTopTop + 400, { opacity: 0 }]
                 ])}
               >

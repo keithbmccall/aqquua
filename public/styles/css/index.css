@@ -155,7 +155,8 @@ header {
         display: block;
         display: flex; }
         .Nav-container .Nav-menu-spread .Nav-item {
-          font-size: 1rem; } }
+          font-size: 1rem;
+          transition: all 0.3s ease-in-out; } }
   @media only screen and (min-width: 550px) {
     .Nav-container .Nav-menu,
     .Nav-container .Nav-burger {
@@ -189,11 +190,12 @@ header {
 .Big-section {
   justify-content: space-between; }
   .Big-section .Section-number {
-    font-size: 12rem;
+    font-size: 14rem;
+    padding: 0;
     margin: 0 0 -3.5rem 0; }
     @media only screen and (min-width: 550px) {
       .Big-section .Section-number {
-        margin-right: 4rem; } }
+        margin: -8rem 4rem -3.5rem 0; } }
 
 .Section-title {
   font-size: 2em; }
@@ -205,6 +207,9 @@ header {
   letter-spacing: 0.8px;
   text-align: justify;
   margin-bottom: 4rem; }
+  @media only screen and (min-width: 550px) {
+    .Section-text {
+      max-width: 40%; } }
   .Section-text h4 {
     font-size: 1.2rem;
     text-align: right;
@@ -297,8 +302,8 @@ header {
 
 .Products,
 .Products-roll {
-  -webkit-transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
-  transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s; }
+  -webkit-transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s; }
 
 .Products-roll {
   transform: translateX(-1000%); }

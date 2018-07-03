@@ -9,10 +9,11 @@ import grouper from "../assets/images/png/grouper.png";
 
 const productsFish = [coraltrout, redsnapper, hirame, mahi, grouper].map(
   (x, i) => {
-    let colors = ["#EC5D73", "#f32e37", "#71CC51", "#5ad0ba", "#ffc702"];
+    // let colors = ["#EC5D73", "#f32e37", "#71CC51", "#5ad0ba", "#ffc702"];
     return {
       fish: x,
-      color: colors[i]
+      name: x.split(".")[0].split("/")[3]
+      // color: colors[i]
     };
   }
 );

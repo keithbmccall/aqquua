@@ -2,10 +2,12 @@
   justify-content: space-between;
   .Section-number {
     @extend .geo-ultra;
-    font-size: 12rem;
+    font-size: 14rem;
+    padding:0;
+    // line-height: 5rem;
     margin: 0 0 -3.5rem 0;
     @include tabtop {
-      margin-right: 4rem;
+      margin: -8rem 4rem -3.5rem 0;
     }
   }
 }
@@ -13,18 +15,22 @@
   font-size: 2em;
 }
 .Section-text {
-  h4 {
-    @extend .geo-bold-italics;
-    font-size: 1.2rem;
-    text-align: right;
-    margin-bottom: 1.5rem;
-  }
   font-size: 0.8rem;
   max-width: 70%;
   line-height: 22px;
   letter-spacing: 0.8px;
   text-align: justify;
   margin-bottom: 4rem;
+  @include tabtop{
+    max-width: 40%;
+
+  }
+  h4 {
+    @extend .geo-bold-italics;
+    font-size: 1.2rem;
+    text-align: right;
+    margin-bottom: 1.5rem;
+  }
 }
 .Products-fish-holder {
   margin: 10rem 0;
