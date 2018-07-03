@@ -10,6 +10,10 @@ header {
   height: $navbargap;
   background: $navbarcolor;
   padding: 0 5%;
+  .image {
+    margin-top: 10%;
+    max-width: 100%;
+  }
   .Nav-image-holder {
     width: 20%;
   }
@@ -21,7 +25,6 @@ header {
       .Nav-item {
         font-size: 1rem;
         transition: all 0.3s ease-in-out;
-
       }
     }
   }

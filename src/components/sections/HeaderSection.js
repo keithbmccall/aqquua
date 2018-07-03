@@ -12,35 +12,27 @@ const HeaderSection = props => {
       >
         <div className="absolute">
           <TrackingFadeIn>
+            <div className="Header-items flex flex-column flex-content-center">
+              <div className="logo">
+                <SVG fill="white" path={content.logo} className="image" />
+              </div>
+            </div>
+          </TrackingFadeIn>
+          <TrackingFadeIn>
             <h1>
               {content.title
                 .split(" ")
                 .slice(0, 2)
                 .join(" ")
-                .toUpperCase()}
-              <br />
+                .toUpperCase() }
               <span>
-                {content.title
+                {` ${content.title
                   .split(" ")
                   .slice(2)
                   .join(" ")
-                  .toUpperCase()}
+                  .toUpperCase()}`}
               </span>
             </h1>
-          </TrackingFadeIn>
-          <TrackingFadeIn>
-            <div className="flex-column flex-content-center">
-              <h1>
-                {content.caption
-                  .split(" ")
-                  .slice(0, 2)
-                  .join(" ")
-                  .toUpperCase()}
-              </h1>
-              <div className="logo">
-                <SVG fill="black" path={content.logo} className="image" />
-              </div>
-            </div>
           </TrackingFadeIn>
         </div>
       </div>

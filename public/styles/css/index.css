@@ -22,7 +22,7 @@
 body, .Header-section {
   font-family: "geomanist-light", Arial, Helvetica, sans-serif; }
 
-.geo-ultra, .Big-section .Section-number {
+.geo-ultra {
   font-family: "geomanist-ultra", Arial, Helvetica, sans-serif; }
 
 .geo-bold-italics, .Section-text h4 {
@@ -33,7 +33,7 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6, .Big-section .Section-number-holder .Section-number {
   font-family: "geomanist-bold", Arial, Helvetica, sans-serif; }
 
 * {
@@ -144,8 +144,11 @@ header {
   z-index: 100;
   width: 100vw;
   height: 6em;
-  background: #87857d;
+  background: #85dbd7;
   padding: 0 5%; }
+  .Nav-container .image {
+    margin-top: 10%;
+    max-width: 100%; }
   .Nav-container .Nav-image-holder {
     width: 20%; }
   .Nav-container .Nav-menu-spread {
@@ -166,7 +169,7 @@ header {
   margin-top: -100px;
   height: 0vh;
   width: 100vw;
-  background: #87857d;
+  background: #85dbd7;
   flex-direction: column;
   transition: all 0.3s ease-in; }
   .Nav-menu .Nav-item {
@@ -189,27 +192,35 @@ header {
 
 .Big-section {
   justify-content: space-between; }
-  .Big-section .Section-number {
-    font-size: 14rem;
-    padding: 0;
-    margin: 0 0 -3.5rem 0; }
+  .Big-section .Section-number-holder {
+    justify-content: center; }
     @media only screen and (min-width: 550px) {
-      .Big-section .Section-number {
-        margin: -8rem 4rem -3.5rem 0; } }
+      .Big-section .Section-number-holder {
+        justify-content: flex-end; }
+        .Big-section .Section-number-holder + .Section-text-holder {
+          padding-right: 10%;
+          margin-top: 20rem; }
+          .Big-section .Section-number-holder + .Section-text-holder .Section-text {
+            max-width: 100%; } }
+    .Big-section .Section-number-holder .Section-number {
+      font-size: 15rem;
+      padding: 0;
+      margin: 0 0 -3.5rem 0; }
+      .Big-section .Section-number-holder .Section-number span {
+        font-size: 8rem;
+        margin-left: -0.5rem; }
 
 .Section-title {
   font-size: 2em; }
 
 .Section-text {
-  font-size: 0.8rem;
+  hyphens: none;
+  font-size: 1.2rem;
   max-width: 70%;
-  line-height: 22px;
+  line-height: 30px;
   letter-spacing: 0.8px;
   text-align: justify;
   margin-bottom: 4rem; }
-  @media only screen and (min-width: 550px) {
-    .Section-text {
-      max-width: 40%; } }
   .Section-text h4 {
     font-size: 1.2rem;
     text-align: right;
@@ -239,34 +250,46 @@ header {
         margin: auto; } }
 
 .Big-section-1 {
-  background: #5ad0ba; }
+  background: #573b30; }
 
 .Big-section-2 {
-  background: #f32e37; }
-
-.Big-section-6 {
-  background: #c3447a; }
-
-.Big-section-4 {
-  background: #4D448A; }
-
-.Big-section-5 {
-  background: #e15d44; }
-
-.Big-section-7 {
-  background: #71CC51; }
+  background: #5ad0ba; }
 
 .Big-section-3 {
+  background: #573b30; }
+
+.Big-section-4 {
+  background: #f32e37; }
+
+.Big-section-8 {
+  background: #c3447a; }
+
+.Big-section-6 {
+  background: #4d448a; }
+
+.Big-section-7 {
+  background: #e15d44; }
+
+.Big-section-9 {
+  background: #ec5d73; }
+
+.Big-section-10 {
+  background: #87857d; }
+
+.Big-section-11 {
+  background: #71cc51; }
+
+.Big-section-5 {
   background: white; }
-  .Big-section-3 .content {
+  .Big-section-5 .content {
     max-width: 200px;
     flex-wrap: wrap;
     justify-content: space-evenly; }
     @media only screen and (min-width: 550px) and (max-width: 989px) {
-      .Big-section-3 .content {
+      .Big-section-5 .content {
         flex-direction: row; } }
     @media only screen and (min-width: 990px) {
-      .Big-section-3 .content {
+      .Big-section-5 .content {
         flex-direction: row; } }
 
 .Header-band {
@@ -277,20 +300,30 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0 10% 0 10%;
-  height: 110vh; }
-  .Header-section .logo {
-    max-width: 70%; }
-    @media only screen and (min-width: 550px) {
-      .Header-section .logo {
-        max-width: 100%; } }
+  height: 130vh; }
+  .Header-section .logo .image {
+    max-width: auto;
+    height: 100%;
+    width: 100%; }
+  @media only screen and (min-width: 550px) {
+    .Header-section .logo {
+      width: 100%; }
+      .Header-section .logo .image {
+        max-width: 100%;
+        height: 100%;
+        width: 80em; } }
   .Header-section h1 {
-    font-size: 3rem;
+    color: #b5457c;
+    font-size: 2.6rem;
     text-align: center;
-    line-height: 40px;
     letter-spacing: 2px; }
+    @media only screen and (min-width: 550px) {
+      .Header-section h1 {
+        font-size: 4rem;
+        text-align: center;
+        letter-spacing: 2px; } }
     .Header-section h1 span {
-      font-size: 2rem;
-      display: inline-block; }
+      white-space: nowrap; }
   .Header-section .absolute, .Header-section .Nav-container, .Header-section .We-are-animation h3, .We-are-animation .Header-section h3 {
     width: 100%;
     bottom: 0;

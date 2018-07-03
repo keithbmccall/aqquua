@@ -12,27 +12,7 @@ const Navbar = props => {
   const navMenuOpen = props.menuOpen ? "Nav-menu-open" : "";
   return (
     <header>
-      <div className="container Nav-container flex flex-space-between">
-        <div className="Nav-image-holder flex flex-center-vertical">
-          <Link to="/">
-            <SVG path={props.aqquuaHead} className="image" fill="white" />
-          </Link>
-        </div>
-
-        <nav className="Nav-menu-spread flex">{navLinks}</nav>
-        <div
-          className="flex flex-center-vertical Nav-burger"
-          onClick={props.toggleMenu}
-        >
-          <FaBars size={30} color="white" />
-        </div>
-      </div>
-      <nav
-        className={`Nav-menu flex ${navMenuOpen}`}
-        onClick={props.toggleMenu}
-      >
-        {navLinks}
-      </nav>
+      
     </header>
   );
 };

@@ -8,21 +8,34 @@
   background-size: cover;
   background-repeat: no-repeat;
   padding: 0 10% 0 10%;
-  height: 110vh;
+  height: 130vh;
   .logo {
-    max-width: 70%;
+    .image {
+      max-width: auto;
+      height: 100%;
+      width: 100%;
+    }
     @include tabtop {
-      max-width: 100%;
+      width: 100%;
+      .image {
+        max-width: 100%;
+        height: 100%;
+        width: 80em;
+      }
     }
   }
   h1 {
-    font-size: 3rem;
+    color: $crushedberriescolor;
+    font-size: 2.6rem;
     text-align: center;
-    line-height: 40px;
     letter-spacing: 2px;
+    @include tabtop {
+      font-size: 4rem;
+      text-align: center;
+      letter-spacing: 2px;
+    }
     span {
-      font-size: 2rem;
-      display: inline-block;
+      white-space: nowrap;
     }
   }
   .absolute {

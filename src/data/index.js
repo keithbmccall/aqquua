@@ -65,6 +65,11 @@ export const navbarLinks = [
     id: "Sustainability"
   },
   {
+    title: "Health",
+    color: "#573b30",
+    id: "Health"
+  },
+  {
     title: "Contact",
     color: "#4D448A",
     id: "Contact"
@@ -73,7 +78,7 @@ export const navbarLinks = [
 export const aqquuaHead = images.logo;
 export const headerContent = {
   title: "We do fish right",
-  caption: "We are Aqquua",
+  caption: "We're wild about farmed fish'",
   logo: images.logo,
   background: images.fishPrint
 };
@@ -83,11 +88,13 @@ export const sectionData = [
     title: "We Are",
     content: weAreContent
   },
+  { title: "placeholder" },
   {
     title: "Aqquua",
     caption:
       "At aqquua™ we engage in best practices and device technological innovations in RAS and R&D to raise the bar in aquaculture at every level. Our fin-fish products are raised in a controlled environment and are 100% antibiotic and hormone free. We are committed to bring the freshest, highest quality seafood experience to the table."
   },
+  { title: "placeholder" },
   {
     title: "Our Products",
     number: 1,
@@ -95,6 +102,7 @@ export const sectionData = [
     caption:
       "We work day in and day out making sure all of our operations are properly executed and managed to bring you a first rate high quality product, free of antibiotics and hormones. We deliver 100% pure healthy, fresh and tasty fish."
   },
+
   {
     id: "Products",
     title: "Our Products",
@@ -102,16 +110,16 @@ export const sectionData = [
       "Our products are fresh, authentic, traceable and sustainable. The collaboration between scientists, farmers and individuals who work in our farms is imperative in this effort. It is from this connection that we are always trying to push the boundaries of what is possible in aquaculture to bring the best tasting fish to the market and families around the globe.",
     fish: images.productsFish
   },
+
   {
     id: "Farm",
     number: 2,
     title: "Farm",
     headline: "WE ARE NON CONFORMISTS",
     caption:
-      "At our core we know that raising the bar in how aquaculture is perceived means transforming the industry as a whole. It means being transparent and authentic in everything we do. Making the transition from a wild caught product to a farmed one can only be achieved by gaining public trust. At Aqquua we will work tirelessly until this message has been made crystal clear."
+      "We took a deep dive to understand why aquaculture still gets a bad rap, We understood that if we are to change that perception we would need to be transparent and authentic in everything we do. Making the transition from a 'wild caught' product to a farmed one can only be achieved by gaining public trust. It is our duty to educate the public to the multiple benefits of eating farmed fish products. We are working tirelessly until this message has been made crystal clear. It is the path we have chosen towards saving our oceans and achieving food security for this and future generations."
   },
   {
-    id: "RD",
     number: 3,
     title: "R&D",
     headline: "WE ARE INNOVATORS",
@@ -119,10 +127,6 @@ export const sectionData = [
       "IP technology and methodology that we gather from brood-stock, eggs, larval rearing techniques and genetics for optimum fingerling production are immensely important. By using best practices conditions for the grow-out of this sustainable protein source,we further our objective of making a significant contribution in supplying scientific and operational training. It will allow us to produce the highest quality fin fish product and help us to make definitive contributions to the restocking of our oceans.",
 
     content: {
-      number: 4,
-      headline: "NURTURING LEADERS",
-      text:
-        "Helping to educate the next leaders in aquaculture is something we take very seriously. The only way to succeed at getting to food security for this and future generations, is to bring academic knowledge together with commercial aquaculture experience. We currently offer scholarships in the advancement of aquaculture studies.",
       schools: [
         {
           school: "UM",
@@ -136,6 +140,18 @@ export const sectionData = [
         }
       ]
     }
+  },
+  {
+    number: 4,
+    headline: "NURTURING LEADERS",
+    caption:
+      "Helping to educate the next leaders in aquaculture is something we take very seriously. The only way to succeed at getting to food security for this and future generations, is to bring academic knowledge together with commercial aquaculture experience. We currently offer scholarships in the advancement of aquaculture studies."
+  },
+  {
+    number: 5,
+    headline: "DESIGNING THE FUTURE",
+    caption:
+      "Conceptualizing and manufacturing a new RAS is at the heart of the future of aquaculture. Aqquua is developing a modular style RAS that can be constructed in a cost effective way with the flexibility to move ones’ assets from one site to another. We are also exploring new mechanisms to re-circulate water and the best procedures to manage waste-water in an environmental conscious and responsible way."
   },
   {
     id: "Eat-fish",

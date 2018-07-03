@@ -11,10 +11,10 @@ export default class TrackingFade extends Component {
           <TrackedDiv formulas={[topTop]}>
             {posTopTop => (
               <div
-                className="flex-content-center"
+                className={`${this.props.className}`}
                 style={tween(scrollY, [
-                  [posTopTop - 150, { opacity: 1 }],
-                  [posTopTop + 400, { opacity: 0 }]
+                  [posTopTop - 300, { opacity: 0 }],
+                  [posTopTop - 100, { opacity: 1 }]
                 ])}
               >
                 {this.props.children}

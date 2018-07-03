@@ -1,30 +1,47 @@
 .Big-section {
   justify-content: space-between;
-  .Section-number {
-    @extend .geo-ultra;
-    font-size: 14rem;
-    padding:0;
-    // line-height: 5rem;
-    margin: 0 0 -3.5rem 0;
+
+  .Section-number-holder {
+    justify-content: center;
     @include tabtop {
-      margin: -8rem 4rem -3.5rem 0;
+      justify-content: flex-end;
+
+      + .Section-text-holder {
+        padding-right: 10%;
+        margin-top: 20rem;
+        .Section-text {
+          max-width: 100%;
+        }
+      }
+    }
+
+    .Section-number {
+      @extend .geo-bold;
+      font-size: 15rem;
+      padding: 0;
+      // line-height: 5rem;
+      margin: 0 0 -3.5rem 0;
+
+      span {
+        font-size: 8rem;
+        margin-left: -0.5rem;
+      }
     }
   }
 }
+
 .Section-title {
   font-size: 2em;
 }
 .Section-text {
-  font-size: 0.8rem;
+  hyphens: none;
+  font-size: 1.2rem;
   max-width: 70%;
-  line-height: 22px;
+  line-height: 30px;
   letter-spacing: 0.8px;
   text-align: justify;
   margin-bottom: 4rem;
-  @include tabtop{
-    max-width: 40%;
 
-  }
   h4 {
     @extend .geo-bold-italics;
     font-size: 1.2rem;
@@ -60,24 +77,36 @@
   }
 }
 .Big-section-1 {
-  background: $cockatoocolor;
+  background: $ottercolor;
 }
 .Big-section-2 {
-  background: $poppycolor;
-}
-.Big-section-6 {
-  background: $fuschiacolor;
-}
-.Big-section-4 {
-  background: $libertycolor;
-}
-.Big-section-5 {
-  background: $tigercolor;
-}
-.Big-section-7 {
-  background: $greenflash;
+  background: $cockatoocolor;
 }
 .Big-section-3 {
+  background: $ottercolor;
+}
+.Big-section-4 {
+  background: $poppycolor;
+}
+.Big-section-8 {
+  background: $fuschiacolor;
+}
+.Big-section-6 {
+  background: $libertycolor;
+}
+.Big-section-7 {
+  background: $tigercolor;
+}
+.Big-section-9 {
+  background: $calypsocolor;
+}
+.Big-section-10 {
+  background: $greycolor;
+}
+.Big-section-11 {
+  background: $greenflash;
+}
+.Big-section-5 {
   background: white;
   .content {
     max-width: 200px;
