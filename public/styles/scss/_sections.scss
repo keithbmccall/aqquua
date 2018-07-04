@@ -66,6 +66,14 @@
   @include tabtop {
     .Products-fish-square {
       margin-right: 10px;
+      .Products-text {
+        opacity: 0;
+        transition: all 0.3s ease-in-out;
+        margin-bottom: -1em;
+      }
+      &:hover .Products-text {
+        opacity: 1;
+      }
     }
     padding: 0 10%;
     flex-direction: row;

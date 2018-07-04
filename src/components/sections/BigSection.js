@@ -1,12 +1,10 @@
-import React, { Fragment } from "react";
-import { Link } from "react-router-dom";
-import ProductsAnimation from "../animations/ProductsAnimation";
+import React from "react";
 import ProductsCircleMap from "../landing/products/ProductsCircleMap";
-import SectionTitleImage from "../tools/text/SectionTitleImage";
 import TrackingFade from "../animations/TrackingFade";
 import SectionText from "../tools/text/SectionText";
 import TrackingFadeNumber from "../animations/TrackingFadeNumber";
 
+//
 const BigSection = props => {
   const { item, index } = props;
   console.log(index, item);

@@ -24,7 +24,7 @@ const HeaderSection = props => {
                 .split(" ")
                 .slice(0, 2)
                 .join(" ")
-                .toUpperCase() }
+                .toUpperCase()}
               <span>
                 {` ${content.title
                   .split(" ")

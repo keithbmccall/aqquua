@@ -136,6 +136,12 @@ main {
 .text-black {
   color: black; }
 
+.opacity-0 {
+  opacity: 0 !important; }
+
+.hidden {
+  visibility: hidden !important; }
+
 header {
   top: 0;
   z-index: 100; }
@@ -145,7 +151,7 @@ header {
   width: 100vw;
   height: 6em;
   background: #85dbd7;
-  padding: 0 5%; }
+  padding: 0 2%; }
   .Nav-container .image {
     margin-top: 10%;
     max-width: 100%; }
@@ -158,12 +164,14 @@ header {
         display: block;
         display: flex; }
         .Nav-container .Nav-menu-spread .Nav-item {
-          font-size: 1rem;
-          transition: all 0.3s ease-in-out; } }
+          font-size: 1rem; } }
   @media only screen and (min-width: 550px) {
     .Nav-container .Nav-menu,
     .Nav-container .Nav-burger {
       display: none; } }
+
+.Nav-item {
+  transition: all 0.3s ease-in-out; }
 
 .Nav-menu {
   margin-top: -100px;
@@ -174,8 +182,7 @@ header {
   transition: all 0.3s ease-in; }
   .Nav-menu .Nav-item {
     font-size: 1.5rem;
-    height: 2.3rem;
-    transition: all 0.3s ease-in-out; }
+    height: 2.3rem; }
   @media only screen and (min-width: 550px) {
     .Nav-menu {
       flex-direction: row; } }
@@ -245,6 +252,12 @@ header {
       padding: auto; }
       .Products-fish .Products-fish-square {
         margin-right: 10px; }
+        .Products-fish .Products-fish-square .Products-text {
+          opacity: 0;
+          transition: all 0.3s ease-in-out;
+          margin-bottom: -1em; }
+        .Products-fish .Products-fish-square:hover .Products-text {
+          opacity: 1; }
       .Products-fish .image {
         height: auto;
         margin: auto; } }
@@ -319,7 +332,7 @@ header {
     letter-spacing: 2px; }
     @media only screen and (min-width: 550px) {
       .Header-section h1 {
-        font-size: 4rem;
+        font-size: 6rem;
         text-align: center;
         letter-spacing: 2px; } }
     .Header-section h1 span {

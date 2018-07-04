@@ -13,8 +13,8 @@ export default class TrackingFade extends Component {
               <div
                 className={`${this.props.className}`}
                 style={tween(scrollY, [
-                  [posTopTop - 300, { opacity: 0 }],
-                  [posTopTop - 100, { opacity: 1 }]
+                  [posTopTop - 500, { opacity: 0 }],
+                  [posTopTop - 200, { opacity: 1 }]
                 ])}
               >
                 {this.props.children}
