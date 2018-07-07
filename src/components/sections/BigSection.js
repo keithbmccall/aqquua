@@ -7,7 +7,6 @@ import TrackingFadeNumber from "../animations/TrackingFadeNumber";
 //
 const BigSection = props => {
   const { item, index } = props;
-  console.log(index, item);
 
   return (
     <div

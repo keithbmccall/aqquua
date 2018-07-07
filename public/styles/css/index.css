@@ -19,7 +19,7 @@
   src: url("../../fonts/Geomanist-Light/geomanist-light-webfont.eot");
   src: url("../../fonts/Geomanist-Light/geomanist-light-webfont.woff") format("woff"), url("../../fonts/Geomanist-Light/geomanist-light-webfont.woff2") format("woff2"), url("../../fonts/Geomanist-Light/geomanist-light-webfont.svg#filename") format("svg"); }
 .geo-light, #root,
-body, .Header-section {
+body, .Header-section, .Wa-container .Wa-title {
   font-family: "geomanist-light", Arial, Helvetica, sans-serif; }
 
 .geo-ultra {
@@ -35,6 +35,9 @@ h4,
 h5,
 h6, .Big-section .Section-number-holder .Section-number {
   font-family: "geomanist-bold", Arial, Helvetica, sans-serif; }
+
+.geo-thin {
+  font-family: "geomanist-thin", Arial, Helvetica, sans-serif; }
 
 * {
   margin: 0;
@@ -96,10 +99,10 @@ main {
   justify-content: center;
   align-items: center; }
 
-.relative, .We-are-animation {
+.relative, .Wa-container {
   position: relative; }
 
-.absolute, .Nav-container, .We-are-animation h3 {
+.absolute, .Nav-container, .Wa-container h3, .Wa-container .Wa-title {
   position: absolute; }
 
 .fixed, header {
@@ -337,11 +340,135 @@ header {
         letter-spacing: 2px; } }
     .Header-section h1 span {
       white-space: nowrap; }
-  .Header-section .absolute, .Header-section .Nav-container, .Header-section .We-are-animation h3, .We-are-animation .Header-section h3 {
+  .Header-section .absolute, .Header-section .Nav-container, .Header-section .Wa-container h3, .Wa-container .Header-section h3, .Header-section .Wa-container .Wa-title, .Wa-container .Header-section .Wa-title {
     width: 100%;
     bottom: 0;
     left: 50%;
     transform: translate(-50%, 0); }
+
+.Wa-container {
+  height: 36rem;
+  margin-bottom: 2.5rem;
+  white-space: nowrap; }
+  .Wa-container h3 {
+    font-size: 3rem;
+    right: 200%;
+    transition: all 0.5s ease-in-out 0.5s; }
+    @media only screen and (min-width: 550px) and (max-width: 989px) {
+      .Wa-container h3 {
+        font-size: 5rem; } }
+  .Wa-container .Wa-title {
+    font-size: 6rem;
+    top: 50%;
+    transform: translateY(-50%); }
+  .Wa-container .Wa-title-push {
+    right: 0% !important; }
+  .Wa-container .Wa-0 {
+    right: 18% !important; }
+  .Wa-container .Wa-1 {
+    right: 19% !important; }
+  .Wa-container .Wa-2 {
+    right: 46% !important; }
+  .Wa-container .Wa-3 {
+    right: 9% !important; }
+  .Wa-container .Wa-4 {
+    right: 0% !important; }
+  .Wa-container .Wa-5 {
+    right: 32% !important; }
+  .Wa-container .Wa-6 {
+    right: 6% !important; }
+  .Wa-container .Wa-7 {
+    right: 38% !important; }
+  .Wa-container .Wa-8 {
+    right: 0% !important; }
+  .Wa-container .Wa-9 {
+    right: 43% !important; }
+  .Wa-container .Wa-10 {
+    right: 39% !important; }
+  .Wa-container .Wa-11 {
+    right: 18% !important; }
+  .Wa-container .Wa-12 {
+    right: 0% !important; }
+  .Wa-container .Wa-13 {
+    right: 23% !important; }
+  .Wa-container .Wa-14 {
+    right: 1% !important; }
+  @media only screen and (min-width: 550px) and (max-width: 989px) {
+    .Wa-container .Wa-title {
+      font-size: 11rem; }
+    .Wa-container h3 {
+      font-size: 5.5rem; }
+    .Wa-container .Wa-title-push {
+      right: 0% !important; }
+    .Wa-container .Wa-0 {
+      right: 40% !important; }
+    .Wa-container .Wa-1 {
+      right: 18% !important; }
+    .Wa-container .Wa-2 {
+      right: 46% !important; }
+    .Wa-container .Wa-3 {
+      right: 30% !important; }
+    .Wa-container .Wa-4 {
+      right: 0% !important; }
+    .Wa-container .Wa-5 {
+      right: 32% !important; }
+    .Wa-container .Wa-6 {
+      right: 6% !important; }
+    .Wa-container .Wa-7 {
+      right: 38% !important; }
+    .Wa-container .Wa-8 {
+      right: 0% !important; }
+    .Wa-container .Wa-9 {
+      right: 59% !important; }
+    .Wa-container .Wa-10 {
+      right: 39% !important; }
+    .Wa-container .Wa-11 {
+      right: 11% !important; }
+    .Wa-container .Wa-12 {
+      right: 0% !important; }
+    .Wa-container .Wa-13 {
+      right: 23% !important; }
+    .Wa-container .Wa-14 {
+      right: 1% !important; } }
+  @media only screen and (min-width: 990px) {
+    .Wa-container {
+      margin-bottom: 5rem; }
+      .Wa-container .Wa-title {
+        font-size: 18rem; }
+      .Wa-container h3 {
+        font-size: 5rem; }
+      .Wa-container .Wa-title-push {
+        right: 5% !important; }
+      .Wa-container .Wa-0 {
+        right: 40% !important; }
+      .Wa-container .Wa-1 {
+        right: 18% !important; }
+      .Wa-container .Wa-2 {
+        right: 46% !important; }
+      .Wa-container .Wa-3 {
+        right: 30% !important; }
+      .Wa-container .Wa-4 {
+        right: 0% !important; }
+      .Wa-container .Wa-5 {
+        right: 32% !important; }
+      .Wa-container .Wa-6 {
+        right: 6% !important; }
+      .Wa-container .Wa-7 {
+        right: 38% !important; }
+      .Wa-container .Wa-8 {
+        right: 0% !important; }
+      .Wa-container .Wa-9 {
+        right: 59% !important; }
+      .Wa-container .Wa-10 {
+        right: 39% !important; }
+      .Wa-container .Wa-11 {
+        right: 11% !important; }
+      .Wa-container .Wa-12 {
+        right: 10% !important; }
+      .Wa-container .Wa-13 {
+        right: 23% !important; }
+      .Wa-container .Wa-14 {
+        right: 1% !important; } }
 
 .Products-animation {
   transform: rotate(2turn) translateX(0) !important; }
@@ -356,32 +483,5 @@ header {
 
 .Tracking-fade-in {
   opacity: 0; }
-
-@keyframes slideright {
-  0% {
-    margin-left: -400%; }
-  25% {
-    margin-left: inherit; }
-  75% {
-    margin-left: inherit; }
-  100% {
-    margin-left: 400%; } }
-.We-are-animation {
-  height: 500px;
-  flex: 1;
-  font-size: 1.6rem;
-  padding: 0 10%;
-  margin: 50px 0;
-  text-align: center; }
-  .We-are-animation .We-are {
-    font-family: "geomanist-thin", helvetica, sans-serif; }
-    @media only screen and (min-width: 550px) and (max-width: 989px) {
-      .We-are-animation .We-are {
-        display: inline; } }
-    @media only screen and (min-width: 990px) {
-      .We-are-animation .We-are {
-        display: inline; } }
-  .We-are-animation .We-are-rotary {
-    transition: all 0.3s ease-in-out 0.7s; }
 
 /*# sourceMappingURL=index.css.map */

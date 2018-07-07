@@ -1,0 +1,186 @@
+.Wa-container {
+  @extend .relative;
+  height: 36rem;
+  margin-bottom: 2.5rem;
+  white-space: nowrap;
+  h3 {
+    @extend .absolute;
+    font-size: 3rem;
+    right: 200%;
+    transition: all 0.5s ease-in-out 0.5s;
+    @include tablet {
+      font-size: 5rem;
+    }
+  }
+  .Wa-title {
+    @extend .geo-light;
+    @extend .absolute;
+    font-size: 6rem;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .Wa-title-push {
+    right: 0% !important;
+  }
+  .Wa-0 {
+    right: 18% !important;
+  }
+  .Wa-1 {
+    right: 19% !important;
+  }
+  .Wa-2 {
+    right: 46% !important;
+  }
+  .Wa-3 {
+    right: 9% !important;
+  }
+  .Wa-4 {
+    right: 0% !important;
+  }
+  .Wa-5 {
+    right: 32% !important;
+  }
+  .Wa-6 {
+    right: 6% !important;
+  }
+  .Wa-7 {
+    right: 38% !important;
+  }
+  .Wa-8 {
+    right: 0% !important;
+  }
+  .Wa-9 {
+    right: 43% !important;
+  }
+  .Wa-10 {
+    right: 39% !important;
+  }
+  .Wa-11 {
+    right: 18% !important;
+  }
+  .Wa-12 {
+    right: 0% !important;
+  }
+  .Wa-13 {
+    right: 23% !important;
+  }
+  .Wa-14 {
+    right: 1% !important;
+  }
+  @include tablet {
+    .Wa-title {
+      font-size: 11rem;
+    }
+    h3 {
+      font-size: 5.5rem;
+    }
+    .Wa-title-push {
+      right: 0% !important;
+    }
+    //
+    .Wa-0 {
+      right: 40% !important;
+    }
+    .Wa-1 {
+      right: 18% !important;
+    }
+    .Wa-2 {
+      right: 46% !important;
+    }
+    .Wa-3 {
+      right: 30% !important;
+    }
+    .Wa-4 {
+      right: 0% !important;
+    }
+    .Wa-5 {
+      right: 32% !important;
+    }
+    .Wa-6 {
+      right: 6% !important;
+    }
+    .Wa-7 {
+      right: 38% !important;
+    }
+    .Wa-8 {
+      right: 0% !important;
+    }
+    .Wa-9 {
+      right: 59% !important;
+    }
+    .Wa-10 {
+      right: 39% !important;
+    }
+    .Wa-11 {
+      right: 11% !important;
+    }
+    .Wa-12 {
+      right: 0% !important;
+    }
+    .Wa-13 {
+      right: 23% !important;
+    }
+    .Wa-14 {
+      right: 1% !important;
+    }
+  }
+  @include desktop {
+    margin-bottom: 5rem;
+    .Wa-title {
+      font-size: 18rem;
+    }
+    h3 {
+      font-size: 5rem;
+    }
+    .Wa-title-push {
+      right: 5% !important;
+    }
+    //
+    .Wa-0 {
+      right: 40% !important;
+    }
+    .Wa-1 {
+      right: 18% !important;
+    }
+    .Wa-2 {
+      right: 46% !important;
+    }
+    .Wa-3 {
+      right: 30% !important;
+    }
+    .Wa-4 {
+      right: 0% !important;
+    }
+    .Wa-5 {
+      right: 32% !important;
+    }
+    .Wa-6 {
+      right: 6% !important;
+    }
+    .Wa-7 {
+      right: 38% !important;
+    }
+    .Wa-8 {
+      right: 0% !important;
+    }
+    .Wa-9 {
+      right: 59% !important;
+    }
+    .Wa-10 {
+      right: 39% !important;
+    }
+    .Wa-11 {
+      right: 11% !important;
+    }
+    .Wa-12 {
+      right: 10% !important;
+    }
+    .Wa-13 {
+      right: 23% !important;
+    }
+    .Wa-14 {
+      right: 1% !important;
+    }
+  }
+}

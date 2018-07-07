@@ -3,18 +3,18 @@ const weAreList = [
   "HEALTHY",
   "FRESH",
   "TASTY",
-  "FOOD",
-  "NUTRITIOUS",
   "DYNAMIC",
-  "PASSIONATE",
-  "AUTHENTIC",
-  "INNOVATIVE",
-  "TRACEABLE",
-  "SUSTAINABLE",
-  "ENVIRONMENTALISTS",
+  "EDUCATION",
   "EXPERTS",
-  "KNOWLEDGE",
-  "TECHNOLOGY"
+  "SCIENTISTS",
+  "FARMERS",
+  "INNOVATION",
+  "CLEAN",
+  "FOOD",
+  "FISH",
+  "TECHNOLOGY",
+  "GROUPER",
+  ""
 ];
 const weAreContent = weAreList.map((x, i) => {
   let colors = [
