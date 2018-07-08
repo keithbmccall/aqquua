@@ -145,7 +145,17 @@ export const sectionData = [
     number: 4,
     headline: "NURTURING LEADERS",
     caption:
-      "Helping to educate the next leaders in aquaculture is something we take very seriously. The only way to succeed at getting to food security for this and future generations, is to bring academic knowledge together with commercial aquaculture experience. We currently offer scholarships in the advancement of aquaculture studies."
+      "Helping to educate the next leaders in aquaculture is something we take very seriously. The only way to succeed at getting to food security for this and future generations, is to bring academic knowledge together with commercial aquaculture experience. We currently offer scholarships in the advancement of aquaculture studies.",
+    schoolEmblems: [
+      {
+        pic: images.schools.miami, //250
+        name: "miami"
+      },
+      {
+        pic: images.schools.burapha, //250
+        name: "burapha"
+      }
+    ]
   },
   {
     number: 5,

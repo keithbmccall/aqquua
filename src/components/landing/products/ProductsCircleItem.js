@@ -1,34 +1,23 @@
-import React, { Component, Fragment } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import ProductsAnimation from "../../animations/ProductsAnimation";
-import text from "../../../assets/images/svgs/text/mahi.svg";
 import SVG from "../../tools/images/SVG";
 
-export default class ProductsCircleItem extends Component {
-  constructor() {
-    super();
-    this.state = {
-      revealed: false
-    };
-  }
-  revealName = e => {
-    e.preventDefault();
-    this.setState({
-      revealed: !this.state.revealed
-    });
-  };
-  render() {
-    const { item } = this.props;
-    return (
-      <div className="Products-fish-square">
-        <div className="Products-text">
-          <SVG path={text} fill="black" className="image" />
-        </div>
-
-        <ProductsAnimation>
-          <img src={item.fish} className="image" alt={item.fish} />
-        </ProductsAnimation>
+const ProductsCircleItem = props => {
+  const { item } = props;
+  console.log("d", item);
+  return (
+    <div className="Products-fish-square">
+      <div className="Products-text flex flex-content-center">
+        <Link to={`/products/${item.name}`}>
+          <SVG path={item.svg} fill="black" className="image" />
+        </Link>
       </div>
-    );
-  }
-}
+      <ProductsAnimation>
+        <img src={item.png} className="image" alt={item.fish} />
+      </ProductsAnimation>
+    </div>
+  );
+};
+
+export default ProductsCircleItem;

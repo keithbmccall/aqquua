@@ -49,6 +49,9 @@ h6 {
 .vh {
   min-height: 100vh;
 }
+.w-vw {
+  width: 100vw;
+}
 .container {
   width: 100%;
 }
@@ -93,6 +96,9 @@ h6 {
 }
 .mw-100 {
   max-width: 100%;
+}
+.w-100 {
+  width: 100%;
 }
 .logo {
   @extend .mw-100;

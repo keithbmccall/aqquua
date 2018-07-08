@@ -19,7 +19,7 @@
   src: url("../../fonts/Geomanist-Light/geomanist-light-webfont.eot");
   src: url("../../fonts/Geomanist-Light/geomanist-light-webfont.woff") format("woff"), url("../../fonts/Geomanist-Light/geomanist-light-webfont.woff2") format("woff2"), url("../../fonts/Geomanist-Light/geomanist-light-webfont.svg#filename") format("svg"); }
 .geo-light, #root,
-body, .Header-section, .Wa-container .Wa-title {
+body, .Header-section, .Wa-container .Wa-title, .Wa-container .Wa-1, .Wa-container .Wa-7, .Wa-container .Wa-11 {
   font-family: "geomanist-light", Arial, Helvetica, sans-serif; }
 
 .geo-ultra {
@@ -33,10 +33,10 @@ h2,
 h3,
 h4,
 h5,
-h6, .Big-section .Section-number-holder .Section-number {
+h6, .Big-section .Section-number-holder .Section-number, .Wa-container .Wa-2, .Wa-container .Wa-6, .Wa-container .Wa-9, .Wa-container .Wa-10 {
   font-family: "geomanist-bold", Arial, Helvetica, sans-serif; }
 
-.geo-thin {
+.geo-thin, .Wa-container .Wa-0, .Wa-container .Wa-4, .Wa-container .Wa-8, .Wa-container .Wa-13 {
   font-family: "geomanist-thin", Arial, Helvetica, sans-serif; }
 
 * {
@@ -65,7 +65,7 @@ body {
   width: 100vw; }
 
 .App {
-  padding-top: 6em; }
+  padding-top: 6.5em; }
 
 main {
   position: relative;
@@ -73,6 +73,9 @@ main {
 
 .vh {
   min-height: 100vh; }
+
+.w-vw {
+  width: 100vw; }
 
 .container {
   width: 100%; }
@@ -117,6 +120,9 @@ main {
 .mw-100, .logo, .Header-band {
   max-width: 100%; }
 
+.w-100 {
+  width: 100%; }
+
 .space-10 {
   margin: 7em 0; }
   @media only screen and (min-width: 990px) {
@@ -152,14 +158,14 @@ header {
 .Nav-container {
   z-index: 100;
   width: 100vw;
-  height: 6em;
+  height: 6.5em;
   background: #85dbd7;
   padding: 0 2%; }
   .Nav-container .image {
     margin-top: 10%;
     max-width: 100%; }
   .Nav-container .Nav-image-holder {
-    width: 20%; }
+    width: 15%; }
   .Nav-container .Nav-menu-spread {
     display: none; }
     @media only screen and (min-width: 550px) {
@@ -197,7 +203,7 @@ header {
 
 .Nav-menu-open {
   margin-top: 0;
-  padding-top: 7em;
+  padding-top: 7.5em;
   height: 120vh; }
 
 .Big-section {
@@ -248,6 +254,8 @@ header {
   padding: 0 25%; }
   .Products-fish .image {
     margin-bottom: 2.5rem; }
+  .Products-fish .Products-text .image {
+    margin: 0 0 -20px 0; }
   @media only screen and (min-width: 550px) {
     .Products-fish {
       padding: 0 10%;
@@ -259,6 +267,9 @@ header {
           opacity: 0;
           transition: all 0.3s ease-in-out;
           margin-bottom: -1em; }
+          .Products-fish .Products-fish-square .Products-text .image {
+            margin: 0;
+            height: auto; }
         .Products-fish .Products-fish-square:hover .Products-text {
           opacity: 1; }
       .Products-fish .image {
@@ -348,8 +359,10 @@ header {
 
 .Wa-container {
   height: 36rem;
-  margin-bottom: 2.5rem;
   white-space: nowrap; }
+  @media only screen and (min-width: 550px) {
+    .Wa-container {
+      height: 50rem; } }
   .Wa-container h3 {
     font-size: 3rem;
     right: 200%;
@@ -444,29 +457,29 @@ header {
       .Wa-container .Wa-1 {
         right: 18% !important; }
       .Wa-container .Wa-2 {
-        right: 46% !important; }
+        right: 75% !important; }
       .Wa-container .Wa-3 {
-        right: 30% !important; }
+        right: 46% !important; }
       .Wa-container .Wa-4 {
         right: 0% !important; }
       .Wa-container .Wa-5 {
-        right: 32% !important; }
+        right: 54% !important; }
       .Wa-container .Wa-6 {
         right: 6% !important; }
       .Wa-container .Wa-7 {
-        right: 38% !important; }
+        right: 64% !important; }
       .Wa-container .Wa-8 {
-        right: 0% !important; }
+        right: 25% !important; }
       .Wa-container .Wa-9 {
         right: 59% !important; }
       .Wa-container .Wa-10 {
         right: 39% !important; }
       .Wa-container .Wa-11 {
-        right: 11% !important; }
+        right: 70% !important; }
       .Wa-container .Wa-12 {
         right: 10% !important; }
       .Wa-container .Wa-13 {
-        right: 23% !important; }
+        right: 43% !important; }
       .Wa-container .Wa-14 {
         right: 1% !important; } }
 

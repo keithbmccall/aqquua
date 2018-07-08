@@ -3,11 +3,12 @@ import ProductsCircleMap from "../landing/products/ProductsCircleMap";
 import TrackingFade from "../animations/TrackingFade";
 import SectionText from "../tools/text/SectionText";
 import TrackingFadeNumber from "../animations/TrackingFadeNumber";
+import SchoolEmblem from "../landing/schools/SchoolEmblem";
 
 //
 const BigSection = props => {
   const { item, index } = props;
-
+  console.log(item);
   return (
     <div
       className={`vh flex-column Big-section Big-section-${index}`}
@@ -46,7 +47,15 @@ const BigSection = props => {
               </TrackingFade>
             </div>
           </div>
-
+          {item.schoolEmblems && (
+            <TrackingFade>
+              <div className="flex space-10 w-vw">
+                {item.schoolEmblems.map((school, key) => (
+                  <SchoolEmblem key={key} school={school} />
+                ))}
+              </div>
+            </TrackingFade>
+          )}
           {item.fish && (
             <div className="Products-fish">
               <ProductsCircleMap fish={item.fish} />

@@ -15,7 +15,7 @@ export default class WeAreCarousel extends Component {
     return (
       <h3
         key={key}
-        className={`Wa-text ${this.state.text[key]}`}
+        className={`Wa-text Wa-${key}`}
         style={{
           top: key * 6.67 + "%",
           color: item.color
@@ -25,6 +25,7 @@ export default class WeAreCarousel extends Component {
       </h3>
     );
   };
+  //selects new text for next rotation
   setText = counter => {
     let textState = [...this.state.text];
     textState[counter] = `Wa-${counter}`;
