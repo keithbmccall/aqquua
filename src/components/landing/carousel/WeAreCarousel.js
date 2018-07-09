@@ -15,7 +15,9 @@ export default class WeAreCarousel extends Component {
     return (
       <h3
         key={key}
-        className={`Wa-text Wa-${key}`}
+        className={`Wa-text ${this.state.text[key]}`}
+        //Wa-${key}
+        //${this.state.text[key]}
         style={{
           top: key * 6.67 + "%",
           color: item.color
