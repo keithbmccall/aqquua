@@ -4,6 +4,8 @@ import TrackingFade from "../animations/TrackingFade";
 import SectionText from "../tools/text/SectionText";
 import TrackingFadeNumber from "../animations/TrackingFadeNumber";
 import SchoolEmblem from "../landing/schools/SchoolEmblem";
+import MovingPrintsL from "../animations/MovingPrintsL";
+import MovingPrintsR from "../animations/MovingPrintsR";
 
 //
 const BigSection = props => {
@@ -14,6 +16,28 @@ const BigSection = props => {
       className={`vh flex-column Big-section Big-section-${index}`}
       id={item.id}
     >
+      {item.printTest &&
+        item.printTest.map(
+          (x, k) =>
+            k == 0 ? (
+              <MovingPrintsL>
+                <div
+                  className="printtest"
+                  style={{ background: `url(${x})` }}
+                  key={k}
+                />
+              </MovingPrintsL>
+            ) : (
+              <MovingPrintsR>
+                <div
+                  className="printtest"
+                  style={{ background: `url(${x})` }}
+                  key={k}
+                />
+              </MovingPrintsR>
+            )
+        )}
+
       <div className="flex-1 flex-content-center space-10">
         <div
           className={`flex-content-center flex-column  ${

@@ -77,7 +77,7 @@ export const navbarLinks = [
 ];
 export const aqquuaHead = images.logo;
 export const headerContent = {
-  title: "We do fish right",
+  title: "We're Wild about Farmed",
   caption: "We're wild about farmed fish'",
   logo: images.logo,
   background: images.fishPrint
@@ -88,7 +88,7 @@ export const sectionData = [
     title: "We Are",
     content: weAreContent
   },
-  { title: "placeholder" },
+  { printTest: [images.fishPrint, images.fishPrint] },
   {
     title: "Aqquua",
     caption:

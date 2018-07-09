@@ -4,7 +4,7 @@
   .Section-number-holder {
     justify-content: center;
     @include tabtop {
-      justify-content: flex-end;
+      justify-content: center;
 
       + .Section-text-holder {
         padding-right: 10%;
@@ -26,6 +26,12 @@
         font-size: 8rem;
         margin-left: -0.5rem;
       }
+      @include tabtop {
+        font-size: 25rem;
+        span {
+          font-size: 20rem;
+        }
+      }
     }
   }
 }
@@ -39,7 +45,7 @@
   max-width: 70%;
   line-height: 30px;
   letter-spacing: 0.8px;
-  text-align: justify;
+  text-align: auto;
   margin-bottom: 4rem;
 
   h4 {
@@ -47,6 +53,9 @@
     font-size: 1.2rem;
     text-align: right;
     margin-bottom: 1.5rem;
+    @include tabtop {
+      font-size: 2.2rem;
+    }
   }
 }
 .Products-fish-holder {
@@ -106,22 +115,50 @@
   background: $poppycolor;
 }
 .Big-section-8 {
-  background: $fuschiacolor;
+  background: $festivecolor;
 }
 .Big-section-6 {
-  background: $libertycolor;
+  background: $daphnecolor;
 }
 .Big-section-7 {
-  background: $tigercolor;
+  background: linear-gradient(
+    to bottom right,
+    #210420,
+    #490847,
+    #620c5f,
+    #620c5f,
+    #770574,
+    #9b0096
+  );
 }
 .Big-section-9 {
-  background: $calypsocolor;
+  background: linear-gradient(
+    to bottom right,
+    #f79d04,
+    #f79d04,
+    #f79d04,
+    #f7aa04,
+    #ffb30f,
+    #f7ba04,
+    #ffc31c,
+    #f7c604,
+    #f7c604
+  );
 }
 .Big-section-10 {
-  background: $greycolor;
+  background: $pinkcolor;
 }
 .Big-section-11 {
-  background: $greenflash;
+  background: linear-gradient(
+    to bottom right,
+    #1b7a06,
+    #21af01,
+    #24b500,
+    #28c900,
+    #28c900,
+    #33ef09,
+    #9ce881
+  );
 }
 .Big-section-5 {
   background: white;
@@ -136,4 +173,12 @@
       flex-direction: row;
     }
   }
+}
+//
+
+.printtest {
+  flex: 1;
+  height: 200px;
+  background-size: contain;
+  background-repeat: no-repeat !important;
 }

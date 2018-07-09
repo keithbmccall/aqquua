@@ -15,15 +15,20 @@
       font-size: 5rem;
     }
   }
+  .Wa-title-mid {
+    right: 10%;
+  }
   .Wa-title {
     @extend .geo-light;
     @extend .absolute;
     font-size: 6rem;
     top: 50%;
     transform: translateY(-50%);
+    transition: all 2s ease-in-out 0.5s !important;
   }
   .Wa-title-push {
-    right: 0% !important;
+    opacity: 0;
+    right: 10%;
   }
   .Wa-0 {
     right: 18% !important;
@@ -90,7 +95,8 @@
       font-size: 5.5rem;
     }
     .Wa-title-push {
-      right: 0% !important;
+      opacity: 0;
+      right: 10%;
     }
     //
     .Wa-0 {
@@ -148,7 +154,8 @@
       font-size: 5rem;
     }
     .Wa-title-push {
-      right: 5% !important;
+      opacity: 0;
+      right: 10%;
     }
     //
     .Wa-0 {
@@ -161,7 +168,7 @@
       right: 75% !important;
     }
     .Wa-3 {
-      right:46% !important;
+      right: 46% !important;
     }
     .Wa-4 {
       right: 0% !important;

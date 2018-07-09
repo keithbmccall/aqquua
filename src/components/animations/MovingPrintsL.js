@@ -3,7 +3,7 @@ import { TrackDocument, TrackedDiv } from "react-track";
 import { topTop, calculateScrollY } from "react-track/tracking-formulas";
 import { tween } from "react-imation";
 
-export default class TrackingFadeNumber extends Component {
+export default class MovingPrintsL extends Component {
   render() {
     return (
       <TrackDocument formulas={[topTop, calculateScrollY]}>
@@ -13,8 +13,8 @@ export default class TrackingFadeNumber extends Component {
               <div
                 className={`${this.props.className}`}
                 style={tween(scrollY, [
-                  [posTopTop - 600, { opacity: 0 }],
-                  [posTopTop - 200, { opacity: 1 }]
+                  [posTopTop - 600, { marginLeft: -1800 }],
+                  [posTopTop - 200, { marginLeft: 0 }]
                 ])}
               >
                 {this.props.children}

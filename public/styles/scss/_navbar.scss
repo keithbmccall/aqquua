@@ -16,6 +16,9 @@ header {
   }
   .Nav-image-holder {
     width: 15%;
+    @include desktop {
+      width: 10%;
+    }
   }
   .Nav-menu-spread {
     display: none;

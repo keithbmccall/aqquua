@@ -1,6 +1,7 @@
-import fishPrint from "../assets/images/png/fish-print-6.png";
+// plain, -6 , and -9
+import fishPrint from "../assets/images/png/fish-print-9.png";
 import logo from "../assets/images/aqquualogo.svg";
-//
+//product circle map
 import coraltrout from "../assets/images/png/coraltrout.png";
 import redsnapper from "../assets/images/png/redsnapper.png";
 import hirame from "../assets/images/png/hirame.png";
@@ -9,7 +10,7 @@ import grouper from "../assets/images/png/grouper.png";
 // schools emblems
 import burapha from "../assets/images/png/burapha.png";
 import miami from "../assets/images/png/miami.png";
-// svg
+// svgtexts  for product circle map
 import coraltroutsvg from "../assets/images/svgs/text/coraltrout.svg";
 import redsnappersvg from "../assets/images/svgs/text/redsnapper.svg";
 import hiramesvg from "../assets/images/svgs/text/hirame.svg";

@@ -45,7 +45,7 @@ export default class WeAreCarousel extends Component {
               text: this.setText(this.state.counter),
               counter: this.state.counter + 1
             }),
-      3000
+      1000
     );
   };
   pushTitle = () => {
@@ -54,12 +54,19 @@ export default class WeAreCarousel extends Component {
         this.setState({
           title: "Wa-title-push"
         }),
+      5000
+    );
+    setTimeout(
+      () =>
+        this.setState({
+          title: "Wa-title-mid"
+        }),
       2000
     );
   };
   ignite = () => {
     this.pushTitle();
-    this.textRotary();
+    setTimeout(() => this.textRotary(), 5000);
   };
   componentDidMount() {
     this.ignite();
