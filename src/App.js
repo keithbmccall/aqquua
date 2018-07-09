@@ -10,15 +10,7 @@ class App extends Component {
   render() {
     let routes = (
       <Switch>
-        <Route
-          exact
-          path="/"
-          render={props => (
-            <LandingContainer
-              
-            />
-          )}
-        />
+        <Route exact path="/" render={props => <LandingContainer />} />
         <Route path="/products" render={props => <ProductsContainer />} />
         <Route exact path="/research" render={props => <ResearchContainer />} />
         <Route path="/" render={() => <Redirect to="/" />} />
@@ -27,7 +19,7 @@ class App extends Component {
     return (
       <BrowserRouter>
         <Layout>
-          <NavbarContainer  />
+          <NavbarContainer />
           <div className="App">{routes}</div>
         </Layout>
       </BrowserRouter>
