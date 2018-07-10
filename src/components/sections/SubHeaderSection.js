@@ -1,5 +1,4 @@
 import React from "react";
-import SectionText from "../tools/text/SectionText";
 import WeAreCarousel from "../landing/carousel/WeAreCarousel";
 
 const SubHeaderSection = props => {

@@ -39,20 +39,24 @@ export const navbarLinks = [
     id: "About"
   },
   {
-    title: "Products",
-    color: "#5ad0ba",
-    id: "Products"
-  },
-
-  {
     title: "Farm",
     color: "#e15d44",
     id: "Farm"
   },
   {
+    title: "Products",
+    color: "#5ad0ba",
+    id: "Products"
+  },
+  {
     title: "R&D",
     color: "#f32e37",
     id: "RD"
+  },
+  {
+    title: "Health",
+    color: "#573b30",
+    id: "Health"
   },
   {
     title: "Eat Fish",
@@ -64,11 +68,7 @@ export const navbarLinks = [
     color: "#5ad0ba",
     id: "Sustainability"
   },
-  {
-    title: "Health",
-    color: "#573b30",
-    id: "Health"
-  },
+
   {
     title: "Contact",
     color: "#4D448A",
@@ -121,7 +121,6 @@ export const sectionData = [
   },
   {
     number: 3,
-    title: "R&D",
     headline: "WE ARE INNOVATORS",
     caption:
       "IP technology and methodology that we gather from brood-stock, eggs, larval rearing techniques and genetics for optimum fingerling production are immensely important. By using best practices conditions for the grow-out of this sustainable protein source,we further our objective of making a significant contribution in supplying scientific and operational training. It will allow us to produce the highest quality fin fish product and help us to make definitive contributions to the restocking of our oceans.",
@@ -142,6 +141,7 @@ export const sectionData = [
     }
   },
   {
+    id: "RD",
     number: 4,
     headline: "NURTURING LEADERS",
     caption:

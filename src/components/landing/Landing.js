@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
-import BigSection from "../sections/BigSection";
 import HeaderSection from "../sections/HeaderSection";
 import Contact from "../../containers/contact/Contact";
 import SubHeaderSection from "../sections/SubHeaderSection";
+import LandingSection from "../sections/LandingSection";
 
 const Landing = props => {
   const { sectionData } = props;
@@ -11,7 +11,7 @@ const Landing = props => {
     return index === 0 ? (
       <SubHeaderSection key={key} item={item} />
     ) : (
-      <BigSection key={key} item={item} index={key} />
+      <LandingSection key={key} item={item} index={key} />
     );
   };
   const sections = sectionData.map(renderSections);

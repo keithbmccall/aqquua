@@ -5,7 +5,7 @@ const ProductsCircleMap = props => {
   const content = props.fish.map((item, key) => (
     <ProductsCircleItem item={item} key={key} />
   ));
-  return <Fragment>{content}</Fragment>;
+  return <div className="Products-fish">{content}</div>;
 };
 
 export default ProductsCircleMap;

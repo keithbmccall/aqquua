@@ -1,23 +1,23 @@
 @font-face {
   font-family: "geomanist-bold";
-  src: url("../../fonts/Geomanist-Bold/geomanist-bold-webfont.eot");
-  src: url("../../fonts/Geomanist-Bold/geomanist-bold-webfont.woff") format("woff"), url("../../fonts/Geomanist-Bold/geomanist-bold-webfont.woff2") format("woff2"), url("../../fonts/Geomanist-Bold/geomanist-bold-webfont.svg#filename") format("svg"); }
+  src: url("../../assets/fonts/Geomanist-Bold/geomanist-bold-webfont.eot");
+  src: url("../../assets/fonts/Geomanist-Bold/geomanist-bold-webfont.woff") format("woff"), url("../../assets/fonts/Geomanist-Bold/geomanist-bold-webfont.woff2") format("woff2"), url("../../assets/fonts/Geomanist-Bold/geomanist-bold-webfont.svg#filename") format("svg"); }
 @font-face {
   font-family: "geomanist-thin";
-  src: url("../../fonts/Geomanist-Thin/geomanist-thin-webfont.eot");
-  src: url("../../fonts/Geomanist-Thin/geomanist-thin-webfont.woff") format("woff"), url("../../fonts/Geomanist-Thin/geomanist-thin-webfont.woff2") format("woff2"), url("../../fonts/Geomanist-Thin/geomanist-thin-webfont.svg#filename") format("svg"); }
+  src: url("../../assets/fonts/Geomanist-Thin/geomanist-thin-webfont.eot");
+  src: url("../../assets/fonts/Geomanist-Thin/geomanist-thin-webfont.woff") format("woff"), url("../../assets/fonts/Geomanist-Thin/geomanist-thin-webfont.woff2") format("woff2"), url("../../assets/fonts/Geomanist-Thin/geomanist-thin-webfont.svg#filename") format("svg"); }
 @font-face {
   font-family: "geomanist-bold-italics";
-  src: url("../../fonts/Geomanist-Bold-Italic/geomanist-bold-italic-webfont.eot");
-  src: url("../../fonts/Geomanist-Bold-Italic/geomanist-bold-italic-webfont.woff") format("woff"), url("../../fonts/Geomanist-Bold-Italic/geomanist-bold-italic-webfont.woff2") format("woff2"), url("../../fonts/Geomanist-Bold-Italic/geomanist-bold-italic-webfont.svg#filename") format("svg"); }
+  src: url("../../assets/fonts/Geomanist-Bold-Italic/geomanist-bold-italic-webfont.eot");
+  src: url("../../assets/fonts/Geomanist-Bold-Italic/geomanist-bold-italic-webfont.woff") format("woff"), url("../../assets/fonts/Geomanist-Bold-Italic/geomanist-bold-italic-webfont.woff2") format("woff2"), url("../../assets/fonts/Geomanist-Bold-Italic/geomanist-bold-italic-webfont.svg#filename") format("svg"); }
 @font-face {
   font-family: "geomanist-ultra";
-  src: url("../../fonts/Geomanist-Ultra/geomanist-ultra-webfont.eot");
-  src: url("../../fonts/Geomanist-Ultra/geomanist-ultra-webfont.woff") format("woff"), url("../../fonts/Geomanist-Ultra/geomanist-ultra-webfont.woff2") format("woff2"), url("../../fonts/Geomanist-Ultra/geomanist-ultra-webfont.svg#filename") format("svg"); }
+  src: url("../../assets/fonts/Geomanist-Ultra/geomanist-ultra-webfont.eot");
+  src: url("../../assets/fonts/Geomanist-Ultra/geomanist-ultra-webfont.woff") format("woff"), url("../../assets/fonts/Geomanist-Ultra/geomanist-ultra-webfont.woff2") format("woff2"), url("../../assets/fonts/Geomanist-Ultra/geomanist-ultra-webfont.svg#filename") format("svg"); }
 @font-face {
   font-family: "geomanist-light";
-  src: url("../../fonts/Geomanist-Light/geomanist-light-webfont.eot");
-  src: url("../../fonts/Geomanist-Light/geomanist-light-webfont.woff") format("woff"), url("../../fonts/Geomanist-Light/geomanist-light-webfont.woff2") format("woff2"), url("../../fonts/Geomanist-Light/geomanist-light-webfont.svg#filename") format("svg"); }
+  src: url("../../assets/fonts/Geomanist-Light/geomanist-light-webfont.eot");
+  src: url("../../assets/fonts/Geomanist-Light/geomanist-light-webfont.woff") format("woff"), url("../../assets/fonts/Geomanist-Light/geomanist-light-webfont.woff2") format("woff2"), url("../../assets/fonts/Geomanist-Light/geomanist-light-webfont.svg#filename") format("svg"); }
 .geo-light, #root,
 body, .Header-section, .Wa-container .Wa-title, .Wa-container .Wa-1, .Wa-container .Wa-7, .Wa-container .Wa-11 {
   font-family: "geomanist-light", Arial, Helvetica, sans-serif; }
@@ -153,14 +153,15 @@ main {
 
 header {
   top: 0;
-  z-index: 100; }
+  z-index: 100;
+  background: #85dbd7; }
 
 .Nav-container {
   z-index: 100;
-  width: 100vw;
+  width: 100%;
   height: 6.5em;
   background: #85dbd7;
-  padding: 0 2%; }
+  padding: 0 4%; }
   .Nav-container .image {
     margin-top: 10%;
     max-width: 100%; }
@@ -171,16 +172,20 @@ header {
         width: 10%; } }
   .Nav-container .Nav-menu-spread {
     display: none; }
-    @media only screen and (min-width: 661px) {
+    @media only screen and (min-width: 990px) {
       .Nav-container .Nav-menu-spread {
+        justify-content: flex-end;
         display: block;
         display: flex; }
         .Nav-container .Nav-menu-spread .Nav-item {
-          font-size: 1rem; } }
-  @media only screen and (min-width: 661px) {
+          font-size: 1.2rem; } }
+  @media only screen and (min-width: 990px) {
     .Nav-container .Nav-menu,
     .Nav-container .Nav-burger {
       display: none; } }
+
+.Nav-burger {
+  justify-content: flex-end; }
 
 .Nav-item {
   transition: all 0.3s ease-in-out; }
@@ -195,19 +200,23 @@ header {
   .Nav-menu .Nav-item {
     font-size: 1.5rem;
     height: 2.3rem; }
-  @media only screen and (min-width: 661px) {
+  @media only screen and (min-width: 990px) {
     .Nav-menu {
+      transition: initial;
       flex-direction: row; } }
 
 .Nav-item {
   color: white;
-  padding: 0 1%;
+  padding: 0 1.5%;
   white-space: nowrap; }
 
 .Nav-menu-open {
   margin-top: 0;
   padding-top: 7.5em;
   height: 120vh; }
+  @media only screen and (min-width: 990px) {
+    .Nav-menu-open {
+      display: none; } }
 
 .Big-section {
   justify-content: space-between; }
@@ -269,11 +278,18 @@ header {
     margin: 0 0 -20px 0; }
   @media only screen and (min-width: 661px) {
     .Products-fish {
-      padding: 0 10%;
+      justify-content: space-evenly;
+      width: 70%;
+      padding: 0 0%;
       flex-direction: row;
       padding: auto; }
+      .Products-fish .image {
+        height: auto;
+        margin: auto; }
       .Products-fish .Products-fish-square {
-        margin-right: 10px; }
+        margin-right: 1rem; }
+        .Products-fish .Products-fish-square:nth-of-type(5) {
+          margin: 0 0 0 1rem; }
         .Products-fish .Products-fish-square .Products-text {
           opacity: 0;
           transition: all 0.3s ease-in-out;
@@ -282,10 +298,7 @@ header {
             margin: 0;
             height: auto; }
         .Products-fish .Products-fish-square:hover .Products-text {
-          opacity: 1; }
-      .Products-fish .image {
-        height: auto;
-        margin: auto; } }
+          opacity: 1; } }
 
 .Big-section-1 {
   background: #573b30; }
@@ -383,18 +396,18 @@ header {
   .Wa-container h3 {
     font-size: 3rem;
     right: 200%;
-    transition: all 0.5s ease-in-out 0.5s; }
+    transition: all 1s ease-in-out 0.5s; }
     @media only screen and (min-width: 661px) and (max-width: 989px) {
       .Wa-container h3 {
         font-size: 5rem; } }
   .Wa-container .Wa-title-mid {
-    right: 10%; }
+    right: 20%; }
   .Wa-container .Wa-title {
     font-size: 6rem;
     top: 50%;
     transform: translateY(-50%);
-    transition: all 2s ease-in-out 0.5s !important; }
-  .Wa-container .Wa-title-push {
+    transition: all 3s ease-in-out 0 !important; }
+  .Wa-container .Wa-title-fade {
     opacity: 0;
     right: 10%; }
   .Wa-container .Wa-0 {
@@ -432,9 +445,6 @@ header {
       font-size: 11rem; }
     .Wa-container h3 {
       font-size: 5.5rem; }
-    .Wa-container .Wa-title-push {
-      opacity: 0;
-      right: 10%; }
     .Wa-container .Wa-0 {
       right: 40% !important; }
     .Wa-container .Wa-1 {
@@ -466,45 +476,40 @@ header {
     .Wa-container .Wa-14 {
       right: 1% !important; } }
   @media only screen and (min-width: 990px) {
-    .Wa-container {
-      margin-bottom: 5rem; }
-      .Wa-container .Wa-title {
-        font-size: 18rem; }
-      .Wa-container h3 {
-        font-size: 5rem; }
-      .Wa-container .Wa-title-push {
-        opacity: 0;
-        right: 10%; }
-      .Wa-container .Wa-0 {
-        right: 40% !important; }
-      .Wa-container .Wa-1 {
-        right: 18% !important; }
-      .Wa-container .Wa-2 {
-        right: 75% !important; }
-      .Wa-container .Wa-3 {
-        right: 46% !important; }
-      .Wa-container .Wa-4 {
-        right: 0% !important; }
-      .Wa-container .Wa-5 {
-        right: 54% !important; }
-      .Wa-container .Wa-6 {
-        right: 6% !important; }
-      .Wa-container .Wa-7 {
-        right: 64% !important; }
-      .Wa-container .Wa-8 {
-        right: 25% !important; }
-      .Wa-container .Wa-9 {
-        right: 59% !important; }
-      .Wa-container .Wa-10 {
-        right: 39% !important; }
-      .Wa-container .Wa-11 {
-        right: 70% !important; }
-      .Wa-container .Wa-12 {
-        right: 10% !important; }
-      .Wa-container .Wa-13 {
-        right: 43% !important; }
-      .Wa-container .Wa-14 {
-        right: 1% !important; } }
+    .Wa-container .Wa-title {
+      font-size: 18rem; }
+    .Wa-container h3 {
+      font-size: 5rem; }
+    .Wa-container .Wa-0 {
+      right: 40% !important; }
+    .Wa-container .Wa-1 {
+      right: 18% !important; }
+    .Wa-container .Wa-2 {
+      right: 75% !important; }
+    .Wa-container .Wa-3 {
+      right: 46% !important; }
+    .Wa-container .Wa-4 {
+      right: 5% !important; }
+    .Wa-container .Wa-5 {
+      right: 54% !important; }
+    .Wa-container .Wa-6 {
+      right: 6% !important; }
+    .Wa-container .Wa-7 {
+      right: 64% !important; }
+    .Wa-container .Wa-8 {
+      right: 25% !important; }
+    .Wa-container .Wa-9 {
+      right: 59% !important; }
+    .Wa-container .Wa-10 {
+      right: 39% !important; }
+    .Wa-container .Wa-11 {
+      right: 70% !important; }
+    .Wa-container .Wa-12 {
+      right: 10% !important; }
+    .Wa-container .Wa-13 {
+      right: 43% !important; }
+    .Wa-container .Wa-14 {
+      right: 1% !important; } }
 
 .Products-animation {
   transform: rotate(2turn) translateX(0) !important; }

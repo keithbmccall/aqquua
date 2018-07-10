@@ -16,7 +16,7 @@ export default class WeAreCarousel extends Component {
       <h3
         key={key}
         className={`Wa-text ${this.state.text[key]}`}
-        //Wa-${key}
+        //Wa-${key} or
         //${this.state.text[key]}
         style={{
           top: key * 6.67 + "%",
@@ -45,14 +45,14 @@ export default class WeAreCarousel extends Component {
               text: this.setText(this.state.counter),
               counter: this.state.counter + 1
             }),
-      1000
+      1500
     );
   };
   pushTitle = () => {
     setTimeout(
       () =>
         this.setState({
-          title: "Wa-title-push"
+          title: "Wa-title-fade"
         }),
       5000
     );

@@ -13,16 +13,16 @@ const Navbar = props => {
   let navMenuOpen = props.menuOpen ? "Nav-menu-open" : "";
   return (
     <header className="flex">
-      <div className="Nav-container flex-1 flex-space-between flex">
+      <div className="Nav-container flex-1 flex">
         <div className="Nav-image-holder flex flex-center-vertical">
           <Link to="/">
             <SVG path={props.aqquuaHead} className="image" fill="white" />
           </Link>
         </div>
 
-        <nav className="Nav-menu-spread">{navLinks}</nav>
+        <nav className="Nav-menu-spread flex-1">{navLinks}</nav>
         <div
-          className="flex flex-center-vertical Nav-burger"
+          className="flex flex-1 flex-center-vertical Nav-burger"
           onClick={props.toggleMenu}
         >
           <FaBars size={30} color="white" />

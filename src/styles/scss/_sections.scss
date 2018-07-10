@@ -42,7 +42,7 @@
 .Section-text {
   hyphens: none;
   font-size: 1.2rem;
-  max-width: 70%;
+  max-width: $productscirclewidth;
   line-height: 30px;
   letter-spacing: 0.8px;
   text-align: auto;
@@ -78,8 +78,20 @@
     }
   }
   @include tabtop {
+    justify-content: space-evenly;
+    width: $productscirclewidth;
+    padding: 0 0%;
+    flex-direction: row;
+    padding: auto;
+    .image {
+      height: auto;
+      margin: auto;
+    }
     .Products-fish-square {
-      margin-right: 10px;
+      margin-right: 1rem;
+      &:nth-of-type(5) {
+        margin: 0 0 0 1rem;
+      }
       .Products-text {
         opacity: 0;
         transition: all 0.3s ease-in-out;
@@ -92,13 +104,6 @@
       &:hover .Products-text {
         opacity: 1;
       }
-    }
-    padding: 0 10%;
-    flex-direction: row;
-    padding: auto;
-    .image {
-      height: auto;
-      margin: auto;
     }
   }
 }

@@ -10,13 +10,13 @@
     @extend .absolute;
     font-size: 3rem;
     right: 200%;
-    transition: all 0.5s ease-in-out 0.5s;
+    transition: all 1s ease-in-out 0.5s;
     @include tablet {
       font-size: 5rem;
     }
   }
   .Wa-title-mid {
-    right: 10%;
+    right: 20%;
   }
   .Wa-title {
     @extend .geo-light;
@@ -24,9 +24,9 @@
     font-size: 6rem;
     top: 50%;
     transform: translateY(-50%);
-    transition: all 2s ease-in-out 0.5s !important;
+    transition: all 3s ease-in-out 0 !important;
   }
-  .Wa-title-push {
+  .Wa-title-fade {
     opacity: 0;
     right: 10%;
   }
@@ -94,10 +94,6 @@
     h3 {
       font-size: 5.5rem;
     }
-    .Wa-title-push {
-      opacity: 0;
-      right: 10%;
-    }
     //
     .Wa-0 {
       right: 40% !important;
@@ -146,16 +142,12 @@
     }
   }
   @include desktop {
-    margin-bottom: 5rem;
+    // margin-bottom: 5rem;
     .Wa-title {
       font-size: 18rem;
     }
     h3 {
       font-size: 5rem;
-    }
-    .Wa-title-push {
-      opacity: 0;
-      right: 10%;
     }
     //
     .Wa-0 {
@@ -171,7 +163,7 @@
       right: 46% !important;
     }
     .Wa-4 {
-      right: 0% !important;
+      right: 5% !important;
     }
     .Wa-5 {
       right: 54% !important;

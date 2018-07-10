@@ -2,14 +2,15 @@ header {
   @extend .fixed;
   top: 0;
   z-index: 100;
+  background: $navbarcolor;
 }
 .Nav-container {
   @extend .absolute;
   z-index: 100;
-  width: 100vw;
+  width: 100%;
   height: $navbargap;
   background: $navbarcolor;
-  padding: 0 2%;
+  padding: 0 4%;
   .image {
     margin-top: 10%;
     max-width: 100%;
@@ -22,20 +23,24 @@ header {
   }
   .Nav-menu-spread {
     display: none;
-    @include tabtop {
+    @include desktop {
+      justify-content: flex-end;
       display: block;
       display: flex;
       .Nav-item {
-        font-size: 1rem;
+        font-size: 1.2rem;
       }
     }
   }
   .Nav-menu,
   .Nav-burger {
-    @include tabtop {
+    @include desktop {
       display: none;
     }
   }
+}
+.Nav-burger {
+  justify-content: flex-end;
 }
 .Nav-item {
   transition: all 0.3s ease-in-out;
@@ -51,13 +56,14 @@ header {
     font-size: 1.5rem;
     height: 2.3rem;
   }
-  @include tabtop {
+  @include desktop {
+    transition: initial;
     flex-direction: row;
   }
 }
 .Nav-item {
   color: white;
-  padding: 0 1%;
+  padding: 0 1.5%;
   white-space: nowrap;
 }
 
@@ -65,4 +71,7 @@ header {
   margin-top: 0;
   padding-top: $navbargap + 1em;
   height: 120vh;
+  @include desktop {
+    display: none;
+  }
 }

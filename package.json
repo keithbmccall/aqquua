@@ -21,7 +21,7 @@
     "react-waypoint": "^8.0.2"
   },
   "scripts": {
-    "sass": "sass --watch public/styles/scss:public/styles/css",
+    "sass": "sass --watch src/styles/scss:src/styles/css",
     "start": "gulp;react-scripts start;gulp",
     "build": "gulp && react-scripts build",
     "test": "react-scripts test --env=jsdom",

@@ -12,8 +12,8 @@ class App extends Component {
       <Switch>
         <Route exact path="/" render={props => <LandingContainer />} />
         <Route path="/products" render={props => <ProductsContainer />} />
-        <Route exact path="/research" render={props => <ResearchContainer />} />
-        <Route path="/" render={() => <Redirect to="/" />} />
+        {/* <Route exact path="/research" render={props => <ResearchContainer />} /> */}
+        {/* <Route path="/" render={() => <Redirect to="/" />} /> */}
       </Switch>
     );
     return (
