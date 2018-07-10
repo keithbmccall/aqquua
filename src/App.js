@@ -5,6 +5,9 @@ import LandingContainer from "./containers/landing/LandingContainer";
 import NavbarContainer from "./containers/navbar/NavbarContainer";
 import ResearchContainer from "./containers/research/ResearchContainer";
 import ProductsContainer from "./containers/products/ProductsContainer";
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+
+//
 
 class App extends Component {
   render() {
