@@ -69,7 +69,8 @@ body {
 
 main {
   position: relative;
-  width: 100vw; }
+  width: 100vw;
+  height: 100vh; }
 
 .vh {
   min-height: 100vh; }
@@ -78,6 +79,8 @@ main {
   width: 100vw; }
 
 .container {
+  position: absolute;
+  height: 100%;
   width: 100%; }
 
 .flex-column {
@@ -150,6 +153,14 @@ main {
 
 .hidden {
   visibility: hidden !important; }
+
+.swoop-enter {
+  z-index: 10;
+  top: 100%; }
+
+.swoop-enter.swoop-enter-active {
+  top: 0%;
+  transition: all 0.5s ease-in; }
 
 header {
   top: 0;
@@ -524,5 +535,8 @@ header {
 
 .Tracking-fade-in {
   opacity: 0; }
+
+.zindex {
+  z-index: 50; }
 
 /*# sourceMappingURL=index.css.map */

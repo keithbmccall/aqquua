@@ -16,11 +16,11 @@ const Landing = props => {
   };
   const sections = sectionData.map(renderSections);
   return (
-    <Fragment>
+    <div className="container">
       <HeaderSection content={props.headerContent} />
       {sections}
       <Contact />
-    </Fragment>
+    </div>
   );
 };
 

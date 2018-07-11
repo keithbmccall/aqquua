@@ -3,7 +3,6 @@ import WeAreCarousel from "../landing/carousel/WeAreCarousel";
 
 const SubHeaderSection = props => {
   const { item } = props;
-  console.log(item);
 
   return (
     <div className="flex-column flex Big-section" id={item.id}>

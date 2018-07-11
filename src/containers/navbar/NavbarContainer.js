@@ -18,6 +18,7 @@ export default class NavbarContainer extends Component {
   render() {
     return (
       <Navbar
+      scrollTo={this.props.scrollTo}
         aqquuaHead={aqquuaHead}
         menuOpen={this.state.menuOpen}
         navbarLinks={navbarLinks}

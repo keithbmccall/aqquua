@@ -15,6 +15,7 @@
     "react-imation": "^0.5.3",
     "react-router-dom": "^4.3.1",
     "react-scripts": "^1.1.4",
+    "react-scroll-to-component": "^1.0.2",
     "react-svg": "^4.1.6",
     "react-track": "^0.4.4",
     "react-transition-group": "^2.4.0",

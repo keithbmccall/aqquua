@@ -5,9 +5,8 @@ import NavbarLinks from "./NavbarLinks";
 import SVG from "../tools/images/SVG";
 
 const Navbar = props => {
-  console.log("nav", props);
   const renderNavbarLinks = (link, key) => {
-    return <NavbarLinks link={link} key={key} />;
+    return <NavbarLinks link={link} key={key} scrollTo={props.scrollTo} />;
   };
   const navLinks = props.navbarLinks.map(renderNavbarLinks);
   let navMenuOpen = props.menuOpen ? "Nav-menu-open" : "";

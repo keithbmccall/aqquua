@@ -10,7 +10,12 @@ const NavbarLinks = props => {
   };
   return (
     <li className="Nav-item flex flex-content-center" style={[styles.navItem]}>
-      <a href={`/#${props.link.id}`}>{props.link.title}</a>
+      <a
+        // href={`/#${props.link.id}`}
+        onClick={() => props.scrollTo(this[props.link.id], 0, 500, "top")}
+      >
+        {props.link.title}
+      </a>
     </li>
   );
 };

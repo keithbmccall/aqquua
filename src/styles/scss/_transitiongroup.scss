@@ -1,0 +1,10 @@
+.swoop-enter {
+  // position: absolute;
+  z-index: 10;
+  top: 100%;
+}
+.swoop-enter.swoop-enter-active {
+  // position: absolute;
+  top: 0%;
+  transition: all 0.5s ease-in;
+}
