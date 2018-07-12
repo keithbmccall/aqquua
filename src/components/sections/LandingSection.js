@@ -4,17 +4,18 @@ import TrackingFade from "../animations/TrackingFade";
 import SchoolEmblem from "../landing/schools/SchoolEmblem";
 import SectionNumber from "../landing/section-items/SectionNumber";
 import SectionText from "../landing/section-items/SectionText";
+import Landing from "../landing/Landing";
 
 //
 export default class LandingSection extends Component {
-  constructor(props) {
-    super(props);
-  }
   render() {
     const props = this.props;
     const { item, index } = props;
     return (
-      <div className={`vh flex-column Big-section Big-section-${index}`}>
+      <div
+        className={`vh flex-column Big-section Big-section-${index}`}
+        id={item.id}
+      >
         <div className="flex-1 flex-content-center space-10">
           <div
             className={`flex-content-center flex-column  ${

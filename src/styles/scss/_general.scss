@@ -34,9 +34,7 @@ body {
   padding-top: $navbargap;
 }
 main {
-  position: relative;
   width: 100vw;
-  height: 100vh;
 }
 h1,
 h2,
@@ -53,11 +51,11 @@ h6 {
 .w-vw {
   width: 100vw;
 }
-.container {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-}
+// .container {
+//   position: absolute;
+//   height: 100%;
+//   width: 100%;
+// }
 .flex-column {
   @extend .flex;
   flex-direction: column;

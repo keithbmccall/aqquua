@@ -1,7 +1,11 @@
 import React, { Component } from "react";
 import Navbar from "../../components/navbar/Navbar";
-import { sectionData, headerContent, aqquuaHead, navbarLinks } from "../../data";
-
+import {
+  sectionData,
+  headerContent,
+  aqquuaHead,
+  navbarLinks
+} from "../../data";
 
 export default class NavbarContainer extends Component {
   constructor() {
@@ -18,7 +22,7 @@ export default class NavbarContainer extends Component {
   render() {
     return (
       <Navbar
-      scrollTo={this.props.scrollTo}
+        scrollTo={this.props.scrollTo}
         aqquuaHead={aqquuaHead}
         menuOpen={this.state.menuOpen}
         navbarLinks={navbarLinks}

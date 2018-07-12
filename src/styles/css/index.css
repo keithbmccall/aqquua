@@ -68,20 +68,13 @@ body {
   padding-top: 6.5em; }
 
 main {
-  position: relative;
-  width: 100vw;
-  height: 100vh; }
+  width: 100vw; }
 
 .vh {
   min-height: 100vh; }
 
 .w-vw {
   width: 100vw; }
-
-.container {
-  position: absolute;
-  height: 100%;
-  width: 100%; }
 
 .flex-column {
   flex-direction: column; }
@@ -155,12 +148,28 @@ main {
   visibility: hidden !important; }
 
 .swoop-enter {
+  position: fixed;
   z-index: 10;
-  top: 100%; }
+  top: 100vh; }
 
-.swoop-enter.swoop-enter-active {
-  top: 0%;
-  transition: all 0.5s ease-in; }
+.swoop-enter.swoop-enter-active,
+.swoop-enter-done {
+  top: 0;
+  z-index: 10;
+  transition: all 5s ease-in; }
+
+.swoop-exit.swoop-exit-active {
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 4.5s ease-in; }
+
+.swoop-exit-done {
+  z-index: -1;
+  opacity: 0; }
+
+.wave {
+  width: 100%;
+  margin: 0 0 -2% 0; }
 
 header {
   top: 0;
@@ -197,6 +206,11 @@ header {
 
 .Nav-burger {
   justify-content: flex-end; }
+  .Nav-burger :first-child {
+    height: 2.3rem;
+    width: auto;
+    padding: 0;
+    margin: 0; }
 
 .Nav-item {
   transition: all 0.3s ease-in-out; }
@@ -207,7 +221,7 @@ header {
   width: 100vw;
   background: #85dbd7;
   flex-direction: column;
-  transition: all 0.3s ease-in; }
+  transition: height 0.3s ease-in, margin 0.3s ease-in, padding 0.3s ease-in; }
   .Nav-menu .Nav-item {
     font-size: 1.5rem;
     height: 2.3rem; }
@@ -299,7 +313,7 @@ header {
         margin: auto; }
       .Products-fish .Products-fish-square {
         margin-right: 1rem; }
-        .Products-fish .Products-fish-square:nth-of-type(5) {
+        .Products-fish .Products-fish-square:nth-of-type(7) {
           margin: 0 0 0 1rem; }
         .Products-fish .Products-fish-square .Products-text {
           opacity: 0;

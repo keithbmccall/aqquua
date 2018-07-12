@@ -7,6 +7,7 @@ import redsnapper from "../assets/images/png/redsnapper.png";
 import hirame from "../assets/images/png/hirame.png";
 import mahi from "../assets/images/png/mahi.png";
 import grouper from "../assets/images/png/grouper.png";
+import tuna from "../assets/images/png/tuna.png";
 // schools emblems
 import burapha from "../assets/images/png/burapha.png";
 import miami from "../assets/images/png/miami.png";
@@ -16,6 +17,7 @@ import redsnappersvg from "../assets/images/svgs/text/redsnapper.svg";
 import hiramesvg from "../assets/images/svgs/text/hirame.svg";
 import mahisvg from "../assets/images/svgs/text/mahi.svg";
 import groupersvg from "../assets/images/svgs/text/grouper.svg";
+import tunasvg from "../assets/images/svgs/text/tuna.svg";
 //
 
 const schools = { miami, burapha };
@@ -24,7 +26,8 @@ const productsFish = [
   { png: redsnapper, svg: redsnappersvg },
   { png: hirame, svg: hiramesvg },
   { png: mahi, svg: mahisvg },
-  { png: grouper, svg: groupersvg }
+  { png: grouper, svg: groupersvg },
+  { png: tuna, svg: tunasvg }
 ].map((fish, i) => {
   return {
     png: fish.png,

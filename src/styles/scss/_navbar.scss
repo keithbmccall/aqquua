@@ -41,6 +41,12 @@ header {
 }
 .Nav-burger {
   justify-content: flex-end;
+  :first-child {
+    height: 2.3rem;
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
 }
 .Nav-item {
   transition: all 0.3s ease-in-out;
@@ -51,7 +57,7 @@ header {
   width: 100vw;
   background: $navbarcolor;
   flex-direction: column;
-  transition: all 0.3s ease-in;
+  transition: height 0.3s ease-in, margin 0.3s ease-in, padding 0.3s ease-in;
   .Nav-item {
     font-size: 1.5rem;
     height: 2.3rem;

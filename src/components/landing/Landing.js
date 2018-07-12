@@ -3,15 +3,19 @@ import HeaderSection from "../sections/HeaderSection";
 import Contact from "../../containers/contact/Contact";
 import SubHeaderSection from "../sections/SubHeaderSection";
 import LandingSection from "../sections/LandingSection";
-
+import { Element } from "react-scroll";
+//
 const Landing = props => {
   const { sectionData } = props;
   const renderSections = (item, key) => {
     const index = key;
+
     return index === 0 ? (
-      <SubHeaderSection key={key} item={item} />
+      <SubHeaderSection key={key} item={item} key={key} />
     ) : (
-      <LandingSection key={key} item={item} index={key} />
+      <Element name={item.id}>
+        <LandingSection item={item} index={key} />
+      </Element>
     );
   };
   const sections = sectionData.map(renderSections);
@@ -19,7 +23,9 @@ const Landing = props => {
     <div className="container">
       <HeaderSection content={props.headerContent} />
       {sections}
-      <Contact />
+      <Element name="Contact">
+        <Contact  />
+      </Element>
     </div>
   );
 };

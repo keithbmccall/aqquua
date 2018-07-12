@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import FaBars from "react-icons/lib/fa/bars";
 import NavbarLinks from "./NavbarLinks";
 import SVG from "../tools/images/SVG";
+import menu from "../../assets/images/svgs/menu.svg";
 
 const Navbar = props => {
   const renderNavbarLinks = (link, key) => {
@@ -24,7 +25,8 @@ const Navbar = props => {
           className="flex flex-1 flex-center-vertical Nav-burger"
           onClick={props.toggleMenu}
         >
-          <FaBars size={30} color="white" />
+          {/* <FaBars size={30} color="white" /> */}
+          <SVG path={menu} fill="white" className="image" />
         </div>
       </div>
       <nav

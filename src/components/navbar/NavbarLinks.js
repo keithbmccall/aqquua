@@ -1,6 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import Radium from "radium";
+import { Link } from "react-scroll";
 
 const NavbarLinks = props => {
   const styles = {
@@ -10,12 +10,15 @@ const NavbarLinks = props => {
   };
   return (
     <li className="Nav-item flex flex-content-center" style={[styles.navItem]}>
-      <a
-        // href={`/#${props.link.id}`}
-        onClick={() => props.scrollTo(this[props.link.id], 0, 500, "top")}
+      <Link
+        activeClass="active"
+        to={props.link.id}
+        spy={true}
+        smooth={true}
+        duration={500}
       >
         {props.link.title}
-      </a>
+      </Link>
     </li>
   );
 };
