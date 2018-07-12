@@ -11,9 +11,11 @@ const Landing = props => {
     const index = key;
 
     return index === 0 ? (
-      <SubHeaderSection key={key} item={item} key={key} />
+      <Element name={item.id} key={key}>
+        <SubHeaderSection item={item} key={key} />
+      </Element>
     ) : (
-      <Element name={item.id}>
+      <Element name={item.id && item.id} key={key}>
         <LandingSection item={item} index={key} />
       </Element>
     );
@@ -24,7 +26,7 @@ const Landing = props => {
       <HeaderSection content={props.headerContent} />
       {sections}
       <Element name="Contact">
-        <Contact  />
+        <Contact />
       </Element>
     </div>
   );

@@ -16,6 +16,7 @@ const NavbarLinks = props => {
         spy={true}
         smooth={true}
         duration={500}
+        onClick={props.closeMenu}
       >
         {props.link.title}
       </Link>

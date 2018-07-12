@@ -18,7 +18,15 @@ export default class NavbarContainer extends Component {
     this.setState({
       menuOpen: !this.state.menuOpen
     });
-
+  closeMenu = () => {
+    this.setState({
+      menuOpen: false
+    });
+  };
+  componentDidMount() {
+    this.closeMenu();
+    window.addEventListener("resize", () => this.closeMenu());
+  }
   render() {
     return (
       <Navbar
@@ -27,6 +35,7 @@ export default class NavbarContainer extends Component {
         menuOpen={this.state.menuOpen}
         navbarLinks={navbarLinks}
         toggleMenu={this.toggleMenu}
+        closeMenu={this.closeMenu}
       />
     );
   }

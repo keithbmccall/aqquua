@@ -10,10 +10,16 @@ export default class ProductsContainer extends Component {
   constructor() {
     super();
     this.state = {
-      which: true
+      animeReady: false
     };
   }
-
+  readyAnime = () =>
+    this.setState({
+      animeReady: true
+    });
+  componentDidMount() {
+    this.readyAnime();
+  }
   render() {
     const curve = (
       <svg
@@ -44,7 +50,7 @@ export default class ProductsContainer extends Component {
     return (
       <Fragment>
         <div className="container">
-          {curve}
+          {this.state.animeReady && curve}
 
           {/* <Link to="/"> */}
           <div style={{ background: "grey", height: "100vh", width: "100vw" }}>

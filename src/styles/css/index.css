@@ -233,15 +233,13 @@ header {
 .Nav-item {
   color: white;
   padding: 0 1.5%;
-  white-space: nowrap; }
+  white-space: nowrap;
+  cursor: pointer; }
 
 .Nav-menu-open {
   margin-top: 0;
   padding-top: 7.5em;
   height: 120vh; }
-  @media only screen and (min-width: 990px) {
-    .Nav-menu-open {
-      display: none; } }
 
 .Big-section {
   justify-content: space-between; }

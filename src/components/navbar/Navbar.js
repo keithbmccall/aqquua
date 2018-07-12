@@ -1,13 +1,19 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
-import FaBars from "react-icons/lib/fa/bars";
 import NavbarLinks from "./NavbarLinks";
 import SVG from "../tools/images/SVG";
 import menu from "../../assets/images/svgs/menu.svg";
 
 const Navbar = props => {
   const renderNavbarLinks = (link, key) => {
-    return <NavbarLinks link={link} key={key} scrollTo={props.scrollTo} />;
+    return (
+      <NavbarLinks
+        link={link}
+        key={key}
+        scrollTo={props.scrollTo}
+        closeMenu={props.closeMenu}
+      />
+    );
   };
   const navLinks = props.navbarLinks.map(renderNavbarLinks);
   let navMenuOpen = props.menuOpen ? "Nav-menu-open" : "";
@@ -29,12 +35,7 @@ const Navbar = props => {
           <SVG path={menu} fill="white" className="image" />
         </div>
       </div>
-      <nav
-        className={`Nav-menu flex ${navMenuOpen}`}
-        onClick={props.toggleMenu}
-      >
-        {navLinks}
-      </nav>
+      <nav className={`Nav-menu flex ${navMenuOpen}`}>{navLinks}</nav>
     </header>
   );
 };
