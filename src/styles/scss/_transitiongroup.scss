@@ -5,15 +5,15 @@
 }
 .swoop-enter.swoop-enter-active,
 .swoop-enter-done {
-  top: 0;
+  top: -$navbargap;
   z-index: 10;
-  transition: all 5s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .swoop-exit.swoop-exit-active {
   z-index: 1;
   opacity: 0;
-  transition: opacity 4.5s ease-in;
+  transition: opacity .5s ease-in;
 }
 .swoop-exit-done {
   z-index: -1;
@@ -21,6 +21,6 @@
 }
 .wave {
   width: 100%;
-  margin: 0 0 -2% 0;
-  // transition: all 1s ease-in;
+  margin: -100% 0 -2% 0;
+  // transition: all .5s ease-in;
 }

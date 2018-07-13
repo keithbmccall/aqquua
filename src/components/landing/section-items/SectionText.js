@@ -4,7 +4,7 @@ import TrackingFade from "../../animations/TrackingFade";
 
 const SectionText = props => (
   <div
-    className={`flex-1 flex Section-text-holder ${props.className &&
+    className={`flex-1 flex Section-text-holder ${(props.className || "") &&
       props.className}`}
   >
     <TrackingFade className={`${!props.number && "flex-content-center"}`}>

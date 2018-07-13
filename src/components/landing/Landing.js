@@ -1,8 +1,8 @@
 import React, { Fragment } from "react";
-import HeaderSection from "../sections/HeaderSection";
+import HeaderSection from "./sections/HeaderSection";
 import Contact from "../../containers/contact/Contact";
-import SubHeaderSection from "../sections/SubHeaderSection";
-import LandingSection from "../sections/LandingSection";
+import SubHeaderSection from "./sections/SubHeaderSection";
+import LandingSection from "./sections/LandingSection";
 import { Element } from "react-scroll";
 //
 const Landing = props => {
@@ -22,7 +22,7 @@ const Landing = props => {
   };
   const sections = sectionData.map(renderSections);
   return (
-    <div className="container">
+    <div className="container Landing-container">
       <HeaderSection content={props.headerContent} />
       {sections}
       <Element name="Contact">

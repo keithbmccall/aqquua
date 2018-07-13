@@ -18,7 +18,7 @@ class App extends Component {
               <CSSTransition
                 key={location.key}
                 classNames="swoop"
-                timeout={1000}
+                timeout={500}
                 onEnter={() => console.log("enttrrr")}
                 onExit={() => console.log("exi")}
               >

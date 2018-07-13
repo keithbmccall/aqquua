@@ -1,5 +1,5 @@
 import React from "react";
-import WeAreCarousel from "../landing/carousel/WeAreCarousel";
+import WeAreCarousel from "../carousel/WeAreCarousel";
 
 const SubHeaderSection = props => {
   const { item } = props;

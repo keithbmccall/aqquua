@@ -1,10 +1,9 @@
 import React, { Component } from "react";
-import ProductsCircleMap from "../landing/products/ProductsCircleMap";
-import TrackingFade from "../animations/TrackingFade";
-import SchoolEmblem from "../landing/schools/SchoolEmblem";
-import SectionNumber from "../landing/section-items/SectionNumber";
-import SectionText from "../landing/section-items/SectionText";
-import Landing from "../landing/Landing";
+import ProductsCircleMap from "../products/ProductsCircleMap";
+import TrackingFade from "../../animations/TrackingFade";
+import SchoolEmblem from "../schools/SchoolEmblem";
+import SectionNumber from "../section-items/SectionNumber";
+import SectionText from "../section-items/SectionText";
 
 //
 export default class LandingSection extends Component {

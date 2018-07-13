@@ -31,7 +31,7 @@ body {
   width: 100vw;
 }
 .App {
-  padding-top: $navbargap;
+  margin-top: -$navbargap;
 }
 main {
   width: 100vw;
@@ -51,11 +51,7 @@ h6 {
 .w-vw {
   width: 100vw;
 }
-// .container {
-//   position: absolute;
-//   height: 100%;
-//   width: 100%;
-// }
+
 .flex-column {
   @extend .flex;
   flex-direction: column;

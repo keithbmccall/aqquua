@@ -1,6 +1,6 @@
 import React from "react";
-import TrackingFadeIn from "../animations/TrackingFadeIn";
-import SVG from "../tools/images/SVG";
+import TrackingFadeIn from "../../animations/TrackingFadeIn";
+import SVG from "../../tools/images/SVG";
 
 const HeaderSection = props => {
   const { content } = props;
