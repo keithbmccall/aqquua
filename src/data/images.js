@@ -1,5 +1,5 @@
 // plain, -6 , and -9
-import fishPrint from "../assets/images/png/fish-print-9.png";
+import fishPrint from "../assets/images/png/fishprints/fish-print-9.png";
 import logo from "../assets/images/aqquualogo.svg";
 //product circle map
 import coraltrout from "../assets/images/png/coraltrout.png";
@@ -18,8 +18,10 @@ import hiramesvg from "../assets/images/svgs/text/hirame.svg";
 import mahisvg from "../assets/images/svgs/text/mahi.svg";
 import groupersvg from "../assets/images/svgs/text/grouper.svg";
 import tunasvg from "../assets/images/svgs/text/tuna.svg";
+// ribbons
+import coraltroutribbon from "../assets/images/png/fishprints/fishribbons/coraltrout.png";
+import hirameribbon from "../assets/images/png/fishprints/fishribbons/hiramesmall.png";
 //
-
 const schools = { miami, burapha };
 const productsFish = [
   { png: coraltrout, svg: coraltroutsvg },
@@ -35,12 +37,22 @@ const productsFish = [
     svg: fish.svg
   };
 });
-
+const ribbons = [
+  {
+    pic: coraltroutribbon,
+    color: "#ec5d73"
+  },
+  {
+    pic: hirameribbon,
+    color: "#9ce881"
+  }
+];
 const images = {
   fishPrint,
   logo,
   productsFish,
-  schools
+  schools,
+  ribbons
 };
 
 export default images;

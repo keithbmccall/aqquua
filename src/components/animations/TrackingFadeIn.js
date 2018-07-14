@@ -13,10 +13,16 @@ export default class TrackingFadeIn extends Component {
               <div
                 className="flex-content-center Tracking-fade-in"
                 style={tween(scrollY, [
-                  [0, { opacity: 0, marginBottom: 0 }],
-                  [posTopTop - 800, { opacity: 0, marginBottom: 0 }],
-                  [posTopTop - 300, { opacity: 1, marginBottom: 200 }],
-                  [posTopTop + 100, { opacity: 1, marginBottom: 200 }]
+                  [0, { opacity: 0, marginTop: 0 }],
+                  [posTopTop - 600, { opacity: 0, marginTop: 0 }],
+                  [
+                    posTopTop - 300,
+                    { opacity: 1, marginTop: this.props.scene1 }
+                  ],
+                  [
+                    posTopTop + 100,
+                    { opacity: 1, marginTop: this.props.scene2 }
+                  ]
                 ])}
               >
                 {this.props.children}

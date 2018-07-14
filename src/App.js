@@ -13,35 +13,38 @@ class App extends Component {
     let routes = (
       <Route
         render={({ location }) => (
-          <div className="App">
-            <TransitionGroup>
-              <CSSTransition
-                key={location.key}
-                classNames="swoop"
-                timeout={500}
-                onEnter={() => console.log("enttrrr")}
-                onExit={() => console.log("exi")}
-              >
-                <Switch location={location}>
-                  <Route
-                    exact
-                    path="/"
-                    render={props => <LandingContainer />}
-                  />
-                  <Route
-                    path="/products"
-                    render={props => <ProductsContainer />}
-                  />
-                  <Route
-                    exact
-                    path="/research"
-                    render={props => <ResearchContainer />}
-                  />
-                  <Route path="/" render={() => <Redirect to="/" />} />
-                </Switch>
-              </CSSTransition>
-            </TransitionGroup>
-          </div>
+          <Layout>
+            <NavbarContainer />
+            <div className="App">
+              <TransitionGroup>
+                <CSSTransition
+                  key={location.key}
+                  classNames="swoop"
+                  timeout={500}
+                  onEnter={() => console.log("enttrrr")}
+                  onExit={() => console.log("exi")}
+                >
+                  <Switch location={location}>
+                    <Route
+                      exact
+                      path="/"
+                      render={props => <LandingContainer />}
+                    />
+                    <Route
+                      path="/products"
+                      render={props => <ProductsContainer />}
+                    />
+                    <Route
+                      exact
+                      path="/research"
+                      render={props => <ResearchContainer />}
+                    />
+                    <Route path="/" render={() => <Redirect to="/" />} />
+                  </Switch>
+                </CSSTransition>
+              </TransitionGroup>
+            </div>
+          </Layout>
         )}
       />
     );
@@ -56,12 +59,9 @@ class App extends Component {
 
     return (
       <BrowserRouter>
-        <ScrollToTop>
-          <Layout>
-            <NavbarContainer />
-            {routes}
-          </Layout>
-        </ScrollToTop>
+        {/* <ScrollToTop> */}
+        {routes}
+        {/* </ScrollToTop> */}
       </BrowserRouter>
     );
   }

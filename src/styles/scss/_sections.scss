@@ -94,7 +94,7 @@
       }
       .Products-text {
         opacity: 0;
-        transition: all 0.3s ease-in-out;
+        @include transition(all 0.3s ease-in-out);
         margin-bottom: -1em;
         .image {
           margin: 0;
@@ -107,28 +107,22 @@
     }
   }
 }
-.Big-section-1 {
-  background: $ottercolor;
-}
-.Big-section-2 {
-  background: $cockatoocolor;
-}
-.Big-section-3 {
-  background: $ottercolor;
-}
+// .Big-section-1 {
+//   background: $ottercolor;
+// }
 .Big-section-9 {
   background: white;
 }
-.Big-section-4 {
+.Big-section-2 {
   background: $poppycolor;
 }
-.Big-section-8 {
+.Big-section-6 {
   background: $festivecolor;
 }
-.Big-section-6 {
+.Big-section-4 {
   background: $daphnecolor;
 }
-.Big-section-7 {
+.Big-section-5 {
   background: linear-gradient(
     to bottom right,
     #210420,
@@ -139,7 +133,7 @@
     #9b0096
   );
 }
-.Big-section-10 {
+.Big-section-8 {
   background: linear-gradient(
     to bottom right,
     #f79d04,
@@ -153,10 +147,10 @@
     #f7c604
   );
 }
-.Big-section-11 {
+.Big-section-9 {
   background: $pinkcolor;
 }
-.Big-section-12 {
+.Big-section-10 {
   background: linear-gradient(
     to bottom right,
     #1b7a06,
@@ -168,7 +162,7 @@
     #9ce881
   );
 }
-.Big-section-5 {
+.Big-section-3 {
   background: white;
   .content {
     max-width: 200px;
@@ -183,10 +177,3 @@
   }
 }
 //
-
-.printtest {
-  flex: 1;
-  height: 200px;
-  background-size: contain;
-  background-repeat: no-repeat !important;
-}

@@ -11,14 +11,14 @@ const HeaderSection = props => {
         style={{ backgroundImage: `url(${content.background})` }}
       >
         <div className="absolute">
-          <TrackingFadeIn>
+          <TrackingFadeIn scene1={-100} scene2={-200}>
             <div className="Header-items flex flex-column flex-content-center">
               <div className="logo">
                 <SVG fill="white" path={content.logo} className="image" />
               </div>
             </div>
           </TrackingFadeIn>
-          <TrackingFadeIn>
+          <TrackingFadeIn scene1={0} scene2={0}>
             <h1>
               {content.title
                 .split(" ")

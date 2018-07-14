@@ -88,13 +88,15 @@ export const sectionData = [
     title: "We Are",
     content: weAreContent
   },
-  { printTest: [images.fishPrint, images.fishPrint] },
   {
-    title: "Aqquua",
-    caption:
-      "At aqquua™ we engage in best practices and device technological innovations in RAS and R&D to raise the bar in aquaculture at every level. Our fin-fish products are raised in a controlled environment and are 100% antibiotic and hormone free. We are committed to bring the freshest, highest quality seafood experience to the table."
+    ribbons: images.ribbons
   },
-  { title: "placeholder" },
+  // {
+  //   title: "Aqquua",
+  //   caption:
+  //     "At aqquua™ we engage in best practices and device technological innovations in RAS and R&D to raise the bar in aquaculture at every level. Our fin-fish products are raised in a controlled environment and are 100% antibiotic and hormone free. We are committed to bring the freshest, highest quality seafood experience to the table."
+  // },
+  // { title: "placeholder" },
   {
     title: "Our Products",
     number: 1,

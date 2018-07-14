@@ -10,190 +10,197 @@
     @extend .absolute;
     font-size: 3rem;
     right: 200%;
-    transition: all 1s ease-in-out 0.5s;
+    @include transition(all 1s ease-in-out 0.5s);
     @include tablet {
       font-size: 5rem;
     }
   }
-  .Wa-title-mid {
-    right: 5%;
-  }
-  .Wa-title {
-    @extend .geo-light;
-    @extend .absolute;
-    font-size: 6rem;
-    top: 50%;
-    transform: translateY(-50%);
-    transition: all 3s ease-in-out 0 !important;
-  }
-  .Wa-title-fade {
-    opacity: 0;
-    right: 10%;
-  }
-  .Wa-0 {
-    right: 18% !important;
-    @extend .geo-thin;
-  }
-  .Wa-1 {
-    right: 19% !important;
-    @extend .geo-light;
-  }
-  .Wa-2 {
-    right: 46% !important;
-    @extend .geo-bold;
-  }
-  .Wa-3 {
-    right: 9% !important;
-  }
-  .Wa-4 {
-    right: 0% !important;
-    @extend .geo-thin;
-  }
-  .Wa-5 {
-    right: 32% !important;
-  }
-  .Wa-6 {
-    right: 6% !important;
-    @extend .geo-bold;
-  }
-  .Wa-7 {
-    right: 38% !important;
-    @extend .geo-light;
-  }
-  .Wa-8 {
-    right: 0% !important;
-    @extend .geo-thin;
-  }
-  .Wa-9 {
-    right: 43% !important;
-    @extend .geo-bold;
-  }
-  .Wa-10 {
-    right: 39% !important;
-    @extend .geo-bold;
-  }
-  .Wa-11 {
-    right: 18% !important;
-    @extend .geo-light;
-  }
-  .Wa-12 {
-    right: 0% !important;
-  }
-  .Wa-13 {
-    right: 23% !important;
-    @extend .geo-thin;
-  }
-  .Wa-14 {
-    right: 1% !important;
+
+  .Wa {
+    &-title-mid {
+      right: 5%;
+    }
+    &-title {
+      @extend .geo-light;
+      @extend .absolute;
+      font-size: 6rem;
+      top: 50%;
+      @include transform(translateY(-50%));
+      @include transition(all 3s ease-in-out 0 !important);
+    }
+    &-title-fade {
+      opacity: 0;
+      right: 10%;
+    }
+
+    &-0 {
+      right: 18% !important;
+      @extend .geo-thin;
+    }
+    &-1 {
+      right: 19% !important;
+      @extend .geo-light;
+    }
+    &-2 {
+      right: 46% !important;
+      @extend .geo-bold;
+    }
+    &-3 {
+      right: 9% !important;
+    }
+    &-4 {
+      right: 0% !important;
+      @extend .geo-thin;
+    }
+    &-5 {
+      right: 32% !important;
+    }
+    &-6 {
+      right: 6% !important;
+      @extend .geo-bold;
+    }
+    &-7 {
+      right: 38% !important;
+      @extend .geo-light;
+    }
+    &-8 {
+      right: 0% !important;
+      @extend .geo-thin;
+    }
+    &-9 {
+      right: 43% !important;
+      @extend .geo-bold;
+    }
+    &-10 {
+      right: 39% !important;
+      @extend .geo-bold;
+    }
+    &-11 {
+      right: 18% !important;
+      @extend .geo-light;
+    }
+    &-12 {
+      right: 0% !important;
+    }
+    &-13 {
+      right: 23% !important;
+      @extend .geo-thin;
+    }
+    &-14 {
+      right: 1% !important;
+    }
   }
 
   @include tablet {
-    .Wa-title {
-      font-size: 11rem;
-    }
     h3 {
       font-size: 5.5rem;
     }
-    //
-    .Wa-0 {
-      right: 40% !important;
-    }
-    .Wa-1 {
-      right: 18% !important;
-    }
-    .Wa-2 {
-      right: 46% !important;
-    }
-    .Wa-3 {
-      right: 30% !important;
-    }
-    .Wa-4 {
-      right: 0% !important;
-    }
-    .Wa-5 {
-      right: 32% !important;
-    }
-    .Wa-6 {
-      right: 6% !important;
-    }
-    .Wa-7 {
-      right: 38% !important;
-    }
-    .Wa-8 {
-      right: 0% !important;
-    }
-    .Wa-9 {
-      right: 59% !important;
-    }
-    .Wa-10 {
-      right: 39% !important;
-    }
-    .Wa-11 {
-      right: 11% !important;
-    }
-    .Wa-12 {
-      right: 0% !important;
-    }
-    .Wa-13 {
-      right: 23% !important;
-    }
-    .Wa-14 {
-      right: 1% !important;
+    .Wa {
+      &-title {
+        font-size: 11rem;
+      }
+
+      //
+      &-0 {
+        right: 40% !important;
+      }
+      &-1 {
+        right: 18% !important;
+      }
+      &-2 {
+        right: 46% !important;
+      }
+      &-3 {
+        right: 30% !important;
+      }
+      &-4 {
+        right: 0% !important;
+      }
+      &-5 {
+        right: 32% !important;
+      }
+      &-6 {
+        right: 6% !important;
+      }
+      &-7 {
+        right: 38% !important;
+      }
+      &-8 {
+        right: 0% !important;
+      }
+      &-9 {
+        right: 59% !important;
+      }
+      &-10 {
+        right: 39% !important;
+      }
+      &-11 {
+        right: 11% !important;
+      }
+      &-12 {
+        right: 0% !important;
+      }
+      &-13 {
+        right: 23% !important;
+      }
+      &-14 {
+        right: 1% !important;
+      }
     }
   }
   @include desktop {
-    // margin-bottom: 5rem;
-    .Wa-title {
-      font-size: 18rem;
-    }
     h3 {
       font-size: 5rem;
     }
-    //
-    .Wa-0 {
-      right: 40% !important;
-    }
-    .Wa-1 {
-      right: 18% !important;
-    }
-    .Wa-2 {
-      right: 75% !important;
-    }
-    .Wa-3 {
-      right: 46% !important;
-    }
-    .Wa-4 {
-      right: 5% !important;
-    }
-    .Wa-5 {
-      right: 54% !important;
-    }
-    .Wa-6 {
-      right: 6% !important;
-    }
-    .Wa-7 {
-      right: 64% !important;
-    }
-    .Wa-8 {
-      right: 25% !important;
-    }
-    .Wa-9 {
-      right: 59% !important;
-    }
-    .Wa-10 {
-      right: 39% !important;
-    }
-    .Wa-11 {
-      right: 70% !important;
-    }
-    .Wa-12 {
-      right: 10% !important;
-    }
-    .Wa-13 {
-      right: 43% !important;
-    }
-    .Wa-14 {
-      right: 1% !important;
+    .Wa {
+      &-title {
+        font-size: 18rem;
+      }
+      &-0 {
+        right: 40% !important;
+      }
+      &-1 {
+        right: 18% !important;
+      }
+      &-2 {
+        right: 75% !important;
+      }
+      &-3 {
+        right: 46% !important;
+      }
+      &-4 {
+        right: 5% !important;
+      }
+      &-5 {
+        right: 54% !important;
+      }
+      &-6 {
+        right: 6% !important;
+      }
+      &-7 {
+        right: 64% !important;
+      }
+      &-8 {
+        right: 25% !important;
+      }
+      &-9 {
+        right: 59% !important;
+      }
+      &-10 {
+        right: 39% !important;
+      }
+      &-11 {
+        right: 70% !important;
+      }
+      &-12 {
+        right: 10% !important;
+      }
+      &-13 {
+        right: 43% !important;
+      }
+      &-14 {
+        right: 1% !important;
+      }
     }
   }
 }

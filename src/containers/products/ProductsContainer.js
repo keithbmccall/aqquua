@@ -8,11 +8,9 @@ export default class ProductsContainer extends Component {
         <div className="container Products-container">
           <WaveAnimation color="grey" />
 
-          {/* <Link to="/"> */}
           <div style={{ background: "grey", height: "100vh", width: "100vw" }}>
             <div style={{ height: "100px",width: '100px' }} className="border"/>
           </div>
-          {/* </Link> */}
         </div>
       </Fragment>
     );

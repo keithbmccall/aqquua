@@ -89,7 +89,7 @@ h6 {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  @include transform(translate(-50%, -50%));
 }
 .mw-100 {
   max-width: 100%;
@@ -127,4 +127,7 @@ h6 {
 }
 .hidden {
   visibility: hidden !important;
+}
+.container {
+  padding-top: $navbargap;
 }

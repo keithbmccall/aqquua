@@ -1,17 +1,30 @@
 .Products-animation {
-  transform: rotate(2turn) translateX(0) !important;
+  @include transform(rotate(2turn) translateX(0) !important);
 }
 .Products,
 .Products-roll {
-  -webkit-transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
-  transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  @include transition(all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s);
 }
 .Products-roll {
-  transform: translateX(-1000%);
+  @include transform(translateX(-1000%));
 }
 .Tracking-fade-in {
   opacity: 0;
+  margin-bottom: 5rem;
 }
 .zindex {
   z-index: 50;
+}
+
+.Ribbons-container {
+  height: 10.5rem;
+  margin: 0;
+  .Ribbons {
+    height: 5.2rem;
+    &-holder {
+    }
+    &-right {
+      @include transform(scaleX(-1));
+    }
+  }
 }
