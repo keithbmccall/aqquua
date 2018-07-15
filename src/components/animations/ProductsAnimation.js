@@ -9,7 +9,6 @@ export default class ProductsAnimation extends Component {
     };
   }
   bounceIn = () => {
-    console.log("pop");
     this.setState({
       className: "Products-animation"
     });

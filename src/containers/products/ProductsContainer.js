@@ -1,18 +1,9 @@
-import React, { Component, Fragment } from "react";
-import WaveAnimation from "../../components/animations/WaveAnimation";
+import React, { Component } from "react";
+import { fishProductsInfo } from "../../data";
+import Products from "../../components/products/Products";
 //
 export default class ProductsContainer extends Component {
   render() {
-    return (
-      <Fragment>
-        <div className="container Products-container">
-          <WaveAnimation color="grey" />
-
-          <div style={{ background: "grey", height: "100vh", width: "100vw" }}>
-            <div style={{ height: "100px",width: '100px' }} className="border"/>
-          </div>
-        </div>
-      </Fragment>
-    );
+    return <Products fishProductsInfo={fishProductsInfo} />;
   }
 }

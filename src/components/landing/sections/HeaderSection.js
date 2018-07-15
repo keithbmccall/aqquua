@@ -1,6 +1,6 @@
 import React from "react";
-import TrackingFadeIn from "../../animations/TrackingFadeIn";
 import SVG from "../../tools/images/SVG";
+import TrackingAnimations from "../../animations/TrackingAnimations";
 
 const HeaderSection = props => {
   const { content } = props;
@@ -11,14 +11,24 @@ const HeaderSection = props => {
         style={{ backgroundImage: `url(${content.background})` }}
       >
         <div className="absolute">
-          <TrackingFadeIn scene1={-100} scene2={-200}>
+          <TrackingAnimations
+            scene1={-100}
+            scene2={-200}
+            type="headerFade"
+            className="flex-content-center Tracking-fade-in"
+          >
             <div className="Header-items flex flex-column flex-content-center">
               <div className="logo">
                 <SVG fill="white" path={content.logo} className="image" />
               </div>
             </div>
-          </TrackingFadeIn>
-          <TrackingFadeIn scene1={0} scene2={0}>
+          </TrackingAnimations>
+          <TrackingAnimations
+            scene1={0}
+            scene2={0}
+            type="headerFade"
+            className="flex-content-center Tracking-fade-in"
+          >
             <h1>
               {content.title
                 .split(" ")
@@ -33,7 +43,7 @@ const HeaderSection = props => {
                   .toUpperCase()}`}
               </span>
             </h1>
-          </TrackingFadeIn>
+          </TrackingAnimations>
         </div>
       </div>
     </div>

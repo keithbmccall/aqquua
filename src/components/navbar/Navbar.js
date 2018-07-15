@@ -22,7 +22,7 @@ const Navbar = props => {
       <div className="Nav-container flex-1 flex">
         <div className="Nav-image-holder flex flex-center-vertical">
           <Link to="/">
-            <SVG path={props.aqquuaHead} className="image" fill="white" />
+            <SVG path={props.aqquuaLogo} className="image" fill="white" />
           </Link>
         </div>
 
@@ -31,7 +31,6 @@ const Navbar = props => {
           className="flex flex-1 flex-center-vertical Nav-burger"
           onClick={props.toggleMenu}
         >
-          {/* <FaBars size={30} color="white" /> */}
           <SVG path={menu} fill="white" className="image" />
         </div>
       </div>

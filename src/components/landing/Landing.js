@@ -5,19 +5,21 @@ import SubHeaderSection from "./sections/SubHeaderSection";
 import LandingSection from "./sections/LandingSection";
 import { Element } from "react-scroll";
 import WaveAnimation from "../animations/WaveAnimation";
+import RibbonSection from "./sections/RibbonsSection";
 //
 const Landing = props => {
   const { sectionData } = props;
   const renderSections = (item, key) => {
     const index = key;
-
-    return index === 0 ? (
-      <Element name={item.id} key={key}>
-        <SubHeaderSection item={item} key={key} />
-      </Element>
-    ) : (
+    return (
       <Element name={item.id && item.id} key={key}>
-        <LandingSection item={item} index={key} />
+        {index === 0 ? (
+          <SubHeaderSection item={item} key={key} />
+        ) : index === 1 ? (
+          <RibbonSection item={item} key={key} />
+        ) : (
+          <LandingSection item={item} index={key} />
+        )}
       </Element>
     );
   };

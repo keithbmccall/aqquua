@@ -1,14 +1,14 @@
 import React from "react";
-import TrackingFadeNumber from "../../animations/TrackingFadeNumber";
+import TrackingAnimations from "../../animations/TrackingAnimations";
 
 const SectionNumber = props => (
   <div className="flex-1 Section-number-holder flex">
-    <TrackingFadeNumber>
+    <TrackingAnimations type="numberFade">
       <div className="Section-number text-white flex-1">
         {props.content}
         <span>.</span>
       </div>
-    </TrackingFadeNumber>
+    </TrackingAnimations>
   </div>
 );
 

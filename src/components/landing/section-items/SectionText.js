@@ -1,13 +1,16 @@
 import React from "react";
 import TextAndHeadline from "../../tools/text/TextAndHeadline";
-import TrackingFade from "../../animations/TrackingFade";
+import TrackingAnimations from "../../animations/TrackingAnimations";
 
 const SectionText = props => (
   <div
     className={`flex-1 flex Section-text-holder ${(props.className || "") &&
       props.className}`}
   >
-    <TrackingFade className={`${!props.number && "flex-content-center"}`}>
+    <TrackingAnimations
+      className={`${!props.number && "flex-content-center"}`}
+      type="sectionFade"
+    >
       <div className="flex flex-1 flex-content-center">
         <TextAndHeadline
           text={props.caption}
@@ -17,7 +20,7 @@ const SectionText = props => (
             props.contentClassName}`}
         />
       </div>
-    </TrackingFade>
+    </TrackingAnimations>
   </div>
 );
 

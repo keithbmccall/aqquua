@@ -5,7 +5,7 @@ import logo from "../assets/images/aqquualogo.svg";
 import coraltrout from "../assets/images/png/coraltrout.png";
 import redsnapper from "../assets/images/png/redsnapper.png";
 import hirame from "../assets/images/png/hirame.png";
-import mahi from "../assets/images/png/mahi.png";
+import mahimahi from "../assets/images/png/mahimahi.png";
 import grouper from "../assets/images/png/grouper.png";
 import tuna from "../assets/images/png/tuna.png";
 // schools emblems
@@ -15,11 +15,11 @@ import miami from "../assets/images/png/miami.png";
 import coraltroutsvg from "../assets/images/svgs/text/coraltrout.svg";
 import redsnappersvg from "../assets/images/svgs/text/redsnapper.svg";
 import hiramesvg from "../assets/images/svgs/text/hirame.svg";
-import mahisvg from "../assets/images/svgs/text/mahi.svg";
+import mahimahisvg from "../assets/images/svgs/text/mahimahi.svg";
 import groupersvg from "../assets/images/svgs/text/grouper.svg";
 import tunasvg from "../assets/images/svgs/text/tuna.svg";
 // ribbons
-import coraltroutribbon from "../assets/images/png/fishprints/fishribbons/coraltrout.png";
+import coraltroutribbon from "../assets/images/png/fishprints/fishribbons/coraltroutsmall.png";
 import hirameribbon from "../assets/images/png/fishprints/fishribbons/hiramesmall.png";
 //
 const schools = { miami, burapha };
@@ -27,10 +27,11 @@ const productsFish = [
   { png: coraltrout, svg: coraltroutsvg },
   { png: redsnapper, svg: redsnappersvg },
   { png: hirame, svg: hiramesvg },
-  { png: mahi, svg: mahisvg },
+  { png: mahimahi, svg: mahimahisvg },
   { png: grouper, svg: groupersvg },
   { png: tuna, svg: tunasvg }
 ].map((fish, i) => {
+  console.log(fish.png, fish.png.split(".")[0].split("/")[3]);
   return {
     png: fish.png,
     name: fish.png.split(".")[0].split("/")[3],

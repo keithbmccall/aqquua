@@ -596,7 +596,9 @@ header {
 
 .Ribbons-container {
   height: 10.5rem;
-  margin: 0; }
+  margin: 0;
+  padding: 0;
+  background: white; }
   .Ribbons-container .Ribbons {
     height: 5.2rem; }
     .Ribbons-container .Ribbons-right {
