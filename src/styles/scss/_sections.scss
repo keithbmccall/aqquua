@@ -79,7 +79,7 @@
   @include tabtop {
     justify-content: space-evenly;
     width: $productscirclewidth;
-    padding: 0 0%;
+    padding: 0 0% !important;
     flex-direction: row;
     .image {
       height: auto;

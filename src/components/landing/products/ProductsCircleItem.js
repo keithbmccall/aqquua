@@ -8,12 +8,12 @@ const ProductsCircleItem = props => {
   return (
     <div className="Products-fish-square">
       <ProductsAnimation>
-        <div className="Products-text flex flex-content-center">
-          <Link to={`/products/${item.name}`}>
+        <Link to={`/products/${item.name}`}>
+          <div className="Products-text flex flex-content-center">
             <SVG path={item.svg} fill="black" className="image" />
-          </Link>
-        </div>
-        <img src={item.png} className="image" alt={item.fish} />
+          </div>
+          <img src={item.png} className="image" alt={item.fish} />{" "}
+        </Link>
       </ProductsAnimation>
     </div>
   );

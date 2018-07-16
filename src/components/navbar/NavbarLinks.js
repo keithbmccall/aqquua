@@ -18,7 +18,7 @@ const NavbarLinks = props => {
         duration={500}
         onClick={props.closeMenu}
       > */}
-      <a href={`#${props.link.id}`}>{props.link.title}</a>
+      <a href={`/#${props.link.id}`}>{props.link.title}</a>
       {/* </Link> */}
     </li>
   );

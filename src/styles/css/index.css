@@ -387,7 +387,7 @@ header {
     .Products-fish {
       justify-content: space-evenly;
       width: 70%;
-      padding: 0 0%;
+      padding: 0 0% !important;
       flex-direction: row; }
       .Products-fish .image {
         height: auto;
