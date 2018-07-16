@@ -34,7 +34,6 @@ const productsFish = [
   { png: grouper, svg: groupersvg },
   { png: tuna, svg: tunasvg }
 ].map((fish, i) => {
-  console.log(fish.png, fish.png.split(".")[0].split("/")[3]);
   return {
     png: fish.png,
     name: fish.png.split(".")[0].split("/")[3],
@@ -52,13 +51,22 @@ const ribbons = [
   }
 ];
 const eatfishicons = [eatfishred, eatfishyellow];
+const heroImages = {
+  redsnapper,
+  coraltrout,
+  hirame,
+  mahimahi,
+  grouper,
+  tuna
+};
 const images = {
   fishPrint,
   logo,
   productsFish,
   schools,
   ribbons,
-  eatfishicons
+  eatfishicons,
+  heroImages
 };
 
 export default images;

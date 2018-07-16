@@ -1,8 +1,14 @@
 import React from "react";
 
 const EatFishTagIcon = props => (
-  <div class={props.index === 0 ? "front" : "back"}>
-    <img src={props.tag} className="image" />
+  <div class="flip-container">
+    <div class="flipper">
+      {props.item.map((tag, key) => (
+        <div class={key === 0 ? "front" : "back"} key={key}>
+          <img src={tag} alt="Eat Fish" className="image" />
+        </div>
+      ))}
+    </div>
   </div>
 );
 

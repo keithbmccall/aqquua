@@ -35,13 +35,7 @@ const LandingSection = props => {
                 </div>
               ) : (
                 <div className="flex-1 flex-content-center space-10">
-                  <div class="flip-container">
-                    <div class="flipper">
-                      {item.eatFishTag.map((tag, key) => (
-                        <EatFishTagIcon key={key} tag={tag} index={key} />
-                      ))}
-                    </div>
-                  </div>
+                  <EatFishTagIcon item={item.eatFishTag} />
                 </div>
               )}
             </TrackingAnimations>

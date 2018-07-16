@@ -1,11 +1,9 @@
 import React from "react";
 import WaveAnimation from "../animations/WaveAnimation";
-import image from "../../assets/images/png/redsnapper.png";
 import ProductsHeroAnimation from "../animations/ProductsHeroAnimation";
 
 const Products = props => {
   const { info } = props;
-
   return (
     <div className="container">
       <WaveAnimation color="white" />
@@ -19,7 +17,7 @@ const Products = props => {
         </div>
         <div className="Products-hero-holder flex">
           <ProductsHeroAnimation className="Products-hero">
-            <img src={image} className="image" />
+            <img src={info.hero} className="image" alt={info.name} />
           </ProductsHeroAnimation>
         </div>
       </div>
