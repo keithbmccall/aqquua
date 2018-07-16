@@ -23,7 +23,7 @@ export default class Contact extends Component {
     );
 
     return (
-      <div className="flex-column Contact-section">
+      <div className="flex-column Contact-section" id="Contact">
         <div className="flex-1 flex-content-center space-10 flex-column">
           <div className="Contact-holder">
             <h3>{this.props.contactInfo.title.toUpperCase()}</h3>
