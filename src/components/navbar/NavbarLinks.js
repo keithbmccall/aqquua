@@ -8,18 +8,23 @@ const NavbarLinks = props => {
       ":hover": { backgroundColor: props.link.color }
     }
   };
+  console.log(props.routing.location.pathname);
   return (
     <li className="Nav-item flex flex-content-center" style={[styles.navItem]}>
-      <Link
-        activeClass="active"
-        to={props.link.id}
-        spy={true}
-        smooth={false}
-        duration={500}
-        onClick={props.closeMenu}
-      >
-        {props.link.title}
-      </Link>
+      {props.routing.location.pathname === "/" ? (
+        <Link
+          activeClass="active"
+          to={props.link.id}
+          spy={true}
+          smooth={false}
+          duration={500}
+          onClick={props.closeMenu}
+        >
+          {props.link.title}
+        </Link>
+      ) : (
+        <a href={`/#${props.link.id}`}>{props.link.title}</a>
+      )}
     </li>
   );
 };

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import NavbarLinks from "./NavbarLinks";
 import SVG from "../tools/images/SVG";
 import menu from "../../assets/images/svgs/menu.svg";
+import { withRouter } from "react-router-dom";
 
 const Navbar = props => {
   const renderNavbarLinks = (link, key) => {
@@ -12,9 +13,11 @@ const Navbar = props => {
         key={key}
         scrollTo={props.scrollTo}
         closeMenu={props.closeMenu}
+        routing={props.history}
       />
     );
   };
+  console.log(props);
   const navLinks = props.navbarLinks.map(renderNavbarLinks);
   let navMenuOpen = props.menuOpen ? "Nav-menu-open" : "";
   return (
@@ -38,4 +41,4 @@ const Navbar = props => {
     </header>
   );
 };
-export default Navbar;
+export default withRouter(Navbar);
