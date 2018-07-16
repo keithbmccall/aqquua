@@ -27,11 +27,11 @@ import eatfishyellow from "../assets/images/png/eatfishiconyellow.png";
 
 const schools = { miami, burapha };
 const productsFish = [
-  { png: coraltrout, svg: coraltroutsvg },
-  { png: redsnapper, svg: redsnappersvg },
+  { png: grouper, svg: groupersvg },
   { png: hirame, svg: hiramesvg },
   { png: mahimahi, svg: mahimahisvg },
-  { png: grouper, svg: groupersvg },
+  { png: redsnapper, svg: redsnappersvg },
+  { png: coraltrout, svg: coraltroutsvg },
   { png: tuna, svg: tunasvg }
 ].map((fish, i) => {
   return {

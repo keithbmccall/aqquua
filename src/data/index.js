@@ -234,6 +234,15 @@ export const fishProductsInfo = {
     caption: [
       "An important Japanese food-fish, which attains a large size, the hirame, also known as the olive flounder, bastard halibut or Japanese halibut is a temperate marine species of large-tooth flounder native to the north-western Pacific Ocean.  It is often referred to as the Japanese flatfish or Korea(n) flatfish (광어) when mentioned in the context of those countries. It can reach a length of 41 inches and a weight of 20 lbs.  It is the most common flatfish species raised in aquaculture in Korea. They are raised in Japan and China as well. It is the most highly prized of the Japanese flounders."
     ]
+  },
+  tuna: {
+    fish: "Blackfin Tuna",
+    color: "#16639f",
+    scienceName: "Thunnus atlanticus",
+    hero: images.heroImages.tuna,
+    caption: [
+      "This is a pelagic, schooling fish that generally feeds near the surface. Its diet consists of small fishes, squid, crustaceans, and plankton. An excellent light tackle species, it can be taken by trolling or casting small baits or lures, including ballyhoo, mullet and other small fishes as well as strip baits, spoons, feathers, jigs, or plugs; or by live bait fishing from boats at the surface of deep waters one to two miles offshore. It has some local commercial importance, but is predominantly an angler's fish. It is a spunky game species and the flesh is of good quality and flavor."
+    ]
   }
 };
 export const contactInfo = {
