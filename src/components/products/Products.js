@@ -4,7 +4,6 @@ import ProductsHeroAnimation from "../animations/ProductsHeroAnimation";
 
 const Products = props => {
   const { info } = props;
-  console.log(info);
   return (
     <div className="container">
       <WaveAnimation color="white" />

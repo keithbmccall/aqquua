@@ -18,7 +18,6 @@ const RibbonSection = props => {
     </div>
   );
   const { item } = props;
-  console.log(props)
   const ribbons = item.map(renderRibbons);
   return (
     <div className="flex-column Big-section">
