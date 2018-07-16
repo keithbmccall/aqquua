@@ -1,6 +1,6 @@
 // tablet
 @mixin tablet {
-  @media only screen and (min-width: 661px) and (max-width: 989px) {
+  @media only screen and (min-width: 790px) and (max-width: 989px) {
     @content;
   }
 }
@@ -13,7 +13,7 @@
 }
 
 @mixin tabtop {
-  @media only screen and (min-width: 661px) {
+  @media only screen and (min-width: 790px) {
     @content;
   }
 }

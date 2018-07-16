@@ -1,13 +1,27 @@
 import React from "react";
 import WaveAnimation from "../animations/WaveAnimation";
+import image from "../../assets/images/png/redsnapper.png";
+import ProductsHeroAnimation from "../animations/ProductsHeroAnimation";
 
 const Products = props => {
-  return (
-    <div className="container Products-container">
-      <WaveAnimation color="grey" />
+  const { info } = props;
 
-      <div style={{ background: "grey", height: "100vh", width: "100vw" }}>
-        <div style={{ height: "100px", width: "100px" }} className="border" />
+  return (
+    <div className="container">
+      <WaveAnimation color="white" />
+      <div className="Products-container flex collapse-row-column">
+        <div className="Products-info">
+          <h1>
+            {info.fish.toUpperCase()}
+            <span>{`(${info.scienceName})`}</span>
+          </h1>
+          {info.caption.map((caption, key) => <p key={key}>{caption}</p>)}
+        </div>
+        <div className="Products-hero-holder flex">
+          <ProductsHeroAnimation className="Products-hero">
+            <img src={image} className="image" />
+          </ProductsHeroAnimation>
+        </div>
       </div>
     </div>
   );

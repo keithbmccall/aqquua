@@ -73,7 +73,7 @@
   }
   .Products-text {
     .image {
-      margin: 0 0 -20px 0;
+      margin: 0 0 -2rem 0;
     }
   }
   @include tabtop {
@@ -94,7 +94,7 @@
       .Products-text {
         opacity: 0;
         @include transition(all 0.3s ease-in-out);
-        margin-bottom: -1em;
+        margin-bottom: -1rem;
         .image {
           margin: 0;
           height: auto;
@@ -175,4 +175,89 @@
     }
   }
 }
-//
+.Contact-section {
+}
+.Contact-holder {
+  font-size: 1rem;
+  width: 70%;
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .Contact-caption {
+    margin-bottom: 2rem;
+  }
+  .Contact-addresses {
+    flex: 1;
+    order: 1;
+    address {
+      text-align: center;
+
+      line-height: 1.5rem;
+      font-style: normal;
+      margin-bottom: 1rem;
+      span {
+        @extend .geo-bold;
+      }
+    }
+  }
+  .Contact-caption,
+  .Contact-form,
+  .Contact-addresses {
+    margin-bottom: 2rem;
+  }
+  .Contact-form {
+    text-align: center;
+    flex: 2;
+
+    form {
+      margin: 0;
+      input,
+      textarea {
+        width: 100%;
+        border: 4px solid $greycolor;
+        margin-bottom: 1rem;
+        padding-left: 0.5rem;
+      }
+      input {
+        height: 2rem;
+      }
+      textarea {
+        height: 10rem;
+        resize: none;
+        padding-top: 0.5rem;
+      }
+      &:first-child {
+        input {
+          &:nth-of-type(1) {
+            margin-right: 10%;
+          }
+        }
+      }
+    }
+  }
+  @include tabtop {
+    width: 70%;
+    .Contact-caption {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      margin-bottom: 3rem;
+    }
+    .Contact-addresses {
+      order: initial;
+      address {
+        text-align: initial;
+      }
+    }
+    .Contact-form {
+      form {
+        input {
+          height: 2.5rem;
+        }
+        textarea {
+          height: 15rem;
+        }
+      }
+    }
+  }
+}

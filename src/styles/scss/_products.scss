@@ -1,4 +1,69 @@
 .Products-container {
+  padding-top: $navbargap;
+  min-height: 100vh;
+  padding-bottom: 3rem;
+  background: white;
 }
-.Landing-container {
+.Products-info {
+  flex: 8; //  9/24 ~ Products-hero-holder
+  padding: 15% 10% 0 10%;
+
+  @include tabtop {
+    padding: 15% 1% 0 10%;
+    flex: 10; //  9/24 ~ Products-hero-holder
+  }
+  @include desktop {
+    flex: 7;
+  }
+  h1 {
+    @extend .geo-bold;
+    font-size: 2.3rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+    span {
+      display: block;
+      letter-spacing: 1px;
+      @extend .geo-bold-italics;
+      font-size: 1rem;
+      //   padding-left: 3%;
+    }
+  }
+  p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    max-width: 90%;
+    margin-bottom: 1rem;
+  }
+}
+.Products-hero-holder {
+  order: -1;
+  justify-content: center;
+  flex: 17; //  15/24 ~ Products-info
+  .Products-hero {
+    width: 70%;
+    .image {
+    }
+  }
+
+  @include tabtop {
+    order: 2;
+    flex: 14; //  19/24 ~ Products-info
+    justify-content: flex-start;
+    position: relative;
+    .Products-hero {
+      position: absolute;
+      @include transform(translateX(1000%));
+      @include transition(transform 1.5s ease-in-out);
+      .image {
+        object-fit: contain;
+        max-width: initial !important;
+        height: 50rem;
+        left: 0;
+        // @include transform(translateX(50%))
+      }
+    }
+  }
+  @include desktop {
+    flex: 16;
+  }
 }

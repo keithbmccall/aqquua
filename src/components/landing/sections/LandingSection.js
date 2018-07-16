@@ -4,6 +4,7 @@ import SchoolEmblem from "../schools/SchoolEmblem";
 import SectionNumber from "../section-items/SectionNumber";
 import SectionText from "../section-items/SectionText";
 import TrackingAnimations from "../../animations/TrackingAnimations";
+import EatFishTagIcon from "../eat-fish/EatFishTagIcon";
 //
 const LandingSection = props => {
   const { item, index } = props;
@@ -24,13 +25,25 @@ const LandingSection = props => {
               fish={item.fish}
             />
           </div>
-          {item.schoolEmblems && (
+          {(item.schoolEmblems || item.eatFishTag) && (
             <TrackingAnimations type="sectionFade">
-              <div className="flex space-10 w-vw">
-                {item.schoolEmblems.map((school, key) => (
-                  <SchoolEmblem key={key} school={school} />
-                ))}
-              </div>
+              {item.schoolEmblems ? (
+                <div className="flex space-10 w-vw">
+                  {item.schoolEmblems.map((school, key) => (
+                    <SchoolEmblem key={key} school={school} />
+                  ))}
+                </div>
+              ) : (
+                <div className="flex-1 flex-content-center space-10">
+                  <div class="flip-container">
+                    <div class="flipper">
+                      {item.eatFishTag.map((tag, key) => (
+                        <EatFishTagIcon key={key} tag={tag} index={key} />
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              )}
             </TrackingAnimations>
           )}
           {item.fish && <ProductsCircleMap fish={item.fish} />}

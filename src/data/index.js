@@ -169,6 +169,7 @@ export const sectionData = [
   {
     id: "Eat-fish",
     title: "Eat Fish",
+    eatFishTag: images.eatfishicons,
     number: 6,
     headline: "DOING IT IN STYLE",
     caption:
@@ -194,31 +195,63 @@ export const fishProductsInfo = {
   redsnapper: {
     fish: "American Red Snapper",
     scienceName: "Lutjanus campechanus",
-    caption:
+    hero: "",
+    caption: [
       'The northern or "American" red snapper is found in the Gulf of Mexico and the southeastern Atlantic coast of the United States and much less commonly northward as far as Massachusetts. In Latin American Spanish, it is known as huachinango, pargo, or chillo. They are a prized food fish, caught commercially, as well as recreationally. It is used in Vietnamese canh chua ("Sour soup"). Red snapper is the most commonly caught snapper in the continental USA (almost 50% of the total catch), with similar species being more common elsewhere. They eat almost anything, but prefer small fish and crustaceans. Interest in recreational fishing for northern red snapper, and in the Gulf of Mexico in general, has increased dramatically. From 1995–2003, the number of Louisiana fishing charter guide license holders increased eight-fold.Researchers estimate the bycatch of young red snapper, especially by shrimp trawlers, is a significant concern.'
+    ]
   },
   mahimahi: {
     fish: "Mahi-Mahi",
     scienceName: "Coryphaena hippurus",
-    caption:
+    hero: "",
+    caption: [
       "The mahi-mahi or common dolphinfish is a surface-dwelling ray-finned fish found in off-shore temperate, tropical and subtropical waters worldwide. Also widely called dorado and dolphin, it is one of two members of the Coryphaenidae family, the other being the pompano dolphinfish.  Mahi-mahi can be found in the Caribbean Sea, on the west coast of North and South America, the Pacific coast of Costa Rica, the Gulf of Mexico, the Atlantic coast of Florida and West Africa, South China Sea and Southeast Asia, Hawaii, Tahiti and many other places worldwide. They are highly sought for sport fishing and commercial purposes. Sport fishermen seek them due to their beauty, size, food quality, and healthy population. Mahi-mahi is popular in many restaurants."
+    ]
   },
   grouper: {
     fish: "Hybrid Grouper",
     scienceName: "Epinephelus fuscoguttatus",
-    caption:
+    hero: "",
+    caption: [
       "The Grouper is a new type of grouper produced by fertilizing the eggs of the Tiger Grouper (Epinephelus fuscoguttatus) with the sperm of the Giant Grouper (Epinephelus lanceolatus) through the in-vitro fertilisation (IVF) technique. The first hybrid grouper was cross-bred by researches from Universiti Malaysia Sabah (UMS), Malaysia, in collaboration among researchers of the Borneo Marine Research Institute of UMS, the Fisheries Development Authority of Malaysia (LKIM) and Kinki University of Japan, represented by Prof. Dr Shigeharu Senoo of UMS."
+    ]
   },
   coraltrout: {
     fish: "Coral Trout",
     scienceName: "Plectropomus leopardus",
-    caption:
-      "The Coral Trout is a species of fish in the Serranidae family, which includes groupers and coral cod (not related to true cod), which are all characterized by having three spines on the gill cover and a large mouth lined with more than one row of sharp teeth. Native to the western Pacific Ocean, its natural habitat includes open seas and coral reefs. Coral trout are piscivorous; juveniles mostly eat crustaceans, especially prawns, and adults feed upon a variety of reef fish, particularly damselfish. Coral trout are the favorite target fish for all sectors of the fishery because they are a good food fish and command high market prices locally and overseas. The total amount of Coral Trout caught commercially in Australia in 2010 was 974 tons, the majority coming from the Coral Reef Fin Fish Fishery (Queensland)."
+    hero: "",
+    caption: [
+      "The Coral Trout is a species of fish in the Serranidae family, which includes groupers and coral cod (not related to true cod), which are all characterized by having three spines on the gill cover and a large mouth lined with more than one row of sharp teeth. Native to the western Pacific Ocean, its natural habitat includes open seas and coral reefs. Coral trout are piscivorous; juveniles mostly eat crustaceans, especially prawns, and adults feed upon a variety of reef fish, particularly damselfish.",
+      "Coral trout are the favorite target fish for all sectors of the fishery because they are a good food fish and command high market prices locally and overseas. The total amount of Coral Trout caught commercially in Australia in 2010 was 974 tons, the majority coming from the Coral Reef Fin Fish Fishery (Queensland)."
+    ]
   },
   hirame: {
     fish: "Hirame",
     scienceName: "Paralichthys olivaceus",
-    caption:
-      " An important Japanese food-fish, which attains a large size, the hirame, also known as the olive flounder, bastard halibut or Japanese halibut is a temperate marine species of large-tooth flounder native to the north-western Pacific Ocean.  It is often referred to as the Japanese flatfish or Korea(n) flatfish (광어) when mentioned in the context of those countries. It can reach a length of 41 inches and a weight of 20 lbs.  It is the most common flatfish species raised in aquaculture in Korea. They are raised in Japan and China as well. It is the most highly prized of the Japanese flounders."
+    hero: "",
+    caption: [
+      "An important Japanese food-fish, which attains a large size, the hirame, also known as the olive flounder, bastard halibut or Japanese halibut is a temperate marine species of large-tooth flounder native to the north-western Pacific Ocean.  It is often referred to as the Japanese flatfish or Korea(n) flatfish (광어) when mentioned in the context of those countries. It can reach a length of 41 inches and a weight of 20 lbs.  It is the most common flatfish species raised in aquaculture in Korea. They are raised in Japan and China as well. It is the most highly prized of the Japanese flounders."
+    ]
   }
+};
+export const contactInfo = {
+  title: "Contact Us",
+  caption:
+    "AQQUUA IS AN OPEN DOOR OPERATION. WHETHER YOU ARE A SEAFOOD CUSTOMER, RETAILER, CHEF, MEMBER OF THE PRESS OR MEDIA, OR EDUCATOR LOOKING FOR MORE INFORMATION ABOUT AQQUUA, WE CAN BE REACHED THROUGH SOCIAL MEDIA OR WITH THE BELOW INFO. WE WELCOME ALL KINDS OF INQUIRIES.",
+  addresses: [
+    {
+      country: "US",
+      title: "WeWork c/o Aqquua",
+      street: "450 Lexington Avenue",
+      city: "New York, NY 10017",
+      phone: "+1 646 719 0377"
+    },
+    {
+      country: "Thailand",
+      title: "39 Moo 9",
+      street: "T.Bangkachai A.Leam Sing",
+      city: "Chanthaburi 22120",
+      phone: "+ 66 98 935 7644"
+    }
+  ]
 };

@@ -22,6 +22,9 @@ import tunasvg from "../assets/images/svgs/text/tuna.svg";
 import coraltroutribbon from "../assets/images/png/fishprints/fishribbons/coraltroutsmall.png";
 import hirameribbon from "../assets/images/png/fishprints/fishribbons/hiramesmall.png";
 //
+import eatfishred from "../assets/images/png/eatfishiconred.png";
+import eatfishyellow from "../assets/images/png/eatfishiconyellow.png";
+
 const schools = { miami, burapha };
 const productsFish = [
   { png: coraltrout, svg: coraltroutsvg },
@@ -48,12 +51,14 @@ const ribbons = [
     color: "#9ce881"
   }
 ];
+const eatfishicons = [eatfishred, eatfishyellow];
 const images = {
   fishPrint,
   logo,
   productsFish,
   schools,
-  ribbons
+  ribbons,
+  eatfishicons
 };
 
 export default images;

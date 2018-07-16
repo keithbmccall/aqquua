@@ -30,7 +30,7 @@ const Landing = props => {
       <HeaderSection content={props.headerContent} />
       {sections}
       <Element name="Contact">
-        <Contact />
+        <Contact contactInfo={props.contactInfo} />
       </Element>
     </div>
   );

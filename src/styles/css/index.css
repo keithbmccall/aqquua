@@ -25,7 +25,7 @@ body, .Header-section, .Wa-container .Wa-title, .Wa-container .Wa-1, .Wa-contain
 .geo-ultra {
   font-family: "geomanist-ultra", Arial, Helvetica, sans-serif; }
 
-.geo-bold-italics, .Section-text h4 {
+.geo-bold-italics, .Products-info h1 span, .Section-text h4 {
   font-family: "geomanist-bold-italics", Arial, Helvetica, sans-serif; }
 
 .geo-bold, h1,
@@ -33,7 +33,7 @@ h2,
 h3,
 h4,
 h5,
-h6, .Big-section .Section-number-holder .Section-number, .Wa-container .Wa-2, .Wa-container .Wa-6, .Wa-container .Wa-9, .Wa-container .Wa-10 {
+h6, .Products-info h1, .Big-section .Section-number-holder .Section-number, .Contact-holder .Contact-addresses address span, .Wa-container .Wa-2, .Wa-container .Wa-6, .Wa-container .Wa-9, .Wa-container .Wa-10 {
   font-family: "geomanist-bold", Arial, Helvetica, sans-serif; }
 
 .geo-thin, .Wa-container .Wa-0, .Wa-container .Wa-4, .Wa-container .Wa-8, .Wa-container .Wa-13 {
@@ -55,7 +55,8 @@ ul li {
   border: solid 1px black; }
 
 .image {
-  max-width: 100%; }
+  max-width: 100%;
+  height: auto; }
 
 #root,
 body {
@@ -127,14 +128,14 @@ main {
   @media only screen and (min-width: 990px) {
     .space-10 {
       margin: 9em 0; } }
-  @media only screen and (min-width: 661px) and (max-width: 989px) {
+  @media only screen and (min-width: 790px) and (max-width: 989px) {
     .space-10 {
       margin: 8em 0; } }
 
 .collapse-row-column {
   display: flex;
   flex-direction: column; }
-  @media only screen and (min-width: 661px) {
+  @media only screen and (min-width: 790px) {
     .collapse-row-column {
       flex-direction: row; } }
 
@@ -184,6 +185,67 @@ main {
   width: 100%;
   margin: -100% 0 -2% 0; }
 
+.Products-container {
+  padding-top: 6.5em;
+  min-height: 100vh;
+  padding-bottom: 3rem;
+  background: white; }
+
+.Products-info {
+  flex: 8;
+  padding: 15% 10% 0 10%; }
+  @media only screen and (min-width: 790px) {
+    .Products-info {
+      padding: 15% 1% 0 10%;
+      flex: 10; } }
+  @media only screen and (min-width: 990px) {
+    .Products-info {
+      flex: 7; } }
+  .Products-info h1 {
+    font-size: 2.3rem;
+    line-height: 2rem;
+    margin-bottom: 1rem; }
+    .Products-info h1 span {
+      display: block;
+      letter-spacing: 1px;
+      font-size: 1rem; }
+  .Products-info p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    max-width: 90%;
+    margin-bottom: 1rem; }
+
+.Products-hero-holder {
+  order: -1;
+  justify-content: center;
+  flex: 17; }
+  .Products-hero-holder .Products-hero {
+    width: 70%; }
+  @media only screen and (min-width: 790px) {
+    .Products-hero-holder {
+      order: 2;
+      flex: 14;
+      justify-content: flex-start;
+      position: relative; }
+      .Products-hero-holder .Products-hero {
+        position: absolute;
+        -moz-transform: translateX(1000%);
+        -o-transform: translateX(1000%);
+        -webkit-transform: translateX(1000%);
+        transform: translateX(1000%);
+        -moz-transition: transform 1.5s ease-in-out;
+        -o-transition: transform 1.5s ease-in-out;
+        -webkit-transition: transform 1.5s ease-in-out;
+        transition: transform 1.5s ease-in-out; }
+        .Products-hero-holder .Products-hero .image {
+          object-fit: contain;
+          max-width: initial !important;
+          height: 50rem;
+          left: 0; } }
+  @media only screen and (min-width: 990px) {
+    .Products-hero-holder {
+      flex: 16; } }
+
 header {
   top: 0;
   z-index: 100;
@@ -203,15 +265,6 @@ header {
     @media only screen and (min-width: 990px) {
       .Nav-container .Nav-image-holder {
         width: 10%; } }
-  .Nav-container .Nav-menu-spread {
-    display: none; }
-    @media only screen and (min-width: 990px) {
-      .Nav-container .Nav-menu-spread {
-        justify-content: flex-end;
-        display: block;
-        display: flex; }
-        .Nav-container .Nav-menu-spread .Nav-item {
-          font-size: 1.2rem; } }
   @media only screen and (min-width: 990px) {
     .Nav-container .Nav-menu,
     .Nav-container .Nav-burger {
@@ -220,7 +273,7 @@ header {
 .Nav-burger {
   justify-content: flex-end; }
   .Nav-burger :first-child {
-    height: 2.3rem;
+    height: 2rem;
     width: auto;
     padding: 0;
     margin: 0; }
@@ -237,18 +290,19 @@ header {
   width: 100vw;
   background: #85dbd7;
   flex-direction: column;
-  -moz-transition: height 0.3s ease-in;
-  -o-transition: height 0.3s ease-in;
-  -webkit-transition: height 0.3s ease-in;
-  transition: height 0.3s ease-in;
-  -moz-transition: margin 0.3s ease-in;
-  -o-transition: margin 0.3s ease-in;
-  -webkit-transition: margin 0.3s ease-in;
-  transition: margin 0.3s ease-in;
-  -moz-transition: padding 0.3s ease-in;
-  -o-transition: padding 0.3s ease-in;
-  -webkit-transition: padding 0.3s ease-in;
-  transition: padding 0.3s ease-in; }
+  -moz-transition: height 0.3s ease-in, margin-top 0.3s ease-in, padding-top 0.3s ease-in;
+  -o-transition: height 0.3s ease-in, margin-top 0.3s ease-in, padding-top 0.3s ease-in;
+  -webkit-transition: height 0.3s ease-in, margin-top 0.3s ease-in, padding-top 0.3s ease-in;
+  transition: height 0.3s ease-in, margin-top 0.3s ease-in, padding-top 0.3s ease-in; }
+  .Nav-menu-spread {
+    display: none; }
+    @media only screen and (min-width: 990px) {
+      .Nav-menu-spread {
+        justify-content: flex-end;
+        display: block;
+        display: flex; }
+        .Nav-menu-spread .Nav-item {
+          font-size: 1.2rem; } }
   .Nav-menu .Nav-item {
     font-size: 1.5rem;
     height: 2.3rem; }
@@ -275,7 +329,7 @@ header {
   justify-content: space-between; }
   .Big-section .Section-number-holder {
     justify-content: center; }
-    @media only screen and (min-width: 661px) {
+    @media only screen and (min-width: 790px) {
       .Big-section .Section-number-holder {
         justify-content: center; }
         .Big-section .Section-number-holder + .Section-text-holder {
@@ -290,7 +344,7 @@ header {
       .Big-section .Section-number-holder .Section-number span {
         font-size: 8rem;
         margin-left: -0.5rem; }
-      @media only screen and (min-width: 661px) {
+      @media only screen and (min-width: 790px) {
         .Big-section .Section-number-holder .Section-number {
           font-size: 25rem; }
           .Big-section .Section-number-holder .Section-number span {
@@ -311,13 +365,13 @@ header {
     font-size: 1.2rem;
     text-align: right;
     margin-bottom: 1.5rem; }
-    @media only screen and (min-width: 661px) {
+    @media only screen and (min-width: 790px) {
       .Section-text h4 {
         font-size: 2.2rem; } }
 
 .Products-fish-holder {
   margin: 10rem 0; }
-  @media only screen and (min-width: 661px) {
+  @media only screen and (min-width: 790px) {
     .Products-fish-holder {
       margin: inherit; } }
 
@@ -328,8 +382,8 @@ header {
   .Products-fish .image {
     margin-bottom: 2.5rem; }
   .Products-fish .Products-text .image {
-    margin: 0 0 -20px 0; }
-  @media only screen and (min-width: 661px) {
+    margin: 0 0 -2rem 0; }
+  @media only screen and (min-width: 790px) {
     .Products-fish {
       justify-content: space-evenly;
       width: 70%;
@@ -349,7 +403,7 @@ header {
           -o-transition: all 0.3s ease-in-out;
           -webkit-transition: all 0.3s ease-in-out;
           transition: all 0.3s ease-in-out;
-          margin-bottom: -1em; }
+          margin-bottom: -1rem; }
           .Products-fish .Products-fish-square .Products-text .image {
             margin: 0;
             height: auto; }
@@ -386,12 +440,67 @@ header {
     max-width: 200px;
     flex-wrap: wrap;
     justify-content: space-evenly; }
-    @media only screen and (min-width: 661px) and (max-width: 989px) {
+    @media only screen and (min-width: 790px) and (max-width: 989px) {
       .Big-section-3 .content {
         flex-direction: row; } }
     @media only screen and (min-width: 990px) {
       .Big-section-3 .content {
         flex-direction: row; } }
+
+.Contact-holder {
+  font-size: 1rem;
+  width: 70%; }
+  .Contact-holder h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem; }
+  .Contact-holder .Contact-caption {
+    margin-bottom: 2rem; }
+  .Contact-holder .Contact-addresses {
+    flex: 1;
+    order: 1; }
+    .Contact-holder .Contact-addresses address {
+      text-align: center;
+      line-height: 1.5rem;
+      font-style: normal;
+      margin-bottom: 1rem; }
+  .Contact-holder .Contact-caption,
+  .Contact-holder .Contact-form,
+  .Contact-holder .Contact-addresses {
+    margin-bottom: 2rem; }
+  .Contact-holder .Contact-form {
+    text-align: center;
+    flex: 2; }
+    .Contact-holder .Contact-form form {
+      margin: 0; }
+      .Contact-holder .Contact-form form input,
+      .Contact-holder .Contact-form form textarea {
+        width: 100%;
+        border: 4px solid #87857d;
+        margin-bottom: 1rem;
+        padding-left: 0.5rem; }
+      .Contact-holder .Contact-form form input {
+        height: 2rem; }
+      .Contact-holder .Contact-form form textarea {
+        height: 10rem;
+        resize: none;
+        padding-top: 0.5rem; }
+      .Contact-holder .Contact-form form:first-child input:nth-of-type(1) {
+        margin-right: 10%; }
+  @media only screen and (min-width: 790px) {
+    .Contact-holder {
+      width: 70%; }
+      .Contact-holder .Contact-caption {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        margin-bottom: 3rem; }
+      .Contact-holder .Contact-addresses {
+        order: initial; }
+        .Contact-holder .Contact-addresses address {
+          text-align: initial; }
+      .Contact-holder .Contact-form form input {
+        height: 2.5rem; }
+      .Contact-holder .Contact-form form textarea {
+        height: 15rem; } }
 
 .Header-band {
   border-bottom: solid 5px black; }
@@ -406,7 +515,7 @@ header {
     max-width: auto;
     height: 100%;
     width: 100%; }
-  @media only screen and (min-width: 661px) {
+  @media only screen and (min-width: 790px) {
     .Header-section .logo {
       width: 100%; }
       .Header-section .logo .image {
@@ -418,7 +527,7 @@ header {
     font-size: 2.6rem;
     text-align: center;
     letter-spacing: 2px; }
-    @media only screen and (min-width: 661px) {
+    @media only screen and (min-width: 790px) {
       .Header-section h1 {
         font-size: 6rem;
         text-align: center;
@@ -438,7 +547,7 @@ header {
 .Wa-container {
   height: 36rem;
   white-space: nowrap; }
-  @media only screen and (min-width: 661px) {
+  @media only screen and (min-width: 790px) {
     .Wa-container {
       height: 50rem; } }
   .Wa-container h3 {
@@ -448,7 +557,7 @@ header {
     -o-transition: all 1s ease-in-out 0.5s;
     -webkit-transition: all 1s ease-in-out 0.5s;
     transition: all 1s ease-in-out 0.5s; }
-    @media only screen and (min-width: 661px) and (max-width: 989px) {
+    @media only screen and (min-width: 790px) and (max-width: 989px) {
       .Wa-container h3 {
         font-size: 5rem; } }
   .Wa-container .Wa-title-mid {
@@ -497,7 +606,7 @@ header {
     right: 23% !important; }
   .Wa-container .Wa-14 {
     right: 1% !important; }
-  @media only screen and (min-width: 661px) and (max-width: 989px) {
+  @media only screen and (min-width: 790px) and (max-width: 989px) {
     .Wa-container h3 {
       font-size: 5.5rem; }
     .Wa-container .Wa-title {
@@ -595,7 +704,7 @@ header {
   z-index: 50; }
 
 .Ribbons-container {
-  height: 10.5rem;
+  height: 10.3rem;
   margin: 0;
   padding: 0;
   background: white; }
@@ -606,5 +715,50 @@ header {
       -o-transform: scaleX(-1);
       -webkit-transform: scaleX(-1);
       transform: scaleX(-1); }
+
+.Products-hero-animation {
+  -moz-transform: translateX(0%) !important;
+  -o-transform: translateX(0%) !important;
+  -webkit-transform: translateX(0%) !important;
+  transform: translateX(0%) !important; }
+
+/* entire container, keeps perspective */
+.flip-container {
+  perspective: 1000px; }
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+  transform: rotateY(180deg); }
+
+.flip-container,
+.front,
+.back {
+  width: 12rem;
+  height: 12rem; }
+
+/* flip speed goes here */
+.flipper {
+  transition: 0.5s;
+  transform-style: preserve-3d;
+  position: relative; }
+
+/* hide back of pane during swap */
+.front,
+.back {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg); }
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg); }
 
 /*# sourceMappingURL=index.css.map */

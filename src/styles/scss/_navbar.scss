@@ -21,17 +21,7 @@ header {
       width: 10%;
     }
   }
-  .Nav-menu-spread {
-    display: none;
-    @include desktop {
-      justify-content: flex-end;
-      display: block;
-      display: flex;
-      .Nav-item {
-        font-size: 1.2rem;
-      }
-    }
-  }
+
   .Nav-menu,
   .Nav-burger {
     @include desktop {
@@ -42,7 +32,7 @@ header {
 .Nav-burger {
   justify-content: flex-end;
   :first-child {
-    height: 2.3rem;
+    height: 2rem;
     width: auto;
     padding: 0;
     margin: 0;
@@ -57,10 +47,20 @@ header {
   width: 100vw;
   background: $navbarcolor;
   flex-direction: column;
-  @include transition(height 0.3s ease-in);
-  @include transition(margin 0.3s ease-in);
-  @include transition(padding 0.3s ease-in);
-
+  @include transition(
+    (height 0.3s ease-in, margin-top 0.3s ease-in, padding-top 0.3s ease-in)
+  );
+  &-spread {
+    display: none;
+    @include desktop {
+      justify-content: flex-end;
+      display: block;
+      display: flex;
+      .Nav-item {
+        font-size: 1.2rem;
+      }
+    }
+  }
   .Nav-item {
     font-size: 1.5rem;
     height: 2.3rem;
