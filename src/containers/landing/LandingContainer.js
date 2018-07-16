@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Landing from "../../components/landing/Landing";
-import { sectionData, headerContent, contactInfo } from "../../data";
+import { sectionData, headerContent, contactInfo, ribbons } from "../../data";
 
 export default class LandingContainer extends Component {
   render() {
@@ -9,6 +9,7 @@ export default class LandingContainer extends Component {
         sectionData={sectionData}
         headerContent={headerContent}
         contactInfo={contactInfo}
+        ribbons={ribbons}
       />
     );
   }

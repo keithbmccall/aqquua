@@ -10,16 +10,16 @@ const NavbarLinks = props => {
   };
   return (
     <li className="Nav-item flex flex-content-center" style={[styles.navItem]}>
-      <Link
+      {/* <Link
         activeClass="active"
         to={props.link.id}
         spy={true}
         smooth={true}
         duration={500}
         onClick={props.closeMenu}
-      >
-        {props.link.title}
-      </Link>
+      > */}
+      <a href={`#${props.link.id}`}>{props.link.title}</a>
+      {/* </Link> */}
     </li>
   );
 };

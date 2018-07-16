@@ -19,7 +19,7 @@ export default class WeAreCarousel extends Component {
         //Wa-${key} or
         //${this.state.text[key]}
         style={{
-          top: key * 6.67 + "%",
+          top: key * 7 + "%", //6.67
           color: item.color
         }}
       >
@@ -45,7 +45,7 @@ export default class WeAreCarousel extends Component {
               text: this.setText(this.state.counter),
               counter: this.state.counter + 1
             }),
-      1500
+      750 //1500
     );
   };
   pushTitle = () => {
@@ -54,7 +54,7 @@ export default class WeAreCarousel extends Component {
         this.setState({
           title: "Wa-title-fade"
         }),
-      5000
+      3000
     );
     setTimeout(
       () =>
@@ -66,7 +66,7 @@ export default class WeAreCarousel extends Component {
   };
   ignite = () => {
     this.pushTitle();
-    setTimeout(() => this.textRotary(), 5000);
+    setTimeout(() => this.textRotary(), 3000);
   };
   componentDidMount() {
     this.ignite();

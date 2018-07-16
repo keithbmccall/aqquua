@@ -10,7 +10,7 @@
     @extend .absolute;
     font-size: 3rem;
     right: 200%;
-    @include transition(all 1s ease-in-out 0.5s);
+    @include transition(all .5s ease-in-out 0.5s);
     @include tablet {
       font-size: 5rem;
     }

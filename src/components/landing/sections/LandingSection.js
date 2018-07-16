@@ -8,8 +8,12 @@ import EatFishTagIcon from "../eat-fish/EatFishTagIcon";
 //
 const LandingSection = props => {
   const { item, index } = props;
+  console.log(item);
   return (
-    <div className={`flex-column Big-section Big-section-${index}`}>
+    <div
+      className={`flex-column Big-section Big-section-${index}`}
+      id={item.id && item.id !== 'About' ? item.id : ''}
+    >
       <div className="flex-1 flex-content-center space-10">
         <div
           className={`flex-content-center flex-column  ${

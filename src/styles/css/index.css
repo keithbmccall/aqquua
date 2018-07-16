@@ -36,7 +36,7 @@ h5,
 h6, .Products-info h1, .Big-section .Section-number-holder .Section-number, .Contact-holder .Contact-addresses address span, .Wa-container .Wa-2, .Wa-container .Wa-6, .Wa-container .Wa-9, .Wa-container .Wa-10 {
   font-family: "geomanist-bold", Arial, Helvetica, sans-serif; }
 
-.geo-thin, .Wa-container .Wa-0, .Wa-container .Wa-4, .Wa-container .Wa-8, .Wa-container .Wa-13 {
+.geo-thin, .Header-section h1, .Wa-container .Wa-0, .Wa-container .Wa-4, .Wa-container .Wa-8, .Wa-container .Wa-13 {
   font-family: "geomanist-thin", Arial, Helvetica, sans-serif; }
 
 * {
@@ -410,41 +410,41 @@ header {
         .Products-fish .Products-fish-square:hover .Products-text {
           opacity: 1; } }
 
-.Big-section-9 {
+.Big-section-8 {
   background: white; }
 
-.Big-section-2 {
+.Big-section-1 {
   background: #f32e37; }
 
-.Big-section-6 {
+.Big-section-5 {
   background: #ea5924; }
 
-.Big-section-4 {
+.Big-section-3 {
   background: #16639f; }
 
-.Big-section-5 {
+.Big-section-4 {
   background: linear-gradient(to bottom right, #210420, #490847, #620c5f, #620c5f, #770574, #9b0096); }
 
-.Big-section-8 {
+.Big-section-7 {
   background: linear-gradient(to bottom right, #f79d04, #f79d04, #f79d04, #f7aa04, #ffb30f, #f7ba04, #ffc31c, #f7c604, #f7c604); }
 
-.Big-section-9 {
+.Big-section-8 {
   background: #ff2882; }
 
-.Big-section-10 {
+.Big-section-9 {
   background: linear-gradient(to bottom right, #1b7a06, #21af01, #24b500, #28c900, #28c900, #33ef09, #9ce881); }
 
-.Big-section-3 {
+.Big-section-2 {
   background: white; }
-  .Big-section-3 .content {
+  .Big-section-2 .content {
     max-width: 200px;
     flex-wrap: wrap;
     justify-content: space-evenly; }
     @media only screen and (min-width: 790px) and (max-width: 989px) {
-      .Big-section-3 .content {
+      .Big-section-2 .content {
         flex-direction: row; } }
     @media only screen and (min-width: 990px) {
-      .Big-section-3 .content {
+      .Big-section-2 .content {
         flex-direction: row; } }
 
 .Contact-holder {
@@ -502,6 +502,20 @@ header {
       .Contact-holder .Contact-form form textarea {
         height: 15rem; } }
 
+.Sub-header-section {
+  padding: 3rem; }
+
+.School-emblem {
+  -moz-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out; }
+  .School-emblem:hover {
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); }
+
 .Header-band {
   border-bottom: solid 5px black; }
 
@@ -553,10 +567,10 @@ header {
   .Wa-container h3 {
     font-size: 3rem;
     right: 200%;
-    -moz-transition: all 1s ease-in-out 0.5s;
-    -o-transition: all 1s ease-in-out 0.5s;
-    -webkit-transition: all 1s ease-in-out 0.5s;
-    transition: all 1s ease-in-out 0.5s; }
+    -moz-transition: all 0.5s ease-in-out 0.5s;
+    -o-transition: all 0.5s ease-in-out 0.5s;
+    -webkit-transition: all 0.5s ease-in-out 0.5s;
+    transition: all 0.5s ease-in-out 0.5s; }
     @media only screen and (min-width: 790px) and (max-width: 989px) {
       .Wa-container h3 {
         font-size: 5rem; } }

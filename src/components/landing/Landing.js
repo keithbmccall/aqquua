@@ -11,16 +11,12 @@ const Landing = props => {
   const { sectionData } = props;
   const renderSections = (item, key) => {
     const index = key;
-    return (
-      <Element name={item.id && item.id} key={key}>
-        {index === 0 ? (
-          <SubHeaderSection item={item} key={key} />
-        ) : index === 1 ? (
-          <RibbonSection item={item} key={key} />
-        ) : (
-          <LandingSection item={item} index={key} />
-        )}
-      </Element>
+    return index === 0 ? (
+      <div id="About">
+        <SubHeaderSection item={item} key={key} />
+      </div>
+    ) : (
+      <LandingSection item={item} index={key} />
     );
   };
   const sections = sectionData.map(renderSections);
@@ -29,9 +25,8 @@ const Landing = props => {
       <WaveAnimation color="#ffc702" />
       <HeaderSection content={props.headerContent} />
       {sections}
-      <Element name="Contact">
-        <Contact contactInfo={props.contactInfo} />
-      </Element>
+      <RibbonSection item={props.ribbons} />
+      <Contact contactInfo={props.contactInfo} />
     </div>
   );
 };

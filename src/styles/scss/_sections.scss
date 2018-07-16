@@ -109,19 +109,19 @@
 // .Big-section-1 {
 //   background: $ottercolor;
 // }
-.Big-section-9 {
+.Big-section-8 {
   background: white;
 }
-.Big-section-2 {
+.Big-section-1 {
   background: $poppycolor;
 }
-.Big-section-6 {
+.Big-section-5 {
   background: $festivecolor;
 }
-.Big-section-4 {
+.Big-section-3 {
   background: $daphnecolor;
 }
-.Big-section-5 {
+.Big-section-4 {
   background: linear-gradient(
     to bottom right,
     #210420,
@@ -132,7 +132,7 @@
     #9b0096
   );
 }
-.Big-section-8 {
+.Big-section-7 {
   background: linear-gradient(
     to bottom right,
     #f79d04,
@@ -146,10 +146,10 @@
     #f7c604
   );
 }
-.Big-section-9 {
+.Big-section-8 {
   background: $pinkcolor;
 }
-.Big-section-10 {
+.Big-section-9 {
   background: linear-gradient(
     to bottom right,
     #1b7a06,
@@ -161,7 +161,7 @@
     #9ce881
   );
 }
-.Big-section-3 {
+.Big-section-2 {
   background: white;
   .content {
     max-width: 200px;
@@ -259,5 +259,14 @@
         }
       }
     }
+  }
+}
+.Sub-header-section {
+  padding: 3rem;
+}
+.School-emblem {
+  @include transition(transform 0.3s ease-in-out);
+  &:hover  {
+    @include transform(scale(1.1));
   }
 }

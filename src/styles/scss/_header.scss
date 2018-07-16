@@ -25,6 +25,7 @@
     }
   }
   h1 {
+    @extend .geo-thin;
     color: white;
     font-size: 2.6rem;
     text-align: center;
@@ -35,6 +36,7 @@
       letter-spacing: 2px;
     }
     span {
+     
       white-space: nowrap;
     }
   }

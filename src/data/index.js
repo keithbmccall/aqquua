@@ -88,9 +88,7 @@ export const sectionData = [
     title: "We Are",
     content: weAreContent
   },
-  {
-    ribbons: images.ribbons
-  },
+
   // {
   //   title: "Aqquua",
   //   caption:
@@ -102,7 +100,7 @@ export const sectionData = [
     number: 1,
     headline: "WE TAKE OUR JOB SERIOUSLY",
     caption:
-      "We work day in and day out making sure all of our operations are properly executed and managed to bring you a first rate high quality product, free of antibiotics and hormones. We deliver 100% pure healthy, fresh and tasty fish."
+      "Every day we use best practices to make sure all of our operations are properly executed and managed to bring you a first rate high quality responsibly raised product, free of chemicals, antibiotics and hormones. Our job is to deliver 100% sustainably farmed, healthy, fresh and tasty fish. At Aqquua we are committed to developing innovative and scalable technologies that are necessary to bring the freshest, highest quality seafood experience to the table."
   },
 
   {
@@ -119,14 +117,13 @@ export const sectionData = [
     title: "Farm",
     headline: "WE ARE NON CONFORMISTS",
     caption:
-      "We took a deep dive to understand why aquaculture still gets a bad rap, We understood that if we are to change that perception we would need to be transparent and authentic in everything we do. Making the transition from a 'wild caught' product to a farmed one can only be achieved by gaining public trust. It is our duty to educate the public to the multiple benefits of eating farmed fish products. We are working tirelessly until this message has been made crystal clear. It is the path we have chosen towards saving our oceans and achieving food security for this and future generations."
+      "We took a deep dive to understand why aquaculture still gets a bad name, We learned that if we are to change that negative perception we need to be transparent and authentic in everything we do. Making the transition from a “wild caught” product to a farmed one will be achieved by earning public trust. We see it as our duty to educate the public to the multiple health benefits of eating farmed fish products. We are working tirelessly until this message has been made crystal clear."
   },
   {
     number: 3,
     headline: "WE ARE INNOVATORS",
     caption:
-      "IP technology and methodology that we gather from brood-stock, eggs, larval rearing techniques and genetics for optimum fingerling production are immensely important. By using best practices conditions for the grow-out of this sustainable protein source,we further our objective of making a significant contribution in supplying scientific and operational training. It will allow us to produce the highest quality fin fish product and help us to make definitive contributions to the restocking of our oceans.",
-
+      "We are developing IP technologies and methodologies gathered from working closely with brood-stock, eggs, larval rearing techniques and genetics. The knowledge we gain will be implemented for optimum fingerling production. We believe by doing so we will have the opportunity to tackle food security issues and make definitive contributions to restocking our oceans.",
     content: {
       schools: [
         {
@@ -147,7 +144,7 @@ export const sectionData = [
     number: 4,
     headline: "NURTURING LEADERS",
     caption:
-      "Helping to educate the next leaders in aquaculture is something we take very seriously. The only way to succeed at getting to food security for this and future generations, is to bring academic knowledge together with commercial aquaculture experience. We currently offer scholarships in the advancement of aquaculture studies.",
+      "Helping to educate the next leaders in aquaculture is something we take to heart. Bringing academic knowledge together with commercial aquaculture experience is the road to future achievements in aquaculture success. Our strategic partnerships with the university of Miami and Burapha university Thailand, have helped lay the necessary research foundation that informs our commercial strategy and allows us to be an exemplar of eco-friendly and sustainable business practices.",
     schoolEmblems: [
       {
         pic: images.schools.miami, //250
@@ -173,7 +170,7 @@ export const sectionData = [
     number: 6,
     headline: "DOING IT IN STYLE",
     caption:
-      "Showing our true colors in the way we raise our fish is the way to be 100% transparent, sustainable and traceabe. That’s why we have become proud members of the Eat Fish platform, whose sole purpose is to efficiently track fish from our farm to your table. To learn more visit EAT FISH",
+      "Showing our true colors in the way we raise our fish is the way to ensure 100% transparency and traceability. That’s why we have become proud members of the Eat Fish platform, whose sole purpose is to efficiently track fish from our farm directly to your table. To learn more visit EAT FISH (here)",
     content:
       "The Eat Fish platform is useful as an educational tool that lets our customer verify, learn and enjoy their purchase in a truly and innovative way by successfully providing them with 100% transparency, sustainability and traceability information. Eat Fish sole purpose is to efficiently track fish from our farm all the way to our end users table. Eat Fish enables our customer to scan the Eat Fish tag attached to our fish, which has a QR and serial code. After scanning any given fish at the retailer, our customers will find an actual image of their specific fish potential purchase, nutritional facts and farm and country of origin. It also provides a recipe api leading our customers to great food recipes for the specific fish purchase. Once at home you can submit a video of your sea-food cooking experience from your very own kitchen. This allows us to connect to our customers and get immediate reviews that can help us to best serve them in the future. We sell our products under the trade mark “Sea food for what it is”… We don’t sell you a story, we prefer to hear yours!"
   },
@@ -183,7 +180,7 @@ export const sectionData = [
     number: 7,
     headline: "WE PLANT THE SEED",
     caption:
-      "Seasonal and climate changes are a challenge to the “fish food” industry whether out to sea or on land. Global warming is growing at an alarming rate. We know how important is to be respectful of our planet. That’s why we take it to heart when tackling issues of sustainability and conservation and why we prepare ahead to meet whatever challenges may come our way in order to keep our fish home, a happy one. We know that happy fish make for great tasting fish, and that a happy planet will only come if we take appropriate action now.",
+      "Seasonal and climate changes are a challenge to the “fish food” industry whether out to sea or on land. Global warming is growing at an alarming rate. That’s why we take it to heart when tackling issues of conservation and the environment. Why we prepare ahead to meet whatever challenges may come our way in order to keep our fish home, a happy one. We know that happy fish make for great tasting fish, and that a happy planet will only come if we take appropriate action now. See our mangrove plantation initiatives (here)",
     content: {
       headline: "Mangrove Conservation:",
       text:
@@ -255,3 +252,4 @@ export const contactInfo = {
     }
   ]
 };
+export const ribbons = images.ribbons;
