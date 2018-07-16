@@ -6,8 +6,8 @@
     height: 50rem;
     // margin-bottom: 2.5rem;
   }
-  @include tabtop{
-    h3{
+  @include tabtop {
+    h3 {
       font-size: 5rem;
       line-height: 13rem !important;
     }
@@ -32,7 +32,6 @@
       }
     }
   }
-
   .Wa {
     &-title-mid {
     }
@@ -219,4 +218,7 @@
       }
     }
   }
+}
+[class*="Wa-bricks"] {
+  opacity: 1;
 }

@@ -164,10 +164,10 @@ main {
 .swoop-enter-done {
   top: -6.5em;
   z-index: 10;
-  -moz-transition: all 0.8s ease-in;
-  -o-transition: all 0.8s ease-in;
-  -webkit-transition: all 0.8s ease-in;
-  transition: all 0.8s ease-in; }
+  -moz-transition: all 0.7s ease-in;
+  -o-transition: all 0.7s ease-in;
+  -webkit-transition: all 0.7s ease-in;
+  transition: all 0.7s ease-in; }
 
 .swoop-exit.swoop-exit-active {
   z-index: 1;
@@ -742,6 +742,9 @@ header {
       right: 43% !important; }
     .Wa-container .Wa-14 {
       right: 1% !important; } }
+
+[class*="Wa-bricks"] {
+  opacity: 1; }
 
 .Products-animation {
   -moz-transform: rotate(2turn) translateX(0) !important;

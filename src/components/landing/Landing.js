@@ -11,13 +11,13 @@ const Landing = props => {
   const { sectionData } = props;
   const renderSections = (item, key) => {
     const index = key;
-    return index === 0 ? (
+    return <Element name={item.id}>{index === 0 ? (
       <div id="About">
         <SubHeaderSection item={item} key={key} />
       </div>
     ) : (
       <LandingSection item={item} index={key} />
-    );
+    )}</Element>
   };
   const sections = sectionData.map(renderSections);
   return (
