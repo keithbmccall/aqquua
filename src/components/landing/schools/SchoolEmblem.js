@@ -6,7 +6,11 @@ const SchoolEmblem = props => {
   return (
     <div className="flex-1 flex-content-center">
       <Link to={`schools/${school.name}`}>
-        <img src={school.pic} alt={school.name} className="image School-emblem" />
+        <img
+          src={school.pic}
+          alt={school.name}
+          className="image School-emblem"
+        />
       </Link>
     </div>
   );

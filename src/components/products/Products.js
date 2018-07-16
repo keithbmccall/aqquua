@@ -4,12 +4,13 @@ import ProductsHeroAnimation from "../animations/ProductsHeroAnimation";
 
 const Products = props => {
   const { info } = props;
+  console.log(info);
   return (
     <div className="container">
       <WaveAnimation color="white" />
       <div className="Products-container flex collapse-row-column">
         <div className="Products-info">
-          <h1>
+          <h1 style={{ color: info.color }}>
             {info.fish.toUpperCase()}
             <span>{`(${info.scienceName})`}</span>
           </h1>

@@ -191,6 +191,7 @@ export const sectionData = [
 export const fishProductsInfo = {
   redsnapper: {
     fish: "American Red Snapper",
+    color: "#f32e37",
     scienceName: "Lutjanus campechanus",
     hero: images.heroImages.redsnapper,
     caption: [
@@ -199,6 +200,7 @@ export const fishProductsInfo = {
   },
   mahimahi: {
     fish: "Mahi-Mahi",
+    color: "#5ad0ba",
     scienceName: "Coryphaena hippurus",
     hero: images.heroImages.mahimahi,
     caption: [
@@ -207,6 +209,7 @@ export const fishProductsInfo = {
   },
   grouper: {
     fish: "Hybrid Grouper",
+    color: "#ffc702",
     scienceName: "Epinephelus fuscoguttatus",
     hero: images.heroImages.grouper,
     caption: [
@@ -215,6 +218,7 @@ export const fishProductsInfo = {
   },
   coraltrout: {
     fish: "Coral Trout",
+    color: "#ec5d73",
     scienceName: "Plectropomus leopardus",
     hero: images.heroImages.coraltrout,
     caption: [
@@ -224,6 +228,7 @@ export const fishProductsInfo = {
   },
   hirame: {
     fish: "Hirame",
+    color: "#9ce881",
     scienceName: "Paralichthys olivaceus",
     hero: images.heroImages.hirame,
     caption: [
