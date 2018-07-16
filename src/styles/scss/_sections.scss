@@ -265,7 +265,11 @@
 }
 .School-emblem {
   @include transition(transform 0.3s ease-in-out);
-  &:hover  {
+  &:hover {
     @include transform(scale(1.1));
   }
+}
+.Eat-fish-tag-icon {
+  @include transform(scale(1.5));
+  cursor: pointer;
 }

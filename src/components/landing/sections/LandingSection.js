@@ -11,7 +11,7 @@ const LandingSection = props => {
   return (
     <div
       className={`flex-column Big-section Big-section-${index}`}
-      id={item.id && item.id !== 'About' ? item.id : ''}
+      id={item.id && item.id !== "About" ? item.id : ""}
     >
       <div className="flex-1 flex-content-center space-10">
         <div
@@ -37,9 +37,14 @@ const LandingSection = props => {
                   ))}
                 </div>
               ) : (
-                <div className="flex-1 flex-content-center space-10">
-                  <EatFishTagIcon item={item.eatFishTag} />
-                </div>
+                <React.Fragment>
+                  <div className="flex-1 flex-content-center space-10">
+                    <EatFishTagIcon item={item.eatFishTag} />
+                  </div>
+                  <p style={{ color: "white", fontSize: "2rem" }}>
+                    SEE MORE ABOVE
+                  </p>
+                </React.Fragment>
               )}
             </TrackingAnimations>
           )}

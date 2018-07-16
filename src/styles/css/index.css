@@ -19,13 +19,13 @@
   src: url("../../assets/fonts/Geomanist-Light/geomanist-light-webfont.eot");
   src: url("../../assets/fonts/Geomanist-Light/geomanist-light-webfont.woff") format("woff"), url("../../assets/fonts/Geomanist-Light/geomanist-light-webfont.woff2") format("woff2"), url("../../assets/fonts/Geomanist-Light/geomanist-light-webfont.svg#filename") format("svg"); }
 .geo-light, #root,
-body, .Header-section, .Wa-container .Wa-title, .Wa-container .Wa-1, .Wa-container .Wa-7, .Wa-container .Wa-11 {
+body, .Header-section, .Wa-container .Wa-1, .Wa-container .Wa-7, .Wa-container .Wa-11 {
   font-family: "geomanist-light", Arial, Helvetica, sans-serif; }
 
-.geo-ultra {
+.geo-ultra, .Wa-container .Wa-title {
   font-family: "geomanist-ultra", Arial, Helvetica, sans-serif; }
 
-.geo-bold-italics, .Products-info h1 span, .Section-text h4 {
+.geo-bold-italics, .Products-info h1 span, .Research-info-holder h1, .Section-text h4 {
   font-family: "geomanist-bold-italics", Arial, Helvetica, sans-serif; }
 
 .geo-bold, h1,
@@ -164,18 +164,18 @@ main {
 .swoop-enter-done {
   top: -6.5em;
   z-index: 10;
-  -moz-transition: all 0.3s ease-in;
-  -o-transition: all 0.3s ease-in;
-  -webkit-transition: all 0.3s ease-in;
-  transition: all 0.3s ease-in; }
+  -moz-transition: all 0.8s ease-in;
+  -o-transition: all 0.8s ease-in;
+  -webkit-transition: all 0.8s ease-in;
+  transition: all 0.8s ease-in; }
 
 .swoop-exit.swoop-exit-active {
   z-index: 1;
   opacity: 0;
-  -moz-transition: all 0.5s ease-in;
-  -o-transition: all 0.5s ease-in;
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in; }
+  -moz-transition: all 1s ease-in;
+  -o-transition: all 1s ease-in;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in; }
 
 .swoop-exit-done {
   z-index: -1;
@@ -245,6 +245,37 @@ main {
   @media only screen and (min-width: 990px) {
     .Products-hero-holder {
       flex: 16; } }
+
+.Research-container {
+  padding-top: 6.5em;
+  min-height: 100vh;
+  padding-bottom: 3rem;
+  background: white;
+  align-items: center; }
+
+.Research-info-holder .Research-logo-holder {
+  flex: 1;
+  margin-bottom: 1rem; }
+.Research-info-holder .Research-info {
+  align-items: center; }
+  .Research-info-holder .Research-info p, .Research-info-holder .Research-info h1 {
+    max-width: 80%; }
+@media only screen and (min-width: 790px) {
+  .Research-info-holder {
+    padding-top: 3rem;
+    padding: 3rem 4rem; }
+    .Research-info-holder .Research-logo-holder {
+      flex: 1;
+      margin-bottom: 1rem; }
+    .Research-info-holder .Research-info {
+      flex: 2; } }
+.Research-info-holder h1 {
+  font-size: 2.3rem;
+  line-height: 2.2rem;
+  margin-bottom: 1rem; }
+.Research-info-holder p {
+  font-size: 1rem;
+  margin-bottom: 1rem; }
 
 header {
   top: 0;
@@ -515,6 +546,13 @@ header {
     -webkit-transform: scale(1.1);
     transform: scale(1.1); }
 
+.Eat-fish-tag-icon {
+  -moz-transform: scale(1.5);
+  -o-transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  transform: scale(1.5);
+  cursor: pointer; }
+
 .Header-band {
   border-bottom: solid 5px black; }
 
@@ -563,32 +601,47 @@ header {
   @media only screen and (min-width: 790px) {
     .Wa-container {
       height: 50rem; } }
+  @media only screen and (min-width: 790px) {
+    .Wa-container h3 {
+      font-size: 5rem;
+      line-height: 13rem !important; } }
   .Wa-container h3 {
     font-size: 3rem;
-    right: 200%;
+    line-height: 4.5rem;
+    margin-bottom: 0;
     -moz-transition: all 0.5s ease-in-out 0.5s;
     -o-transition: all 0.5s ease-in-out 0.5s;
     -webkit-transition: all 0.5s ease-in-out 0.5s;
     transition: all 0.5s ease-in-out 0.5s; }
+    .Wa-container h3 span {
+      display: block;
+      -moz-transform: translateX(32.5%);
+      -o-transform: translateX(32.5%);
+      -webkit-transform: translateX(32.5%);
+      transform: translateX(32.5%); }
     @media only screen and (min-width: 790px) and (max-width: 989px) {
       .Wa-container h3 {
-        font-size: 5rem; } }
-  .Wa-container .Wa-title-mid {
-    right: 5%; }
+        font-size: 5rem;
+        line-height: 13rem !important; }
+        .Wa-container h3 span {
+          display: block;
+          -moz-transform: translateX(32.5%);
+          -o-transform: translateX(32.5%);
+          -webkit-transform: translateX(32.5%);
+          transform: translateX(32.5%); } }
   .Wa-container .Wa-title {
     font-size: 6rem;
     top: 30%;
-    -moz-transform: translateY(-50%);
-    -o-transform: translateY(-50%);
-    -webkit-transform: translateY(-50%);
-    transform: translateY(-50%);
-    -moz-transition: all 3s ease-in-out 0 !important;
-    -o-transition: all 3s ease-in-out 0 !important;
-    -webkit-transition: all 3s ease-in-out 0 !important;
-    transition: all 3s ease-in-out 0 !important; }
+    -moz-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -moz-transition: all 2.5s ease-in-out;
+    -o-transition: all 2.5s ease-in-out;
+    -webkit-transition: all 2.5s ease-in-out;
+    transition: all 2.5s ease-in-out; }
   .Wa-container .Wa-title-fade {
-    opacity: 0;
-    right: 10%; }
+    opacity: 0; }
   .Wa-container .Wa-0 {
     right: 18% !important; }
   .Wa-container .Wa-1 {

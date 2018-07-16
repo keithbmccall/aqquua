@@ -20,7 +20,7 @@ class App extends Component {
                 <CSSTransition
                   key={location.key}
                   classNames="swoop"
-                  timeout={500}
+                  timeout={1000}
                   onEnter={() => console.log("enttrrr")}
                   onExit={() => console.log("exi")}
                 >
@@ -28,16 +28,15 @@ class App extends Component {
                     <Route
                       exact
                       path="/"
-                      render={props => <LandingContainer {...props}/>}
+                      render={props => <LandingContainer {...props} />}
                     />
                     <Route
                       path="/products/:id"
                       render={props => <ProductsContainer {...props} />}
                     />
                     <Route
-                      exact
-                      path="/research"
-                      render={props => <ResearchContainer {...props}/>}
+                      path="/university-research/:id"
+                      render={props => <ResearchContainer {...props} />}
                     />
                     <Route path="/" render={() => <Redirect to="/" />} />
                   </Switch>
@@ -59,9 +58,7 @@ class App extends Component {
 
     return (
       <BrowserRouter>
-        <ScrollToTop>
-        {routes}
-        </ScrollToTop>
+        <ScrollToTop>{routes}</ScrollToTop>
       </BrowserRouter>
     );
   }

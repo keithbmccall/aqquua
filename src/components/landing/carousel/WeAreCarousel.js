@@ -54,19 +54,19 @@ export default class WeAreCarousel extends Component {
         this.setState({
           title: "Wa-title-fade"
         }),
-      3000
+      3500
     );
     setTimeout(
       () =>
         this.setState({
           title: "Wa-title-mid"
         }),
-      2000
+      500
     );
   };
   ignite = () => {
     this.pushTitle();
-    setTimeout(() => this.textRotary(), 3000);
+    setTimeout(() => this.textRotary(), 1500);
   };
   componentDidMount() {
     this.ignite();
@@ -76,9 +76,11 @@ export default class WeAreCarousel extends Component {
     const content = weAreContent.map(this.renderContentBricks);
     return (
       <div className="Wa-container flex flex-content-center">
-        <h3 className={`Wa-title ${this.state.title}`}>
-          {title.toUpperCase()}
+        <h3 className={`Wa-title centered ${this.state.title} `}>
+          {/* {title.splice(0,1)toUpperCase()} */}
+          WE<span>ARE</span>
         </h3>
+
         {content}
       </div>
     );

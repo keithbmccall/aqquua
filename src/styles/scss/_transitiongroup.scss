@@ -8,13 +8,13 @@
 .swoop-enter-done {
   top: -$navbargap;
   z-index: 10;
-  @include transition(all 0.3s ease-in);
+  @include transition(all .8s ease-in);
 }
 
 .swoop-exit.swoop-exit-active {
   z-index: 1;
   opacity: 0;
-  @include transition(all 0.5s ease-in);
+  @include transition(all 1s ease-in);
 }
 .swoop-exit-done {
   z-index: -1;

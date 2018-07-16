@@ -1,0 +1,44 @@
+.Research-container {
+  padding-top: $navbargap;
+  min-height: 100vh;
+  padding-bottom: 3rem;
+  background: white;
+  align-items: center;
+}
+
+.Research-info-holder {
+  .Research-logo-holder {
+    flex: 1;
+    margin-bottom: 1rem;
+  }
+  .Research-info {
+    align-items: center;
+    p,h1 {
+      max-width: 80%;
+    }
+  }
+
+  @include tabtop {
+    padding-top: 3rem;
+    padding: 3rem 4rem;
+
+    .Research-logo-holder {
+      flex: 1;
+      margin-bottom: 1rem;
+    }
+    .Research-info {
+      flex: 2;
+      
+    }
+  }
+  h1 {
+    font-size: 2.3rem;
+    line-height: 2.2rem;
+    margin-bottom: 1rem;
+    @extend .geo-bold-italics;
+  }
+  p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}

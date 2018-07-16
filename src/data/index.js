@@ -11,9 +11,9 @@ const weAreList = [
   "INNOVATION",
   "CLEAN",
   "FOOD",
-  "FISH",
+  "FIN-FISH",
   "TECHNOLOGY",
-  "GROUPER",
+  "AQUACULTURE",
   ""
 ];
 const weAreContent = weAreList.map((x, i) => {
@@ -22,7 +22,7 @@ const weAreContent = weAreList.map((x, i) => {
     "#5ad0ba",
     "#ffc702",
     "#4D448A",
-    "black",
+    "#9ce881",
     "#c3447a",
     "#f32e37",
     "#573b30"
@@ -54,9 +54,9 @@ export const navbarLinks = [
     id: "RD"
   },
   {
-    title: "Health",
+    title: "Recipes",
     color: "#573b30",
-    id: "Health"
+    id: "Recipes"
   },
   {
     title: "Eat Fish",
@@ -148,7 +148,7 @@ export const sectionData = [
     schoolEmblems: [
       {
         pic: images.schools.miami, //250
-        name: "miami"
+        name: "um"
       },
       {
         pic: images.schools.burapha, //250
@@ -156,7 +156,7 @@ export const sectionData = [
       }
     ]
   },
-  { caption: "health", id: "Health" },
+  { caption: "health", id: "Recipes" },
   {
     number: 5,
     headline: "DESIGNING THE FUTURE",
@@ -170,7 +170,7 @@ export const sectionData = [
     number: 6,
     headline: "DOING IT IN STYLE",
     caption:
-      "Showing our true colors in the way we raise our fish is the way to ensure 100% transparency and traceability. That’s why we have become proud members of the Eat Fish platform, whose sole purpose is to efficiently track fish from our farm directly to your table. To learn more visit EAT FISH (here)",
+      "Showing our true colors in the way we raise our fish is the way to ensure 100% transparency and traceability. That’s why we have become proud members of the Eat Fish platform, whose sole purpose is to efficiently track fish from our farm directly to your table.",
     content:
       "The Eat Fish platform is useful as an educational tool that lets our customer verify, learn and enjoy their purchase in a truly and innovative way by successfully providing them with 100% transparency, sustainability and traceability information. Eat Fish sole purpose is to efficiently track fish from our farm all the way to our end users table. Eat Fish enables our customer to scan the Eat Fish tag attached to our fish, which has a QR and serial code. After scanning any given fish at the retailer, our customers will find an actual image of their specific fish potential purchase, nutritional facts and farm and country of origin. It also provides a recipe api leading our customers to great food recipes for the specific fish purchase. Once at home you can submit a video of your sea-food cooking experience from your very own kitchen. This allows us to connect to our customers and get immediate reviews that can help us to best serve them in the future. We sell our products under the trade mark “Sea food for what it is”… We don’t sell you a story, we prefer to hear yours!"
   },
@@ -258,3 +258,25 @@ export const contactInfo = {
   ]
 };
 export const ribbons = images.ribbons;
+export const researchInfo = {
+  um: {
+    logo: images.schools.miami,
+    name: "um",
+    color: "#f37224",
+    title: "Rosenstiel School of Marine and Atmospheric Science",
+    caption: [
+      "OUR COLLABORATIVE RESEARCH AGREEMENT WITH THE UNIVERSITY OF MIAMI IS HELPING TO ADVANCE AQUACULTURE TECHNOLOGY FOR HIGH-VALUE MARINE FISH SUCH AS TUNA AND HIRAME (JAPANESE FLOUNDER) AT THE UM EXPERIMENTAL FISH HATCHERY.",
+      "THE THREE-YEAR AGREEMENT BETWEEN AQQUUA AND THE UM ROSENSTIEL SCHOOL-BASED AQUACULTURE PROGRAM IS AIMED AT IMPROVING HATCHERY AND OTHER AQUACULTURE TECHNOLOGIES OF A NUMBER OF ECONOMICALLY VALUABLE SPECIES THAT HAVE NEVER BEEN DEVELOPED ELSEWHERE IN THE WORLD.",
+      '"THIS RESEARCH AGREEMENT WILL HELP ADVANCE SUSTAINABLE AQUACULTURE RESEARCH AT A TIME WHEN IT IS CRITICALLY NEEDED TO SUPPORT INCREASING DEMAND FOR HIGH-QUALITY PROTEIN TO FEED THE WORLD’S GROWING POPULATION,” SAID UM ROSENSTIEL SCHOOL PROFESSOR DAN BENETTI, DIRECTOR OF THE UM AQUACULTURE PROGRAM. “WE ARE PLEASED BY AQQUUA’S COMMITMENT TO ADVANCE AQUACULTURE TECHNOLOGY IN A SUSTAINABLE WAY."'
+    ]
+  },
+  burapha: {
+    logo: images.schools.burapha,
+    name: "burapha",
+    color: "#ffdf10",
+    title: "Burapha University",
+    caption: [
+      "AQQUUA HAS AN M.O.U. WITH THE UNIVERSITY OF BURAPHA TO HELP US WITH EGG PRODUCING BROODSTOCK AND ADVANCEMENT OF OUR LARVAL REARING EFFORTS IN THAILAND. AQQUUA HAS ALSO PROVIDED SCHOLARSHIPS AND HAS HIRED GRADUATE STUDENTS FROM THE UNIVERSITY OF BURAPHA TO FURTHER THESE EFFORTS."
+    ]
+  }
+};
