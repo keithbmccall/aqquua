@@ -19,7 +19,7 @@ export default class WeAreCarousel extends Component {
         //Wa-${key} or
         //${this.state.text[key]}
         style={{
-          top: key * 7 + "%", //6.67
+          top: key * 6.67 + "%", //6.67
           color: item.color
         }}
       >

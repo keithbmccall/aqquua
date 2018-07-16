@@ -577,7 +577,7 @@ header {
     right: 5%; }
   .Wa-container .Wa-title {
     font-size: 6rem;
-    top: 50%;
+    top: 30%;
     -moz-transform: translateY(-50%);
     -o-transform: translateY(-50%);
     -webkit-transform: translateY(-50%);

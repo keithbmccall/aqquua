@@ -59,9 +59,9 @@ class App extends Component {
 
     return (
       <BrowserRouter>
-        {/* <ScrollToTop> */}
+        <ScrollToTop>
         {routes}
-        {/* </ScrollToTop> */}
+        </ScrollToTop>
       </BrowserRouter>
     );
   }

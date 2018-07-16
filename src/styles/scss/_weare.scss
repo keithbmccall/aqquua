@@ -24,7 +24,7 @@
       @extend .geo-light;
       @extend .absolute;
       font-size: 6rem;
-      top: 50%;
+      top: 30%;
       @include transform(translateY(-50%));
       @include transition(all 3s ease-in-out 0 !important);
     }
