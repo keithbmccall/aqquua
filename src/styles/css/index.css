@@ -639,7 +639,7 @@ header {
         -webkit-transform: translateX(32.5%);
         transform: translateX(32.5%); } }
   .Wa-container .Wa-text {
-    font-size: 2.8rem; }
+    font-size: 1rem; }
   .Wa-container .Wa-title {
     font-size: 6rem;
     top: 30%;
@@ -659,7 +659,7 @@ header {
       .Wa-container .Wa-title {
         line-height: 13rem !important; } }
   .Wa-container .Wa-title-fade {
-    color: lightgrey; }
+    color: #87857d; }
   .Wa-container .Wa-0 {
     left: 50% !important;
     -moz-transform: translateX(-50%) !important;
@@ -750,9 +750,90 @@ header {
     -o-transform: translateX(-50%) !important;
     -webkit-transform: translateX(-50%) !important;
     transform: translateX(-50%) !important; }
-  .Wa-container .Wa-11 {
-    font-size: 2rem;
-    padding-top: 0.5rem; }
+  .Wa-container .Wa-15 {
+    left: 50% !important;
+    -moz-transform: translateX(-50%) !important;
+    -o-transform: translateX(-50%) !important;
+    -webkit-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important; }
+  .Wa-container .Wa-16 {
+    left: 50% !important;
+    -moz-transform: translateX(-50%) !important;
+    -o-transform: translateX(-50%) !important;
+    -webkit-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important; }
+  .Wa-container .Wa-17 {
+    left: 50% !important;
+    -moz-transform: translateX(-50%) !important;
+    -o-transform: translateX(-50%) !important;
+    -webkit-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important; }
+  .Wa-container .Wa-18 {
+    left: 50% !important;
+    -moz-transform: translateX(-50%) !important;
+    -o-transform: translateX(-50%) !important;
+    -webkit-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important; }
+  .Wa-container .Wa-19 {
+    left: 50% !important;
+    -moz-transform: translateX(-50%) !important;
+    -o-transform: translateX(-50%) !important;
+    -webkit-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important; }
+  .Wa-container .Wa-20 {
+    left: 50% !important;
+    -moz-transform: translateX(-50%) !important;
+    -o-transform: translateX(-50%) !important;
+    -webkit-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important; }
+  .Wa-container .Wa-21 {
+    left: 50% !important;
+    -moz-transform: translateX(-50%) !important;
+    -o-transform: translateX(-50%) !important;
+    -webkit-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important; }
+  .Wa-container .Wa-22 {
+    left: 50% !important;
+    -moz-transform: translateX(-50%) !important;
+    -o-transform: translateX(-50%) !important;
+    -webkit-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important; }
+  .Wa-container .Wa-23 {
+    left: 50% !important;
+    -moz-transform: translateX(-50%) !important;
+    -o-transform: translateX(-50%) !important;
+    -webkit-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important; }
+  .Wa-container .Wa-24 {
+    left: 50% !important;
+    -moz-transform: translateX(-50%) !important;
+    -o-transform: translateX(-50%) !important;
+    -webkit-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important; }
+  .Wa-container .Wa-25 {
+    left: 50% !important;
+    -moz-transform: translateX(-50%) !important;
+    -o-transform: translateX(-50%) !important;
+    -webkit-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important; }
+  .Wa-container .Wa-26 {
+    left: 50% !important;
+    -moz-transform: translateX(-50%) !important;
+    -o-transform: translateX(-50%) !important;
+    -webkit-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important; }
+  .Wa-container .Wa-27 {
+    left: 50% !important;
+    -moz-transform: translateX(-50%) !important;
+    -o-transform: translateX(-50%) !important;
+    -webkit-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important; }
+  .Wa-container .Wa-28 {
+    left: 50% !important;
+    -moz-transform: translateX(-50%) !important;
+    -o-transform: translateX(-50%) !important;
+    -webkit-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important; }
   @media only screen and (min-width: 767px) {
     .Wa-container .Wa-0 {
       -moz-transform: initial !important;

@@ -1,6 +1,62 @@
 import images from "./images";
 const weAreContent = [
   {
+    content: "healthy",
+    color: "#e15d44"
+  },
+  {
+    content: "fresh",
+    color: "#5ad0ba"
+  },
+  {
+    content: "tasty",
+    color: "#ffc702"
+  },
+  {
+    content: "dynamic",
+    color: "#4d448a"
+  },
+  {
+    content: "education",
+    color: "#c3447a"
+  },
+  {
+    content: "expert",
+    color: "#015b97"
+  },
+  {
+    content: "scientists",
+    color: "#f32e37"
+  },
+  {
+    content: "farmers",
+    color: "#573b30"
+  },
+  {
+    content: "innovation",
+    color: "#ac4e4e"
+  },
+  {
+    content: "clean",
+    color: "#d9dc85"
+  },
+  {
+    content: "food",
+    color: "#00a7c7"
+  },
+  {
+    content: "fin-fish",
+    color: "#296525"
+  },
+  {
+    content: "technology",
+    color: "#66848f"
+  },
+  {
+    content: "aquaculture",
+    color: "#f16c4d"
+  },
+  {
     content: "creative",
     color: "#00B6D9"
   },

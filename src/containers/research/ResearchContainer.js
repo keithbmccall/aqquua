@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 import WaveAnimation from "../../components/animations/WaveAnimation";
-import { researchInfo } from "../../data";
 import SVGC from "../../components/tools/images/SVG";
+import { researchInfo } from "../../data";
+
 
 export default class ResearchContainer extends Component {
   render() {
