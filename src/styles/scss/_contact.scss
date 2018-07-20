@@ -1,0 +1,94 @@
+.Contact-section {
+}
+.Contact-holder {
+  font-size: 1rem;
+  width: 70%;
+  hr {
+    margin: 0 1.5rem 3.5rem 1.5rem;
+  }
+  h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .Contact-caption {
+    margin-bottom: 2rem;
+  }
+  .Contact-addresses {
+    flex: 1;
+    order: 1;
+    address {
+      text-align: center;
+      line-height: 1.8rem;
+      font-style: normal;
+      margin-bottom: 1rem;
+      span {
+        @extend .geo-bold;
+        font-size: 1.2rem;
+      }
+    }
+  }
+  .Contact-caption,
+  .Contact-form,
+  .Contact-addresses {
+    margin-bottom: 3.5rem;
+  }
+  .Contact-form {
+    text-align: center;
+    flex: 3;
+
+    form {
+      margin: 0;
+      input,
+      textarea {
+        background: rgba(100, 100, 100, 0.1);
+        width: 100%;
+        border: 1px solid $greycolor;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        padding-left: 0.5rem;
+        font-size: 1.4rem;
+        @extend .geo-light;
+      }
+      input {
+        height: 3rem;
+      }
+      textarea {
+        height: 10rem;
+        resize: none;
+        padding-top: 0.5rem;
+      }
+      &:first-child {
+        input {
+          &:nth-of-type(1) {
+            margin-right: 6rem;
+          }
+        }
+      }
+    }
+  }
+  @include tabtop {
+    .collapse-row-column {
+      padding: 0 1.5rem;
+    }
+    width: 70%;
+    .Contact-caption {
+      font-size: 1.2rem;
+      line-height: 1.8rem;
+      margin-bottom: 5rem;
+    }
+    .Contact-addresses {
+      order: initial;
+      address {
+        text-align: initial;
+      }
+    }
+    .Contact-form {
+      margin-left: 2rem;
+      form {
+        textarea {
+          height: 15rem;
+        }
+      }
+    }
+  }
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import ReactSVG from "react-svg";
 
-const SVG = props => (
+const SVGC = props => (
   <ReactSVG
     path={props.path}
     svgStyle={{ fill: props.fill }}
@@ -9,4 +9,4 @@ const SVG = props => (
   />
 );
 
-export default SVG;
+export default SVGC;

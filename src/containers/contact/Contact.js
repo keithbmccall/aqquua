@@ -30,9 +30,9 @@ export default class Contact extends Component {
             <div className="Contact-caption">
               {this.props.contactInfo.caption}
             </div>
+            <hr />
             <div className="flex collapse-row-column">
               <div className="Contact-addresses">{addresses}</div>
-
               <div className="Contact-form">
                 <form>
                   <div className="flex">
@@ -41,7 +41,7 @@ export default class Contact extends Component {
                     <input placeholder="Last Name" />
                   </div>
                   <input placeholder="Email" />
-                  <textarea placeholder="Message" />
+                  <textarea placeholder="Message . . ." />
                 </form>
               </div>
             </div>

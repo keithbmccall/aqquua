@@ -26,8 +26,7 @@ const Landing = props => {
   const sections = sectionData.map(renderSections);
   return (
     <div className="container Landing-container">
-      {/* <WaveAnimation color="#ffc702" /> */}
-      <WaveAnimation color="#ffc702" />
+      <WaveAnimation color="#e15d44" />
       <HeaderSection content={props.headerContent} />
       {sections}
       <RibbonSection item={props.ribbons} />

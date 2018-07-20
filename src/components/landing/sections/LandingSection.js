@@ -12,6 +12,7 @@ const LandingSection = props => {
     <div
       className={`flex-column Big-section Big-section-${index}`}
       id={item.id && item.id !== "About" ? item.id : ""}
+      //debuging
     >
       <div className="flex-1 flex-content-center space-10">
         <div

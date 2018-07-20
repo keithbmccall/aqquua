@@ -1,9 +1,9 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import NavbarLinks from "./NavbarLinks";
-import SVG from "../tools/images/SVG";
 import menu from "../../assets/images/svgs/menu.svg";
 import { withRouter } from "react-router-dom";
+import SVGC from "../tools/images/SVG";
 
 const Navbar = props => {
   const renderNavbarLinks = (link, key) => {
@@ -25,7 +25,7 @@ const Navbar = props => {
       <div className="Nav-container flex-1 flex">
         <div className="Nav-image-holder flex flex-center-vertical">
           <Link to="/">
-            <SVG path={props.aqquuaLogo} className="image" fill="white" />
+            <SVGC path={props.aqquuaLogo} className="image" fill="white" />
           </Link>
         </div>
 
@@ -34,7 +34,7 @@ const Navbar = props => {
           className="flex flex-1 flex-center-vertical Nav-burger"
           onClick={props.toggleMenu}
         >
-          <SVG path={menu} fill="white" className="image" />
+          <SVGC path={menu} fill="white" className="image" />
         </div>
       </div>
       <nav className={`Nav-menu flex ${navMenuOpen}`}>{navLinks}</nav>

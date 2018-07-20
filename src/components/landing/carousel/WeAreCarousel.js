@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import _ from "lodash";
 
 export default class WeAreCarousel extends Component {
   constructor(props) {
@@ -8,7 +7,7 @@ export default class WeAreCarousel extends Component {
   }
   initialState = {
     title: "opacity-0",
-    text: _.times(this.props.weAreContent.length, () => "opacity-0 hidden"),
+    text: this.props.weAreContent.map(() => "opacity-0 hidden"),
     counter: 0
   };
   renderContentBricks = (item, key) => {
@@ -19,7 +18,7 @@ export default class WeAreCarousel extends Component {
         //Wa-${key} or
         // ${this.state.text[key]}
         style={{
-          top: key * 6.67 + "%", //6.67
+          top: key * 6.3 + "%", //6.67
           color: item.color
         }}
       >
@@ -36,7 +35,7 @@ export default class WeAreCarousel extends Component {
   textRotary = () => {
     const textInterval = setInterval(
       () =>
-        this.state.counter === 15
+        this.state.counter === 16
           ? this.setState(this.initialState, () => {
               clearInterval(textInterval);
               this.ignite();
@@ -75,13 +74,22 @@ export default class WeAreCarousel extends Component {
     const { weAreContent, title } = this.props;
     const content = weAreContent.map(this.renderContentBricks);
     return (
-      <div className="Wa-container flex flex-content-center">
+      <div className="Wa-container vh flex flex-content-center">
         <h3 className={`Wa-title centered ${this.state.title} `}>
-          {/* {title.splice(0,1)toUpperCase()} */}
-          WE<span>ARE</span>
+          {title
+            .split(" ")
+            .splice(0, 1)
+            .toString()
+            .toUpperCase()}
+          <span>
+            {title
+              .split(" ")
+              .splice(1)
+              .toString()
+              .toUpperCase()}
+          </span>
         </h3>
-
-        {content}
+        <div className="Wa-words">{content}</div>
       </div>
     );
   }

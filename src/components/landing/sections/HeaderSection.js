@@ -1,6 +1,6 @@
 import React from "react";
-import SVG from "../../tools/images/SVG";
 import TrackingAnimations from "../../animations/TrackingAnimations";
+import SVGC from "../../tools/images/SVG";
 
 const HeaderSection = props => {
   const { content } = props;
@@ -19,7 +19,7 @@ const HeaderSection = props => {
           >
             <div className="Header-items flex flex-column flex-content-center">
               <div className="logo">
-                <SVG fill="white" path={content.logo} className="image" />
+                <SVGC fill="white" path={content.logo} className="image" />
               </div>
             </div>
           </TrackingAnimations>

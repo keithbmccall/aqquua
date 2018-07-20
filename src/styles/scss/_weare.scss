@@ -1,31 +1,21 @@
 .Wa-container {
   @extend .relative;
-  height: 36rem;
   white-space: nowrap;
-  @include tabtop {
-    height: 50rem;
-    // margin-bottom: 2.5rem;
-  }
-  @include tabtop {
-    h3 {
-      font-size: 5rem;
-      line-height: 13rem !important;
-    }
-  }
+  // @include tabtop {
+  //   h3 {
+  //     font-size: 5rem;
+  //     line-height: 13rem !important;
+  //   }
+  // }
   h3 {
     @extend .absolute;
-    font-size: 3rem;
-    line-height: 4.5rem;
     margin-bottom: 0;
+    @include transition(all 0.5s ease-in-out 0.5s);
     span {
       display: block;
       @include transform(translateX(32.5%));
     }
-    // right: 200%;
-    @include transition(all 0.5s ease-in-out 0.5s);
-    @include tablet {
-      font-size: 5rem;
-      line-height: 13rem !important;
+    @include desktop {
       span {
         display: block;
         @include transform(translateX(32.5%));
@@ -33,6 +23,9 @@
     }
   }
   .Wa {
+    &-text {
+      font-size: 2.8rem;
+    }
     &-title-mid {
     }
     &-title {
@@ -40,126 +33,132 @@
       @extend .absolute;
       font-size: 6rem;
       top: 30%;
-
+      line-height: 4.5rem;
       @include transform(translateX(-50%));
       @include transition(all 2.5s ease-in-out);
+      @include tablet {
+        line-height: 11rem !important;
+      }
+      @include desktop {
+        line-height: 13rem !important;
+      }
     }
     &-title-fade {
-      opacity: 0;
+      color: lightgrey;
     }
-
+    @for $i from 0 through 14 {
+      &-#{$i} {
+        left: 50% !important;
+        @include transform(translateX(-50%) !important);
+      }
+    }
     &-0 {
-      right: 18% !important;
       @extend .geo-thin;
     }
     &-1 {
-      right: 19% !important;
       @extend .geo-light;
     }
     &-2 {
-      right: 46% !important;
       @extend .geo-bold;
     }
     &-3 {
-      right: 9% !important;
     }
     &-4 {
-      right: 0% !important;
       @extend .geo-thin;
     }
     &-5 {
-      right: 32% !important;
     }
     &-6 {
-      right: 6% !important;
       @extend .geo-bold;
     }
     &-7 {
-      right: 38% !important;
       @extend .geo-light;
     }
     &-8 {
-      right: 0% !important;
       @extend .geo-thin;
     }
     &-9 {
-      right: 43% !important;
       @extend .geo-bold;
     }
     &-10 {
-      right: 39% !important;
       @extend .geo-bold;
     }
     &-11 {
-      right: 18% !important;
-      @extend .geo-light;
+      @extend .geo-thin;
+      font-size: 2rem;
+      padding-top: 0.5rem;
     }
     &-12 {
-      right: 0% !important;
     }
     &-13 {
-      right: 23% !important;
       @extend .geo-thin;
     }
     &-14 {
-      right: 1% !important;
+      @extend .geo-thin;
     }
   }
-
-  @include tablet {
+  @include tabtop {
+    @for $i from 0 through 14 {
+      .Wa-#{$i} {
+        @include transform(initial !important);
+      }
+    }
+  }
+  @include tabtop {
     h3 {
       font-size: 5.5rem;
     }
     .Wa {
-      &-title {
-        font-size: 11rem;
+      &-text {
+        font-size: 4.8rem;
       }
-
-      //
+      &-title {
+        font-size: 15rem;
+      }
       &-0 {
-        right: 40% !important;
+        left: 25% !important;
       }
       &-1 {
-        right: 18% !important;
+        left: 40% !important;
       }
       &-2 {
-        right: 46% !important;
+        left: 20% !important;
       }
       &-3 {
-        right: 30% !important;
+        left: 56% !important;
       }
       &-4 {
-        right: 0% !important;
+        left: 7% !important;
       }
       &-5 {
-        right: 32% !important;
+        left: 30% !important;
       }
       &-6 {
-        right: 6% !important;
+        left: 6% !important;
       }
       &-7 {
-        right: 38% !important;
+        left: 30% !important;
       }
       &-8 {
-        right: 0% !important;
+        left: 20% !important;
       }
       &-9 {
-        right: 59% !important;
+        left: 17% !important;
       }
       &-10 {
-        right: 39% !important;
+        left: 50% !important;
       }
       &-11 {
-        right: 11% !important;
+        left: 2% !important;
       }
       &-12 {
-        right: 0% !important;
+        left: 10% !important;
       }
       &-13 {
-        right: 23% !important;
+        left: 59% !important;
       }
       &-14 {
-        right: 1% !important;
+        left: 25% !important;
       }
     }
   }
@@ -168,57 +167,63 @@
       font-size: 5rem;
     }
     .Wa {
+      &-text {
+        font-size: 4.8rem;
+      }
       &-title {
         font-size: 18rem;
       }
       &-0 {
-        right: 40% !important;
+        left: 25% !important;
       }
       &-1 {
-        right: 18% !important;
+        left: 53% !important;
       }
       &-2 {
-        right: 75% !important;
+        left: 16% !important;
       }
       &-3 {
-        right: 46% !important;
+        left: 56% !important;
       }
       &-4 {
-        right: 5% !important;
+        left: 7% !important;
       }
       &-5 {
-        right: 54% !important;
+        left: 21% !important;
       }
       &-6 {
-        right: 6% !important;
+        left: 6% !important;
       }
       &-7 {
-        right: 64% !important;
+        left: 51% !important;
       }
       &-8 {
-        right: 25% !important;
+        left: 20% !important;
       }
       &-9 {
-        right: 59% !important;
+        left: 17% !important;
       }
       &-10 {
-        right: 39% !important;
+        left: 67% !important;
       }
       &-11 {
-        right: 70% !important;
+        left: 2% !important;
       }
       &-12 {
-        right: 10% !important;
+        left: 39% !important;
       }
       &-13 {
-        right: 43% !important;
+        left: 67% !important;
       }
       &-14 {
-        right: 1% !important;
+        left: 25% !important;
       }
     }
   }
 }
 [class*="Wa-bricks"] {
   opacity: 1;
+}
+.Sub-header-section {
+  // padding: 3rem;
 }
