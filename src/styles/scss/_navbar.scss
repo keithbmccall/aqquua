@@ -31,8 +31,11 @@ header {
 }
 .Nav-burger {
   justify-content: flex-end;
+  :hover {
+    cursor: pointer;
+  }
   :first-child {
-    height: 2rem;
+    height: 1.5rem;
     width: auto;
     padding: 0;
     margin: 0;
