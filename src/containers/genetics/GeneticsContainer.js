@@ -19,22 +19,15 @@ export default class GeneticsContainer extends Component {
               </div>
             </div>
           </div>
+          <hr className="space-10 border" />
           <div className="Content-info-holder flex">
-            <div className="Content-image-title flex-column flex-1">
-              {info.images.map(
-                (image, key) =>
-                  key % 2 === 0 ? (
-                    <div className="collapse-row-column" key={key}>
-                      <img src={image} className="image" />
-                      <h3>IMAGE TITLE dada</h3>
-                    </div>
-                  ) : (
-                    <div className="collapse-row-column" key={key}>
-                      <h3>IMAGE TITLE dada</h3>
-                      <img src={image} className="image" />
-                    </div>
-                  )
-              )}
+            <div className="Content-image-title collapse-row-column">
+              {info.images.map((image, key) => (
+                <div className="Content-holder flex flex-column" key={key}>
+                  <img src={image} className="image" alt="title" />
+                  <h4>IMAGE TITLE dada</h4>
+                </div>
+              ))}
             </div>
           </div>
         </div>

@@ -26,7 +26,7 @@ body, .Contact-holder .Contact-form form input,
 .geo-ultra, .Wa-container .Wa-title {
   font-family: "geomanist-ultra", Arial, Helvetica, sans-serif; }
 
-.geo-bold-italics, .Contact-holder h3, .Products-info h1 span, .Content-info-holder h1, .Content-image-title h3, .Research-info-holder h1, .Section-text h4 {
+.geo-bold-italics, .Contact-holder h3, .Products-info h1 span, .Content-info-holder h1, .Research-info-holder h1, .Section-text h4 {
   font-family: "geomanist-bold-italics", Arial, Helvetica, sans-serif; }
 
 .geo-bold, h1,
@@ -388,29 +388,18 @@ img {
   .Genetics-container .space-10 {
     margin-bottom: 0 !important; } }
 
-.Content-image-title {
-  max-width: 100%; }
-  .Content-image-title .image {
-    width: 50%; }
-  .Content-image-title .collapse-row-column {
-    justify-content: space-evenly;
-    margin-bottom: 3rem; }
-  .Content-image-title img {
-    align-self: center; }
-  .Content-image-title h3 {
-    align-self: center;
-    order: -1;
-    font-size: 1.5rem;
-    margin-bottom: 2rem; }
-  @media only screen and (min-width: 767px) {
-    .Content-image-title .image {
-      width: 30%; }
-    .Content-image-title .collapse-row-column {
-      justify-content: center; }
-      .Content-image-title .collapse-row-column :first-child {
-        margin-right: 10%; }
-      .Content-image-title .collapse-row-column h3 {
-        order: initial; } }
+.Content-image-title .Content-holder img {
+  width: 100%; }
+.Content-image-title .Content-holder h4 {
+  font-size: 1.2rem; }
+@media only screen and (min-width: 767px) {
+  .Content-image-title {
+    justify-content: center;
+    padding: 0 15%; }
+    .Content-image-title .Content-holder {
+      padding: 0 1%; }
+      .Content-image-title .Content-holder img {
+        width: initial; } }
 
 .Research-container {
   align-items: center; }

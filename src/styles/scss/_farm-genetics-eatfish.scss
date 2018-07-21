@@ -51,38 +51,22 @@
   }
 }
 .Content-image-title {
-  max-width: 100%;
-  .image {
-    width: 50%;
-  }
-  .collapse-row-column {
-    // border:2px solid black;
-    justify-content: space-evenly;
-    margin-bottom: 3rem;
-  }
-  img {
-    align-self: center;
-  }
-  h3 {
-    // border:2px solid black;
-    align-self: center;
-    order: -1;
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-    @extend .geo-bold-italics;
-  }
-
-  @include tabtop {
-    .image {
-      width: 30%;
+  .Content-holder {
+    img {
+      width: 100%;
     }
-    .collapse-row-column {
-      justify-content: center;
-      :first-child {
-        margin-right: 10%;
-      }
-      h3 {
-        order: initial;
+    h4 {
+      font-size: 1.2rem;
+    }
+  }
+  @include tabtop {
+    justify-content: center;
+    padding: 0 15%;
+    .Content-holder {
+      padding: 0 1%;
+      img {
+        // height: 100%;
+        width: initial;
       }
     }
   }
