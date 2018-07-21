@@ -1,19 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-const SchoolEmblem = props => {
-  const { school } = props;
-  console.log(school)
-  return (
-    <div className="flex-1 flex-content-center">
-      <Link to={`/university-research/${school.name}`}>
-        <img
-          src={school.pic}
-          alt={school.name}
-          className="image School-emblem"
-        />
-      </Link>
-    </div>
-  );
-};
+const SchoolEmblem = props => (
+  <div className="flex-1 flex-content-center">
+    <Link to={`/university-research/${props.school.name}`}>
+      <img
+        src={props.school.pic}
+        alt={props.school.name}
+        className="image School-emblem"
+      />
+    </Link>
+  </div>
+);
+
 export default SchoolEmblem;

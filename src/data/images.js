@@ -24,7 +24,18 @@ import hirameribbon from "../assets/images/png/fishprints/fishribbons/hiramesmal
 //
 import eatfishred from "../assets/images/png/eatfishiconred.png";
 import eatfishyellow from "../assets/images/png/eatfishiconyellow.png";
-
+//reicpes
+import recipes1 from "../assets/images/png/food/greensauce.png";
+import recipes2 from "../assets/images/png/food/bellpeppers.png";
+import recipes3 from "../assets/images/png/food/stringbeans.png";
+//
+import backarrow from "../assets/images/svgs/backarrow.svg";
+// geneitcs
+import genetics1 from "../assets/images/png/farm/petridish.png";
+import genetics2 from "../assets/images/png/farm/closeview.png";
+import genetics3 from "../assets/images/png/farm/fossilish.png";
+import genetics4 from "../assets/images/png/farm/flask.png";
+//
 const schools = { miami, burapha };
 const productsFish = [
   { png: grouper, svg: groupersvg },
@@ -59,6 +70,8 @@ const heroImages = {
   grouper,
   tuna
 };
+const recipesImages = [recipes1, recipes2, recipes3];
+const geneticsImages = [genetics1, genetics2, genetics3, genetics4];
 const images = {
   fishPrint,
   logo,
@@ -66,7 +79,10 @@ const images = {
   schools,
   ribbons,
   eatfishicons,
-  heroImages
+  heroImages,
+  recipesImages,
+  backarrow,
+  geneticsImages
 };
 
 export default images;

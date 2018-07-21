@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)http://localhost:3000/#Farm -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="theme-color" content="#000000">
+
+  <!--
+      manifest.json provides metadata used when your web app is added to the
+      homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
+    -->
+  <link rel="manifest" href="http://localhost:3000/manifest.json">
+  <link rel="shortcut icon" href="http://localhost:3000/favicon.ico">
+  <!-- <link rel="stylesheet" type="text/css" href="./styles/css/index.css"> -->
+  <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+  <title>Aqquua</title>
+<style type="text/css">@font-face {
+  font-family: "geomanist-bold";
+  src: url(/static/media/geomanist-bold-webfont.155952a9.eot);
+  src: url(/static/media/geomanist-bold-webfont.8f7a1442.woff) format("woff"), url(/static/media/geomanist-bold-webfont.071b4ab4.woff2) format("woff2"), url(/static/media/geomanist-bold-webfont.ae26d3ff.svg#filename) format("svg"); }
+@font-face {
+  font-family: "geomanist-thin";
+  src: url(/static/media/geomanist-thin-webfont.03e8a27d.eot);
+  src: url(/static/media/geomanist-thin-webfont.90c2d44d.woff) format("woff"), url(/static/media/geomanist-thin-webfont.97ff4401.woff2) format("woff2"), url(/static/media/geomanist-thin-webfont.97767d6e.svg#filename) format("svg"); }
+@font-face {
+  font-family: "geomanist-bold-italics";
+  src: url(/static/media/geomanist-bold-italic-webfont.3aa449b1.eot);
+  src: url(/static/media/geomanist-bold-italic-webfont.73e1524a.woff) format("woff"), url(/static/media/geomanist-bold-italic-webfont.a18f833b.woff2) format("woff2"), url(/static/media/geomanist-bold-italic-webfont.18a03931.svg#filename) format("svg"); }
+@font-face {
+  font-family: "geomanist-ultra";
+  src: url(/static/media/geomanist-ultra-webfont.669abcc8.eot);
+  src: url(/static/media/geomanist-ultra-webfont.5be268c9.woff) format("woff"), url(/static/media/geomanist-ultra-webfont.9842597f.woff2) format("woff2"), url(/static/media/geomanist-ultra-webfont.e6f7810c.svg#filename) format("svg"); }
+@font-face {
+  font-family: "geomanist-light";
+  src: url(/static/media/geomanist-light-webfont.f2bbfd15.eot);
+  src: url(/static/media/geomanist-light-webfont.16314416.woff) format("woff"), url(/static/media/geomanist-light-webfont.d1ca23b3.woff2) format("woff2"), url(/static/media/geomanist-light-webfont.961299e2.svg#filename) format("svg"); }
+.geo-light, #root,
+body, .Contact-holder .Contact-form form input,
+.Contact-holder .Contact-form form textarea, .Header-section, .Wa-container .Wa-1, .Wa-container .Wa-7 {
+  font-family: "geomanist-light", Arial, Helvetica, sans-serif; }
+
+.geo-ultra, .Wa-container .Wa-title {
+  font-family: "geomanist-ultra", Arial, Helvetica, sans-serif; }
+
+.geo-bold-italics, .Contact-holder h3, .Products-info h1 span, .Farm-info-holder h1, .Research-info-holder h1, .Section-text h4 {
+  font-family: "geomanist-bold-italics", Arial, Helvetica, sans-serif; }
+
+.geo-bold, h1,
+h2,
+h3,
+h4,
+h5,
+h6, .Contact-holder .Contact-addresses address span, .Products-info h1, .Big-section .Section-number-holder .Section-number, .Wa-container .Wa-2, .Wa-container .Wa-6, .Wa-container .Wa-9, .Wa-container .Wa-10 {
+  font-family: "geomanist-bold", Arial, Helvetica, sans-serif; }
+
+.geo-thin, .Header-section h1, .Wa-container .Wa-0, .Wa-container .Wa-4, .Wa-container .Wa-8, .Wa-container .Wa-11, .Wa-container .Wa-13, .Wa-container .Wa-14 {
+  font-family: "geomanist-thin", Arial, Helvetica, sans-serif; }
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+a:link, a:hover, a:visited {
+  color: inherit;
+  text-decoration: none; }
+
+ul li {
+  list-style: none; }
+
+.border {
+  border: solid 1px black; }
+
+.image {
+  max-width: 100%;
+  height: auto; }
+
+#root,
+body {
+  overflow-x: hidden !important;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 62.5%;
+  width: 100vw;
+  background: rgba(240, 240, 240, 0.8); }
+
+.App {
+  margin-top: -6.5em; }
+
+main {
+  width: 100vw; }
+
+.vh {
+  min-height: 100vh; }
+
+.w-vw {
+  width: 100vw; }
+
+.flex-column {
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.flex, .flex-column, .flex-content-center {
+  display: -ms-flexbox;
+  display: flex; }
+
+.flex-1 {
+  -ms-flex: 1 1;
+      flex: 1 1; }
+
+.flex-space-between {
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+
+.flex-center-vertical {
+  -ms-flex-align: center;
+      align-items: center; }
+
+.flex-center-horizontal {
+  -ms-flex-pack: center;
+      justify-content: center; }
+
+.flex-content-center {
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex-align: center;
+      align-items: center; }
+
+.relative, .Wa-container {
+  position: relative; }
+
+.absolute, .Nav-container, .Wa-container h3, .Wa-container .Wa-title {
+  position: absolute; }
+
+.fixed, header {
+  position: fixed; }
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+
+.mw-100, .logo, .Header-band {
+  max-width: 100%; }
+
+.w-100 {
+  width: 100%; }
+
+.space-10 {
+  margin: 7em 0; }
+  @media only screen and (min-width: 990px) {
+    .space-10 {
+      margin: 9em 0; } }
+  @media only screen and (min-width: 767px) and (max-width: 989px) {
+    .space-10 {
+      margin: 8em 0; } }
+
+.collapse-row-column {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+  @media only screen and (min-width: 767px) {
+    .collapse-row-column {
+      -ms-flex-direction: row;
+          flex-direction: row; } }
+
+.text-white {
+  color: white; }
+
+.text-black {
+  color: black; }
+
+.opacity-0 {
+  opacity: 0 !important; }
+
+.hidden {
+  visibility: hidden !important; }
+
+.container {
+  padding-top: 6.5em; }
+
+.Research-container,
+.Products-container,
+.Farm-container,
+.Recipes-container,
+.EatFishContainer {
+  padding-top: 6.5em;
+  min-height: 100vh;
+  padding-bottom: 3rem; }
+
+.media-video-holder {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  width: 100%; }
+  .media-video-holder iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.swoop-enter {
+  position: fixed;
+  z-index: 10;
+  top: 100vh;
+  width: 100%; }
+
+.swoop-enter.swoop-enter-active,
+.swoop-enter-done {
+  top: -6.5em;
+  z-index: 10;
+  -o-transition: all 0.7s ease-in;
+  -webkit-transition: all 0.7s ease-in;
+  transition: all 0.7s ease-in; }
+
+.swoop-exit.swoop-exit-active {
+  z-index: 1;
+  opacity: 1;
+  -o-transition: all 1s ease-in;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in; }
+
+.swoop-exit-done {
+  z-index: -1;
+  opacity: 0; }
+
+.wave {
+  width: 100%;
+  margin: -100% 0 -2% 0; }
+
+.Contact-holder {
+  font-size: 1rem;
+  width: 70%; }
+  .Contact-holder hr {
+    margin: 0 1.5rem 3.5rem 1.5rem; }
+  .Contact-holder h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem; }
+  .Contact-holder .Contact-caption {
+    margin-bottom: 2rem; }
+  .Contact-holder .Contact-addresses {
+    -ms-flex: 1 1;
+        flex: 1 1;
+    -ms-flex-order: 1;
+        order: 1; }
+    .Contact-holder .Contact-addresses address {
+      text-align: center;
+      line-height: 1.8rem;
+      font-style: normal;
+      margin-bottom: 1rem; }
+      .Contact-holder .Contact-addresses address span {
+        font-size: 1.2rem; }
+  .Contact-holder .Contact-caption,
+  .Contact-holder .Contact-form,
+  .Contact-holder .Contact-addresses {
+    margin-bottom: 3.5rem; }
+  .Contact-holder .Contact-form {
+    text-align: center;
+    -ms-flex: 3 1;
+        flex: 3 1; }
+    .Contact-holder .Contact-form form {
+      margin: 0; }
+      .Contact-holder .Contact-form form input,
+      .Contact-holder .Contact-form form textarea {
+        width: 100%;
+        border: 1px solid #87857d;
+        border-radius: 5px;
+        margin-bottom: 1rem;
+        padding-left: 0.5rem;
+        font-size: 1rem; }
+      .Contact-holder .Contact-form form input {
+        height: 3rem; }
+      .Contact-holder .Contact-form form textarea {
+        height: 10rem;
+        resize: none;
+        padding-top: 0.5rem; }
+      .Contact-holder .Contact-form form:first-child input:nth-of-type(1) {
+        margin-right: 3rem; }
+  @media only screen and (min-width: 767px) {
+    .Contact-holder {
+      width: 70%; }
+      .Contact-holder .collapse-row-column {
+        padding: 0 1.5rem; }
+      .Contact-holder .Contact-caption {
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        margin-bottom: 5rem; }
+      .Contact-holder .Contact-addresses {
+        -ms-flex-order: initial;
+            order: initial; }
+        .Contact-holder .Contact-addresses address {
+          text-align: initial; }
+      .Contact-holder .Contact-form {
+        margin-left: 2rem; }
+        .Contact-holder .Contact-form form textarea {
+          height: 15rem; } }
+
+.Contact-email,
+.Contact-message,
+.Contact-fname,
+.Contact-lname {
+  background: rgba(195, 68, 122, 0.2); }
+
+.Products-info {
+  -ms-flex: 8 1;
+      flex: 8 1;
+  padding: 15% 10% 0 10%; }
+  @media only screen and (min-width: 767px) {
+    .Products-info {
+      padding: 15% 1% 0 10%;
+      -ms-flex: 10 1;
+          flex: 10 1; } }
+  @media only screen and (min-width: 990px) {
+    .Products-info {
+      -ms-flex: 7 1;
+          flex: 7 1; } }
+  .Products-info h1 {
+    font-size: 2.3rem;
+    line-height: 2rem;
+    margin-bottom: 1rem; }
+    .Products-info h1 span {
+      display: block;
+      letter-spacing: 1px;
+      font-size: 1rem; }
+  .Products-info p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    max-width: 90%;
+    margin-bottom: 1rem; }
+
+.Products-hero-holder {
+  -ms-flex-order: -1;
+      order: -1;
+  -ms-flex-pack: center;
+      justify-content: center;
+  -ms-flex: 17 1;
+      flex: 17 1; }
+  .Products-hero-holder .Products-hero {
+    width: 70%; }
+  @media only screen and (min-width: 767px) {
+    .Products-hero-holder {
+      -ms-flex-order: 2;
+          order: 2;
+      -ms-flex: 14 1;
+          flex: 14 1;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+      position: relative; }
+      .Products-hero-holder .Products-hero {
+        position: absolute;
+        -webkit-transform: translateX(1000%);
+        -ms-transform: translateX(1000%);
+            transform: translateX(1000%);
+        -o-transition: transform 1.5s ease-in-out;
+        -webkit-transition: transform 1.5s ease-in-out;
+        -webkit-transition: -webkit-transform 1.5s ease-in-out;
+        transition: -webkit-transform 1.5s ease-in-out;
+        transition: transform 1.5s ease-in-out;
+        transition: transform 1.5s ease-in-out, -webkit-transform 1.5s ease-in-out; }
+        .Products-hero-holder .Products-hero .image {
+          -o-object-fit: contain;
+             object-fit: contain;
+          max-width: initial !important;
+          height: 50rem;
+          left: 0; } }
+  @media only screen and (min-width: 990px) {
+    .Products-hero-holder {
+      -ms-flex: 16 1;
+          flex: 16 1; } }
+
+.Farm-container {
+  -ms-flex-align: center;
+      align-items: center; }
+
+.Farm-media {
+  -ms-flex-align: center;
+      align-items: center; }
+  @media only screen and (min-width: 767px) {
+    .Farm-media {
+      width: 100vw; } }
+
+.Farm-info-holder .Farm-logo-holder {
+  -ms-flex: 1 1;
+      flex: 1 1;
+  margin-bottom: 1rem; }
+.Farm-info-holder .Farm-info {
+  -ms-flex-align: center;
+      align-items: center; }
+  .Farm-info-holder .Farm-info :first-child {
+    max-width: 80%; }
+@media only screen and (min-width: 767px) {
+  .Farm-info-holder {
+    padding-top: 3rem;
+    padding: 3rem 4rem; }
+    .Farm-info-holder .Farm-info {
+      -ms-flex: 2 1;
+          flex: 2 1;
+      -ms-flex-align: initial;
+          align-items: initial; } }
+.Farm-info-holder h1 {
+  font-size: 2rem;
+  line-height: 2.2rem;
+  margin-bottom: 1rem; }
+.Farm-info-holder p {
+  font-size: 1rem;
+  margin-bottom: 1rem; }
+
+.Research-container {
+  -ms-flex-align: center;
+      align-items: center; }
+
+.Research-info-holder .Research-logo-holder {
+  -ms-flex: 1 1;
+      flex: 1 1;
+  margin-bottom: 1rem; }
+.Research-info-holder .Research-info {
+  -ms-flex-align: center;
+      align-items: center; }
+  .Research-info-holder .Research-info p, .Research-info-holder .Research-info h1 {
+    max-width: 80%; }
+@media only screen and (min-width: 767px) {
+  .Research-info-holder {
+    padding-top: 3rem;
+    padding: 3rem 4rem; }
+    .Research-info-holder .Research-logo-holder {
+      -ms-flex: 1 1;
+          flex: 1 1;
+      margin-bottom: 1rem; }
+    .Research-info-holder .Research-info {
+      -ms-flex: 2 1;
+          flex: 2 1; } }
+.Research-info-holder h1 {
+  font-size: 2.3rem;
+  line-height: 2.2rem;
+  margin-bottom: 1rem; }
+.Research-info-holder p {
+  font-size: 1rem;
+  margin-bottom: 1rem; }
+
+header {
+  top: 0;
+  z-index: 100;
+  background: #85dbd7; }
+
+.Nav-container {
+  z-index: 100;
+  width: 100%;
+  height: 6.5em;
+  background: #85dbd7;
+  padding: 0 4%; }
+  .Nav-container .image {
+    margin-top: 10%;
+    max-width: 100%; }
+  .Nav-container .Nav-image-holder {
+    width: 15%; }
+    @media only screen and (min-width: 990px) {
+      .Nav-container .Nav-image-holder {
+        width: 10%; } }
+  @media only screen and (min-width: 990px) {
+    .Nav-container .Nav-menu,
+    .Nav-container .Nav-burger {
+      display: none; } }
+
+.Nav-burger {
+  -ms-flex-pack: end;
+      justify-content: flex-end; }
+  .Nav-burger :hover {
+    cursor: pointer; }
+  .Nav-burger :first-child {
+    height: 1.5rem;
+    width: auto;
+    padding: 0;
+    margin: 0; }
+
+.Nav-item {
+  -o-transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out; }
+
+.Nav-menu {
+  margin-top: -100px;
+  height: 0vh;
+  width: 100vw;
+  background: #85dbd7;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -o-transition: height 0.3s ease-in, margin-top 0.3s ease-in, padding-top 0.3s ease-in;
+  -webkit-transition: height 0.3s ease-in, margin-top 0.3s ease-in, padding-top 0.3s ease-in;
+  transition: height 0.3s ease-in, margin-top 0.3s ease-in, padding-top 0.3s ease-in; }
+  .Nav-menu-spread {
+    display: none; }
+    @media only screen and (min-width: 990px) {
+      .Nav-menu-spread {
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+        display: block;
+        display: -ms-flexbox;
+        display: flex; }
+        .Nav-menu-spread .Nav-item {
+          font-size: 1.2rem; } }
+  .Nav-menu .Nav-item {
+    font-size: 1.5rem;
+    height: 2.3rem; }
+  @media only screen and (min-width: 990px) {
+    .Nav-menu {
+      -o-transition: initial;
+      -webkit-transition: initial;
+      transition: initial;
+      -ms-flex-direction: row;
+          flex-direction: row; } }
+
+.Nav-item {
+  color: white;
+  padding: 0 1.5%;
+  white-space: nowrap;
+  cursor: pointer; }
+
+.Nav-menu-open {
+  margin-top: 0;
+  padding-top: 7.5em;
+  height: 120vh; }
+
+.Big-section {
+  -ms-flex-pack: justify;
+      justify-content: space-between; }
+  .Big-section .Section-number-holder {
+    -ms-flex-pack: center;
+        justify-content: center; }
+    @media only screen and (min-width: 767px) {
+      .Big-section .Section-number-holder {
+        -ms-flex-pack: center;
+            justify-content: center; }
+        .Big-section .Section-number-holder + .Section-text-holder {
+          padding-right: 10%;
+          margin-top: 20rem; }
+          .Big-section .Section-number-holder + .Section-text-holder .Section-text {
+            max-width: 100%; } }
+    .Big-section .Section-number-holder .Section-number {
+      font-size: 15rem;
+      padding: 0;
+      margin: 0 0 -3.5rem 0; }
+      .Big-section .Section-number-holder .Section-number span {
+        font-size: 8rem;
+        margin-left: -0.5rem; }
+      @media only screen and (min-width: 767px) {
+        .Big-section .Section-number-holder .Section-number {
+          font-size: 25rem; }
+          .Big-section .Section-number-holder .Section-number span {
+            font-size: 20rem; } }
+
+.Section-title {
+  font-size: 2em; }
+
+.Section-text {
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+  font-size: 1.2rem;
+  max-width: 70%;
+  line-height: 30px;
+  letter-spacing: 0.8px;
+  text-align: auto;
+  margin-bottom: 4rem; }
+  .Section-text h4 {
+    font-size: 1.2rem;
+    text-align: right;
+    margin-bottom: 1.5rem; }
+    @media only screen and (min-width: 767px) {
+      .Section-text h4 {
+        font-size: 2.2rem; } }
+
+.Products-fish-holder {
+  margin: 10rem 0; }
+  @media only screen and (min-width: 767px) {
+    .Products-fish-holder {
+      margin: inherit; } }
+
+.Products-fish {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  padding: 0 25%; }
+  .Products-fish .image {
+    margin-bottom: 2.5rem; }
+  .Products-fish .Products-text .image {
+    margin: 0 0 -3.5rem 0; }
+  @media only screen and (min-width: 767px) {
+    .Products-fish {
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+      width: 70%;
+      padding: 0 0% !important;
+      -ms-flex-direction: row;
+          flex-direction: row; }
+      .Products-fish .image {
+        height: auto;
+        margin: auto; }
+      .Products-fish .Products-fish-square {
+        margin-right: 1rem; }
+        .Products-fish .Products-fish-square:nth-of-type(7) {
+          margin: 0 0 0 1rem; }
+        .Products-fish .Products-fish-square .Products-text {
+          opacity: 0;
+          -o-transition: all 0.3s ease-in-out;
+          -webkit-transition: all 0.3s ease-in-out;
+          transition: all 0.3s ease-in-out;
+          margin-bottom: -1rem; }
+          .Products-fish .Products-fish-square .Products-text .image {
+            margin: 0;
+            height: auto; }
+        .Products-fish .Products-fish-square:hover .Products-text {
+          opacity: 1; } }
+
+.Big-section-1 {
+  background: #f32e37; }
+
+.Big-section-5 {
+  background: #ea5924; }
+
+.Big-section-3 {
+  background: #16639f; }
+
+.Big-section-4 {
+  background: -webkit-gradient(linear, left top, right bottom, from(#210420), color-stop(#490847), color-stop(#620c5f), color-stop(#620c5f), color-stop(#770574), to(#9b0096));
+  background: -webkit-linear-gradient(top left, #210420, #490847, #620c5f, #620c5f, #770574, #9b0096);
+  background: -o-linear-gradient(top left, #210420, #490847, #620c5f, #620c5f, #770574, #9b0096);
+  background: linear-gradient(to bottom right, #210420, #490847, #620c5f, #620c5f, #770574, #9b0096); }
+
+.Big-section-6 {
+  background: -webkit-gradient(linear, left top, right bottom, from(#f79d04), color-stop(#f79d04), color-stop(#f79d04), color-stop(#f7aa04), color-stop(#ffb30f), color-stop(#f7ba04), color-stop(#ffc31c), color-stop(#f7c604), to(#f7c604));
+  background: -webkit-linear-gradient(top left, #f79d04, #f79d04, #f79d04, #f7aa04, #ffb30f, #f7ba04, #ffc31c, #f7c604, #f7c604);
+  background: -o-linear-gradient(top left, #f79d04, #f79d04, #f79d04, #f7aa04, #ffb30f, #f7ba04, #ffc31c, #f7c604, #f7c604);
+  background: linear-gradient(to bottom right, #f79d04, #f79d04, #f79d04, #f7aa04, #ffb30f, #f7ba04, #ffc31c, #f7c604, #f7c604); }
+
+.Big-section-8 {
+  background: #ff2882; }
+
+.Big-section-9 {
+  background: -webkit-gradient(linear, left top, right bottom, from(#1b7a06), color-stop(#21af01), color-stop(#24b500), color-stop(#28c900), color-stop(#28c900), color-stop(#33ef09), to(#9ce881));
+  background: -webkit-linear-gradient(top left, #1b7a06, #21af01, #24b500, #28c900, #28c900, #33ef09, #9ce881);
+  background: -o-linear-gradient(top left, #1b7a06, #21af01, #24b500, #28c900, #28c900, #33ef09, #9ce881);
+  background: linear-gradient(to bottom right, #1b7a06, #21af01, #24b500, #28c900, #28c900, #33ef09, #9ce881); }
+
+.Big-section-2 {
+  background: white; }
+  @media only screen and (max-width: 766px) {
+    .Big-section-2 .space-10 {
+      margin: initial !important; } }
+  .Big-section-2 .content {
+    max-width: 200px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: space-evenly;
+        justify-content: space-evenly; }
+    @media only screen and (min-width: 767px) and (max-width: 989px) {
+      .Big-section-2 .content {
+        -ms-flex-direction: row;
+            flex-direction: row; } }
+    @media only screen and (min-width: 990px) {
+      .Big-section-2 .content {
+        -ms-flex-direction: row;
+            flex-direction: row; } }
+
+#About:before,
+#Farm:before,
+#Products:before,
+#RD:before,
+#Recipes:before,
+#Eat-fish:before,
+#Contact:before,
+#Sustainability:before {
+  content: "";
+  display: block;
+  height: 6.5em;
+  margin-top: -6.5em; }
+
+.School-emblem {
+  -o-transition: transform 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out; }
+  .School-emblem:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+        transform: scale(1.1); }
+
+.Eat-fish-tag-icon {
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+      transform: scale(1.5);
+  cursor: pointer; }
+
+.Header-band {
+  border-bottom: solid 5px black; }
+
+.Header-section {
+  background-color: #e15d44;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 10% 0 10%;
+  height: 130vh; }
+  .Header-section .logo .image {
+    max-width: auto;
+    height: 100%;
+    width: 100%; }
+  @media only screen and (min-width: 767px) {
+    .Header-section .logo {
+      width: 100%; }
+      .Header-section .logo .image {
+        max-width: 100%;
+        height: 100%;
+        width: 80em; } }
+  .Header-section h1 {
+    color: white;
+    font-size: 2.6rem;
+    text-align: center;
+    letter-spacing: 2px; }
+    @media only screen and (min-width: 767px) {
+      .Header-section h1 {
+        font-size: 6rem;
+        text-align: center;
+        letter-spacing: 2px; } }
+    .Header-section h1 span {
+      white-space: nowrap; }
+  .Header-section .absolute, .Header-section .Nav-container, .Header-section .Wa-container h3, .Wa-container .Header-section h3, .Header-section .Wa-container .Wa-title, .Wa-container .Header-section .Wa-title {
+    width: 100%;
+    bottom: 0;
+    left: 50%;
+    height: 50%;
+    -webkit-transform: translate(-50%, 0);
+    -ms-transform: translate(-50%, 0);
+        transform: translate(-50%, 0); }
+
+.Wa-container {
+  white-space: nowrap; }
+  .Wa-container h3 {
+    margin-bottom: 0;
+    -o-transition: all 0.5s ease-in-out 0.5s;
+    -webkit-transition: all 0.5s ease-in-out 0.5s;
+    transition: all 0.5s ease-in-out 0.5s; }
+    .Wa-container h3 span {
+      display: block;
+      -webkit-transform: translateX(32.5%);
+      -ms-transform: translateX(32.5%);
+          transform: translateX(32.5%); }
+    @media only screen and (min-width: 990px) {
+      .Wa-container h3 span {
+        display: block;
+        -webkit-transform: translateX(32.5%);
+        -ms-transform: translateX(32.5%);
+            transform: translateX(32.5%); } }
+  .Wa-container .Wa-text {
+    font-size: 2.8rem; }
+  .Wa-container .Wa-title {
+    font-size: 6rem;
+    top: 30%;
+    line-height: 4.5rem;
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+        transform: translateX(-50%);
+    -o-transition: all 3s ease-in-out;
+    -webkit-transition: all 3s ease-in-out;
+    transition: all 3s ease-in-out; }
+    @media only screen and (min-width: 767px) and (max-width: 989px) {
+      .Wa-container .Wa-title {
+        line-height: 11rem !important; } }
+    @media only screen and (min-width: 990px) {
+      .Wa-container .Wa-title {
+        line-height: 13rem !important; } }
+  .Wa-container .Wa-title-fade {
+    color: #979797; }
+  .Wa-container .Wa-0 {
+    left: 0 !important; }
+  .Wa-container .Wa-1 {
+    right: 0 !important; }
+  .Wa-container .Wa-2 {
+    left: 0 !important; }
+  .Wa-container .Wa-3 {
+    right: 0 !important; }
+  .Wa-container .Wa-4 {
+    left: 0 !important; }
+  .Wa-container .Wa-5 {
+    right: 0 !important; }
+  .Wa-container .Wa-6 {
+    left: 0 !important; }
+  .Wa-container .Wa-7 {
+    right: 0 !important; }
+  .Wa-container .Wa-8 {
+    left: 0 !important; }
+  .Wa-container .Wa-9 {
+    right: 0 !important; }
+  .Wa-container .Wa-10 {
+    left: 0 !important; }
+  .Wa-container .Wa-11 {
+    right: 0 !important; }
+  .Wa-container .Wa-12 {
+    left: 0 !important; }
+  .Wa-container .Wa-13 {
+    right: 0 !important; }
+  .Wa-container .Wa-14 {
+    left: 0 !important; }
+  .Wa-container .Wa-15 {
+    right: 0 !important; }
+  .Wa-container .Wa-16 {
+    left: 0 !important; }
+  .Wa-container .Wa-17 {
+    right: 0 !important; }
+  .Wa-container .Wa-18 {
+    left: 0 !important; }
+  .Wa-container .Wa-19 {
+    right: 0 !important; }
+  .Wa-container .Wa-20 {
+    left: 0 !important; }
+  .Wa-container .Wa-21 {
+    right: 0 !important; }
+  .Wa-container .Wa-22 {
+    left: 0 !important; }
+  .Wa-container .Wa-23 {
+    right: 0 !important; }
+  .Wa-container .Wa-24 {
+    left: 0 !important; }
+  .Wa-container .Wa-25 {
+    right: 0 !important; }
+  .Wa-container .Wa-26 {
+    left: 0 !important; }
+  .Wa-container .Wa-27 {
+    right: 0 !important; }
+  .Wa-container .Wa-28 {
+    left: 0 !important; }
+  @media only screen and (min-width: 767px) {
+    .Wa-container .Wa-0 {
+      right: initial;
+      left: initial; }
+    .Wa-container .Wa-1 {
+      right: initial;
+      left: initial; }
+    .Wa-container .Wa-2 {
+      right: initial;
+      left: initial; }
+    .Wa-container .Wa-3 {
+      right: initial;
+      left: initial; }
+    .Wa-container .Wa-4 {
+      right: initial;
+      left: initial; }
+    .Wa-container .Wa-5 {
+      right: initial;
+      left: initial; }
+    .Wa-container .Wa-6 {
+      right: initial;
+      left: initial; }
+    .Wa-container .Wa-7 {
+      right: initial;
+      left: initial; }
+    .Wa-container .Wa-8 {
+      right: initial;
+      left: initial; }
+    .Wa-container .Wa-9 {
+      right: initial;
+      left: initial; }
+    .Wa-container .Wa-10 {
+      right: initial;
+      left: initial; }
+    .Wa-container .Wa-11 {
+      right: initial;
+      left: initial; }
+    .Wa-container .Wa-12 {
+      right: initial;
+      left: initial; }
+    .Wa-container .Wa-13 {
+      right: initial;
+      left: initial; }
+    .Wa-container .Wa-14 {
+      right: initial;
+      left: initial; } }
+  @media only screen and (min-width: 767px) {
+    .Wa-container h3 {
+      font-size: 5.5rem; }
+    .Wa-container .Wa-text {
+      font-size: 4.8rem; }
+    .Wa-container .Wa-title {
+      font-size: 15rem; }
+    .Wa-container .Wa-0 {
+      left: 25% !important; }
+    .Wa-container .Wa-1 {
+      left: 40% !important; }
+    .Wa-container .Wa-2 {
+      left: 20% !important; }
+    .Wa-container .Wa-3 {
+      left: 56% !important; }
+    .Wa-container .Wa-4 {
+      left: 7% !important; }
+    .Wa-container .Wa-5 {
+      left: 30% !important; }
+    .Wa-container .Wa-6 {
+      left: 6% !important; }
+    .Wa-container .Wa-7 {
+      left: 30% !important; }
+    .Wa-container .Wa-8 {
+      left: 20% !important; }
+    .Wa-container .Wa-9 {
+      left: 17% !important; }
+    .Wa-container .Wa-10 {
+      left: 50% !important; }
+    .Wa-container .Wa-11 {
+      left: 2% !important; }
+    .Wa-container .Wa-12 {
+      left: 10% !important; }
+    .Wa-container .Wa-13 {
+      left: 59% !important; }
+    .Wa-container .Wa-14 {
+      left: 25% !important; } }
+  @media only screen and (min-width: 990px) {
+    .Wa-container h3 {
+      font-size: 5rem; }
+    .Wa-container .Wa-text {
+      font-size: 4.8rem; }
+    .Wa-container .Wa-title {
+      font-size: 18rem; }
+    .Wa-container .Wa-0 {
+      left: 25% !important; }
+    .Wa-container .Wa-1 {
+      left: 53% !important; }
+    .Wa-container .Wa-2 {
+      left: 16% !important; }
+    .Wa-container .Wa-3 {
+      left: 56% !important; }
+    .Wa-container .Wa-4 {
+      left: 7% !important; }
+    .Wa-container .Wa-5 {
+      left: 21% !important; }
+    .Wa-container .Wa-6 {
+      left: 6% !important; }
+    .Wa-container .Wa-7 {
+      left: 51% !important; }
+    .Wa-container .Wa-8 {
+      left: 20% !important; }
+    .Wa-container .Wa-9 {
+      left: 17% !important; }
+    .Wa-container .Wa-10 {
+      left: 67% !important; }
+    .Wa-container .Wa-11 {
+      left: 2% !important; }
+    .Wa-container .Wa-12 {
+      left: 39% !important; }
+    .Wa-container .Wa-13 {
+      left: 67% !important; }
+    .Wa-container .Wa-14 {
+      left: 25% !important; } }
+
+[class*="Wa-bricks"] {
+  opacity: 1; }
+
+.Products-animation {
+  -webkit-transform: rotate(2turn) translateX(0) !important;
+  -ms-transform: rotate(2turn) translateX(0) !important;
+      transform: rotate(2turn) translateX(0) !important; }
+
+.Products,
+.Products-roll {
+  -o-transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  -webkit-transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s;
+  transition: all 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) 0.5s; }
+
+.Products-roll {
+  -webkit-transform: translateX(-1000%);
+  -ms-transform: translateX(-1000%);
+      transform: translateX(-1000%); }
+
+.Tracking-fade-in {
+  opacity: 0;
+  margin-bottom: 5rem; }
+
+.zindex {
+  z-index: 50; }
+
+.Ribbons-container {
+  height: 10.3rem;
+  margin: 0;
+  padding: 0;
+  background: white; }
+  .Ribbons-container .Ribbons {
+    height: 5.2rem; }
+    .Ribbons-container .Ribbons-right {
+      -webkit-transform: scaleX(-1);
+      -ms-transform: scaleX(-1);
+          transform: scaleX(-1); }
+
+.Products-hero-animation {
+  -webkit-transform: translateX(0%) !important;
+  -ms-transform: translateX(0%) !important;
+      transform: translateX(0%) !important; }
+
+/* entire container, keeps perspective */
+.flip-container {
+  -webkit-perspective: 1000px;
+          perspective: 1000px; }
+
+/* flip the pane when hovered */
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg); }
+
+.flip-container,
+.front,
+.back {
+  width: 12rem;
+  height: 12rem; }
+
+/* flip speed goes here */
+.flipper {
+  -webkit-transition: 0.5s;
+  -o-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  position: relative; }
+
+/* hide back of pane during swap */
+.front,
+.back {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg); }
+
+/* back, initially hidden pane */
+.back {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg); }
+</style></head>
+
+<body>
+  <noscript>
+    You need to enable JavaScript to run this app.
+  </noscript>
+  <div id="root"><main><header class="flex"><div class="Nav-container flex-1 flex"><div class="Nav-image-holder flex flex-center-vertical"><a href="http://localhost:3000/"><div><div><svg xmlns="http://www.w3.org/2000/svg" width="348" height="83" viewBox="0 4.4 347.9 83.4" class="injected-svg image" style="fill:white" data-src="/static/media/aqquualogo.5e41424b.svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M220 12.6v13.8 29.8c0 1.1-1.1 2-2.2 2 -1.2 0-2.2-0.9-2.2-2v-8.3C212 54.5 205.7 59.2 197.7 59.2c-12.8 0-19.9-10.3-19.9-21.1V12.6c0-1 0.9-2 2.2-2s2.2 1 2.2 2v25.5c0 8.6 5.3 17.1 15.6 17.1 14.5 0 17.9-12.5 17.9-26.4V12.6c0-1 0.9-2 2.2-2C218.9 10.6 220 11.6 220 12.6"></path><path d="M271.2 12.6v13.8 29.8c0 1.1-1.1 2-2.2 2 -1.2 0-2.2-0.9-2.2-2v-8.3c-3.5 6.6-9.9 11.3-17.9 11.3C236.1 59.2 229 48.9 229 38.1V12.6c0-1 0.9-2 2.2-2s2.2 1 2.2 2v25.5c0 8.6 5.3 17.1 15.6 17.1 14.5 0 17.9-12.5 17.9-26.4V12.6c0-1 0.9-2 2.2-2C270.2 10.6 271.2 11.6 271.2 12.6"></path><path d="M49.8 34.2c0 13-10.5 24.8-25 24.8S0 47.2 0 34.2C0 21.4 10.3 9.4 24.8 9.4S49.8 21.4 49.8 34.2M45.4 34.2c0-10.5-8.3-20.7-20.5-20.7 -12.1 0-20.6 10.1-20.6 20.7C4.3 44.9 12.8 55 24.8 55 37 55 45.4 44.9 45.4 34.2"></path><path d="M49.6 34.2c0 10.7 8.5 20.8 20.5 20.8v4c-14.5 0-24.8-11.8-24.8-24.8"></path><path d="M114.7 12.2V66.6c0 1.1-0.9 2-2.2 2s-2.1-4.4-2.1-5.5V46.6C106.1 53.9 98.1 59 88.8 59 74.3 59 64 47 64 34.2 63.9 21.3 74.2 9.3 88.7 9.3c9.3 0 17.3 5 21.6 12.4v-9.5c0-1 0.9-2 2.2-2S114.7 11.2 114.7 12.2M109.3 34.1c0-10.7-8.3-20.8-20.5-20.8 -12 0-20.5 10.1-20.5 20.8s8.5 20.8 20.5 20.8C100.9 55 109.3 44.8 109.3 34.1"></path><path d="M114.7 63c0 10.7 8.5 20.8 20.5 20.8v4C120.7 87.8 110.4 76 110.4 63"></path><path d="M168.8 12.2V66.6c0 1.1-0.9 2-2.2 2 -1.2 0-2.1-4.4-2.1-5.5V46.6c-4.3 7.3-12.3 12.4-21.6 12.4 -14.5 0-24.8-12-24.8-24.8 0-12.8 10.3-24.9 24.8-24.9 9.3 0 17.3 5 21.6 12.4v-9.5c0-1 0.9-2 2.2-2C167.9 10.2 168.8 11.2 168.8 12.2M163.4 34.1c0-10.7-8.3-20.8-20.5-20.8 -12 0-20.5 10.1-20.5 20.8s8.5 20.8 20.5 20.8C155.1 55 163.4 44.8 163.4 34.1"></path><path d="M168.9 63c0 10.7 8.5 20.8 20.5 20.8v4C174.9 87.8 164.6 76 164.6 63"></path><path d="M327.6 33.8c0 13-10.5 24.8-25 24.8S277.8 46.8 277.8 33.8C277.8 21 288.1 9 302.6 9S327.6 21 327.6 33.8M323.2 33.8c0-10.5-8.3-20.7-20.5-20.7 -12 0-20.5 10.1-20.5 20.7 0 10.7 8.5 20.8 20.5 20.8C314.8 54.6 323.2 44.5 323.2 33.8"></path><path d="M327.4 33.8c0 10.7 8.5 20.8 20.5 20.8v4C333.4 58.6 323.1 46.8 323.1 33.8"></path><path d="M333.4 5.3h-2.5V4.4h6v0.9h-2.5v7.2h-1.1V5.3z"></path><path d="M344.7 9c-0.1-1.1-0.1-2.5-0.1-3.5h0c-0.3 0.9-0.6 2-1 3.1l-1.4 3.9h-0.8l-1.3-3.8c-0.4-1.1-0.7-2.2-0.9-3.1h0c0 1-0.1 2.4-0.2 3.6l-0.2 3.5h-1l0.6-8.1h1.3l1.4 3.9c0.3 1 0.6 1.9 0.8 2.7h0c0.2-0.8 0.5-1.7 0.9-2.7l1.4-3.9h1.3l0.5 8.1h-1L344.7 9z"></path></svg></div></div></a></div><nav class="Nav-menu-spread flex-1"><li class="Nav-item flex flex-content-center" data-radium="true" style=""><a activeclass="active">About</a></li><li class="Nav-item flex flex-content-center" data-radium="true" style=""><a activeclass="active">Farm</a></li><li class="Nav-item flex flex-content-center" data-radium="true"><a activeclass="active" class="active">Products</a></li><li class="Nav-item flex flex-content-center" data-radium="true"><a activeclass="active">R&amp;D</a></li><li class="Nav-item flex flex-content-center" data-radium="true"><a activeclass="active">Recipes</a></li><li class="Nav-item flex flex-content-center" data-radium="true"><a activeclass="active">Eat Fish</a></li><li class="Nav-item flex flex-content-center" data-radium="true"><a activeclass="active">Sustainability</a></li><li class="Nav-item flex flex-content-center" data-radium="true"><a activeclass="active">Contact</a></li></nav><div class="flex flex-1 flex-center-vertical Nav-burger"><div><div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="134.993px" height="122.427px" viewBox="0 0 134.993 122.427" enable-background="new 0 0 134.993 122.427" xml:space="preserve" class="injected-svg image" style="fill:white" data-src="/static/media/menu.9d5a104a.svg">
+<path d="M134.993,25.49c0,1.586-1.286,2.873-2.872,2.873H2.873C1.286,28.363,0,27.077,0,25.49V2.872C0,1.286,1.286,0,2.873,0  h129.248c1.586,0,2.872,1.286,2.872,2.872V25.49z"></path>
+<path d="M134.993,72.523c0,1.586-1.286,2.872-2.872,2.872H2.873C1.286,75.395,0,74.109,0,72.523V49.904  c0-1.586,1.286-2.873,2.873-2.873h129.248c1.586,0,2.872,1.286,2.872,2.873V72.523z"></path>
+<path d="M134.993,119.554c0,1.587-1.286,2.873-2.872,2.873H2.873c-1.586,0-2.873-1.286-2.873-2.873V96.936  c0-1.586,1.286-2.872,2.873-2.872h129.248c1.586,0,2.872,1.286,2.872,2.872V119.554z"></path>
+</svg></div></div></div></div><nav class="Nav-menu flex "><li class="Nav-item flex flex-content-center" data-radium="true"><a activeclass="active">About</a></li><li class="Nav-item flex flex-content-center" data-radium="true"><a activeclass="active">Farm</a></li><li class="Nav-item flex flex-content-center" data-radium="true"><a activeclass="active" class="active">Products</a></li><li class="Nav-item flex flex-content-center" data-radium="true"><a activeclass="active">R&amp;D</a></li><li class="Nav-item flex flex-content-center" data-radium="true"><a activeclass="active">Recipes</a></li><li class="Nav-item flex flex-content-center" data-radium="true"><a activeclass="active">Eat Fish</a></li><li class="Nav-item flex flex-content-center" data-radium="true"><a activeclass="active">Sustainability</a></li><li class="Nav-item flex flex-content-center" data-radium="true"><a activeclass="active">Contact</a></li></nav></header><div class="App"><div><div class="container Landing-container"><svg version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 720 180.813" enable-background="new 0 0 720 180.813" fill="#e15d44" class="wave"><path d="M 0 175.813 c 0 0 139.515 0 345 0 c 162 0 269.854 0 320 0 c 34 0 55 0 55 0 v 5 H 0 V 175.813 Z"><animate dur="3.5s" attributeName="d" calcMode="spline" keySplines="0.4 0 0.2 1; 0.4 0 0.2 1" values="M0,64.84c0,0,183.974-145.891,328.681,0c144.707,145.891,317.947,82.877,345.8,60.959 C702.336,103.881,720,108.813,720,108.813v72H0V64.84z;M0,175.813c0,0,139.515,0,345,0c162,0,269.854,0,320,0c34,0,55,0,55,0v5H0V175.813z;M0,175.813c0,0,139.515,0,345,0c162,0,269.854,0,320,0c34,0,55,0,55,0v5H0V175.813z"></animate></path></svg><div class="vh flex-column Big-section" id="home"><div class="flex-1 Header-section relative" style="background-image: url(&quot;/static/media/fish-print-9.6cac1ea4.png&quot;);"><div class="absolute"><div><div class="flex-content-center Tracking-fade-in" style="opacity: 1; margin-top: -200px;"><div class="Header-items flex flex-column flex-content-center"><div class="logo"><div><div><svg xmlns="http://www.w3.org/2000/svg" width="348" height="83" viewBox="0 4.4 347.9 83.4" class="injected-svg image" style="fill:white" data-src="/static/media/aqquualogo.5e41424b.svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M220 12.6v13.8 29.8c0 1.1-1.1 2-2.2 2 -1.2 0-2.2-0.9-2.2-2v-8.3C212 54.5 205.7 59.2 197.7 59.2c-12.8 0-19.9-10.3-19.9-21.1V12.6c0-1 0.9-2 2.2-2s2.2 1 2.2 2v25.5c0 8.6 5.3 17.1 15.6 17.1 14.5 0 17.9-12.5 17.9-26.4V12.6c0-1 0.9-2 2.2-2C218.9 10.6 220 11.6 220 12.6"></path><path d="M271.2 12.6v13.8 29.8c0 1.1-1.1 2-2.2 2 -1.2 0-2.2-0.9-2.2-2v-8.3c-3.5 6.6-9.9 11.3-17.9 11.3C236.1 59.2 229 48.9 229 38.1V12.6c0-1 0.9-2 2.2-2s2.2 1 2.2 2v25.5c0 8.6 5.3 17.1 15.6 17.1 14.5 0 17.9-12.5 17.9-26.4V12.6c0-1 0.9-2 2.2-2C270.2 10.6 271.2 11.6 271.2 12.6"></path><path d="M49.8 34.2c0 13-10.5 24.8-25 24.8S0 47.2 0 34.2C0 21.4 10.3 9.4 24.8 9.4S49.8 21.4 49.8 34.2M45.4 34.2c0-10.5-8.3-20.7-20.5-20.7 -12.1 0-20.6 10.1-20.6 20.7C4.3 44.9 12.8 55 24.8 55 37 55 45.4 44.9 45.4 34.2"></path><path d="M49.6 34.2c0 10.7 8.5 20.8 20.5 20.8v4c-14.5 0-24.8-11.8-24.8-24.8"></path><path d="M114.7 12.2V66.6c0 1.1-0.9 2-2.2 2s-2.1-4.4-2.1-5.5V46.6C106.1 53.9 98.1 59 88.8 59 74.3 59 64 47 64 34.2 63.9 21.3 74.2 9.3 88.7 9.3c9.3 0 17.3 5 21.6 12.4v-9.5c0-1 0.9-2 2.2-2S114.7 11.2 114.7 12.2M109.3 34.1c0-10.7-8.3-20.8-20.5-20.8 -12 0-20.5 10.1-20.5 20.8s8.5 20.8 20.5 20.8C100.9 55 109.3 44.8 109.3 34.1"></path><path d="M114.7 63c0 10.7 8.5 20.8 20.5 20.8v4C120.7 87.8 110.4 76 110.4 63"></path><path d="M168.8 12.2V66.6c0 1.1-0.9 2-2.2 2 -1.2 0-2.1-4.4-2.1-5.5V46.6c-4.3 7.3-12.3 12.4-21.6 12.4 -14.5 0-24.8-12-24.8-24.8 0-12.8 10.3-24.9 24.8-24.9 9.3 0 17.3 5 21.6 12.4v-9.5c0-1 0.9-2 2.2-2C167.9 10.2 168.8 11.2 168.8 12.2M163.4 34.1c0-10.7-8.3-20.8-20.5-20.8 -12 0-20.5 10.1-20.5 20.8s8.5 20.8 20.5 20.8C155.1 55 163.4 44.8 163.4 34.1"></path><path d="M168.9 63c0 10.7 8.5 20.8 20.5 20.8v4C174.9 87.8 164.6 76 164.6 63"></path><path d="M327.6 33.8c0 13-10.5 24.8-25 24.8S277.8 46.8 277.8 33.8C277.8 21 288.1 9 302.6 9S327.6 21 327.6 33.8M323.2 33.8c0-10.5-8.3-20.7-20.5-20.7 -12 0-20.5 10.1-20.5 20.7 0 10.7 8.5 20.8 20.5 20.8C314.8 54.6 323.2 44.5 323.2 33.8"></path><path d="M327.4 33.8c0 10.7 8.5 20.8 20.5 20.8v4C333.4 58.6 323.1 46.8 323.1 33.8"></path><path d="M333.4 5.3h-2.5V4.4h6v0.9h-2.5v7.2h-1.1V5.3z"></path><path d="M344.7 9c-0.1-1.1-0.1-2.5-0.1-3.5h0c-0.3 0.9-0.6 2-1 3.1l-1.4 3.9h-0.8l-1.3-3.8c-0.4-1.1-0.7-2.2-0.9-3.1h0c0 1-0.1 2.4-0.2 3.6l-0.2 3.5h-1l0.6-8.1h1.3l1.4 3.9c0.3 1 0.6 1.9 0.8 2.7h0c0.2-0.8 0.5-1.7 0.9-2.7l1.4-3.9h1.3l0.5 8.1h-1L344.7 9z"></path></svg></div></div></div></div></div></div><div><div class="flex-content-center Tracking-fade-in" style="opacity: 1; margin-top: 0px;"><h1>WE'RE WILD<span> ABOUT FARMED</span></h1></div></div></div></div></div><div name="About"><div class="flex-column flex Big-section Sub-header-section" id="About"><div class="Wa-container vh flex flex-content-center"><h3 class="Wa-title centered Wa-title-fade ">WE<span>ARE</span></h3><div class="Wa-words"><h3 class="Wa-text Wa-0 Wa-bricks-0" style="top: 0%; color: rgb(225, 93, 68);">HEALTHY</h3><h3 class="Wa-text Wa-1 Wa-bricks-1" style="top: 6.3%; color: rgb(90, 208, 186);">FRESH</h3><h3 class="Wa-text Wa-2 Wa-bricks-2" style="top: 12.6%; color: rgb(255, 199, 2);">TASTY</h3><h3 class="Wa-text Wa-3 Wa-bricks-3" style="top: 18.9%; color: rgb(77, 68, 138);">DYNAMIC</h3><h3 class="Wa-text Wa-4 Wa-bricks-4" style="top: 25.2%; color: rgb(195, 68, 122);">EDUCATION</h3><h3 class="Wa-text Wa-5 Wa-bricks-5" style="top: 31.5%; color: rgb(1, 91, 151);">EXPERT</h3><h3 class="Wa-text Wa-6 Wa-bricks-6" style="top: 37.8%; color: rgb(243, 46, 55);">SCIENTISTS</h3><h3 class="Wa-text Wa-7 Wa-bricks-7" style="top: 44.1%; color: rgb(87, 59, 48);">FARMERS</h3><h3 class="Wa-text Wa-8 Wa-bricks-8" style="top: 50.4%; color: rgb(172, 78, 78);">INNOVATION</h3><h3 class="Wa-text Wa-9 Wa-bricks-9" style="top: 56.7%; color: rgb(217, 220, 133);">CLEAN</h3><h3 class="Wa-text Wa-10 Wa-bricks-10" style="top: 63%; color: rgb(0, 167, 199);">FOOD</h3><h3 class="Wa-text Wa-11 Wa-bricks-11" style="top: 69.3%; color: rgb(41, 101, 37);">FIN-FISH</h3><h3 class="Wa-text Wa-12 Wa-bricks-12" style="top: 75.6%; color: rgb(102, 132, 143);">TECHNOLOGY</h3><h3 class="Wa-text Wa-13 Wa-bricks-13" style="top: 81.9%; color: rgb(0, 182, 217);">CREATIVE</h3><h3 class="Wa-text Wa-14 Wa-bricks-14" style="top: 88.2%; color: rgb(241, 108, 77);">AQUACULTURE</h3><h3 class="Wa-text Wa-15 Wa-bricks-15" style="top: 0%; color: rgb(255, 132, 6);">AUTHENTIC</h3><h3 class="Wa-text Wa-16 Wa-bricks-16" style="top: 6.3%; color: rgb(85, 85, 155);">LIFESTYLE</h3><h3 class="Wa-text Wa-17 Wa-bricks-17" style="top: 12.6%; color: rgb(136, 193, 114);">GENETICS</h3><h3 class="Wa-text Wa-18 Wa-bricks-18" style="top: 18.9%; color: rgb(220, 62, 113);">FAMILY</h3><h3 class="Wa-text Wa-19 opacity-0 hidden" style="top: 25.2%; color: rgb(76, 63, 135);">SUSTAINABLE</h3><h3 class="Wa-text Wa-20 opacity-0 hidden" style="top: 31.5%; color: rgb(243, 46, 55);">LOVE</h3><h3 class="Wa-text Wa-21 opacity-0 hidden" style="top: 37.8%; color: rgb(250, 220, 0);">TRANSPARENCY</h3><h3 class="Wa-text Wa-22 opacity-0 hidden" style="top: 44.1%; color: rgb(245, 84, 56);">STEWARDSHIP</h3><h3 class="Wa-text Wa-23 opacity-0 hidden" style="top: 50.4%; color: rgb(255, 87, 104);">PASSIONATE</h3><h3 class="Wa-text Wa-24 opacity-0 hidden" style="top: 56.7%; color: rgb(218, 145, 190);">DIVERSITY</h3><h3 class="Wa-text Wa-25 opacity-0 hidden" style="top: 63%; color: rgb(54, 190, 66);">NON-CONFORMISTS</h3><h3 class="Wa-text Wa-26 opacity-0 hidden" style="top: 69.3%; color: rgb(30, 127, 134);">OMEGA-3'S</h3><h3 class="Wa-text Wa-27 opacity-0 hidden" style="top: 75.6%; color: rgb(1, 91, 151);">QUALITY</h3><h3 class="Wa-text Wa-28 opacity-0 hidden" style="top: 81.9%; color: rgb(0, 191, 173);">BEST PRACTICES</h3></div></div></div></div><div><div class="flex-column Big-section Big-section-1" id=""><div class="flex-1 flex-content-center space-10"><div class="flex-content-center flex-column "><div class="collapse-row-column flex-1"><div class="flex-1 Section-number-holder flex"><div><div class="undefined" style="opacity: 1;"><div class="Section-number text-white flex-1">1<span>.</span></div></div></div></div><div class="flex-1 flex Section-text-holder "><div><div class="false" style="opacity: 1;"><div class="flex flex-1 flex-content-center"><div class="text-white flex-1 flex-column undefined Section-text"><h4>WE TAKE OUR JOB SERIOUSLY</h4><p class="">Every day we use best practices to make sure all of our operations are properly executed and managed to bring you a first rate high quality responsibly raised product, free of chemicals, antibiotics and hormones. Our job is to deliver 100% sustainably farmed, healthy, fresh and tasty fish. At Aqquua we are committed to developing innovative and scalable technologies that are necessary to bring you the freshest, most sublime seafood experience to the table.</p></div></div></div></div></div></div></div></div></div></div><div name="Products"><div class="flex-column Big-section Big-section-2" id="Products"><div class="flex-1 flex-content-center space-10"><div class="flex-content-center flex-column Products-fish-holder"><div class="collapse-row-column flex-1"><div class="flex-1 flex Section-text-holder "><div><div class="flex-content-center" style="opacity: 1;"><div class="flex flex-1 flex-content-center"><div class="false flex-1 flex-column undefined Section-text"><h4></h4><p class="">OUR FISH ARE GROWN USING THE HIGHEST STANDARDS IN AQUACULTURE. OUR FAMILY IS COMPRISED OF ENTREPRENEURS, PROFESSIONALS, STUDENTS, DOERS AND SCIENTISTS. THEY ARE THE HEART AND HUMAN COMPONENT OF THE OPERATION. THROUGH EXPLORATION, THE SHARING OF IDEAS, AND PROBLEM SOLVING, THEY EXERCISE THEIR EXPERTICE AND LEADERSHIP EVERY DAY. UNDERSTANDING THE TREMENDOUS RESPONSIBILITY THAT GOES HAND IN HAND IN THE PRODUCTION OF FOOD SECURITY FOR THE FUTURE IS THEIR ULTIMARTE GOAL.  IT IS FROM THIS CONNECTION THAT WE ARE ALWAYS TRYING TO PUSH THE BOUNDARIES OF WHAT IS POSSIBLE IN AQUACULTURE TO BRING THE BEST TASTING FISH TO THE MARKETAND FAMILIES AROUND THE GLOBE.</p></div></div></div></div></div></div><div class="Products-fish"><div class="Products-fish-square"><div class="Products-roll Products-animation"><div class="Products Products-animation"><a href="http://localhost:3000/products/grouper"><div class="Products-text flex flex-content-center"><div><div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="363.732px" height="133.421px" viewBox="0 0 363.732 133.421" enable-background="new 0 0 363.732 133.421" xml:space="preserve" class="injected-svg image" style="fill:black" data-src="/static/media/grouper.1bce0cbe.svg">
+<path d="M83.374,26.324l-0.9,3.603c-2.202-0.5-6.105-1.101-10.811,1.702c-6.905,4.104-8.507,12.211-4.304,19.316  c4.304,7.308,12.211,9.509,18.917,5.505c5.005-3.002,6.606-6.905,7.006-8.407l-3.703-6.306l-6.706,4.004l-1.802-3.103l10.109-6.006  l6.405,10.91c-1.301,5.204-4.304,9.108-9.408,12.11c-8.608,5.105-18.917,2.503-24.422-6.605c-5.205-8.808-2.803-19.518,6.006-24.723  C75.667,24.923,80.871,25.624,83.374,26.324z"></path>
+<path d="M96.085,15.915l8.408-3.003c6.706-2.402,11.51-0.3,13.513,5.505c1.4,3.903,0.7,8.208-2.604,10.81l13.612,12.211  l-4.204,1.501L112.3,31.229l-5.605,2.002l5.105,14.312l-3.805,1.4L96.085,15.915z M109.998,28.226  c3.903-1.401,5.605-4.003,4.104-8.408c-1.201-3.503-3.903-5.104-8.607-3.503l-4.304,1.501l4.304,11.911L109.998,28.226z"></path>
+<path d="M145.631,2.002c10.108-1.501,18.816,5.305,20.317,15.414c1.501,10.209-5.004,19.118-15.114,20.518  c-10.009,1.502-18.717-5.104-20.218-15.414C129.015,12.311,135.521,3.403,145.631,2.002z M150.334,34.231  c7.707-1.101,12.611-8.007,11.411-16.214c-1.201-8.107-7.906-13.412-15.613-12.211c-7.707,1.101-12.611,8.107-11.411,16.215  C135.922,30.127,142.627,35.332,150.334,34.231z"></path>
+<path d="M176.358,22.42L177.859,0l4.004,0.3l-1.502,22.42c-0.4,5.805,2.402,9.709,8.309,10.11c5.904,0.4,9.309-3.104,9.708-8.909  l1.502-22.42l4.004,0.3l-1.501,22.42c-0.501,7.907-5.604,12.911-13.913,12.312C180.061,35.932,175.759,30.328,176.358,22.42z"></path>
+<path d="M219.097,4.604l9.309,2.302c6.206,1.501,9.208,6.206,7.707,12.312c-1.501,6.105-6.706,8.908-12.611,7.407l-5.404-1.301  l-3.604,14.212l-3.901-1L219.097,4.604z M224.002,23.121c4.104,1.001,7.105-0.901,8.107-4.804c1-3.904-0.801-6.906-4.905-7.907  l-5.005-1.301l-3.203,12.812L224.002,23.121z"></path>
+<path d="M250.224,13.612l15.313,6.406l-1.4,3.403l-11.61-4.804l-4.504,10.81l10.109,4.204l-1.402,3.403l-10.108-4.203l-4.805,11.41  l12.111,5.004l-1.401,3.403l-15.813-6.606L250.224,13.612z"></path>
+<path d="M278.35,26.424l7.605,4.704c6.105,3.703,7.407,8.808,4.204,14.013c-2.202,3.503-5.904,5.705-10.009,4.704l-1.001,18.217  l-3.804-2.402l1.201-17.116l-5.104-3.102l-7.907,13.011l-3.503-2.102L278.35,26.424z M277.449,44.941  c3.504,2.103,6.707,1.901,9.109-2.103c1.9-3.202,1.602-6.305-2.703-8.808l-3.903-2.401l-6.605,10.809L277.449,44.941z"></path>
+</svg></div></div></div><img src="./Aqquua_files/grouper.60d6a02c.png" class="image"> </a></div></div></div><div class="Products-fish-square"><div class="Products-roll Products-animation"><div class="Products Products-animation"><a href="http://localhost:3000/products/hirame"><div class="Products-text flex flex-content-center"><div><div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="363.732px" height="133.421px" viewBox="0 0 363.732 133.421" enable-background="new 0 0 363.732 133.421" xml:space="preserve" class="injected-svg image" style="fill:black" data-src="/static/media/hirame.9478d174.svg">
+<path d="M84.06,21.92l3.704-1.602l6.005,14.112l17.116-7.306l-6.005-14.113l3.703-1.601l13.712,32.229l-3.703,1.602l-6.206-14.613  l-17.115,7.207l6.206,14.713l-3.703,1.602L84.06,21.92z"></path>
+<path d="M122.796,7.407l3.903-1.001l9.008,33.832l-3.903,1L122.796,7.407z"></path>
+<path d="M140.612,3.103l8.808-1.201c7.106-1.001,11.311,2.102,12.111,8.107c0.601,4.104-1,8.208-4.804,10.009l10.81,14.713  l-4.504,0.601l-9.909-14.013l-5.905,0.801l2.102,15.113l-4.003,0.501L140.612,3.103z M151.622,18.117  c4.104-0.601,6.306-2.803,5.705-7.307c-0.5-3.704-2.803-5.805-7.707-5.205l-4.604,0.601l1.702,12.512L151.622,18.117z"></path>
+<path d="M179.447,23.421l-4.704,11.21l-4.104-0.201L185.252,0l4.104,0.2l11.71,35.532l-4.104-0.2l-3.703-11.51L179.447,23.421z   M187.154,4.504l-6.206,15.514l11.209,0.5L187.154,4.504z"></path>
+<path d="M226.09,33.03l19.117-22.921l5.004,1.301l-8.908,33.831L237.5,44.24l7.406-27.925l-18.116,21.92l-3.903-1.002l-4.904-27.925  l-7.406,27.925l-3.805-1l8.908-33.831l5.005,1.301L226.09,33.03z"></path>
+<path d="M265.025,18.117l14.913,7.307l-1.602,3.302l-11.311-5.504l-5.104,10.51l9.809,4.804l-1.602,3.303l-9.809-4.804  l-5.505,11.109l11.812,5.805l-1.602,3.303l-15.414-7.605L265.025,18.117z"></path>
+</svg></div></div></div><img src="./Aqquua_files/hirame.d7a337a5.png" class="image"> </a></div></div></div><div class="Products-fish-square"><div class="Products-roll Products-animation"><div class="Products Products-animation"><a href="http://localhost:3000/products/mahimahi"><div class="Products-text flex flex-content-center"><div><div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="363.732px" height="133.421px" viewBox="-20.877 0.263 363.732 133.421" enable-background="new -20.877 0.263 363.732 133.421" xml:space="preserve" class="injected-svg image" style="fill:black" data-src="/static/media/mahimahi.56cd4c7a.svg">
+<g>
+	<path fill="#231F20" d="M52.404,63.947l-5.791-29.223l4.153-3.043L71.449,59.91l-3.146,2.307L51.225,38.906l5.629,27.731L53.627,69   L28.883,55.275L45.96,78.586l-3.146,2.305L22.133,52.659l4.194-3.073L52.404,63.947z"></path>
+	<path fill="#231F20" d="M79.706,43.524l0.689,12.083l-3.758,1.64l-1.988-37.316l3.758-1.639l26.001,26.84l-3.758,1.641   l-8.387-8.724L79.706,43.524z M78.308,23.189l1.146,16.628l10.311-4.499L78.308,23.189z"></path>
+	<path fill="#231F20" d="M102.69,9.259l3.955-0.869l3.294,14.99l18.165-3.991l-3.294-14.99l3.955-0.869l7.511,34.181l-3.956,0.869   l-3.422-15.576l-18.165,3.991l3.423,15.577l-3.955,0.869L102.69,9.259z"></path>
+	<path fill="#231F20" d="M143.384,2.176l4.038-0.306l2.636,34.905l-4.038,0.305L143.384,2.176z"></path>
+	<path fill="#231F20" d="M158.582,19.437l12.748,0.245l-0.07,3.699l-12.748-0.245L158.582,19.437z"></path>
+	<path fill="#231F20" d="M197.605,32.066L215.32,8.11l5.047,1.024l-6.956,34.3l-3.821-0.774l5.743-28.322l-16.722,22.831   l-3.92-0.794l-6.506-27.542l-5.742,28.322l-3.822-0.774l6.956-34.3l5.096,1.034L197.605,32.066z"></path>
+	<path fill="#231F20" d="M231.074,38.506l-8.463,8.653l-3.743-1.672l26.229-26.622l3.742,1.671l-2.304,37.302l-3.743-1.671   l0.79-12.077L231.074,38.506z M245.155,23.764L233.643,35.82l10.272,4.585L245.155,23.764z"></path>
+	<path fill="#231F20" d="M271.889,32.396l3.309,2.336l-8.854,12.539l15.192,10.728l8.854-12.539l3.308,2.335l-20.187,28.588   l-3.308-2.335l9.198-13.027L264.21,50.292l-9.198,13.028l-3.309-2.336L271.889,32.396z"></path>
+	<path fill="#231F20" d="M304.535,57.691l2.945,2.777l-24.016,25.452l-2.945-2.779L304.535,57.691z"></path>
+</g>
+</svg></div></div></div><img src="./Aqquua_files/mahimahi.a81164fb.png" class="image"> </a></div></div></div><div class="Products-fish-square"><div class="Products-roll Products-animation"><div class="Products Products-animation"><a href="http://localhost:3000/products/redsnapper"><div class="Products-text flex flex-content-center"><div><div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="363.732px" height="133.421px" viewBox="-20.877 0.263 363.732 133.421" enable-background="new -20.877 0.263 363.732 133.421" xml:space="preserve" class="injected-svg image" style="fill:black" data-src="/static/media/redsnapper.bba5dc95.svg">
+<path d="M9.132,67.023l6.406-6.205c5.104-5.006,10.309-5.006,14.613-0.701c2.902,3.002,4.104,7.105,2.102,10.91l17.416,5.404  l-3.203,3.104l-16.314-5.406l-4.304,4.205l10.61,10.91l-2.903,2.801L9.132,67.023z M26.848,72.428  c2.903-2.902,3.403-6.006,0.2-9.309c-2.603-2.602-5.705-3.002-9.208,0.4l-3.303,3.203l8.808,9.109L26.848,72.428z"></path>
+<path d="M34.755,43.902l13.512-9.609l2.102,3.003L40.16,44.603l6.706,9.508l8.908-6.305l2.102,3.002l-8.908,6.305l7.106,10.109  l10.709-7.605l2.102,3.002l-13.913,9.908L34.755,43.902z"></path>
+<path d="M60.779,26.587l6.506-3.103c10.81-5.205,19.718-2.202,24.522,7.607c5.004,10.509,1.201,18.817-9.309,23.921l-6.506,3.104  L60.779,26.587z M81.598,51.509c7.607-3.604,10.41-10.31,6.406-18.517c-3.803-7.907-10.91-10.109-18.417-6.506l-3.604,1.701  l12.011,25.023L81.598,51.509z"></path>
+<path d="M120.433,31.792c1.501,2.502,4.003,4.804,8.608,3.903c3.603-0.701,5.805-3.303,5.104-6.906  c-1.702-8.607-17.316-3.203-19.518-14.313c-1.001-4.904,2.001-9.508,8.107-10.709c6.106-1.201,9.709,2.502,11.01,4.704l-3.103,2.002  c-1.101-1.602-3.503-3.804-7.307-3.003c-3.803,0.701-5.305,3.403-4.804,6.306c1.501,7.807,17.416,3.003,19.518,14.013  c1.101,5.405-2.102,10.41-8.508,11.711c-6.706,1.301-10.509-2.402-12.211-5.405L120.433,31.792z"></path>
+<path d="M146.857,0.663l4.003-0.1l19.718,27.625l-0.4-27.825l4.004-0.1l0.5,35.032l-4.003,0.1L151.061,7.87l0.4,27.725l-4.003,0.1  L146.857,0.663z"></path>
+<path d="M190.896,25.986l-6.205,10.409l-4.004-0.801l19.317-32.029l4.004,0.801l6.405,36.833l-4.003-0.8l-2.002-11.911  L190.896,25.986z M201.206,8.37l-8.407,14.413l11.109,2.102L201.206,8.37z"></path>
+<path d="M228.531,10.572l9.008,3.303c6.006,2.202,8.508,7.207,6.306,13.112c-2.202,5.906-7.606,8.107-13.412,6.006l-5.204-1.902  l-5.105,13.712l-3.803-1.401L228.531,10.572z M231.334,29.489c3.902,1.501,7.105-0.1,8.607-3.903c1.401-3.704,0-6.906-4.004-8.408  l-4.904-1.802l-4.604,12.311L231.334,29.489z"></path>
+<path d="M258.559,22.983l8.407,4.704c5.505,3.103,7.307,8.408,4.204,13.913c-3.104,5.505-8.708,6.906-14.113,3.904l-4.805-2.703  l-7.105,12.812l-3.504-2.002L258.559,22.983z M258.458,42.101c3.704,2.002,7.106,1.001,9.009-2.602c1.901-3.503,1-6.906-2.604-8.908  l-4.504-2.502l-6.405,11.511L258.458,42.101z"></path>
+<path d="M286.283,39.699l13.111,10.109l-2.301,2.903l-9.91-7.708l-7.105,9.208l8.707,6.707l-2.201,2.902l-8.709-6.707l-7.506,9.811  l10.409,8.006l-2.202,2.902l-13.612-10.508L286.283,39.699z"></path>
+<path d="M310.005,59.416l6.105,6.506c4.904,5.205,4.904,10.41,0.501,14.613c-3.004,2.902-7.207,4.004-10.91,1.902l-5.705,17.416  l-3.104-3.303l5.605-16.215l-4.104-4.305l-11.01,10.51l-2.803-2.902L310.005,59.416z M304.4,77.031  c2.802,3.004,6.005,3.504,9.308,0.4c2.702-2.502,3.103-5.604-0.3-9.207l-3.203-3.303l-9.209,8.707L304.4,77.031z"></path>
+</svg></div></div></div><img src="./Aqquua_files/redsnapper.c7e6d685.png" class="image"> </a></div></div></div><div class="Products-fish-square"><div class="Products-roll Products-animation"><div class="Products Products-animation"><a href="http://localhost:3000/products/coraltrout"><div class="Products-text flex flex-content-center"><div><div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="363.732px" height="133.421px" viewBox="-20.877 0.263 363.732 133.421" enable-background="new -20.877 0.263 363.732 133.421" xml:space="preserve" class="injected-svg image" style="fill:black" data-src="/static/media/coraltrout.08e7639b.svg">
+<path d="M36.356,78.133c0,1.802-0.701,6.706-4.705,11.01c-7.006,7.508-17.816,7.808-25.423,0.701  c-7.607-7.006-8.107-18.017-1.401-25.323c3.604-3.903,7.707-5.204,10.009-5.505l1.802,3.403c-1.702,0.2-5.806,1.2-8.908,4.604  C2.425,72.729,3.126,81.236,9.131,86.74c6.005,5.506,14.313,5.705,19.818-0.3c3.603-3.903,3.903-8.308,4.003-9.909L36.356,78.133z"></path>
+<path d="M36.456,37.396c8.408-5.905,19.217-3.703,25.022,4.604c5.905,8.407,4.104,19.318-4.204,25.123s-19.017,3.903-25.023-4.604  C26.347,54.111,28.148,43.201,36.456,37.396z M55.173,64.02c6.306-4.403,7.707-12.812,2.903-19.617  c-4.705-6.706-13.112-8.408-19.417-3.903c-6.306,4.504-7.607,12.911-2.903,19.618C40.459,66.923,48.767,68.424,55.173,64.02z"></path>
+<path d="M64.281,21.381l8.107-3.603c6.506-2.903,11.41-1.101,13.913,4.504c1.701,3.804,1.301,8.107-1.902,10.91l14.413,11.21  l-4.104,1.802l-13.312-10.71l-5.405,2.402l6.105,13.913l-3.703,1.601L64.281,21.381z M78.995,32.692  c3.803-1.602,5.305-4.404,3.503-8.608c-1.501-3.403-4.304-4.804-8.808-2.903l-4.204,1.802l5.104,11.61L78.995,32.692z"></path>
+<path d="M107.22,30.189L105.819,42.2l-4.003,1.001l4.404-37.134l4.003-1l21.019,30.928l-4.003,1.001l-6.806-10.009L107.22,30.189z   M109.322,9.871l-1.701,16.615l10.91-2.703L109.322,9.871z"></path>
+<path d="M134.945,0.663l4.003-0.3l2.402,31.329l13.112-1.001l0.3,3.603l-17.116,1.301L134.945,0.663z"></path>
+<path d="M188.193,5.367l-9.309-1.501l0.501-3.604l22.62,3.604l-0.601,3.703l-9.308-1.501l-4.905,30.928l-4.003-0.601L188.193,5.367z  "></path>
+<path d="M214.518,6.968l8.508,2.803c6.806,2.202,9.208,6.806,7.307,12.611c-1.302,3.904-4.404,6.906-8.708,6.906l3.303,18.017  l-4.304-1.401l-2.803-16.916l-5.705-1.802L207.411,41.6l-3.903-1.301L214.518,6.968z M217.92,25.185  c3.904,1.301,6.906,0.3,8.309-4.104c1.101-3.503,0.1-6.506-4.604-8.007l-4.404-1.401l-3.903,12.011L217.92,25.185z"></path>
+<path d="M262.16,26.186c8.908,5.004,11.711,15.714,6.707,24.622c-5.105,9.009-15.615,12.011-24.523,7.007  c-8.807-5.004-11.71-15.514-6.605-24.522C242.743,24.184,253.353,21.181,262.16,26.186z M246.246,54.512  c6.807,3.803,14.914,1.4,18.917-5.806c4.004-7.106,1.901-15.414-4.904-19.217c-6.806-3.803-14.913-1.301-18.917,5.805  C237.238,42.5,239.439,50.708,246.246,54.512z"></path>
+<path d="M273.971,61.117l14.914-16.815l3.003,2.703L276.975,63.72c-3.904,4.304-4.004,9.208,0.4,13.112  c4.403,3.903,9.207,3.203,13.111-1.102L305.3,59.016l3.003,2.703l-14.914,16.715c-5.205,5.904-12.411,6.705-18.617,1.201  C268.666,74.029,268.666,67.023,273.971,61.117z"></path>
+<path d="M319.913,80.635l-5.806-7.406l2.902-2.303l14.213,18.018l-2.902,2.301l-5.805-7.406l-24.623,19.418l-2.502-3.203  L319.913,80.635z"></path>
+</svg></div></div></div><img src="./Aqquua_files/coraltrout.f8ace0c9.png" class="image"> </a></div></div></div><div class="Products-fish-square"><div class="Products-roll Products-animation"><div class="Products Products-animation"><a href="http://localhost:3000/products/tuna"><div class="Products-text flex flex-content-center"><div><div><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Layer_1" x="0px" y="0px" width="363.732px" height="133.421px" viewBox="-20.877 0.263 363.732 133.421" enable-background="new -20.877 0.263 363.732 133.421" xml:space="preserve" class="injected-svg image" style="fill:black" data-src="/static/media/tuna.96520dcb.svg">
+<g>
+	<path fill="#231F20" d="M-20.877,103.918l5.277-8.077c3.638-5.566,8.534-6.847,13.18-3.812c2.931,1.914,4.234,4.856,3.985,7.979   c2.837-2.148,6.592-2.502,10.149-0.177c5.273,3.444,5.841,9.249,2.56,14.272l-5.853,8.957L-20.877,103.918z M-2.671,103.749   c1.914-2.93,1.205-6.141-1.767-8.081c-2.889-1.888-5.851-1.374-7.901,1.766l-3.31,5.063l9.67,6.317L-2.671,103.749z M10.92,112.748   c2.27-3.475,2.182-6.995-1.586-9.457c-3.852-2.516-7.025-0.946-9.24,2.443l-3.227,4.938l10.799,7.056L10.92,112.748z"></path>
+	<path fill="#231F20" d="M-1.08,76.019l2.703-3.016l23.348,20.918l8.741-9.757L36.43,86.6L24.986,99.372L-1.08,76.019z"></path>
+	<path fill="#231F20" d="M38.142,69.73l3.832,11.479l-3.196,2.567L27.075,48.285l3.197-2.567l32.129,19.086l-3.196,2.567   l-10.382-6.219L38.142,69.73z M31.46,50.471l5.465,15.748l8.771-7.045L31.46,50.471z"></path>
+	<path fill="#231F20" d="M89.148,46.523c-0.634,1.692-2.906,6.058-8.123,8.813c-9.062,4.787-19.336,1.393-24.169-7.758   c-4.81-9.107-1.624-19.667,7.13-24.29c4.642-2.452,8.961-2.302,11.297-1.84l0.531,3.79c-1.707-0.341-5.854-0.808-9.965,1.363   c-6.853,3.619-9.086,11.81-5.28,19.015c3.806,7.206,11.608,10.096,18.771,6.313c4.686-2.475,6.451-6.517,7.046-7.962L89.148,46.523   z"></path>
+	<path fill="#231F20" d="M86.769,13.598l3.855-1.242l4.94,15.326l8.34-19.605l4.664-1.503l-8.855,20.454l20.163,12.679l-4.712,1.519   L95.963,28.919l5.398,16.753l-3.855,1.243L86.769,13.598z"></path>
+	<path fill="#231F20" d="M138.669,1.403l16.562-1.141l0.254,3.691l-12.521,0.863l0.824,11.972l10.975-0.756l0.251,3.641   l-10.976,0.756l1.076,15.614l-4.04,0.279L138.669,1.403z"></path>
+	<path fill="#231F20" d="M167.974,0.487l4.047,0.177l-1.526,34.969l-4.048-0.177L167.974,0.487z"></path>
+	<path fill="#231F20" d="M186.711,1.533l3.978,0.754l13.774,30.953l5.186-27.358l3.93,0.745l-6.518,34.382l-3.93-0.745L189.34,9.409   l-5.167,27.26l-3.979-0.753L186.711,1.533z"></path>
+	<path fill="#231F20" d="M249.619,23.993l-8.5-4.127l1.615-3.328l20.6,10.001l-1.617,3.329l-8.455-4.106l-13.67,28.155l-3.643-1.769   L249.619,23.993z"></path>
+	<path fill="#231F20" d="M261.447,51.288l13.206-18.154l3.275,2.382l-13.178,18.113c-3.412,4.69-3.082,9.506,1.689,12.978   c4.771,3.471,9.495,2.331,12.937-2.398l13.148-18.073l3.233,2.353l-13.178,18.114c-4.646,6.388-11.635,7.92-18.347,3.037   C257.441,64.697,256.77,57.716,261.447,51.288z"></path>
+	<path fill="#231F20" d="M307.829,59.217l2.724,2.996l-7.627,33.012l20.608-18.73l2.69,2.959l-25.898,23.54l-2.689-2.959   l7.552-32.945l-20.532,18.664l-2.725-2.996L307.829,59.217z"></path>
+	<path fill="#231F20" d="M318.001,108.982l-11.892,2.239L304,107.707l36.746-6.778l2.109,3.515l-23.265,29.24l-2.11-3.515l7.57-9.44   L318.001,108.982z M337.986,104.975l-16.342,3.278l5.789,9.645L337.986,104.975z"></path>
+</g>
+</svg></div></div></div><img src="./Aqquua_files/tuna.af0ec996.png" class="image"> </a></div></div></div></div></div></div></div></div><div name="Farm"><div class="flex-column Big-section Big-section-3" id="Farm"><div class="flex-1 flex-content-center space-10"><div class="flex-content-center flex-column "><div class="collapse-row-column flex-1"><div class="flex-1 Section-number-holder flex"><div><div class="undefined" style="opacity: 1;"><div class="Section-number text-white flex-1">2<span>.</span></div></div></div></div><div class="flex-1 flex Section-text-holder "><div><div class="false" style="opacity: 0.195;"><div class="flex flex-1 flex-content-center"><div class="text-white flex-1 flex-column undefined Section-text"><h4>WE ARE NON CONFORMISTS</h4><p class="">We took a deep dive to understand why aquaculture still gets a bad name, We learned that if we are to change that negative perception we need to be transparent and authentic in everything we do. Making the transition from a “wild caught” product to a farmed one will be achieved by earning public trust. We see it as our duty to educate the public to the multiple health benefits of eating farmed fish products. We are working tirelessly until this message has been made crystal clear.</p></div></div></div></div></div></div></div></div></div></div><div><div class="flex-column Big-section Big-section-4" id=""><div class="flex-1 flex-content-center space-10"><div class="flex-content-center flex-column "><div class="collapse-row-column flex-1"><div class="flex-1 Section-number-holder flex"><div><div class="undefined" style="opacity: 0;"><div class="Section-number text-white flex-1">3<span>.</span></div></div></div></div><div class="flex-1 flex Section-text-holder "><div><div class="false" style="opacity: 0;"><div class="flex flex-1 flex-content-center"><div class="text-white flex-1 flex-column undefined Section-text"><h4>WE ARE INNOVATORS</h4><p class="">We are actively contributing to the development of scientifically comprehensive and genetics research. This is integral to positioning fin-fish, and the marine aquaculture industry as the dominant contributor of environmentally sustainable marine protein worldwide. To this end, Aqquuas’ scientific mission is to integrate every genotypic and phenotypic breakthrough achieved toward improving the commercial viability of the subject species within the local and global aquaculture industry.</p></div></div></div></div></div></div></div></div></div></div><div name="RD"><div class="flex-column Big-section Big-section-5" id="RD"><div class="flex-1 flex-content-center space-10"><div class="flex-content-center flex-column "><div class="collapse-row-column flex-1"><div class="flex-1 Section-number-holder flex"><div><div class="undefined" style="opacity: 0;"><div class="Section-number text-white flex-1">4<span>.</span></div></div></div></div><div class="flex-1 flex Section-text-holder "><div><div class="false" style="opacity: 0;"><div class="flex flex-1 flex-content-center"><div class="text-white flex-1 flex-column undefined Section-text"><h4>NURTURING LEADERS</h4><p class="">Helping to educate the next leaders in aquaculture is something we take to epi-center. Bringing academic knowledge together with commercial aquaculture experience is the road to future achievements in aquaculture success. Our strategic partnerships with the university of Miami and Burapha university Thailand, have helped lay the necessary research foundation that informs our commercial strategy and allows us to be an exemplar of eco-friendly and sustainable business practices.</p></div></div></div></div></div></div><div><div class="undefined" style="opacity: 0;"><div class="flex space-10 w-vw"><div class="flex-1 flex-content-center"><a href="http://localhost:3000/university-research/um"><img src="./Aqquua_files/miami.2e60114c.png" alt="um" class="image School-emblem"></a></div><div class="flex-1 flex-content-center"><a href="http://localhost:3000/university-research/burapha"><img src="./Aqquua_files/burapha.b87e16a4.png" alt="burapha" class="image School-emblem"></a></div></div></div></div></div></div></div></div><div><div class="flex-column Big-section Big-section-6" id=""><div class="flex-1 flex-content-center space-10"><div class="flex-content-center flex-column "><div class="collapse-row-column flex-1"><div class="flex-1 Section-number-holder flex"><div><div class="undefined" style="opacity: 0;"><div class="Section-number text-white flex-1">5<span>.</span></div></div></div></div><div class="flex-1 flex Section-text-holder "><div><div class="false" style="opacity: 0;"><div class="flex flex-1 flex-content-center"><div class="text-white flex-1 flex-column undefined Section-text"><h4>DESIGNING THE FUTURE</h4><p class="">Conceptualizing and manufacturing a new RAS is at the heart of the future of aquaculture. Aqquua is developing a modular style RAS that can be constructed in a cost effective way with the flexibility to move ones’ assets from one site to another. We are also exploring new mechanisms to re-circulate water and the best procedures to manage waste-water in an environmental conscious and responsible way.</p></div></div></div></div></div></div></div></div></div></div><div name="Recipes"><div class="flex-column Big-section Big-section-7" id="Recipes"><div class="flex-1 flex-content-center space-10"><div class="flex-content-center flex-column "><div class="collapse-row-column flex-1"><div class="flex-1 flex Section-text-holder "><div><div class="flex-content-center" style="opacity: 0;"><div class="flex flex-1 flex-content-center"><div class="text-white flex-1 flex-column undefined Section-text"><h4></h4><p class="">health</p></div></div></div></div></div></div></div></div></div></div><div name="Eat-fish"><div class="flex-column Big-section Big-section-8" id="Eat-fish"><div class="flex-1 flex-content-center space-10"><div class="flex-content-center flex-column "><div class="collapse-row-column flex-1"><div class="flex-1 Section-number-holder flex"><div><div class="undefined" style="opacity: 0;"><div class="Section-number text-white flex-1">6<span>.</span></div></div></div></div><div class="flex-1 flex Section-text-holder "><div><div class="false" style="opacity: 0;"><div class="flex flex-1 flex-content-center"><div class="text-white flex-1 flex-column undefined Section-text"><h4>DOING IT IN STYLE</h4><p class="">Showing our true colors in the way we raise our fish is the way to ensure 100% transparency and traceability. That’s why we have become proud members of the EATFISH platform, whose sole purpose is to efficiently track fish from our farm directly to your table.</p></div></div></div></div></div></div><div><div class="undefined" style="opacity: 0;"><div class="flex-1 flex-content-center space-10"><div class="flip-container"><div class="flipper"><div class="front"><img src="./Aqquua_files/eatfishiconred.89ad2246.png" alt="Eat Fish" class="image Eat-fish-tag-icon"></div><div class="back"><img src="./Aqquua_files/eatfishiconyellow.794e1d84.png" alt="Eat Fish" class="image Eat-fish-tag-icon"></div></div></div></div><p style="color: white; font-size: 2rem;">SEE MORE ABOVE</p></div></div></div></div></div></div><div name="Sustainability"><div class="flex-column Big-section Big-section-9" id="Sustainability"><div class="flex-1 flex-content-center space-10"><div class="flex-content-center flex-column "><div class="collapse-row-column flex-1"><div class="flex-1 Section-number-holder flex"><div><div class="undefined" style="opacity: 0;"><div class="Section-number text-white flex-1">7<span>.</span></div></div></div></div><div class="flex-1 flex Section-text-holder "><div><div class="false" style="opacity: 0;"><div class="flex flex-1 flex-content-center"><div class="text-white flex-1 flex-column undefined Section-text"><h4>WE PLANT THE SEED</h4><p class="">Global warming is growing at an alarming rate and as a consequence seasonal and climate changes are a challenge to the “fish food” industry whether out to sea or on land. We raise our fish in a controlled, clean and happy home with no environmental consequences. In addition we make direct contributions to mangrove conservation and restoration literally in our own back yard.</p></div></div></div></div></div></div></div></div></div></div><div class="flex-column Big-section"><div class="flex flex-column Ribbons-container"><div class="flex-1"><div><div class="absolute" style="left: 100%;"><img src="./Aqquua_files/coraltroutsmall.60e8bb4c.png" class="Ribbons Ribbons-left" alt="Aqquua" style="background: rgb(236, 93, 115);"></div></div></div><div class="flex-1"><div><div class="absolute" style="right: 100%;"><img src="./Aqquua_files/hiramesmall.b1ab8b27.png" class="Ribbons Ribbons-right" alt="Aqquua" style="background: rgb(156, 232, 129);"></div></div></div></div></div><div name="Contact"><div class="flex-column Contact-section" id="Contact"><div class="flex-1 flex-content-center space-10 flex-column"><div class="Contact-holder"><h3>CONTACT US</h3><div class="Contact-caption">AQQUUA IS AN OPEN DOOR OPERATION. WHETHER YOU ARE A SEAFOOD CUSTOMER, RETAILER, CHEF, MEMBER OF THE PRESS OR MEDIA, OR EDUCATOR LOOKING FOR MORE INFORMATION ABOUT AQQUUA, WE CAN BE REACHED THROUGH SOCIAL MEDIA OR WITH THE BELOW INFO. WE WELCOME ALL KINDS OF INQUIRIES.</div><hr><div class="flex collapse-row-column"><div class="Contact-addresses"><address translate="no"><p><span>US</span><br>WeWork c/o Aqquua<br>450 Lexington Avenue<br>New York, NY 10017<br>+1 646 719 0377</p></address><address translate="no"><p><span>Thailand</span><br>39 Moo 9<br>T.Bangkachai A.Leam Sing<br>Chanthaburi 22120<br>+ 66 98 935 7644</p></address></div><div class="Contact-form"><form><div class="flex"><input placeholder="First Name" class="Contact-fname"><input placeholder="Last Name" class="Contact-lname"></div><input placeholder="Email" class="Contact-email"><textarea placeholder="Message . . ." class="Contact-message"></textarea></form></div></div></div></div></div></div></div></div></div></main></div>
+  <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+
+<script type="text/javascript" src="./Aqquua_files/bundle.js"></script>
+
+</body></html>

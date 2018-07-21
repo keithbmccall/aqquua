@@ -34,55 +34,53 @@
   @include transform(translateX(0%) !important);
 }
 
-
-
-
-
 //
 //
 /* entire container, keeps perspective */
-.flip-container {
-  perspective: 1000px;
-}
-/* flip the pane when hovered */
-.flip-container:hover .flipper,
-.flip-container.hover .flipper {
-  transform: rotateY(180deg);
-}
+.Eat-fish {
+  &-flip-container {
+    perspective: 1000px;
+  }
+  /* flip the pane when hovered */
+  &-flip-container:hover &-flipper,
+  &-flip-container.hover &-flipper {
+    transform: rotateY(180deg);
+  }
 
-.flip-container,
-.front,
-.back {
-  width: 12rem;
-  height: 12rem;
-}
+  &-flip-container,
+  &-front,
+  &-back {
+    width: 12rem;
+    height: 12rem;
+  }
 
-/* flip speed goes here */
-.flipper {
-  transition: 0.5s;
-  transform-style: preserve-3d;
+  /* flip speed goes here */
+  &-flipper {
+    transition: 0.5s;
+    transform-style: preserve-3d;
 
-  position: relative;
-}
+    position: relative;
+  }
 
-/* hide back of pane during swap */
-.front,
-.back {
-  backface-visibility: hidden;
+  /* hide back of pane during swap */
+  &-front,
+  &-back {
+    backface-visibility: hidden;
 
-  position: absolute;
-  top: 0;
-  left: 0;
-}
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 
-/* front pane, placed above back */
-.front {
-  z-index: 2;
-  /* for firefox 31 */
-  transform: rotateY(0deg);
-}
+  /* front pane, placed above back */
+  &-front {
+    z-index: 2;
+    /* for firefox 31 */
+    transform: rotateY(0deg);
+  }
 
-/* back, initially hidden pane */
-.back {
-  transform: rotateY(180deg);
+  /* back, initially hidden pane */
+  &-back {
+    transform: rotateY(180deg);
+  }
 }

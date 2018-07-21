@@ -24,7 +24,7 @@
   }
   .Wa {
     &-text {
-      font-size: 1rem;
+      font-size: 2.8rem;
     }
     &-title-mid {
     }
@@ -35,7 +35,7 @@
       top: 30%;
       line-height: 4.5rem;
       @include transform(translateX(-50%));
-      @include transition(all 2.5s ease-in-out);
+      @include transition(all 3s ease-in-out);
       @include tablet {
         line-height: 11rem !important;
       }
@@ -44,12 +44,17 @@
       }
     }
     &-title-fade {
-      color: $greycolor;
+      color: rgb(151, 151, 151);
     }
     @for $i from 0 through 28 {
-      &-#{$i} {
-        left: 50% !important;
-        @include transform(translateX(-50%) !important);
+      @if $i % 2 == 0 {
+        &-#{$i} {
+          left: 0 !important;
+        }
+      } @else {
+        &-#{$i} {
+          right: 0 !important;
+        }
       }
     }
     &-0 {
@@ -98,7 +103,8 @@
   @include tabtop {
     @for $i from 0 through 14 {
       .Wa-#{$i} {
-        @include transform(initial !important);
+        right: initial;
+        left: initial;
       }
     }
   }

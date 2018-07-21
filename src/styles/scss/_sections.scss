@@ -108,19 +108,17 @@
 // .Big-section-1 {
 //   background: $ottercolor;
 // }
-.Big-section-8 {
-  background: white;
-}
+
 .Big-section-1 {
   background: $poppycolor;
 }
-.Big-section-6 {
+.Big-section-5 {
   background: $festivecolor;
 }
-.Big-section-4 {
+.Big-section-3 {
   background: $daphnecolor;
 }
-.Big-section-5 {
+.Big-section-4 {
   background: linear-gradient(
     to bottom right,
     #210420,
@@ -131,7 +129,7 @@
     #9b0096
   );
 }
-.Big-section-7 {
+.Big-section-6 {
   background: linear-gradient(
     to bottom right,
     #f79d04,
@@ -162,6 +160,12 @@
 }
 .Big-section-2 {
   background: white;
+  .space-10 {
+    @include mobile {
+      margin: initial !important;
+    }
+  }
+
   .content {
     max-width: 200px;
     flex-wrap: wrap;
@@ -193,10 +197,42 @@
 .School-emblem {
   @include transition(transform 0.3s ease-in-out);
   &:hover {
-    @include transform(scale(1.1));
+    @include transform(scale(1.05));
   }
 }
 .Eat-fish-tag-icon {
-  @include transform(scale(1.5));
+  @include transform(scale(1.2));
   cursor: pointer;
+}
+.Recipes-container {
+  // margin-bottom: -1rem;
+  .Recipes-overlay {
+    background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.1),
+      black
+    );
+    height: 100%;
+    width: 100%;
+  }
+  .Recipes-image-holder {
+    position: relative;
+    flex: 1;
+    height: 33.3vh;
+    overflow: hidden;
+    @include tabtop {
+      height: 40vh;
+    }
+    &:hover .image {
+      transform: scale(1.08);
+    }
+    .image {
+      background-size: cover !important;
+      background-position: center center !important;
+      background-repeat: no-repeat !important;
+      flex: 1;
+      transition: all 0.6s ease-in-out;
+    }
+  }
 }

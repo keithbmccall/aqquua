@@ -1,22 +1,23 @@
 import React from "react";
 import HeaderSection from "./sections/HeaderSection";
-import Contact from "../../containers/contact/Contact";
 import SubHeaderSection from "./sections/SubHeaderSection";
 import LandingSection from "./sections/LandingSection";
 import { Element } from "react-scroll";
 import WaveAnimation from "../animations/WaveAnimation";
 import RibbonSection from "./sections/RibbonsSection";
+import ContactContainer from "../../containers/contact/ContactContainer";
+import RecipesSection from "./sections/RecipesSection";
 //
 const Landing = props => {
   const { sectionData } = props;
   const renderSections = (item, key) => {
     const index = key;
     return (
-      <Element name={item.id}>
+      <Element name={item.id} key={key}>
         {index === 0 ? (
-          <div id="About">
-            <SubHeaderSection item={item} key={key} />
-          </div>
+          <SubHeaderSection item={item} index={key} />
+        ) : item.id === "Recipes" ? (
+          <RecipesSection item={item} index={key} />
         ) : (
           <LandingSection item={item} index={key} />
         )}
@@ -31,7 +32,7 @@ const Landing = props => {
       {sections}
       <RibbonSection item={props.ribbons} />
       <Element name="Contact">
-        <Contact contactInfo={props.contactInfo} />
+        <ContactContainer contactInfo={props.contactInfo} />
       </Element>
     </div>
   );

@@ -1,0 +1,89 @@
+.Farm-container {
+  align-items: center;
+}
+.Content-media {
+  align-items: center;
+  @include tabtop {
+    width: 100vw;
+  }
+}
+.Content-info-holder {
+  justify-content: center;
+  .Content-logo-holder {
+    flex: 1;
+    margin-bottom: 1rem;
+  }
+  .Content-info {
+    align-items: center;
+    &:first-child {
+      max-width: 80%;
+      @include tabtop {
+        max-width: 60%;
+      }
+    }
+  }
+
+  @include tabtop {
+    padding-top: 3rem;
+    padding: 3rem 4rem;
+
+    .Content-info {
+      flex: 2;
+      align-items: initial;
+    }
+  }
+  h1 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    margin-bottom: 1rem;
+    @extend .geo-bold-italics;
+  }
+  p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+.Genetics-container {
+  @include tabtop {
+    .space-10 {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+.Content-image-title {
+  max-width: 100%;
+  .image {
+    width: 50%;
+  }
+  .collapse-row-column {
+    // border:2px solid black;
+    justify-content: space-evenly;
+    margin-bottom: 3rem;
+  }
+  img {
+    align-self: center;
+  }
+  h3 {
+    // border:2px solid black;
+    align-self: center;
+    order: -1;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+    @extend .geo-bold-italics;
+  }
+
+  @include tabtop {
+    .image {
+      width: 30%;
+    }
+    .collapse-row-column {
+      justify-content: center;
+      :first-child {
+        margin-right: 10%;
+      }
+      h3 {
+        order: initial;
+      }
+    }
+  }
+}

@@ -6,7 +6,9 @@ import {
   fishProductsInfo,
   contactInfo,
   ribbons,
-  researchInfo
+  researchInfo,
+  farmInfo,
+  geneticsInfo
 } from "./data";
 
 export {
@@ -17,5 +19,7 @@ export {
   fishProductsInfo,
   contactInfo,
   ribbons,
-  researchInfo
+  researchInfo,
+  farmInfo,
+  geneticsInfo
 };

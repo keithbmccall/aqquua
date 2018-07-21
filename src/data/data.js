@@ -53,12 +53,12 @@ const weAreContent = [
     color: "#66848f"
   },
   {
-    content: "aquaculture",
-    color: "#f16c4d"
-  },
-  {
     content: "creative",
     color: "#00B6D9"
+  },
+  {
+    content: "aquaculture",
+    color: "#f16c4d"
   },
   {
     content: "authentic",
@@ -121,13 +121,18 @@ const weAreContent = [
 export const navbarLinks = [
   {
     title: "About",
-    color: "#ffc702",
+    color: "#f32e37",
     id: "About"
   },
   {
     title: "Farm",
-    color: "#e15d44",
+    color: "#16639f",
     id: "Farm"
+  },
+  {
+    title: "Genetics",
+    color: "#620c5f",
+    id: "Genetics"
   },
   {
     title: "Products",
@@ -136,7 +141,7 @@ export const navbarLinks = [
   },
   {
     title: "R&D",
-    color: "#f32e37",
+    color: "#e15d44",
     id: "RD"
   },
   {
@@ -146,12 +151,12 @@ export const navbarLinks = [
   },
   {
     title: "Eat Fish",
-    color: "#c3447a",
+    color: "#ff2882",
     id: "Eat-fish"
   },
   {
     title: "Sustainability",
-    color: "#5ad0ba",
+    color: "#28c900",
     id: "Sustainability"
   },
 
@@ -185,7 +190,7 @@ export const sectionData = [
     number: 1,
     headline: "WE TAKE OUR JOB SERIOUSLY",
     caption:
-      "Every day we use best practices to make sure all of our operations are properly executed and managed to bring you a first rate high quality responsibly raised product, free of chemicals, antibiotics and hormones. Our job is to deliver 100% sustainably farmed, healthy, fresh and tasty fish. At Aqquua we are committed to developing innovative and scalable technologies that are necessary to bring the freshest, highest quality seafood experience to the table."
+      "Every day we use best practices to make sure all of our operations are properly executed and managed to bring you a first rate high quality responsibly raised product, free of chemicals, antibiotics and hormones. Our job is to deliver 100% sustainably farmed, healthy, fresh and tasty fish. At Aqquua we are committed to developing innovative and scalable technologies that are necessary to bring you the freshest, most sublime seafood experience to the table."
   },
 
   {
@@ -196,11 +201,6 @@ export const sectionData = [
     fish: images.productsFish
   },
   {
-    caption: "health",
-    id: "Recipes"
-  },
-
-  {
     id: "Farm",
     number: 2,
     title: "Farm",
@@ -209,10 +209,11 @@ export const sectionData = [
       "We took a deep dive to understand why aquaculture still gets a bad name, We learned that if we are to change that negative perception we need to be transparent and authentic in everything we do. Making the transition from a “wild caught” product to a farmed one will be achieved by earning public trust. We see it as our duty to educate the public to the multiple health benefits of eating farmed fish products. We are working tirelessly until this message has been made crystal clear."
   },
   {
+    id: "Genetics",
     number: 3,
     headline: "WE ARE INNOVATORS",
     caption:
-      "We are developing IP technologies and methodologies gathered from working closely with brood-stock, eggs, larval rearing techniques and genetics. The knowledge we gain will be implemented for optimum fingerling production. We believe by doing so we will have the opportunity to tackle food security issues and make definitive contributions to restocking our oceans.",
+      "We are actively contributing to the development of scientifically comprehensive and genetics research. This is integral to positioning fin-fish, and the marine aquaculture industry as the dominant contributor of environmentally sustainable marine protein worldwide. To this end, Aqquuas’ scientific mission is to integrate every genotypic and phenotypic breakthrough achieved toward improving the commercial viability of the subject species within the local and global aquaculture industry.",
     content: {
       schools: [
         {
@@ -252,15 +253,20 @@ export const sectionData = [
       "Conceptualizing and manufacturing a new RAS is at the heart of the future of aquaculture. Aqquua is developing a modular style RAS that can be constructed in a cost effective way with the flexibility to move ones’ assets from one site to another. We are also exploring new mechanisms to re-circulate water and the best procedures to manage waste-water in an environmental conscious and responsible way."
   },
   {
+    caption: "Recipes",
+    id: "Recipes",
+    images: images.recipesImages
+  },
+  {
     id: "Eat-fish",
     title: "Eat Fish",
     eatFishTag: images.eatfishicons,
     number: 6,
     headline: "DOING IT IN STYLE",
     caption:
-      "Showing our true colors in the way we raise our fish is the way to ensure 100% transparency and traceability. That’s why we have become proud members of the Eat Fish platform, whose sole purpose is to efficiently track fish from our farm directly to your table.",
+      "Showing our true colors in the way we raise our fish is the way to ensure 100% transparency and traceability. That’s why we have become proud members of the EATFISH platform, whose sole purpose is to efficiently track fish from our farm directly to your table.",
     content:
-      "The Eat Fish platform is useful as an educational tool that lets our customer verify, learn and enjoy their purchase in a truly and innovative way by successfully providing them with 100% transparency, sustainability and traceability information. Eat Fish sole purpose is to efficiently track fish from our farm all the way to our end users table. Eat Fish enables our customer to scan the Eat Fish tag attached to our fish, which has a QR and serial code. After scanning any given fish at the retailer, our customers will find an actual image of their specific fish potential purchase, nutritional facts and farm and country of origin. It also provides a recipe api leading our customers to great food recipes for the specific fish purchase. Once at home you can submit a video of your sea-food cooking experience from your very own kitchen. This allows us to connect to our customers and get immediate reviews that can help us to best serve them in the future. We sell our products under the trade mark “Sea food for what it is”… We don’t sell you a story, we prefer to hear yours!"
+      "The EATFISH platform is useful as an educational tool that lets our customer verify, learn and enjoy their purchase in a truly and innovative way by successfully providing them with 100% transparency, sustainability and traceability information. Eat Fish sole purpose is to efficiently track fish from our farm all the way to our end users table. Eat Fish enables our customer to scan the Eat Fish tag attached to our fish, which has a QR and serial code. After scanning any given fish at the retailer, our customers will find an actual image of their specific fish potential purchase, nutritional facts and farm and country of origin. It also provides a recipe api leading our customers to great food recipes for the specific fish purchase. Once at home you can submit a video of your sea-food cooking experience from your very own kitchen. This allows us to connect to our customers and get immediate reviews that can help us to best serve them in the future. We sell our products under the trade mark “Sea food for what it is”… We don’t sell you a story, we prefer to hear yours!"
   },
   {
     id: "Sustainability",
@@ -268,7 +274,7 @@ export const sectionData = [
     number: 7,
     headline: "WE PLANT THE SEED",
     caption:
-      "Seasonal and climate changes are a challenge to the “fish food” industry whether out to sea or on land. Global warming is growing at an alarming rate. That’s why we take it to heart when tackling issues of conservation and the environment. Why we prepare ahead to meet whatever challenges may come our way in order to keep our fish home, a happy one. We know that happy fish make for great tasting fish, and that a happy planet will only come if we take appropriate action now. See our mangrove plantation initiatives (here)",
+      "Global warming is growing at an alarming rate and as a consequence seasonal and climate changes are a challenge to the “fish food” industry whether out to sea or on land. We raise our fish in a controlled, clean and happy home with no environmental consequences. In addition we make direct contributions to mangrove conservation and restoration literally in our own back yard.",
     content: {
       headline: "Mangrove Conservation:",
       text:
@@ -376,4 +382,22 @@ export const researchInfo = {
       "AQQUUA HAS AN M.O.U. WITH THE UNIVERSITY OF BURAPHA TO HELP US WITH EGG PRODUCING BROODSTOCK AND ADVANCEMENT OF OUR LARVAL REARING EFFORTS IN THAILAND. AQQUUA HAS ALSO PROVIDED SCHOLARSHIPS AND HAS HIRED GRADUATE STUDENTS FROM THE UNIVERSITY OF BURAPHA TO FURTHER THESE EFFORTS."
     ]
   }
+};
+export const farmInfo = {
+  caption: [
+    "Aqquua Farm is located on a peaceful 22 acres property in Bangachai Chanthaburi,Thailand, just a three hours drive from Cosmopolitan Bangkok.",
+    "The farm includes a hatchery, quarantine, nursery, and multiple grow-out ponds equipped with raceway technology to eliminate any stress to our fish at time of harvest.",
+    "Intake filtration and waste-water treatment technology systems are employed to give our species a controlled and clean growing habitat.",
+    "Here we produce nutritious Aqquua Grouper, and after just twenty-two months from breaking ground, and as of July 2018, we have sampled and sold over 60 tons of our Grouper to customers in the US, Thailand, Canada, China, and Hong Kong."
+  ],
+  title: "sustainable farming at aqquua",
+  titleColor: "#16639f"
+};
+export const geneticsInfo = {
+  title: "DIVERSITY IN FIN FISH IS THE FUTURE OF AQUACULTURE",
+  caption: [
+    "dreamcatcher swag YOLO occupy vegan cray wayfarers mumblecore keytar whatever Austin vinyl fingerstache Banksy pop-up organic ugh leggings roof party try-hard keffiyeh disrupt photo booth viral Williamsburg Pitchfork tofu stumptown McSweeney's pickled seitan tote bag artisan biodiesel shabby chic pour-over Thundercats Shoreditch plaid Tonx food truck mustache quinoa sriracha aesthetic bicycle rights bitters fixie squid raw denim kitsch cliche forage Helvetica brunch Etsy",
+    "post-ironic farm-to-table chillwave four loko polaroid paleo meh actually Tumblr tousled small batch cornhole pug synth Kickstarter twee literally lomo Schlitz Portland chambray sartorial put a bird on it PBR&B mixtape wolf normcore XOXO heirloom DIY church-key direct trade  sustainable Intelligentsia gentrify craft beer umami 8-bit selvage gluten-free ennui Wes Anderson narwhal flexitarian deep v cred beard kale chips bespoke single-origin coffee hoodie PBR chia before they sold out skateboard blog butcher jean shorts selfies tattooed art party readymade master cleanse VHS retro kogi Marfa yr Godard Cosby sweater authentic Truffaut salvia cardigan you probably haven't heard of them lo-fi Carles gastropub asymmetrical Brooklyn fashion axe High Life Pinterest Vice street art iPhone semiotics scenester locavore Neutra letterpress 3 wolf moon crucifix banjo ethical hashtag Blue Bottle hella pork belly mlkshk drinking vinegar slow-carb irony fap +1 trust fund messenger bag American Apparel banh mi meggings freegan fanny pack next level Echo Park Bushwick 90's typewriter distillery flannel Odd"
+  ],
+  images: images.geneticsImages
 };

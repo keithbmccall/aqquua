@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import NavbarLinks from "./NavbarLinks";
 import menu from "../../assets/images/svgs/menu.svg";
@@ -17,7 +17,6 @@ const Navbar = props => {
       />
     );
   };
-  console.log(props);
   const navLinks = props.navbarLinks.map(renderNavbarLinks);
   let navMenuOpen = props.menuOpen ? "Nav-menu-open" : "";
   return (

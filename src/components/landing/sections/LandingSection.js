@@ -1,10 +1,11 @@
-import React from "react";
+import React, { Fragment } from "react";
 import ProductsCircleMap from "../products/ProductsCircleMap";
 import SchoolEmblem from "../schools/SchoolEmblem";
 import SectionNumber from "../section-items/SectionNumber";
 import SectionText from "../section-items/SectionText";
 import TrackingAnimations from "../../animations/TrackingAnimations";
 import EatFishTagIcon from "../eat-fish/EatFishTagIcon";
+import { withRouter } from "react-router-dom";
 //
 const LandingSection = props => {
   const { item, index } = props;
@@ -16,7 +17,7 @@ const LandingSection = props => {
     >
       <div className="flex-1 flex-content-center space-10">
         <div
-          className={`flex-content-center flex-column  ${
+          className={`flex-content-center flex-column ${
             item.fish ? "Products-fish-holder" : ""
           }`}
         >
@@ -38,14 +39,11 @@ const LandingSection = props => {
                   ))}
                 </div>
               ) : (
-                <React.Fragment>
+                <Fragment>
                   <div className="flex-1 flex-content-center space-10">
                     <EatFishTagIcon item={item.eatFishTag} />
                   </div>
-                  <p style={{ color: "white", fontSize: "2rem" }}>
-                    SEE MORE ABOVE
-                  </p>
-                </React.Fragment>
+                </Fragment>
               )}
             </TrackingAnimations>
           )}
@@ -55,4 +53,4 @@ const LandingSection = props => {
     </div>
   );
 };
-export default LandingSection;
+export default withRouter(LandingSection);

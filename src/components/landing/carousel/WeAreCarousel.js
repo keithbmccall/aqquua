@@ -14,11 +14,11 @@ export default class WeAreCarousel extends Component {
     return (
       <h3
         key={key}
-        className={`Wa-text Wa-${key}`}
+        className={`Wa-text Wa-${key} ${this.state.text[key]}`}
         //Wa-${key} or
         // ${this.state.text[key]}
         style={{
-          top: key * 3.38 + "%", //6.67
+          top: key < 15 ? key * 6.3 + "%" : (key - 15) * 6.3 + "%", //6.67
           color: item.color
         }}
       >
@@ -35,7 +35,7 @@ export default class WeAreCarousel extends Component {
   textRotary = () => {
     const textInterval = setInterval(
       () =>
-        this.state.counter === 29
+        this.state.counter === 30
           ? this.setState(this.initialState, () => {
               clearInterval(textInterval);
               this.ignite();
@@ -65,7 +65,7 @@ export default class WeAreCarousel extends Component {
   };
   ignite = () => {
     this.pushTitle();
-    setTimeout(() => this.textRotary(), 1500);
+    setTimeout(() => this.textRotary(), 3000);
   };
   componentDidMount() {
     this.ignite();

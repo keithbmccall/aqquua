@@ -10,8 +10,10 @@ const RibbonSection = props => {
       >
         <img
           src={ribbon.pic}
-          className={`Ribbons ${key === 0 ? "Ribbons-left" : "Ribbons-right"}`}
-          style={{ background: ribbon.color }}
+          className={`Ribbons ${
+            key % 2 === 0 ? "Ribbons-left" : "Ribbons-right"
+          }`}
+          å
           alt="Aqquua"
         />
       </TrackingAnimations>

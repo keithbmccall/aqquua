@@ -30,6 +30,7 @@ body {
   display: flex;
   font-size: 62.5%;
   width: 100vw;
+  background: $whitebg;
 }
 .App {
   margin-top: -$navbargap;
@@ -45,7 +46,9 @@ h5,
 h6 {
   @extend .geo-bold;
 }
-
+img {
+  border-radius: 2px;
+}
 .vh {
   min-height: 100vh;
 }
@@ -131,4 +134,38 @@ h6 {
 }
 .container {
   padding-top: $navbargap;
+}
+.Research-container,
+.Products-container,
+.Farm-container,
+.Genetics-container,
+.EatFishContainer {
+  padding-top: $navbargap;
+  min-height: 100vh;
+  padding-bottom: 3rem;
+  background: $whitebg;
+  position: relative;
+}
+.media-video-holder {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+  width: 100%;
+  iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.back-arrow {
+  cursor: pointer;
+  height: 3rem !important;
+  margin-bottom: 1rem;
+  @include tabtop {
+    left: -13rem;
+    position: absolute;
+  }
 }
