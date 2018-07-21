@@ -44,7 +44,7 @@
       }
     }
     &-title-fade {
-      color: rgb(151, 151, 151);
+      color: rgb(170, 170, 170);
     }
     @for $i from 0 through 28 {
       @if $i % 2 == 0 {
