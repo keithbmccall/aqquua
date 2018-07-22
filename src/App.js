@@ -8,6 +8,8 @@ import { TransitionGroup, CSSTransition } from "react-transition-group";
 import NavbarContainer from "./containers/navbar/NavbarContainer";
 import FarmContainer from "./containers/farm/FarmContainer";
 import GeneticsContainer from "./containers/genetics/GeneticsContainer";
+import EatFishContainer from "./containers/eatfish/EatFishContainer";
+import SustainabilityContainer from "./containers/sus/SustainabilityContainer";
 //
 
 const transitionTime = 1000;
@@ -39,12 +41,18 @@ class App extends Component {
                       exact
                       path="/farm"
                       render={props => <FarmContainer {...props} />}
-                    />{" "}
+                    />
                     <Route
                       exact
                       path="/genetics"
                       render={props => <GeneticsContainer {...props} />}
                     />
+                    <Route
+                      exact
+                      path="/sustainability"
+                      render={props => <SustainabilityContainer {...props} />}
+                    />
+
                     <Route
                       path="/products/:id"
                       render={props => <ProductsContainer {...props} />}
@@ -52,6 +60,10 @@ class App extends Component {
                     <Route
                       path="/university-research/:id"
                       render={props => <ResearchContainer {...props} />}
+                    />
+                    <Route
+                      path="/eatfish"
+                      render={props => <EatFishContainer {...props} />}
                     />
                     <Route path="/" render={() => <Redirect to="/" />} />
                   </Switch>

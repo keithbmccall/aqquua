@@ -8,7 +8,9 @@ import {
   ribbons,
   researchInfo,
   farmInfo,
-  geneticsInfo
+  geneticsInfo,
+  eatFishInfo,
+  sustainabilityInfo
 } from "./data";
 
 export {
@@ -21,5 +23,7 @@ export {
   ribbons,
   researchInfo,
   farmInfo,
-  geneticsInfo
+  geneticsInfo,
+  eatFishInfo,
+  sustainabilityInfo
 };

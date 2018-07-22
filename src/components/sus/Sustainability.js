@@ -1,20 +1,22 @@
 import React from "react";
 import WaveAnimation from "../../components/animations/WaveAnimation";
-import BackArrow from "../tools/images/BackArrow";
+import BackArrow from "../../components/tools/images/BackArrow";
 import LargeTextWithTitle from "../tools/text/LargeTextWithTitle";
-import ContentLargeVideo from "../tools/media/ContentLargeVideo";
-
-const Farm = props => {
+import ContentImages from "../tools/media/ContentImages";
+//
+const Sustainability = props => {
   const { info } = props;
+
   return (
     <div className="container">
       <WaveAnimation color="white" />
-      <div className="Farm-container">
+      <div className="Eat-fish-container">
         <BackArrow color={info.titleColor} />
         <LargeTextWithTitle info={info} />
-        <ContentLargeVideo info={info.fullScreenVideo} />
+        <ContentImages info={info} />
       </div>
     </div>
   );
 };
-export default Farm;
+
+export default Sustainability;

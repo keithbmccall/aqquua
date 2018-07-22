@@ -31,11 +31,27 @@ import recipes3 from "../assets/images/png/food/stringbeans.png";
 //
 import backarrow from "../assets/images/svgs/backarrow.svg";
 // geneitcs
-import genetics1 from "../assets/images/png/farm/petridish.png";
-import genetics2 from "../assets/images/png/farm/closeview.png";
-import genetics3 from "../assets/images/png/farm/fossilish.png";
-import genetics4 from "../assets/images/png/farm/flask.png";
+import genetics1 from "../assets/images/png/genetics/petridish.png";
+import genetics2 from "../assets/images/png/genetics/closeview.png";
+import genetics3 from "../assets/images/png/genetics/fossilish.png";
+import genetics4 from "../assets/images/png/genetics/flask.png";
+import genetics5 from "../assets/images/png/genetics/baby.png";
 //
+import sus1 from "../assets/images/png/sus/girl.png";
+import sus2 from "../assets/images/png/sus/picking.png";
+import sus3 from "../assets/images/png/sus/twogirls.png";
+import sus4 from "../assets/images/png/sus/largegroup.png";
+import sus5 from "../assets/images/png/sus/flatbed.png";
+//
+import um1 from "../assets/images/png/um/boattank.png";
+import um2 from "../assets/images/png/um/clearfish.png";
+import um3 from "../assets/images/png/um/fishintank.png";
+import um4 from "../assets/images/png/um/boattank2.png";
+import um5 from "../assets/images/png/um/twoshirts.png";
+import um6 from "../assets/images/png/um/twoguys.png";
+import um7 from "../assets/images/png/um/schooloffish.png";
+import um8 from "../assets/images/png/um/twofish.png";
+
 const schools = { miami, burapha };
 const productsFish = [
   { png: grouper, svg: groupersvg },
@@ -71,7 +87,9 @@ const heroImages = {
   tuna
 };
 const recipesImages = [recipes1, recipes2, recipes3];
-const geneticsImages = [genetics1, genetics2, genetics3, genetics4];
+const geneticsImages = [genetics1, genetics2, genetics3, genetics4, genetics5];
+const sustainabilityImages = [sus1, sus2, sus3, sus4, sus5];
+const umImages = [um1, um2, um3, um4, um5, um6, um7, um8];
 const images = {
   fishPrint,
   logo,
@@ -82,7 +100,9 @@ const images = {
   heroImages,
   recipesImages,
   backarrow,
-  geneticsImages
+  geneticsImages,
+  sustainabilityImages,
+  umImages
 };
 
 export default images;

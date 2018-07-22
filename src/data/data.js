@@ -121,12 +121,12 @@ const weAreContent = [
 export const navbarLinks = [
   {
     title: "About",
-    color: "#f32e37",
+    color: "#16639f",
     id: "About"
   },
   {
     title: "Farm",
-    color: "#16639f",
+    color: "#f32e37",
     id: "Farm"
   },
   {
@@ -186,6 +186,7 @@ export const sectionData = [
   // },
   // { title: "placeholder" },
   {
+    id: "Farm",
     title: "Our Products",
     number: 1,
     headline: "WE TAKE OUR JOB SERIOUSLY",
@@ -201,9 +202,8 @@ export const sectionData = [
     fish: images.productsFish
   },
   {
-    id: "Farm",
     number: 2,
-    title: "Farm",
+    title: "Non-Conformists",
     headline: "WE ARE NON CONFORMISTS",
     caption:
       "We took a deep dive to understand why aquaculture still gets a bad name, We learned that if we are to change that negative perception we need to be transparent and authentic in everything we do. Making the transition from a “wild caught” product to a farmed one will be achieved by earning public trust. We see it as our duty to educate the public to the multiple health benefits of eating farmed fish products. We are working tirelessly until this message has been made crystal clear."
@@ -367,6 +367,7 @@ export const researchInfo = {
     name: "um",
     color: "#f37224",
     title: "Rosenstiel School of Marine and Atmospheric Science",
+    images: images.umImages,
     caption: [
       "OUR COLLABORATIVE RESEARCH AGREEMENT WITH THE UNIVERSITY OF MIAMI IS HELPING TO ADVANCE AQUACULTURE TECHNOLOGY FOR HIGH-VALUE MARINE FISH SUCH AS TUNA AND HIRAME (JAPANESE FLOUNDER) AT THE UM EXPERIMENTAL FISH HATCHERY.",
       "THE THREE-YEAR AGREEMENT BETWEEN AQQUUA AND THE UM ROSENSTIEL SCHOOL-BASED AQUACULTURE PROGRAM IS AIMED AT IMPROVING HATCHERY AND OTHER AQUACULTURE TECHNOLOGIES OF A NUMBER OF ECONOMICALLY VALUABLE SPECIES THAT HAVE NEVER BEEN DEVELOPED ELSEWHERE IN THE WORLD.",
@@ -378,6 +379,7 @@ export const researchInfo = {
     name: "burapha",
     color: "#ffdf10",
     title: "Burapha University",
+    images: [],
     caption: [
       "AQQUUA HAS AN M.O.U. WITH THE UNIVERSITY OF BURAPHA TO HELP US WITH EGG PRODUCING BROODSTOCK AND ADVANCEMENT OF OUR LARVAL REARING EFFORTS IN THAILAND. AQQUUA HAS ALSO PROVIDED SCHOLARSHIPS AND HAS HIRED GRADUATE STUDENTS FROM THE UNIVERSITY OF BURAPHA TO FURTHER THESE EFFORTS."
     ]
@@ -391,7 +393,10 @@ export const farmInfo = {
     "Here we produce nutritious Aqquua Grouper, and after just twenty-two months from breaking ground, and as of July 2018, we have sampled and sold over 60 tons of our Grouper to customers in the US, Thailand, Canada, China, and Hong Kong."
   ],
   title: "sustainable farming at aqquua",
-  titleColor: "#16639f"
+  titleColor: "#f32e37",
+  fullScreenVideos: [
+    { video: "https://player.vimeo.com/video/281181900", title: "" }
+  ]
 };
 export const geneticsInfo = {
   title: "DIVERSITY IN FIN FISH IS THE FUTURE OF AQUACULTURE",
@@ -399,5 +404,37 @@ export const geneticsInfo = {
     "dreamcatcher swag YOLO occupy vegan cray wayfarers mumblecore keytar whatever Austin vinyl fingerstache Banksy pop-up organic ugh leggings roof party try-hard keffiyeh disrupt photo booth viral Williamsburg Pitchfork tofu stumptown McSweeney's pickled seitan tote bag artisan biodiesel shabby chic pour-over Thundercats Shoreditch plaid Tonx food truck mustache quinoa sriracha aesthetic bicycle rights bitters fixie squid raw denim kitsch cliche forage Helvetica brunch Etsy",
     "post-ironic farm-to-table chillwave four loko polaroid paleo meh actually Tumblr tousled small batch cornhole pug synth Kickstarter twee literally lomo Schlitz Portland chambray sartorial put a bird on it PBR&B mixtape wolf normcore XOXO heirloom DIY church-key direct trade  sustainable Intelligentsia gentrify craft beer umami 8-bit selvage gluten-free ennui Wes Anderson narwhal flexitarian deep v cred beard kale chips bespoke single-origin coffee hoodie PBR chia before they sold out skateboard blog butcher jean shorts selfies tattooed art party readymade master cleanse VHS retro kogi Marfa yr Godard Cosby sweater authentic Truffaut salvia cardigan you probably haven't heard of them lo-fi Carles gastropub asymmetrical Brooklyn fashion axe High Life Pinterest Vice street art iPhone semiotics scenester locavore Neutra letterpress 3 wolf moon crucifix banjo ethical hashtag Blue Bottle hella pork belly mlkshk drinking vinegar slow-carb irony fap +1 trust fund messenger bag American Apparel banh mi meggings freegan fanny pack next level Echo Park Bushwick 90's typewriter distillery flannel Odd"
   ],
+  titleColor: "#620c5f",
   images: images.geneticsImages
+};
+export const eatFishInfo = {
+  backgroundColor: "#ff2882",
+  titleColor: "#ff2882",
+  title: "SEE FOOD FOR WHAT IT IS",
+  subTitle: "WE DON’T SELL YOU A STORY, WE PREFER TO HEAR YOURS!",
+  caption: [
+    "The Eat Fish platform is useful as an educational tool that lets you the customer verify, learn and enjoy your purchase in a truly and innovative way by successfully providing you with 100% transparency, sustainability and traceability information.  EATFISH's sole purpose is to efficiently track fish from our farm all the way to your table."
+  ],
+  list: {
+    title: "This is how it works:",
+    closing: "ITS THAT SIMPLE!",
+    list: [
+      "Scan the EATFISH tag on your fish of choice",
+      "On your phone you will see an image of that exact fish at time of harvest",
+      "See day and time of harvest",
+      "See nutritional information",
+      "See fantastic recipes for your fish preparation",
+      "Send us a video from your very own kitchen telling us about your seafood experience"
+    ]
+  }
+};
+export const sustainabilityInfo = {
+  titleColor: "#28c900",
+  title: "SUSTAINABILITY, CONSERVATION & THE ENVIRONMENT.",
+  caption: [
+    "Mangroves are extremely important to the coastal ecosystems they inhabit. Physically, they serve as a buffer between marine and terrestrial communities and protect shorelines from damaging winds, waves, and floods. Mangrove thickets improve water quality by filtering pollutants and trapping sediments from the land, and they reduce coastal erosion. Ecologically, they provide habitat for a diverse array of terrestrial organisms, and many species of coastal and offshore fish and shellfish rely exclusively on mangroves as their breeding, spawning, and hatching grounds. Because of their high salt tolerance, mangroves are often among the first species to colonize mud and sandbanks flooded by seawater, but an increase in coastal development and altered land use led to a decline in global populations.",
+    "Aqquua has undergone a mangrove planting restoration project, planting more than 80 mangrove trees on our property alone. Our mission is to spearhead an effort to get our farming neighbors to do the same along their coast-line.",
+    "To make donations to the Aqquua mangrove initiative please donate here: "
+  ],
+  images: images.sustainabilityImages
 };

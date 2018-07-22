@@ -1,0 +1,119 @@
+.Farm-container {
+  align-items: center;
+}
+.Content-media {
+  align-items: center;
+  @include tabtop {
+    width: 100vw;
+  }
+}
+.Content-info-holder,
+.Content-image-holder {
+  justify-content: center;
+  .Content-list-holder {
+    width: 80%;
+    h4 {
+      font-size: 1.6rem;
+    }
+    h3 {
+      font-size: 1.8rem;
+    }
+    ul {
+      margin-bottom: 1rem;
+      padding-top: 0.8rem;
+      li {
+        margin: 0 0 0.5rem 2rem;
+        text-indent: -2rem;
+        font-size: 1.2rem;
+        @extend .geo-book;
+        span {
+          display: inline-block;
+          @extend .geo-bold-italics;
+          width: 0rem;
+          font-size: 1.6rem;
+          margin-right: 1rem;
+        }
+      }
+    }
+    @include tabtop {
+      max-width: 50%;
+    }
+  }
+  .Content-logo-holder {
+    flex: 1;
+    margin-bottom: 1rem;
+  }
+  .Content-info {
+    align-items: center;
+
+    &:first-child {
+      max-width: 80%;
+      @include tabtop {
+        max-width: 50%;
+      }
+    }
+  }
+
+  @include tabtop {
+    justify-content: flex-start;
+
+    padding: 3rem 4rem 3rem 15rem;
+
+    .Content-info {
+      flex: 2;
+      align-items: initial;
+    }
+  }
+  h1 {
+    font-size: 2rem;
+    line-height: 2.2rem;
+    margin-bottom: 1rem;
+    @extend .geo-bold-italics;
+  }
+  h2 {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem;
+    @extend .geo-bold;
+  }
+  p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+}
+.Content-image-holder {
+  padding: 3rem 4rem !important;
+}
+.Farm-container,
+.Genetics-container,
+.Eat-fish-container {
+  @include tabtop {
+    .space-10 {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+.Content-image-title {
+  .Content-holder {
+    margin-bottom: 3rem;
+    img {
+      width: 100%;
+      margin-bottom: 1rem;
+    }
+    h4 {
+      font-size: 1.2rem;
+    }
+  }
+  @include tabtop {
+    justify-content: center;
+    padding: 0 7rem;
+    flex-wrap: wrap;
+    .Content-holder {
+      width: 50%;
+      padding: 0 3rem;
+      img {
+        width: 100% !important;
+      }
+    }
+  }
+}

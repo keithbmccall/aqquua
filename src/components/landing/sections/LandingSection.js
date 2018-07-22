@@ -4,7 +4,7 @@ import SchoolEmblem from "../schools/SchoolEmblem";
 import SectionNumber from "../section-items/SectionNumber";
 import SectionText from "../section-items/SectionText";
 import TrackingAnimations from "../../animations/TrackingAnimations";
-import EatFishTagIcon from "../eat-fish/EatFishTagIcon";
+import EatFishTagIcon from "../eatfish/EatFishTagIcon";
 import { withRouter } from "react-router-dom";
 //
 const LandingSection = props => {

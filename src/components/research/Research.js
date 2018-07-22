@@ -1,6 +1,7 @@
 import React from "react";
 import WaveAnimation from "../../components/animations/WaveAnimation";
 import BackArrow from "../tools/images/BackArrow";
+import ContentImages from "../tools/media/ContentImages";
 //
 const Research = props => {
   const { info } = props;
@@ -18,7 +19,7 @@ const Research = props => {
             {info.caption.map((p, key) => <p key={key}>{p}</p>)}
           </div>
         </div>
-        <div className="Research-media">MEDIA CONTENT TO BE ADDED</div>
+        <ContentImages info={info} />
       </div>
     </div>
   );

@@ -41,7 +41,7 @@
       margin: 0;
       input,
       textarea {
-        // background: rgba(100, 100, 100, 0.1);
+        background: rgba(100, 100, 100, 0.1);
         width: 100%;
         border: 1px solid $greycolor;
         border-radius: 5px;
@@ -69,7 +69,7 @@
   }
   @include tabtop {
     .collapse-row-column {
-      padding: 0 1.5rem;
+      padding: 0 2rem;
     }
     width: 70%;
     .Contact-caption {
@@ -94,9 +94,35 @@
   }
 }
 
-.Contact-email,
-.Contact-message,
-.Contact-fname,
-.Contact-lname {
-  background: rgba($fuschiacolor, 0.2);
+.Contact {
+  &-message,
+  &-email,
+  &-fname,
+  &-lname {
+    @include transition(background 0.3 ease-in);
+  }
+  &-message {
+    &:hover,
+    &:focus {
+      background: rgba($cockatoocolor, 0.2) !important ;
+    }
+  }
+  &-email {
+    &:hover,
+    &:focus {
+      background: rgba($tigercolor, 0.2) !important ;
+    }
+  }
+  &-fname {
+    &:hover,
+    &:focus {
+      background: rgba($libertycolor, 0.2) !important ;
+    }
+  }
+  &-lname {
+    &:hover,
+    &:focus {
+      background: rgba($fuschiacolor, 0.2) !important ;
+    }
+  }
 }

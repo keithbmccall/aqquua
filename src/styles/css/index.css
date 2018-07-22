@@ -1,23 +1,39 @@
 @font-face {
   font-family: "geomanist-bold";
   src: url("../../assets/fonts/Geomanist-Bold/geomanist-bold-webfont.eot");
-  src: url("../../assets/fonts/Geomanist-Bold/geomanist-bold-webfont.woff") format("woff"), url("../../assets/fonts/Geomanist-Bold/geomanist-bold-webfont.woff2") format("woff2"), url("../../assets/fonts/Geomanist-Bold/geomanist-bold-webfont.svg#filename") format("svg"); }
+  src: url("../../assets/fonts/Geomanist-Bold/geomanist-bold-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Geomanist-Bold/geomanist-bold-webfont.woff2") format("woff2"), url("../../assets/fonts/Geomanist-Bold/geomanist-bold-webfont.woff") format("woff"), url("../../assets/fonts/Geomanist-Bold/geomanist-bold-webfont.ttf") format("truetype"), url("../../assets/fonts/Geomanist-Bold/geomanist-bold-webfont.svg#geomanistregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 @font-face {
   font-family: "geomanist-thin";
   src: url("../../assets/fonts/Geomanist-Thin/geomanist-thin-webfont.eot");
-  src: url("../../assets/fonts/Geomanist-Thin/geomanist-thin-webfont.woff") format("woff"), url("../../assets/fonts/Geomanist-Thin/geomanist-thin-webfont.woff2") format("woff2"), url("../../assets/fonts/Geomanist-Thin/geomanist-thin-webfont.svg#filename") format("svg"); }
+  src: url("../../assets/fonts/Geomanist-Thin/geomanist-thin-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Geomanist-Thin/geomanist-thin-webfont.woff2") format("woff2"), url("../../assets/fonts/Geomanist-Thin/geomanist-thin-webfont.woff") format("woff"), url("../../assets/fonts/Geomanist-Thin/geomanist-thin-webfont.ttf") format("truetype"), url("../../assets/fonts/Geomanist-Thin/geomanist-thin-webfont.svg#geomanistregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 @font-face {
   font-family: "geomanist-bold-italics";
   src: url("../../assets/fonts/Geomanist-Bold-Italic/geomanist-bold-italic-webfont.eot");
-  src: url("../../assets/fonts/Geomanist-Bold-Italic/geomanist-bold-italic-webfont.woff") format("woff"), url("../../assets/fonts/Geomanist-Bold-Italic/geomanist-bold-italic-webfont.woff2") format("woff2"), url("../../assets/fonts/Geomanist-Bold-Italic/geomanist-bold-italic-webfont.svg#filename") format("svg"); }
+  src: url("../../assets/fonts/Geomanist-Bold-Italic/geomanist-bold-italic-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Geomanist-Bold-Italic/geomanist-bold-italic-webfont.woff2") format("woff2"), url("../../assets/fonts/Geomanist-Bold-Italic/geomanist-bold-italic-webfont.woff") format("woff"), url("../../assets/fonts/Geomanist-Bold-Italic/geomanist-bold-italic-webfont.ttf") format("truetype"), url("../../assets/fonts/Geomanist-Bold-Italic/geomanist-bold-italic-webfont.svg#geomanistitalic") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 @font-face {
   font-family: "geomanist-ultra";
   src: url("../../assets/fonts/Geomanist-Ultra/geomanist-ultra-webfont.eot");
-  src: url("../../assets/fonts/Geomanist-Ultra/geomanist-ultra-webfont.woff") format("woff"), url("../../assets/fonts/Geomanist-Ultra/geomanist-ultra-webfont.woff2") format("woff2"), url("../../assets/fonts/Geomanist-Ultra/geomanist-ultra-webfont.svg#filename") format("svg"); }
+  src: url("../../assets/fonts/Geomanist-Ultra/geomanist-ultra-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Geomanist-Ultra/geomanist-ultra-webfont.woff2") format("woff2"), url("../../assets/fonts/Geomanist-Ultra/geomanist-ultra-webfont.woff") format("woff"), url("../../assets/fonts/Geomanist-Ultra/geomanist-ultra-webfont.ttf") format("truetype"), url("../../assets/fonts/Geomanist-Ultra/geomanist-ultra-webfont.svg#geomanistregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 @font-face {
   font-family: "geomanist-light";
   src: url("../../assets/fonts/Geomanist-Light/geomanist-light-webfont.eot");
-  src: url("../../assets/fonts/Geomanist-Light/geomanist-light-webfont.woff") format("woff"), url("../../assets/fonts/Geomanist-Light/geomanist-light-webfont.woff2") format("woff2"), url("../../assets/fonts/Geomanist-Light/geomanist-light-webfont.svg#filename") format("svg"); }
+  src: url("../../assets/fonts/Geomanist-Light/geomanist-light-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Geomanist-Light/geomanist-light-webfont.woff2") format("woff2"), url("../../assets/fonts/Geomanist-Light/geomanist-light-webfont.woff") format("woff"), url("../../assets/fonts/Geomanist-Light/geomanist-light-webfont.ttf") format("truetype"), url("../../assets/fonts/Geomanist-Light/geomanist-light-webfont.svg#geomanistregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "geomanist-book";
+  src: url("../../assets/fonts/Geomanist-Book/geomanist-book-webfont.eot");
+  src: url("../../assets/fonts/Geomanist-Book/geomanist-book-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Geomanist-Book/geomanist-book-webfont.woff2") format("woff2"), url("../../assets/fonts/Geomanist-Book/geomanist-book-webfont.woff") format("woff"), url("../../assets/fonts/Geomanist-Book/geomanist-book-webfont.ttf") format("truetype"), url("../../assets/fonts/Geomanist-Book/geomanist-book-webfont.svg#geomanistregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
 .geo-light, #root,
 body, .Contact-holder .Contact-form form input,
 .Contact-holder .Contact-form form textarea, .Header-section, .Wa-container .Wa-1, .Wa-container .Wa-7 {
@@ -26,7 +42,9 @@ body, .Contact-holder .Contact-form form input,
 .geo-ultra, .Wa-container .Wa-title {
   font-family: "geomanist-ultra", Arial, Helvetica, sans-serif; }
 
-.geo-bold-italics, .Contact-holder h3, .Products-info h1 span, .Content-info-holder h1, .Research-info-holder h1, .Section-text h4 {
+.geo-bold-italics, .Contact-holder h3, .Products-info h1 span, .Content-info-holder .Content-list-holder ul li span,
+.Content-image-holder .Content-list-holder ul li span, .Content-info-holder h1,
+.Content-image-holder h1, .Research-info-holder h1, .Section-text h4 {
   font-family: "geomanist-bold-italics", Arial, Helvetica, sans-serif; }
 
 .geo-bold, h1,
@@ -34,11 +52,16 @@ h2,
 h3,
 h4,
 h5,
-h6, .Contact-holder .Contact-addresses address span, .Products-info h1, .Big-section .Section-number-holder .Section-number, .Wa-container .Wa-2, .Wa-container .Wa-6, .Wa-container .Wa-9, .Wa-container .Wa-10 {
+h6, .Contact-holder .Contact-addresses address span, .Products-info h1, .Content-info-holder h2,
+.Content-image-holder h2, .Big-section .Section-number-holder .Section-number, .Wa-container .Wa-2, .Wa-container .Wa-6, .Wa-container .Wa-9, .Wa-container .Wa-10 {
   font-family: "geomanist-bold", Arial, Helvetica, sans-serif; }
 
 .geo-thin, .Header-section h1, .Wa-container .Wa-0, .Wa-container .Wa-4, .Wa-container .Wa-8, .Wa-container .Wa-11, .Wa-container .Wa-13, .Wa-container .Wa-14 {
   font-family: "geomanist-thin", Arial, Helvetica, sans-serif; }
+
+.geo-book, .Content-info-holder .Content-list-holder ul li,
+.Content-image-holder .Content-list-holder ul li {
+  font-family: "geomanist-book", Arial, Helvetica, sans-serif; }
 
 * {
   margin: 0;
@@ -163,7 +186,7 @@ img {
 .Products-container,
 .Farm-container,
 .Genetics-container,
-.EatFishContainer {
+.Eat-fish-container {
   padding-top: 6.5em;
   min-height: 100vh;
   padding-bottom: 3rem;
@@ -190,7 +213,7 @@ img {
   margin-bottom: 1rem; }
   @media only screen and (min-width: 767px) {
     .back-arrow {
-      left: -13rem;
+      left: 0rem;
       position: absolute; } }
 
 .swoop-enter {
@@ -255,6 +278,7 @@ img {
       margin: 0; }
       .Contact-holder .Contact-form form input,
       .Contact-holder .Contact-form form textarea {
+        background: rgba(100, 100, 100, 0.1);
         width: 100%;
         border: 1px solid #87857d;
         border-radius: 5px;
@@ -273,7 +297,7 @@ img {
     .Contact-holder {
       width: 70%; }
       .Contact-holder .collapse-row-column {
-        padding: 0 1.5rem; }
+        padding: 0 2rem; }
       .Contact-holder .Contact-caption {
         font-size: 1.2rem;
         line-height: 1.8rem;
@@ -287,11 +311,19 @@ img {
         .Contact-holder .Contact-form form textarea {
           height: 15rem; } }
 
-.Contact-email,
-.Contact-message,
-.Contact-fname,
-.Contact-lname {
-  background: rgba(195, 68, 122, 0.2); }
+.Contact-message, .Contact-email, .Contact-fname, .Contact-lname {
+  -moz-transition: background 0.3 ease-in;
+  -o-transition: background 0.3 ease-in;
+  -webkit-transition: background 0.3 ease-in;
+  transition: background 0.3 ease-in; }
+.Contact-message:hover, .Contact-message:focus {
+  background: rgba(90, 208, 186, 0.2) !important; }
+.Contact-email:hover, .Contact-email:focus {
+  background: rgba(225, 93, 68, 0.2) !important; }
+.Contact-fname:hover, .Contact-fname:focus {
+  background: rgba(77, 68, 138, 0.2) !important; }
+.Contact-lname:hover, .Contact-lname:focus {
+  background: rgba(195, 68, 122, 0.2) !important; }
 
 .Products-info {
   flex: 8;
@@ -357,49 +389,101 @@ img {
     .Content-media {
       width: 100vw; } }
 
-.Content-info-holder {
+.Content-info-holder,
+.Content-image-holder {
   justify-content: center; }
-  .Content-info-holder .Content-logo-holder {
+  .Content-info-holder .Content-list-holder,
+  .Content-image-holder .Content-list-holder {
+    width: 80%; }
+    .Content-info-holder .Content-list-holder h4,
+    .Content-image-holder .Content-list-holder h4 {
+      font-size: 1.6rem; }
+    .Content-info-holder .Content-list-holder h3,
+    .Content-image-holder .Content-list-holder h3 {
+      font-size: 1.8rem; }
+    .Content-info-holder .Content-list-holder ul,
+    .Content-image-holder .Content-list-holder ul {
+      margin-bottom: 1rem;
+      padding-top: 0.8rem; }
+      .Content-info-holder .Content-list-holder ul li,
+      .Content-image-holder .Content-list-holder ul li {
+        margin: 0 0 0.5rem 2rem;
+        text-indent: -2rem;
+        font-size: 1.2rem; }
+        .Content-info-holder .Content-list-holder ul li span,
+        .Content-image-holder .Content-list-holder ul li span {
+          display: inline-block;
+          width: 0rem;
+          font-size: 1.6rem;
+          margin-right: 1rem; }
+    @media only screen and (min-width: 767px) {
+      .Content-info-holder .Content-list-holder,
+      .Content-image-holder .Content-list-holder {
+        max-width: 50%; } }
+  .Content-info-holder .Content-logo-holder,
+  .Content-image-holder .Content-logo-holder {
     flex: 1;
     margin-bottom: 1rem; }
-  .Content-info-holder .Content-info {
+  .Content-info-holder .Content-info,
+  .Content-image-holder .Content-info {
     align-items: center; }
-    .Content-info-holder .Content-info:first-child {
+    .Content-info-holder .Content-info:first-child,
+    .Content-image-holder .Content-info:first-child {
       max-width: 80%; }
       @media only screen and (min-width: 767px) {
-        .Content-info-holder .Content-info:first-child {
-          max-width: 60%; } }
+        .Content-info-holder .Content-info:first-child,
+        .Content-image-holder .Content-info:first-child {
+          max-width: 50%; } }
   @media only screen and (min-width: 767px) {
-    .Content-info-holder {
-      padding-top: 3rem;
-      padding: 3rem 4rem; }
-      .Content-info-holder .Content-info {
+    .Content-info-holder,
+    .Content-image-holder {
+      justify-content: flex-start;
+      padding: 3rem 4rem 3rem 15rem; }
+      .Content-info-holder .Content-info,
+      .Content-image-holder .Content-info {
         flex: 2;
         align-items: initial; } }
-  .Content-info-holder h1 {
+  .Content-info-holder h1,
+  .Content-image-holder h1 {
     font-size: 2rem;
     line-height: 2.2rem;
     margin-bottom: 1rem; }
-  .Content-info-holder p {
+  .Content-info-holder h2,
+  .Content-image-holder h2 {
+    font-size: 1.4rem;
+    line-height: 1.5rem;
+    margin-bottom: 0.5rem; }
+  .Content-info-holder p,
+  .Content-image-holder p {
     font-size: 1rem;
     margin-bottom: 1rem; }
 
+.Content-image-holder {
+  padding: 3rem 4rem !important; }
+
 @media only screen and (min-width: 767px) {
-  .Genetics-container .space-10 {
+  .Farm-container .space-10,
+  .Genetics-container .space-10,
+  .Eat-fish-container .space-10 {
     margin-bottom: 0 !important; } }
 
-.Content-image-title .Content-holder img {
-  width: 100%; }
-.Content-image-title .Content-holder h4 {
-  font-size: 1.2rem; }
+.Content-image-title .Content-holder {
+  margin-bottom: 3rem; }
+  .Content-image-title .Content-holder img {
+    width: 100%;
+    margin-bottom: 1rem; }
+  .Content-image-title .Content-holder h4 {
+    font-size: 1.2rem; }
 @media only screen and (min-width: 767px) {
   .Content-image-title {
     justify-content: center;
-    padding: 0 15%; }
+    padding: 0 7rem;
+    flex-wrap: wrap; }
     .Content-image-title .Content-holder {
-      padding: 0 1%; }
+      width: 50%;
+      padding: 0 3rem; }
       .Content-image-title .Content-holder img {
-        width: initial; } }
+        width: 100% !important; } }
 
 .Research-container {
   align-items: center; }
@@ -674,12 +758,18 @@ header {
     .Recipes-container .Recipes-image-holder {
       height: 40vh; } }
   .Recipes-container .Recipes-image-holder:hover .image {
+    -moz-transform: scale(1.08);
+    -o-transform: scale(1.08);
+    -webkit-transform: scale(1.08);
     transform: scale(1.08); }
   .Recipes-container .Recipes-image-holder .image {
     background-size: cover !important;
     background-position: center center !important;
     background-repeat: no-repeat !important;
     flex: 1;
+    -moz-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+    -webkit-transition: all 0.6s ease-in-out;
     transition: all 0.6s ease-in-out; }
 
 .Header-band {
@@ -1004,12 +1094,20 @@ header {
   .Eat-fish-flip-container {
     perspective: 1000px; }
   .Eat-fish-flip-container:hover .Eat-fish-flipper, .Eat-fish-flip-container.hover .Eat-fish-flipper {
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg); }
   .Eat-fish-flip-container, .Eat-fish-front, .Eat-fish-back {
     width: 12rem;
     height: 12rem; }
   .Eat-fish-flipper {
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    -webkit-transition: 0.5s;
     transition: 0.5s;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
     transform-style: preserve-3d;
     position: relative; }
   .Eat-fish-front, .Eat-fish-back {
@@ -1020,8 +1118,14 @@ header {
   .Eat-fish-front {
     z-index: 2;
     /* for firefox 31 */
+    -moz-transform: rotateY(0deg);
+    -o-transform: rotateY(0deg);
+    -webkit-transform: rotateY(0deg);
     transform: rotateY(0deg); }
   .Eat-fish-back {
+    -moz-transform: rotateY(180deg);
+    -o-transform: rotateY(180deg);
+    -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg); }
 
 /*# sourceMappingURL=index.css.map */

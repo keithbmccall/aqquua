@@ -13,7 +13,6 @@ const RibbonSection = props => {
           className={`Ribbons ${
             key % 2 === 0 ? "Ribbons-left" : "Ribbons-right"
           }`}
-          å
           alt="Aqquua"
         />
       </TrackingAnimations>

@@ -139,7 +139,7 @@ img {
 .Products-container,
 .Farm-container,
 .Genetics-container,
-.EatFishContainer {
+.Eat-fish-container {
   padding-top: $navbargap;
   min-height: 100vh;
   padding-bottom: 3rem;
@@ -165,7 +165,7 @@ img {
   height: 3rem !important;
   margin-bottom: 1rem;
   @include tabtop {
-    left: -13rem;
+    left: 0rem;
     position: absolute;
   }
 }
