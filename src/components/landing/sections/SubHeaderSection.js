@@ -6,7 +6,11 @@ const SubHeaderSection = props => {
 
   return (
     <div className="flex-column flex Big-section Sub-header-section" id="About">
-      <WeAreCarousel weAreContent={item.content} title={item.title} />
+      <WeAreCarousel
+        weAreContent={item.content}
+        title={item.title}
+        logo={item.logo}
+      />
     </div>
   );
 };

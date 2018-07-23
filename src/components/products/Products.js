@@ -9,7 +9,7 @@ const Products = props => {
     <div className="container">
       <WaveAnimation color="white" />
       <div className="Products-container">
-        <BackArrow color={info.color} />
+        <BackArrow color={info.color} path="/#Products"/>
         <div className="flex collapse-row-column">
           <div className="Products-info">
             <h1 style={{ color: info.color }}>

@@ -35,12 +35,19 @@ const HeaderSection = props => {
                 .slice(0, 2)
                 .join(" ")
                 .toUpperCase()}
-              <span>
+              <span className="relative">
                 {` ${content.title
                   .split(" ")
-                  .slice(2)
+                  .slice(2, 4)
                   .join(" ")
                   .toUpperCase()}`}
+                <small className="trademark-symbol">
+                  {` ${content.title
+                    .split(" ")
+                    .slice(4)
+                    .join(" ")
+                    .toUpperCase()}`}
+                </small>
               </span>
             </h1>
           </TrackingAnimations>

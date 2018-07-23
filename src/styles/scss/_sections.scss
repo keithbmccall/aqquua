@@ -46,7 +46,9 @@
   letter-spacing: 0.8px;
   text-align: auto;
   margin-bottom: 4rem;
-
+  p {
+    margin-bottom: 1rem;
+  }
   h4 {
     @extend .geo-bold-italics;
     font-size: 1.2rem;
@@ -110,13 +112,13 @@
 // }
 
 .Big-section-1 {
-  background: $poppycolor;
+  background: $atollcolor;
 }
 .Big-section-5 {
   background: $festivecolor;
 }
 .Big-section-3 {
-  background: $daphnecolor;
+  background: $poppycolor;
 }
 .Big-section-4 {
   background: linear-gradient(

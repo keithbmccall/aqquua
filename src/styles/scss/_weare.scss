@@ -1,12 +1,7 @@
 .Wa-container {
   @extend .relative;
   white-space: nowrap;
-  // @include tabtop {
-  //   h3 {
-  //     font-size: 5rem;
-  //     line-height: 13rem !important;
-  //   }
-  // }
+
   h3 {
     @extend .absolute;
     margin-bottom: 0;
@@ -35,7 +30,7 @@
       top: 30%;
       line-height: 4.5rem;
       @include transform(translateX(-50%));
-      @include transition(all 3s ease-in-out);
+      @include transition(all 2.4s ease-in-out);
       @include tablet {
         line-height: 11rem !important;
       }
@@ -44,19 +39,19 @@
       }
     }
     &-title-fade {
-      color: rgb(170, 170, 170);
+      color: rgb(200, 200, 200);
     }
-    @for $i from 0 through 28 {
-      @if $i % 2 == 0 {
-        &-#{$i} {
-          left: 0 !important;
-        }
-      } @else {
-        &-#{$i} {
-          right: 0 !important;
-        }
-      }
-    }
+    // @for $i from 0 through 28 {
+    //   @if $i % 2 == 0 {
+    //     &-#{$i} {
+    //       left: 0 !important;
+    //     }
+    //   } @else {
+    //     &-#{$i} {
+    //       right: 0 !important;
+    //     }
+    //   }
+    // }
     &-0 {
       @extend .geo-thin;
     }
@@ -99,6 +94,49 @@
     &-14 {
       @extend .geo-thin;
     }
+    &-15 {
+      @extend .geo-bold;
+    }
+    &-16 {
+      @extend .geo-light;
+    }
+    &-17 {
+      @extend .geo-thin;
+    }
+    &-18 {
+      @extend .geo-light;
+    }
+    &-19 {
+      @extend .geo-book;
+    }
+    &-20 {
+      @extend .geo-bold;
+    }
+    &-21 {
+      @extend .geo-light;
+    }
+    &-22 {
+      @extend .geo-thin;
+    }
+    &-23 {
+      @extend .geo-book;
+    }
+    &-24 {
+      @extend .geo-bold;
+    }
+    &-25 {
+      @extend .geo-thin;
+      @include mobile {
+        font-size: 2.2rem;
+        padding: 0.5rem;
+      }
+    }
+    &-26 {
+      @extend .geo-thin;
+    }
+    &-27 {
+      @extend .geo-book;
+    }
   }
   @include tabtop {
     @for $i from 0 through 14 {
@@ -114,7 +152,7 @@
     }
     .Wa {
       &-text {
-        font-size: 4.8rem;
+        font-size: 4rem;
       }
       &-title {
         font-size: 15rem;
@@ -163,6 +201,48 @@
       }
       &-14 {
         left: 25% !important;
+      }
+      &-15 {
+        left: 30% !important;
+      }
+      &-16 {
+        left: 10% !important;
+      }
+      &-17 {
+        left: 40% !important;
+      }
+      &-18 {
+        left: 60% !important;
+      }
+      &-19 {
+        left: 2% !important;
+      }
+      &-20 {
+        left: 50% !important;
+      }
+      &-21 {
+        left: 4% !important;
+      }
+      &-22 {
+        left: 44% !important;
+      }
+      &-23 {
+        left: 12% !important;
+      }
+      &-24 {
+        left: 5% !important;
+      }
+      &-25 {
+        left: 10% !important;
+      }
+      &-26 {
+        left: 55% !important;
+      }
+      &-27 {
+        left: 28% !important;
+      }
+      &-28 {
+        left: 35% !important;
       }
     }
   }
@@ -222,6 +302,21 @@
       &-14 {
         left: 25% !important;
       }
+      &-17 {
+        left: 50% !important;
+      }
+      &-18 {
+        left: 70% !important;
+      }
+      &-20 {
+        left: 60% !important;
+      }
+      &-24 {
+        left: 70% !important;
+      }
+      &-28 {
+        left: 55% !important;
+      }
     }
   }
 }
@@ -230,4 +325,13 @@
 }
 .Sub-header-section {
   // padding: 3rem;
+}
+.Wa-logo {
+  margin-top: 0rem;
+  margin-left: -6rem;
+  @include transition(opacity 2.4s ease-in-out !important);
+  @include tabtop {
+    margin-top: -5rem;
+    margin-left: -20rem;
+  }
 }

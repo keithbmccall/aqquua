@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import SVGC from "../../tools/images/SVG";
 
 export default class WeAreCarousel extends Component {
   constructor(props) {
@@ -7,18 +8,24 @@ export default class WeAreCarousel extends Component {
   }
   initialState = {
     title: "opacity-0",
-    text: this.props.weAreContent.map(() => "opacity-0 hidden"),
-    counter: 0
+    text: this.props.weAreContent.map(() => "opacity-0-non hidden"),
+    counter: 0,
+    halfwayMark: " ",
+    logoMark: "opacity-0",
+    transparentText: " "
   };
   renderContentBricks = (item, key) => {
     return (
       <h3
         key={key}
-        className={`Wa-text Wa-${key} ${this.state.text[key]}`}
+        className={`Wa-text Wa-${key} ${this.state.text[key]} ${
+          key < 15 ? this.state.halfwayMark : " "
+        } ${this.state.transparentText}`}
+        // ${key < 15 ? this.state.halfwayMark : ""}
         //Wa-${key} or
         // ${this.state.text[key]}
         style={{
-          top: key < 15 ? key * 6.3 + "%" : (key - 15) * 6.3 + "%", //6.67
+          top: key < 15 ? key * 6 + "%" : (key - 15) * 6 + "%", //6.67
           color: item.color
         }}
       >
@@ -35,15 +42,38 @@ export default class WeAreCarousel extends Component {
   textRotary = () => {
     const textInterval = setInterval(
       () =>
-        this.state.counter === 30
+        // this.state.counter === 35
+        //   ? () => {
+        //       clearInterval(textInterval);
+        //       this.ignite();
+        //     }
+        //   :
+        this.state.counter === 35
           ? this.setState(this.initialState, () => {
               clearInterval(textInterval);
               this.ignite();
             })
-          : this.setState({
-              text: this.setText(this.state.counter),
-              counter: this.state.counter + 1
-            }),
+          : this.state.counter === 31
+            ? this.setState({
+                logoMark: "",
+                counter: this.state.counter + 1
+              })
+            : this.state.counter === 30
+              ? this.setState({
+                  logoMark: "",
+                  transparentText: "opacity-0",
+                  counter: this.state.counter + 1
+                })
+              : this.state.counter === 15
+                ? this.setState({
+                    text: this.setText(this.state.counter),
+                    counter: this.state.counter + 1,
+                    halfwayMark: "opacity-0"
+                  })
+                : this.setState({
+                    text: this.setText(this.state.counter),
+                    counter: this.state.counter + 1
+                  }),
       750 //1500
     );
   };
@@ -65,17 +95,18 @@ export default class WeAreCarousel extends Component {
   };
   ignite = () => {
     this.pushTitle();
-    setTimeout(() => this.textRotary(), 3000);
+    setTimeout(() => this.textRotary(), 1500);
   };
   componentDidMount() {
     this.ignite();
   }
   render() {
-    const { weAreContent, title } = this.props;
+    const { weAreContent, title, logo } = this.props;
+    console.log(this.state.counter);
     const content = weAreContent.map(this.renderContentBricks);
     return (
       <div className="Wa-container vh flex flex-content-center">
-        <h3 className={`Wa-title centered ${this.state.title} `}>
+        <h3 className={`Wa-h3 Wa-title centered ${this.state.title} `}>
           {title
             .split(" ")
             .splice(0, 1)
@@ -87,6 +118,9 @@ export default class WeAreCarousel extends Component {
               .splice(1)
               .toString()
               .toUpperCase()}
+          </span>
+          <span className={`Wa-logo logo ${this.state.logoMark}`}>
+            <SVGC fill="#85dbd7" path={logo} className="image" />
           </span>
         </h3>
         <div className="Wa-words">{content}</div>

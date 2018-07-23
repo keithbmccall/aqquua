@@ -4,8 +4,17 @@ import images from "../../../data/images";
 import { withRouter } from "react-router-dom";
 
 const BackArrow = props => {
+  console.log(props);
   return (
-    <a onClick={() => props.history.goBack()}>
+    <a
+      onClick={
+        props.path
+          ? () => {
+              props.history.push(props.path);
+            }
+          : () => props.history.goBack()
+      }
+    >
       <SVGC
         path={images.backarrow}
         className="back-arrow image"

@@ -21,7 +21,7 @@ const weAreContent = [
     color: "#c3447a"
   },
   {
-    content: "expert",
+    content: "experts",
     color: "#015b97"
   },
   {
@@ -30,7 +30,7 @@ const weAreContent = [
   },
   {
     content: "farmers",
-    color: "#573b30"
+    color: "#9ce881"
   },
   {
     content: "innovation",
@@ -62,7 +62,7 @@ const weAreContent = [
   },
   {
     content: "authentic",
-    color: "#ff8406"
+    color: "#ff2882"
   },
   {
     content: "lifestyle",
@@ -90,7 +90,7 @@ const weAreContent = [
   },
   {
     content: "stewardship",
-    color: "#f55438"
+    color: "#00bfad"
   },
   {
     content: "passionate",
@@ -114,7 +114,7 @@ const weAreContent = [
   },
   {
     content: "best practices",
-    color: "#00bfad"
+    color: "#f55438"
   }
 ];
 
@@ -130,15 +130,16 @@ export const navbarLinks = [
     id: "Farm"
   },
   {
+    title: "Fin-fish",
+    color: "#5ad0ba",
+    id: "Products"
+  },
+  {
     title: "Genetics",
     color: "#620c5f",
     id: "Genetics"
   },
-  {
-    title: "Products",
-    color: "#5ad0ba",
-    id: "Products"
-  },
+
   {
     title: "R&D",
     color: "#e15d44",
@@ -150,7 +151,7 @@ export const navbarLinks = [
     id: "Recipes"
   },
   {
-    title: "Eat Fish",
+    title: "EatFish",
     color: "#ff2882",
     id: "Eat-fish"
   },
@@ -168,16 +169,16 @@ export const navbarLinks = [
 ];
 export const aqquuaLogo = images.logo;
 export const headerContent = {
-  title: "We're Wild about Farmed",
+  title: "We're Wild about Farmed ™",
   caption: "We're wild about farmed fish'",
   logo: images.logo,
   background: images.fishPrint
 };
 export const sectionData = [
   {
-    id: "About",
     title: "We Are",
-    content: weAreContent
+    content: weAreContent,
+    logo: images.logo
   },
   // {
   //   title: "Aqquua",
@@ -186,55 +187,58 @@ export const sectionData = [
   // },
   // { title: "placeholder" },
   {
-    id: "Farm",
+    id: "About",
+
     title: "Our Products",
     number: 1,
     headline: "WE TAKE OUR JOB SERIOUSLY",
-    caption:
-      "Every day we use best practices to make sure all of our operations are properly executed and managed to bring you a first rate high quality responsibly raised product, free of chemicals, antibiotics and hormones. Our job is to deliver 100% sustainably farmed, healthy, fresh and tasty fish. At Aqquua we are committed to developing innovative and scalable technologies that are necessary to bring you the freshest, most sublime seafood experience to the table."
+    caption: [
+      "The Aqquua philosophy is that a source of sustainably-farmed, heathful, and antibiotic- and hormone-free fin-fish is not only globally necessary, but financially and technically feasible.",
+      "Our mission is was to develop the innovative and scalable technology and best practices to meet this global need and bring a sublime seafood experience to the customer’s table.",
+      "We’ve succeeded."
+    ]
   },
 
   {
     id: "Products",
     title: "Our Products",
-    caption:
-      "OUR FISH ARE GROWN USING THE HIGHEST STANDARDS IN AQUACULTURE. OUR FAMILY IS COMPRISED OF ENTREPRENEURS, PROFESSIONALS, STUDENTS, DOERS AND SCIENTISTS. THEY ARE THE HEART AND HUMAN COMPONENT OF THE OPERATION. THROUGH EXPLORATION, THE SHARING OF IDEAS, AND PROBLEM SOLVING, THEY EXERCISE THEIR EXPERTICE AND LEADERSHIP EVERY DAY. UNDERSTANDING THE TREMENDOUS RESPONSIBILITY THAT GOES HAND IN HAND IN THE PRODUCTION OF FOOD SECURITY FOR THE FUTURE IS THEIR ULTIMARTE GOAL.  IT IS FROM THIS CONNECTION THAT WE ARE ALWAYS TRYING TO PUSH THE BOUNDARIES OF WHAT IS POSSIBLE IN AQUACULTURE TO BRING THE BEST TASTING FISH TO THE MARKETAND FAMILIES AROUND THE GLOBE.",
+    caption: [
+      "Our desire to push the boundaries of what has been possible in aquaculture is motivated by growing global protein needs and the challenges this growth brings.",
+      "We want to live in a world where healthful and delicious fish are produced sustainably and accessible to families, across the globe.",
+      "Aqquua has surpassed existing standards of aquaculture to produce a truly chemical- and hormone-free farm-raised fish, at low cost and with zero environmental impact. This achievement is a reflection of both our mission and the team of smart and dedicated people, across the world, we've built to fulfill it."
+    ],
     fish: images.productsFish
   },
   {
+    id: "Farm",
     number: 2,
     title: "Non-Conformists",
     headline: "WE ARE NON CONFORMISTS",
-    caption:
-      "We took a deep dive to understand why aquaculture still gets a bad name, We learned that if we are to change that negative perception we need to be transparent and authentic in everything we do. Making the transition from a “wild caught” product to a farmed one will be achieved by earning public trust. We see it as our duty to educate the public to the multiple health benefits of eating farmed fish products. We are working tirelessly until this message has been made crystal clear."
+    caption: [
+      "Combatting the full breadth of challenges to creating the next generation of aquaculture meant acknowledging the well-deserved, negative-consumer sentiment toward existing sources of farmed fish.",
+      "Beyond the technical and management innovations necessary for a better farmed product, Aqquua has pioneered unprecedented degrees of transparency at all stages of the aquaculture process.",
+      "Making the transition from a “wild caught” product to a farmed one will ultimately be achieved by earning public trust.",
+      "Our collective health as well as saving of our oceans depends on it."
+    ]
   },
   {
     id: "Genetics",
     number: 3,
     headline: "WE ARE INNOVATORS",
-    caption:
-      "We are actively contributing to the development of scientifically comprehensive and genetics research. This is integral to positioning fin-fish, and the marine aquaculture industry as the dominant contributor of environmentally sustainable marine protein worldwide. To this end, Aqquuas’ scientific mission is to integrate every genotypic and phenotypic breakthrough achieved toward improving the commercial viability of the subject species within the local and global aquaculture industry.",
-    content: {
-      schools: [
-        {
-          school: "UM",
-          caption:
-            "Our COLLABORATIVE RESEARCH AGREEMENT WITH THE UNIVERSITY OF MIAMI WILL HELP ADVANCE AQUACULTURE TECHNOLOGY FOR HIGH-VALUE MARINE FISH SUCH AS TUNA AND HIRAME (JAPANESE FLOUNDER) AT THE UM EXPERIMENTAL FISH HATCHERY. THE THREE-YEAR AGREEMENT BETWEEN AQQUUA AND THE UM ROSENSTIEL SCHOOL-BASED AQUACULTURE PROGRAM IS AIMED AT IMPROVING HATCHERY AND OTHER AQUACULTURE TECHNOLOGIES OF A NUMBER OF ECONOMICALLY VALUABLE SPECIES THAT HAVE NEVER BEEN DEVELOPED ELSEWHERE IN THE WORLD. 'THIS RESEARCH AGREEMENT WILL HELP ADVANCE SUSTAINABLE AQUACULTURE RESEARCH AT A TIME WHEN IT IS CRITICALLY NEEDED TO SUPPORT INCREASING DEMAND FOR HIGH-QUALITY PROTEIN TO FEED THE WORLD’S GROWING POPULATION,' SAID UM ROSENSTIEL SCHOOL PROFESSOR DAN BENETTI, DIRECTOR OF THE UM AQUACULTURE PROGRAM. 'WE ARE PLEASED BY AQQUUA’S COMMITMENT TO ADVANCE AQUACULTURE TECHNOLOGY IN A SUSTAINABLE WAY.'"
-        },
-        {
-          school: "Burapha",
-          caption:
-            "WE ALSO HAVE AN MOU WITH THE UNIVERSITY OF BURAPHA AND WITH KUNG KRABEAN ROYAL PROJECT TO HELP US WITH EGG PRODUCING BROODSTOCK AND ADVANCE OUR LARVAL REARING EFFORTS IN THAILAND.AQQUUA HAS ALSO PROVIDED SCHOLARSHIPS AND HAS HIRED GRADUATE STUDENTS FROM THE UNIVERSITY OF BURAPHA TO FURTHER THESE EFFORTS."
-        }
-      ]
-    }
+    caption: [
+      "We are actively contributing to the development of scientifically comprehensive genetics research.",
+      "This work is integral to positioning diversity in fin-fish offerings, and the marine aquaculture industry, as the dominant contributor of environmentally sustainable marine protein worldwide.",
+      "To this end, Aqquuas’ scientific mission is to integrate every genotypic and phenotypic breakthrough achieved, towards improving the commercial viability of the subject species within the local and global aquaculture industry."
+    ]
   },
   {
     id: "RD",
     number: 4,
     headline: "NURTURING LEADERS",
-    caption:
-      "Helping to educate the next leaders in aquaculture is something we take to epi-center. Bringing academic knowledge together with commercial aquaculture experience is the road to future achievements in aquaculture success. Our strategic partnerships with the university of Miami and Burapha university Thailand, have helped lay the necessary research foundation that informs our commercial strategy and allows us to be an exemplar of eco-friendly and sustainable business practices.",
+    caption: [
+      "We are passionate about educating the next leaders in aquaculture. Bringing together academic knowledge and commercial aquaculture experience is the road to the future of aquaculture.",
+      "Our strategic partnerships with the University of Miami and Burapha University, Thailand, have helped lay the necessary research foundation that informs our commercial strategy and allows us to be an exemplar of eco-friendly and sustainable business practices."
+    ],
     schoolEmblems: [
       {
         pic: images.schools.miami, //250
@@ -249,8 +253,11 @@ export const sectionData = [
   {
     number: 5,
     headline: "DESIGNING THE FUTURE",
-    caption:
-      "Conceptualizing and manufacturing a new RAS is at the heart of the future of aquaculture. Aqquua is developing a modular style RAS that can be constructed in a cost effective way with the flexibility to move ones’ assets from one site to another. We are also exploring new mechanisms to re-circulate water and the best procedures to manage waste-water in an environmental conscious and responsible way."
+    caption: [
+      "Conceptualizing and manufacturing a new RAS is at the core of the future of aquaculture. Aqquua is developing a modular RAS that can be constructed in a cost-effective way with the added flexibility to move assets from one site to another, as necessary.",
+
+      "Our experts are exploring innovations to re-circulate water economically and efficiently, while with finding the best procedures to manage waste-water in an environmentally conscious and responsible way."
+    ]
   },
   {
     caption: "Recipes",
@@ -263,8 +270,10 @@ export const sectionData = [
     eatFishTag: images.eatfishicons,
     number: 6,
     headline: "DOING IT IN STYLE",
-    caption:
-      "Showing our true colors in the way we raise our fish is the way to ensure 100% transparency and traceability. That’s why we have become proud members of the EATFISH platform, whose sole purpose is to efficiently track fish from our farm directly to your table.",
+    caption: [
+      "Showing our true colors in the way we raise our fish is our way to promote authenticity, transparency and traceability.",
+      "That’s why we have become proud members of the EATFISH platform, whose sole purpose is to track fish from our farm directly to your table."
+    ],
     content:
       "The EATFISH platform is useful as an educational tool that lets our customer verify, learn and enjoy their purchase in a truly and innovative way by successfully providing them with 100% transparency, sustainability and traceability information. Eat Fish sole purpose is to efficiently track fish from our farm all the way to our end users table. Eat Fish enables our customer to scan the Eat Fish tag attached to our fish, which has a QR and serial code. After scanning any given fish at the retailer, our customers will find an actual image of their specific fish potential purchase, nutritional facts and farm and country of origin. It also provides a recipe api leading our customers to great food recipes for the specific fish purchase. Once at home you can submit a video of your sea-food cooking experience from your very own kitchen. This allows us to connect to our customers and get immediate reviews that can help us to best serve them in the future. We sell our products under the trade mark “Sea food for what it is”… We don’t sell you a story, we prefer to hear yours!"
   },
@@ -273,8 +282,12 @@ export const sectionData = [
     title: "Sustainability",
     number: 7,
     headline: "WE PLANT THE SEED",
-    caption:
-      "Global warming is growing at an alarming rate and as a consequence seasonal and climate changes are a challenge to the “fish food” industry whether out to sea or on land. We raise our fish in a controlled, clean and happy home with no environmental consequences. In addition we make direct contributions to mangrove conservation and restoration literally in our own back yard.",
+    caption: [
+      "The earth is warming at an alarming rate and as a consequence seasonal and climate change are a challenge to the “fish food” industry out at sea.",
+      "We raise our fish in controlled, clean and self-contained environment, with no external effects.",
+      "Beyond our zero-environmental impact promise, we’ve gone further still, replanting mangroves, in our own back yard.",
+      "To learn how you can contribute to our initiatives, please visit our conservation and environmental improvements page."
+    ],
     content: {
       headline: "Mangrove Conservation:",
       text:
@@ -394,9 +407,9 @@ export const farmInfo = {
   ],
   title: "sustainable farming at aqquua",
   titleColor: "#f32e37",
-  fullScreenVideos: [
-    { video: "https://player.vimeo.com/video/281181900", title: "" }
-  ]
+
+  video: "https://player.vimeo.com/video/281181900",
+  title: ""
 };
 export const geneticsInfo = {
   title: "DIVERSITY IN FIN FISH IS THE FUTURE OF AQUACULTURE",

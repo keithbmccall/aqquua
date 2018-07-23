@@ -7,7 +7,7 @@ const ContentLargeVideo = props => {
       <div className="Content-media flex-column flex-1 flex">
         <div className="media-video-holder">
           <iframe
-            title={info.title}
+            // title={info.title}
             src={info.video}
             frameBorder="0"
             webkitallowfullscreen="true"

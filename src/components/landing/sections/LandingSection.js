@@ -5,8 +5,11 @@ import SectionNumber from "../section-items/SectionNumber";
 import SectionText from "../section-items/SectionText";
 import TrackingAnimations from "../../animations/TrackingAnimations";
 import EatFishTagIcon from "../eatfish/EatFishTagIcon";
-import { withRouter } from "react-router-dom";
-//
+import { withRouter, Link } from "react-router-dom";
+// test
+import images from "../../../data/images";
+import SVGC from "../../tools/images/SVG";
+
 const LandingSection = props => {
   const { item, index } = props;
   return (
@@ -29,6 +32,13 @@ const LandingSection = props => {
               number={item.number}
               fish={item.fish}
             />
+            <Link to={`/${item.id}`}>
+              <SVGC
+                path={images.backarrow}
+                className="back-arrow image"
+                // fill={props.color}
+              />
+            </Link>
           </div>
           {(item.schoolEmblems || item.eatFishTag) && (
             <TrackingAnimations type="sectionFade">

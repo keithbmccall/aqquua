@@ -19,7 +19,7 @@ const NavbarLinks = props => {
           duration={900}
           onClick={props.closeMenu}
         >
-          {props.link.title}
+          {props.link.title.toUpperCase()}
         </ScrollLink>
       ) : (
         <a href={`/#${props.link.id}`}>{props.link.title}</a>

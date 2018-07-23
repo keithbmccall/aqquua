@@ -29,7 +29,6 @@ class App extends Component {
                   onEntered={() =>
                     setTimeout(window.scrollTo(0, 0), transitionTime)
                   }
-                  onExit={() => console.log("exi")}
                 >
                   <Switch location={location}>
                     <Route
@@ -65,7 +64,7 @@ class App extends Component {
                       path="/eatfish"
                       render={props => <EatFishContainer {...props} />}
                     />
-                    <Route path="/" render={() => <Redirect to="/" />} />
+                    {/* <Route path="/" render={() => <Redirect to="/" />} /> */}
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>
