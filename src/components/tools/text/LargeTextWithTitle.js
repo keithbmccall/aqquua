@@ -2,6 +2,7 @@ import React from "react";
 
 const LargeTextWithTitle = props => {
   const { info } = props;
+  console.log(info.title);
   return (
     <div className="flex Content-info-holder space-10">
       <div className="Content-info flex-column flex-1">

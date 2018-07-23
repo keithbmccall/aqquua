@@ -53,18 +53,21 @@ class App extends Component {
                     />
 
                     <Route
+                      exact
                       path="/products/:id"
                       render={props => <ProductsContainer {...props} />}
                     />
                     <Route
+                      exact
                       path="/university-research/:id"
                       render={props => <ResearchContainer {...props} />}
                     />
                     <Route
+                      exact
                       path="/eatfish"
                       render={props => <EatFishContainer {...props} />}
                     />
-                    {/* <Route path="/" render={() => <Redirect to="/" />} /> */}
+                    <Route path="/" render={() => <Redirect to="/" />} />
                   </Switch>
                 </CSSTransition>
               </TransitionGroup>

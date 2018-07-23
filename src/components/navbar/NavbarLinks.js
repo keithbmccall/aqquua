@@ -15,14 +15,14 @@ const NavbarLinks = props => {
           activeclass="active"
           to={props.link.id}
           spy={true}
-          smooth={false}
-          duration={900}
+          smooth={true}
+          duration={1000}
           onClick={props.closeMenu}
         >
           {props.link.title.toUpperCase()}
         </ScrollLink>
       ) : (
-        <a href={`/#${props.link.id}`}> {props.link.title.toUpperCase()}</a>
+        <a href={`/#${props.link.id}`}>{props.link.title.toUpperCase()}</a>
       )}
     </li>
   );

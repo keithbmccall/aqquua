@@ -260,6 +260,9 @@ export const sectionData = [
     ]
   },
   {
+    backgroundImage: images.sectionals.sectionalFishTank
+  },
+  {
     number: 5,
     headline: "DESIGNING THE FUTURE",
     caption: [
@@ -277,6 +280,9 @@ export const sectionData = [
       "This work is integral to positioning diversity in fin-fish offerings, and the marine aquaculture industry, as the dominant contributor of environmentally sustainable marine protein worldwide.",
       "To this end, Aqquuas’ scientific mission is to integrate every genotypic and phenotypic breakthrough achieved, towards improving the commercial viability of the subject species within the local and global aquaculture industry."
     ]
+  },
+  {
+    backgroundImage: images.sectionals.sectionalHirame
   },
 
   {
@@ -410,8 +416,7 @@ export const farmInfo = {
   title: "sustainable farming at aqquua",
   titleColor: "#f32e37",
 
-  video: "https://player.vimeo.com/video/281181900",
-  title: ""
+  video: "https://player.vimeo.com/video/281181900"
 };
 export const geneticsInfo = {
   title: "DIVERSITY IN FIN FISH IS THE FUTURE OF AQUACULTURE",

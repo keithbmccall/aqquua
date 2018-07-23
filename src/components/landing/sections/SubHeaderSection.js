@@ -5,7 +5,7 @@ const SubHeaderSection = props => {
   const { item } = props;
 
   return (
-    <div className="flex-column flex Big-section Sub-header-section" id="About">
+    <div className="flex-column flex Big-section Sub-header-section">
       <WeAreCarousel
         weAreContent={item.content}
         title={item.title}

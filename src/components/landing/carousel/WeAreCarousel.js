@@ -102,7 +102,7 @@ export default class WeAreCarousel extends Component {
   }
   render() {
     const { weAreContent, title, logo } = this.props;
-    console.log(this.state.counter);
+    // console.log(this.state.counter);
     const content = weAreContent.map(this.renderContentBricks);
     return (
       <div className="Wa-container vh flex flex-content-center">

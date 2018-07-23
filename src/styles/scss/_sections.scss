@@ -120,7 +120,7 @@
 .Big-section-3 {
   background: $poppycolor;
 }
-.Big-section-8 {
+.Big-section-9 {
   background: linear-gradient(
     to bottom right,
     #210420,
@@ -131,7 +131,7 @@
     #9b0096
   );
 }
-.Big-section-7 {
+.Big-section-8 {
   background: linear-gradient(
     to bottom right,
     #f79d04,
@@ -145,10 +145,17 @@
     #f7c604
   );
 }
+.Big-section-7,
+.Big-section-10 {
+  background-size: cover;
+  height: 50vh;
+}
 .Big-section-5 {
   background: $pinkcolor;
 }
-.Big-section-9 {
+.Big-section-10 {
+}
+.Big-section-11 {
   background: linear-gradient(
     to bottom right,
     #1b7a06,
@@ -213,7 +220,7 @@
   justify-content: center;
   align-items: center;
   padding: 5% 0;
-  
+
   a {
     display: flex;
     justify-content: center;

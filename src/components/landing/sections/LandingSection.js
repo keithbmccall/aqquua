@@ -12,11 +12,16 @@ import SVGC from "../../tools/images/SVG";
 
 const LandingSection = props => {
   const { item, index } = props;
+  console.log(item.backgroundImage && console.log());
   return (
     <div
       className={`flex-column Big-section Big-section-${index}`}
-      id={item.id && item.id !== "About" ? item.id : ""}
-      //debuging
+      id={item.id && item.id !== "About" ? item.id : " "}
+      style={
+        item.backgroundImage
+          ? { backgroundImage: `url(${item.backgroundImage})` }
+          : {}
+      }
     >
       <div className="flex-1 flex-content-center space-10">
         <div
