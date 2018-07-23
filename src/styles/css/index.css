@@ -761,32 +761,55 @@ header {
   transform: scale(1.2);
   cursor: pointer; }
 
-.Recipes-container .Recipes-overlay {
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1), black);
-  height: 100%;
-  width: 100%; }
-.Recipes-container .Recipes-image-holder {
-  position: relative;
-  flex: 1;
-  height: 33.3vh;
-  overflow: hidden; }
+.Recipes-icon-holder {
+  background-size: 100% 100% !important;
+  background-repeat: no-repeat;
+  justify-content: center;
+  align-items: center;
+  padding: 5% 0; }
+  .Recipes-icon-holder a {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .Recipes-icon-holder .image {
+    width: 35%; }
   @media only screen and (min-width: 767px) {
-    .Recipes-container .Recipes-image-holder {
-      height: 40vh; } }
-  .Recipes-container .Recipes-image-holder:hover .image {
-    -moz-transform: scale(1.08);
-    -o-transform: scale(1.08);
-    -webkit-transform: scale(1.08);
-    transform: scale(1.08); }
-  .Recipes-container .Recipes-image-holder .image {
-    background-size: cover !important;
-    background-position: center center !important;
-    background-repeat: no-repeat !important;
+    .Recipes-icon-holder {
+      padding: 3% 0; }
+      .Recipes-icon-holder .image {
+        width: 40%; } }
+
+.Recipes-container {
+  margin-top: 2.5rem; }
+  .Recipes-container .Recipes-overlay {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
+    height: 100%;
+    width: 100%; }
+  .Recipes-container .Recipes-image-holder {
+    position: relative;
     flex: 1;
-    -moz-transition: all 0.6s ease-in-out;
-    -o-transition: all 0.6s ease-in-out;
-    -webkit-transition: all 0.6s ease-in-out;
-    transition: all 0.6s ease-in-out; }
+    height: 33.3vh;
+    overflow: hidden; }
+    @media only screen and (min-width: 767px) and (max-width: 989px) {
+      .Recipes-container .Recipes-image-holder {
+        height: 40vh; } }
+    @media only screen and (min-width: 990px) {
+      .Recipes-container .Recipes-image-holder {
+        height: 45vh; } }
+    .Recipes-container .Recipes-image-holder:hover .image {
+      -moz-transform: scale(1.03);
+      -o-transform: scale(1.03);
+      -webkit-transform: scale(1.03);
+      transform: scale(1.03); }
+    .Recipes-container .Recipes-image-holder .image {
+      background-size: cover !important;
+      background-position: center center !important;
+      background-repeat: no-repeat !important;
+      flex: 1;
+      -moz-transition: all 0.6s ease-in-out;
+      -o-transition: all 0.6s ease-in-out;
+      -webkit-transition: all 0.6s ease-in-out;
+      transition: all 0.6s ease-in-out; }
 
 .Header-band {
   border-bottom: solid 5px black; }

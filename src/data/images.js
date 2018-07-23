@@ -51,6 +51,9 @@ import um5 from "../assets/images/png/um/twoshirts.png";
 import um6 from "../assets/images/png/um/twoguys.png";
 import um7 from "../assets/images/png/um/schooloffish.png";
 import um8 from "../assets/images/png/um/twofish.png";
+//
+import recipewave from "../assets/images/png/food/recipesectionwave.gif";
+import recipeicon from "../assets/images/png/food/recipeicon.png";
 
 const schools = { miami, burapha };
 const productsFish = [
@@ -86,7 +89,11 @@ const heroImages = {
   grouper,
   tuna
 };
-const recipesImages = [recipes1, recipes2, recipes3];
+const recipesImages = {
+  images: [recipes3, recipes2, recipes1],
+  backgroundImage: recipewave,
+  icon: recipeicon
+};
 const geneticsImages = [genetics1, genetics2, genetics3, genetics4, genetics5];
 const sustainabilityImages = [sus1, sus2, sus3, sus4, sus5];
 const umImages = [um1, um3, um4, um5, um6, um8, um7, um2];

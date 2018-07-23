@@ -135,17 +135,6 @@ export const navbarLinks = [
     id: "Products"
   },
   {
-    title: "Genetics",
-    color: "#620c5f",
-    id: "Genetics"
-  },
-
-  {
-    title: "R&D",
-    color: "#e15d44",
-    id: "RD"
-  },
-  {
     title: "Recipes",
     color: "#573b30",
     id: "Recipes"
@@ -155,6 +144,17 @@ export const navbarLinks = [
     color: "#ff2882",
     id: "Eat-fish"
   },
+  {
+    title: "R&D",
+    color: "#e15d44",
+    id: "RD"
+  },
+  {
+    title: "Genetics",
+    color: "#620c5f",
+    id: "Genetics"
+  },
+
   {
     title: "Sustainability",
     color: "#28c900",
@@ -239,7 +239,7 @@ export const sectionData = [
     content:
       "The EATFISH platform is useful as an educational tool that lets our customer verify, learn and enjoy their purchase in a truly and innovative way by successfully providing them with 100% transparency, sustainability and traceability information. Eat Fish sole purpose is to efficiently track fish from our farm all the way to our end users table. Eat Fish enables our customer to scan the Eat Fish tag attached to our fish, which has a QR and serial code. After scanning any given fish at the retailer, our customers will find an actual image of their specific fish potential purchase, nutritional facts and farm and country of origin. It also provides a recipe api leading our customers to great food recipes for the specific fish purchase. Once at home you can submit a video of your sea-food cooking experience from your very own kitchen. This allows us to connect to our customers and get immediate reviews that can help us to best serve them in the future. We sell our products under the trade mark “Sea food for what it is”… We don’t sell you a story, we prefer to hear yours!"
   },
-  
+
   {
     id: "RD",
     number: 4,
