@@ -32,26 +32,26 @@
       @include transform(translateX(-50%));
       @include transition(all 2.4s ease-in-out);
       @include tablet {
-        line-height: 11rem !important;
+        line-height: 8rem !important;
       }
       @include desktop {
-        line-height: 13rem !important;
+        line-height: 9rem !important;
       }
     }
     &-title-fade {
       color: rgb(200, 200, 200);
     }
-    // @for $i from 0 through 28 {
-    //   @if $i % 2 == 0 {
-    //     &-#{$i} {
-    //       left: 0 !important;
-    //     }
-    //   } @else {
-    //     &-#{$i} {
-    //       right: 0 !important;
-    //     }
-    //   }
-    // }
+    @for $i from 0 through 28 {
+      @if $i % 2 == 0 {
+        &-#{$i} {
+          left: 0 !important;
+        }
+      } @else {
+        &-#{$i} {
+          right: 0 !important;
+        }
+      }
+    }
     &-0 {
       @extend .geo-thin;
     }
@@ -155,7 +155,7 @@
         font-size: 4rem;
       }
       &-title {
-        font-size: 15rem;
+        font-size: 10rem;
       }
       &-0 {
         left: 25% !important;
@@ -255,7 +255,7 @@
         font-size: 4.8rem;
       }
       &-title {
-        font-size: 18rem;
+        font-size: 12rem;
       }
       &-0 {
         left: 25% !important;
@@ -327,11 +327,11 @@
   // padding: 3rem;
 }
 .Wa-logo {
-  margin-top: 0rem;
-  margin-left: -6rem;
+  .image {
+    width: 50rem;
+  }
+  @include transform(translateX(-25%) !important);
   @include transition(opacity 2.4s ease-in-out !important);
   @include tabtop {
-    margin-top: -5rem;
-    margin-left: -20rem;
   }
 }

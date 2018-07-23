@@ -44,8 +44,11 @@
   max-width: $productscirclewidth;
   line-height: 30px;
   letter-spacing: 0.8px;
-  text-align: justify;
+  text-align: left;
   margin-bottom: 4rem;
+  @include tabtop {
+    text-align: justify;
+  }
   p {
     margin-bottom: 1rem;
   }

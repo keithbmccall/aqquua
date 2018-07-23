@@ -23,48 +23,52 @@ const LandingSection = props => {
           : {}
       }
     >
-      <div className="flex-1 flex-content-center space-10">
-        <div
-          className={`flex-content-center flex-column ${
-            item.fish ? "Products-fish-holder" : ""
-          }`}
-        >
-          <div className="collapse-row-column flex-1">
-            {item.number && <SectionNumber content={item.number} />}
-            <SectionText
-              caption={item.caption}
-              headline={item.headline}
-              number={item.number}
-              fish={item.fish}
-            />
-            <Link to={`/${item.id}`}>
-              <SVGC
-                path={images.backarrow}
-                className="back-arrow image"
-                // fill={props.color}
+      {!item.backgroundImage && (
+        <div className="flex-1 flex-content-center space-10">
+          <div
+            className={`flex-content-center flex-column ${
+              item.fish ? "Products-fish-holder" : ""
+            }`}
+          >
+            <div className="collapse-row-column flex-1">
+              {item.number && <SectionNumber content={item.number} />}
+              <SectionText
+                caption={item.caption}
+                headline={item.headline}
+                number={item.number}
+                fish={item.fish}
               />
-            </Link>
-          </div>
-          {(item.schoolEmblems || item.eatFishTag) && (
-            <TrackingAnimations type="sectionFade">
-              {item.schoolEmblems ? (
-                <div className="flex space-10 w-vw">
-                  {item.schoolEmblems.map((school, key) => (
-                    <SchoolEmblem key={key} school={school} />
-                  ))}
-                </div>
-              ) : (
-                <Fragment>
-                  <div className="flex-1 flex-content-center space-10">
-                    <EatFishTagIcon item={item.eatFishTag} />
-                  </div>
-                </Fragment>
+              {item.clickImage && (
+                <Link to={`/${item.id}`}>
+                  <SVGC
+                    path={images.backarrow}
+                    className="back-arrow image"
+                    // fill={props.color}
+                  />
+                </Link>
               )}
-            </TrackingAnimations>
-          )}
-          {item.fish && <ProductsCircleMap fish={item.fish} />}
+            </div>
+            {(item.schoolEmblems || item.eatFishTag) && (
+              <TrackingAnimations type="sectionFade">
+                {item.schoolEmblems ? (
+                  <div className="flex space-10 w-vw">
+                    {item.schoolEmblems.map((school, key) => (
+                      <SchoolEmblem key={key} school={school} />
+                    ))}
+                  </div>
+                ) : (
+                  <Fragment>
+                    <div className="flex-1 flex-content-center space-10">
+                      <EatFishTagIcon item={item.eatFishTag} />
+                    </div>
+                  </Fragment>
+                )}
+              </TrackingAnimations>
+            )}
+            {item.fish && <ProductsCircleMap fish={item.fish} />}
+          </div>
         </div>
-      </div>
+      )}
     </div>
   );
 };

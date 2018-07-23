@@ -641,8 +641,11 @@ header {
   max-width: 70%;
   line-height: 30px;
   letter-spacing: 0.8px;
-  text-align: justify;
+  text-align: left;
   margin-bottom: 4rem; }
+  @media only screen and (min-width: 767px) {
+    .Section-text {
+      text-align: justify; } }
   .Section-text p {
     margin-bottom: 1rem; }
   .Section-text h4 {
@@ -895,12 +898,70 @@ header {
     transition: all 2.4s ease-in-out; }
     @media only screen and (min-width: 767px) and (max-width: 989px) {
       .Wa-container .Wa-title {
-        line-height: 11rem !important; } }
+        line-height: 8rem !important; } }
     @media only screen and (min-width: 990px) {
       .Wa-container .Wa-title {
-        line-height: 13rem !important; } }
+        line-height: 9rem !important; } }
   .Wa-container .Wa-title-fade {
     color: #c8c8c8; }
+  .Wa-container .Wa-0 {
+    left: 0 !important; }
+  .Wa-container .Wa-1 {
+    right: 0 !important; }
+  .Wa-container .Wa-2 {
+    left: 0 !important; }
+  .Wa-container .Wa-3 {
+    right: 0 !important; }
+  .Wa-container .Wa-4 {
+    left: 0 !important; }
+  .Wa-container .Wa-5 {
+    right: 0 !important; }
+  .Wa-container .Wa-6 {
+    left: 0 !important; }
+  .Wa-container .Wa-7 {
+    right: 0 !important; }
+  .Wa-container .Wa-8 {
+    left: 0 !important; }
+  .Wa-container .Wa-9 {
+    right: 0 !important; }
+  .Wa-container .Wa-10 {
+    left: 0 !important; }
+  .Wa-container .Wa-11 {
+    right: 0 !important; }
+  .Wa-container .Wa-12 {
+    left: 0 !important; }
+  .Wa-container .Wa-13 {
+    right: 0 !important; }
+  .Wa-container .Wa-14 {
+    left: 0 !important; }
+  .Wa-container .Wa-15 {
+    right: 0 !important; }
+  .Wa-container .Wa-16 {
+    left: 0 !important; }
+  .Wa-container .Wa-17 {
+    right: 0 !important; }
+  .Wa-container .Wa-18 {
+    left: 0 !important; }
+  .Wa-container .Wa-19 {
+    right: 0 !important; }
+  .Wa-container .Wa-20 {
+    left: 0 !important; }
+  .Wa-container .Wa-21 {
+    right: 0 !important; }
+  .Wa-container .Wa-22 {
+    left: 0 !important; }
+  .Wa-container .Wa-23 {
+    right: 0 !important; }
+  .Wa-container .Wa-24 {
+    left: 0 !important; }
+  .Wa-container .Wa-25 {
+    right: 0 !important; }
+  .Wa-container .Wa-26 {
+    left: 0 !important; }
+  .Wa-container .Wa-27 {
+    right: 0 !important; }
+  .Wa-container .Wa-28 {
+    left: 0 !important; }
   @media only screen and (max-width: 766px) {
     .Wa-container .Wa-25 {
       font-size: 2.2rem;
@@ -957,7 +1018,7 @@ header {
     .Wa-container .Wa-text {
       font-size: 4rem; }
     .Wa-container .Wa-title {
-      font-size: 15rem; }
+      font-size: 10rem; }
     .Wa-container .Wa-0 {
       left: 25% !important; }
     .Wa-container .Wa-1 {
@@ -1022,7 +1083,7 @@ header {
     .Wa-container .Wa-text {
       font-size: 4.8rem; }
     .Wa-container .Wa-title {
-      font-size: 18rem; }
+      font-size: 12rem; }
     .Wa-container .Wa-0 {
       left: 25% !important; }
     .Wa-container .Wa-1 {
@@ -1068,16 +1129,16 @@ header {
   opacity: 1; }
 
 .Wa-logo {
-  margin-top: 0rem;
-  margin-left: -6rem;
+  -moz-transform: translateX(-25%) !important;
+  -o-transform: translateX(-25%) !important;
+  -webkit-transform: translateX(-25%) !important;
+  transform: translateX(-25%) !important;
   -moz-transition: opacity 2.4s ease-in-out !important;
   -o-transition: opacity 2.4s ease-in-out !important;
   -webkit-transition: opacity 2.4s ease-in-out !important;
   transition: opacity 2.4s ease-in-out !important; }
-  @media only screen and (min-width: 767px) {
-    .Wa-logo {
-      margin-top: -5rem;
-      margin-left: -20rem; } }
+  .Wa-logo .image {
+    width: 50rem; }
 
 .Products-animation {
   -moz-transform: rotate(2turn) translateX(0) !important;

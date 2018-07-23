@@ -127,7 +127,8 @@ export const navbarLinks = [
   {
     title: "Farm",
     color: "#f32e37",
-    id: "Farm"
+    id: "Farm",
+    link: true
   },
   {
     title: "Fin-fish",
@@ -142,7 +143,8 @@ export const navbarLinks = [
   {
     title: "EatFish",
     color: "#ff2882",
-    id: "Eat-fish"
+    id: "Eatfish",
+    link: true
   },
   {
     title: "R&D",
@@ -152,13 +154,15 @@ export const navbarLinks = [
   {
     title: "Genetics",
     color: "#620c5f",
-    id: "Genetics"
+    id: "Genetics",
+    link: true
   },
 
   {
     title: "Sustainability",
     color: "#28c900",
-    id: "Sustainability"
+    id: "Sustainability",
+    link: true
   },
 
   {
@@ -210,6 +214,7 @@ export const sectionData = [
     fish: images.productsFish
   },
   {
+    clickImage: " ",
     id: "Farm",
     number: 2,
     title: "Non-Conformists",
@@ -272,6 +277,7 @@ export const sectionData = [
     ]
   },
   {
+    clickImage: " ",
     id: "Genetics",
     number: 6,
     headline: "WE ARE INNOVATORS",
