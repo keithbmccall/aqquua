@@ -494,7 +494,7 @@ img {
     padding: 0 7rem;
     flex-wrap: wrap; }
     .Content-image-title .Content-holder {
-      width: 50%;
+      width: 33.3%;
       padding: 0 3rem; }
       .Content-image-title .Content-holder img {
         width: 100% !important; } }
@@ -641,7 +641,7 @@ header {
   max-width: 70%;
   line-height: 30px;
   letter-spacing: 0.8px;
-  text-align: auto;
+  text-align: justify;
   margin-bottom: 4rem; }
   .Section-text p {
     margin-bottom: 1rem; }
@@ -696,19 +696,19 @@ header {
 .Big-section-1 {
   background: #00b6d9; }
 
-.Big-section-5 {
+.Big-section-6 {
   background: #ea5924; }
 
 .Big-section-3 {
   background: #f32e37; }
 
-.Big-section-4 {
+.Big-section-8 {
   background: linear-gradient(to bottom right, #210420, #490847, #620c5f, #620c5f, #770574, #9b0096); }
 
-.Big-section-6 {
+.Big-section-7 {
   background: linear-gradient(to bottom right, #f79d04, #f79d04, #f79d04, #f7aa04, #ffb30f, #f7ba04, #ffc31c, #f7c604, #f7c604); }
 
-.Big-section-8 {
+.Big-section-5 {
   background: #ff2882; }
 
 .Big-section-9 {

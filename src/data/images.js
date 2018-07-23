@@ -89,7 +89,7 @@ const heroImages = {
 const recipesImages = [recipes1, recipes2, recipes3];
 const geneticsImages = [genetics1, genetics2, genetics3, genetics4, genetics5];
 const sustainabilityImages = [sus1, sus2, sus3, sus4, sus5];
-const umImages = [um1, um2, um3, um4, um5, um6, um7, um8];
+const umImages = [um1, um3, um4, um5, um6, um8, um7, um2];
 const images = {
   fishPrint,
   logo,

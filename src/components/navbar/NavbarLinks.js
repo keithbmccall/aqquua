@@ -22,7 +22,7 @@ const NavbarLinks = props => {
           {props.link.title.toUpperCase()}
         </ScrollLink>
       ) : (
-        <a href={`/#${props.link.id}`}>{props.link.title}</a>
+        <a href={`/#${props.link.id}`}> {props.link.title.toUpperCase()}</a>
       )}
     </li>
   );

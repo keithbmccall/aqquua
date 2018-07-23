@@ -222,15 +222,24 @@ export const sectionData = [
     ]
   },
   {
-    id: "Genetics",
-    number: 3,
-    headline: "WE ARE INNOVATORS",
-    caption: [
-      "We are actively contributing to the development of scientifically comprehensive genetics research.",
-      "This work is integral to positioning diversity in fin-fish offerings, and the marine aquaculture industry, as the dominant contributor of environmentally sustainable marine protein worldwide.",
-      "To this end, Aqquuas’ scientific mission is to integrate every genotypic and phenotypic breakthrough achieved, towards improving the commercial viability of the subject species within the local and global aquaculture industry."
-    ]
+    caption: "Recipes",
+    id: "Recipes",
+    images: images.recipesImages
   },
+  {
+    id: "Eat-fish",
+    title: "Eat Fish",
+    eatFishTag: images.eatfishicons,
+    number: 3,
+    headline: "DOING IT IN STYLE",
+    caption: [
+      "Showing our true colors in the way we raise our fish is our way to promote authenticity, transparency and traceability.",
+      "That’s why we have become proud members of the EATFISH platform, whose sole purpose is to track fish from our farm directly to your table."
+    ],
+    content:
+      "The EATFISH platform is useful as an educational tool that lets our customer verify, learn and enjoy their purchase in a truly and innovative way by successfully providing them with 100% transparency, sustainability and traceability information. Eat Fish sole purpose is to efficiently track fish from our farm all the way to our end users table. Eat Fish enables our customer to scan the Eat Fish tag attached to our fish, which has a QR and serial code. After scanning any given fish at the retailer, our customers will find an actual image of their specific fish potential purchase, nutritional facts and farm and country of origin. It also provides a recipe api leading our customers to great food recipes for the specific fish purchase. Once at home you can submit a video of your sea-food cooking experience from your very own kitchen. This allows us to connect to our customers and get immediate reviews that can help us to best serve them in the future. We sell our products under the trade mark “Sea food for what it is”… We don’t sell you a story, we prefer to hear yours!"
+  },
+  
   {
     id: "RD",
     number: 4,
@@ -260,23 +269,16 @@ export const sectionData = [
     ]
   },
   {
-    caption: "Recipes",
-    id: "Recipes",
-    images: images.recipesImages
-  },
-  {
-    id: "Eat-fish",
-    title: "Eat Fish",
-    eatFishTag: images.eatfishicons,
+    id: "Genetics",
     number: 6,
-    headline: "DOING IT IN STYLE",
+    headline: "WE ARE INNOVATORS",
     caption: [
-      "Showing our true colors in the way we raise our fish is our way to promote authenticity, transparency and traceability.",
-      "That’s why we have become proud members of the EATFISH platform, whose sole purpose is to track fish from our farm directly to your table."
-    ],
-    content:
-      "The EATFISH platform is useful as an educational tool that lets our customer verify, learn and enjoy their purchase in a truly and innovative way by successfully providing them with 100% transparency, sustainability and traceability information. Eat Fish sole purpose is to efficiently track fish from our farm all the way to our end users table. Eat Fish enables our customer to scan the Eat Fish tag attached to our fish, which has a QR and serial code. After scanning any given fish at the retailer, our customers will find an actual image of their specific fish potential purchase, nutritional facts and farm and country of origin. It also provides a recipe api leading our customers to great food recipes for the specific fish purchase. Once at home you can submit a video of your sea-food cooking experience from your very own kitchen. This allows us to connect to our customers and get immediate reviews that can help us to best serve them in the future. We sell our products under the trade mark “Sea food for what it is”… We don’t sell you a story, we prefer to hear yours!"
+      "We are actively contributing to the development of scientifically comprehensive genetics research.",
+      "This work is integral to positioning diversity in fin-fish offerings, and the marine aquaculture industry, as the dominant contributor of environmentally sustainable marine protein worldwide.",
+      "To this end, Aqquuas’ scientific mission is to integrate every genotypic and phenotypic breakthrough achieved, towards improving the commercial viability of the subject species within the local and global aquaculture industry."
+    ]
   },
+
   {
     id: "Sustainability",
     title: "Sustainability",
