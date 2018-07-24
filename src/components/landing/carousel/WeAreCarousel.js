@@ -106,23 +106,26 @@ export default class WeAreCarousel extends Component {
     const content = weAreContent.map(this.renderContentBricks);
     return (
       <div className="Wa-container vh flex flex-content-center">
-        <h3 className={`Wa-h3 Wa-title centered ${this.state.title} `}>
-          {title
-            .split(" ")
-            .splice(0, 1)
-            .toString()
-            .toUpperCase()}
-          <span>
+        <div className={`Wa-h2 centered ${this.state.title}`}>
+          <h2 className={`Wa-title`}>
             {title
               .split(" ")
-              .splice(1)
+              .splice(0, 1)
               .toString()
               .toUpperCase()}
-          </span>
-          <span className={`Wa-logo logo ${this.state.logoMark}`}>
+            <span>
+              {title
+                .split(" ")
+                .splice(1)
+                .toString()
+                .toUpperCase()}
+            </span>
+          </h2>
+          <div className={`Wa-logo logo`}>
             <SVGC fill="#85dbd7" path={logo} className="image" />
-          </span>
-        </h3>
+          </div>
+        </div>
+        {/* ${this.state.logoMark} */}
         <div className="Wa-words">{content}</div>
       </div>
     );

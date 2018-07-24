@@ -39,7 +39,7 @@ body, .Contact-holder .Contact-form form input,
 .Contact-holder .Contact-form form textarea, .Header-section, .Wa-container .Wa-1, .Wa-container .Wa-7, .Wa-container .Wa-16, .Wa-container .Wa-18, .Wa-container .Wa-21 {
   font-family: "geomanist-light", Arial, Helvetica, sans-serif; }
 
-.geo-ultra, .Wa-container .Wa-title {
+.geo-ultra, .Wa-container .Wa-h2 h2 {
   font-family: "geomanist-ultra", Arial, Helvetica, sans-serif; }
 
 .geo-bold-italics, .Contact-holder h3, .Products-info h1 span, .Content-info-holder .Content-list-holder ul li span,
@@ -130,7 +130,7 @@ img {
 .relative, .Wa-container {
   position: relative; }
 
-.absolute, .Nav-container, .Wa-container h3, .Wa-container .Wa-title {
+.absolute, .Nav-container, .Wa-container h3, .Wa-container .Wa-h2 {
   position: absolute; }
 
 .fixed, header {
@@ -851,7 +851,7 @@ header {
         letter-spacing: 2px; } }
     .Header-section h1 span {
       white-space: nowrap; }
-  .Header-section .absolute, .Header-section .Nav-container, .Header-section .Wa-container h3, .Wa-container .Header-section h3, .Header-section .Wa-container .Wa-title, .Wa-container .Header-section .Wa-title {
+  .Header-section .absolute, .Header-section .Nav-container, .Header-section .Wa-container h3, .Wa-container .Header-section h3, .Header-section .Wa-container .Wa-h2, .Wa-container .Header-section .Wa-h2 {
     width: 100%;
     bottom: 0;
     left: 50%;
@@ -864,44 +864,75 @@ header {
 .Wa-container {
   white-space: nowrap; }
   .Wa-container h3 {
-    margin-bottom: 0;
     -moz-transition: all 0.5s ease-in-out 0.5s;
     -o-transition: all 0.5s ease-in-out 0.5s;
     -webkit-transition: all 0.5s ease-in-out 0.5s;
     transition: all 0.5s ease-in-out 0.5s; }
-    .Wa-container h3 span {
-      display: block;
-      -moz-transform: translateX(32.5%);
-      -o-transform: translateX(32.5%);
-      -webkit-transform: translateX(32.5%);
-      transform: translateX(32.5%); }
-    @media only screen and (min-width: 990px) {
-      .Wa-container h3 span {
-        display: block;
-        -moz-transform: translateX(32.5%);
-        -o-transform: translateX(32.5%);
-        -webkit-transform: translateX(32.5%);
-        transform: translateX(32.5%); } }
   .Wa-container .Wa-text {
     font-size: 2.8rem; }
-  .Wa-container .Wa-title {
-    font-size: 6rem;
+  .Wa-container .Wa-h2 {
     top: 30%;
-    line-height: 4.5rem;
-    -moz-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
     -moz-transition: all 2.4s ease-in-out;
     -o-transition: all 2.4s ease-in-out;
     -webkit-transition: all 2.4s ease-in-out;
     transition: all 2.4s ease-in-out; }
+    .Wa-container .Wa-h2 h2 {
+      font-size: 6rem; }
+      .Wa-container .Wa-h2 h2 span {
+        display: inline-block;
+        -moz-transform: translate(-5.5rem, 4.5rem) !important;
+        -o-transform: translate(-5.5rem, 4.5rem) !important;
+        -webkit-transform: translate(-5.5rem, 4.5rem) !important;
+        transform: translate(-5.5rem, 4.5rem) !important; }
+    .Wa-container .Wa-h2 .Wa-logo {
+      padding: 0 5% !important;
+      -moz-transform: translate(0, 2rem) !important;
+      -o-transform: translate(0, 2rem) !important;
+      -webkit-transform: translate(0, 2rem) !important;
+      transform: translate(0, 2rem) !important;
+      -moz-transition: opacity 2.4s ease-in-out !important;
+      -o-transition: opacity 2.4s ease-in-out !important;
+      -webkit-transition: opacity 2.4s ease-in-out !important;
+      transition: opacity 2.4s ease-in-out !important; }
+      .Wa-container .Wa-h2 .Wa-logo .image {
+        width: 50rem; }
     @media only screen and (min-width: 767px) and (max-width: 989px) {
-      .Wa-container .Wa-title {
-        line-height: 8rem !important; } }
+      .Wa-container .Wa-h2 h2 {
+        font-size: 9rem; }
+        .Wa-container .Wa-h2 h2 span {
+          -moz-transform: translate(-8.5rem, 6.5rem) !important;
+          -o-transform: translate(-8.5rem, 6.5rem) !important;
+          -webkit-transform: translate(-8.5rem, 6.5rem) !important;
+          transform: translate(-8.5rem, 6.5rem) !important; }
+      .Wa-container .Wa-h2 .Wa-logo {
+        -moz-transform: translateY(4rem) !important;
+        -o-transform: translateY(4rem) !important;
+        -webkit-transform: translateY(4rem) !important;
+        transform: translateY(4rem) !important;
+        -moz-transition: opacity 2.4s ease-in-out !important;
+        -o-transition: opacity 2.4s ease-in-out !important;
+        -webkit-transition: opacity 2.4s ease-in-out !important;
+        transition: opacity 2.4s ease-in-out !important; } }
     @media only screen and (min-width: 990px) {
-      .Wa-container .Wa-title {
-        line-height: 9rem !important; } }
+      .Wa-container .Wa-h2 h2 {
+        font-size: 15rem; }
+        .Wa-container .Wa-h2 h2 span {
+          display: inline-block;
+          -moz-transform: translate(-14.25rem, 11rem) !important;
+          -o-transform: translate(-14.25rem, 11rem) !important;
+          -webkit-transform: translate(-14.25rem, 11rem) !important;
+          transform: translate(-14.25rem, 11rem) !important; }
+      .Wa-container .Wa-h2 .Wa-logo {
+        -moz-transform: translateY(5rem) !important;
+        -o-transform: translateY(5rem) !important;
+        -webkit-transform: translateY(5rem) !important;
+        transform: translateY(5rem) !important;
+        -moz-transition: opacity 2.4s ease-in-out !important;
+        -o-transition: opacity 2.4s ease-in-out !important;
+        -webkit-transition: opacity 2.4s ease-in-out !important;
+        transition: opacity 2.4s ease-in-out !important; }
+        .Wa-container .Wa-h2 .Wa-logo .image {
+          width: 50rem; } }
   .Wa-container .Wa-title-fade {
     color: #c8c8c8; }
   .Wa-container .Wa-0 {
@@ -1127,18 +1158,6 @@ header {
 
 [class*="Wa-bricks"] {
   opacity: 1; }
-
-.Wa-logo {
-  -moz-transform: translateX(-25%) !important;
-  -o-transform: translateX(-25%) !important;
-  -webkit-transform: translateX(-25%) !important;
-  transform: translateX(-25%) !important;
-  -moz-transition: opacity 2.4s ease-in-out !important;
-  -o-transition: opacity 2.4s ease-in-out !important;
-  -webkit-transition: opacity 2.4s ease-in-out !important;
-  transition: opacity 2.4s ease-in-out !important; }
-  .Wa-logo .image {
-    width: 50rem; }
 
 .Products-animation {
   -moz-transform: rotate(2turn) translateX(0) !important;

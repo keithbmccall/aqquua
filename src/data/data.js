@@ -198,7 +198,7 @@ export const sectionData = [
     headline: "WE TAKE OUR JOB SERIOUSLY",
     caption: [
       "The Aqquua philosophy is that a source of sustainably-farmed, heathful, and antibiotic- and hormone-free fin-fish is not only globally necessary, but financially and technically feasible.",
-      "Our mission is was to develop the innovative and scalable technology and best practices to meet this global need and bring a sublime seafood experience to the customer’s table.",
+      "Our mission is to develop the innovative and scalable technology and best practices to meet this global need and bring a sublime seafood experience to the customer’s table.",
       "We’ve succeeded."
     ]
   },
