@@ -1,7 +1,7 @@
 import React from "react";
 import TextAndHeadline from "../../tools/text/TextAndHeadline";
 import TrackingAnimations from "../../animations/TrackingAnimations";
-
+import PropTypes from "prop-types";
 const SectionText = props => (
   <div
     className={`flex-1 flex Section-text-holder ${(props.className || "") &&
@@ -11,13 +11,13 @@ const SectionText = props => (
       className={`${!props.number && "flex-content-center"}`}
       type="sectionFade"
     >
-      <div className="flex flex-1 flex-content-center">
+      <div className="flex flex-content-center">
         <TextAndHeadline
           text={props.caption}
           headline={props.headline}
-          className={`${!props.fish &&
-            "text-white"} flex-1 flex-column ${props.contentClassName &&
-            props.contentClassName}`}
+          className={`${
+            props.fish ? "Products-caption" : " "
+          } flex-1 flex-column`}
         />
       </div>
     </TrackingAnimations>
@@ -25,3 +25,8 @@ const SectionText = props => (
 );
 
 export default SectionText;
+
+SectionText.propTypes = {
+  caption: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).required,
+  headline: PropTypes.string.required
+};

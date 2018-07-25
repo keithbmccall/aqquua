@@ -1,40 +1,31 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import TextAndHeadline from "../../tools/text/TextAndHeadline";
 
 const RecipesSection = props => {
   const renderImages = (image, key) => {
     return (
-      <div className="Recipes-image-holder flex" key={key}>
-        <div style={{ background: `url(${image})` }} className="image" />
-        <div className="centered Recipes-overlay" />
+      <div className="Recipes-image-holder" key={key}>
+        <img src={image} className="image" alt="Recipes" />
       </div>
     );
   };
 
   const recipesImages = props.item.images.images.map(renderImages);
-  console.log(props.item.images.backgroundImage);
+  const recipeImage = props.item.images.images[0];
   return (
-    <div className="flex-column Big-section vh flex">
-      <div
-        className="Recipes-icon-holder flex"
-        style={{
-          backgroundImage: `url(${props.item.images.backgroundImage})`
-        }}
-      >
-        <a href="https://www.yummly.com/profile/MarvelousCulinaire61283">
-          <img src={props.item.images.icon} className="image" />
-        </a>
-      </div>
+    <div className="flex-column Big-section vh flex Recipes-container">
+      <div className="flex Recipes-content-container collapse-row-column flex-1">
+        <div className="flex-1 Recipes-caption flex">
+          
+          <TextAndHeadline
+            headline="RECIPES"
+            text={props.item.caption}
+            className="text-black"
+          />
+        </div>
 
-      <div className="flex flex-1 Recipes-container collapse-row-column">
-        {recipesImages}
-      </div>
-      <div
-        className="Recipes-icon-holder flex"
-        style={{ backgroundImage: `url(${props.item.images.backgroundImage})` }}
-      >
-        <div>
-          <img src={props.item.images.icon} className="image opacity-0" />
+        <div className="Recipes-image-holder">
+          <img src={recipeImage} className="image" alt="Recipes" />
         </div>
       </div>
     </div>

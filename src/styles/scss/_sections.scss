@@ -16,6 +16,7 @@
 
     .Section-number {
       @extend .geo-bold;
+
       font-size: 15rem;
       padding: 0;
       // line-height: 5rem;
@@ -39,6 +40,7 @@
   font-size: 2em;
 }
 .Section-text {
+  color: white;
   hyphens: none;
   font-size: 1.2rem;
   max-width: $productscirclewidth;
@@ -46,6 +48,9 @@
   letter-spacing: 0.8px;
   text-align: left;
   margin-bottom: 4rem;
+  @include mobile {
+    text-align: center;
+  }
   @include tabtop {
     text-align: justify;
   }
@@ -68,7 +73,15 @@
     margin: inherit;
   }
 }
-
+.Products-caption {
+  color: black !important;
+  @include tabtop {
+    text-align: justify;
+    font-size: 1.2rem;
+    max-width: 55% !important;
+    line-height: 2.4rem;
+  }
+}
 .Products-fish {
   display: flex;
   flex-direction: column;
@@ -110,10 +123,6 @@
     }
   }
 }
-// .Big-section-1 {
-//   background: $ottercolor;
-// }
-
 .Big-section-1 {
   background: $atollcolor;
 }
@@ -217,61 +226,65 @@
   cursor: pointer;
 }
 //
-.Recipes-icon-holder {
-  background-size: 100% 100% !important;
-  background-repeat: no-repeat;
-  justify-content: center;
-  align-items: center;
-  padding: 5% 0;
-
-  a {
-    display: flex;
+.Recipes-container {
+  .Recipes-icon-holder {
     justify-content: center;
     align-items: center;
+    a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    @include tabtop {
+      padding: 3% 0;
+      .image {
+        width: 40%;
+      }
+    }
   }
-  .image {
-    width: 35%;
-  }
-  @include tabtop {
-    padding: 3% 0;
-    .image {
-      width: 40%;
+  .Recipes-content-container {
+    justify-content: space-between;
+    .Recipes-caption {
+      justify-content: center;
+      margin-top: 5rem;
+      text-align: center;
+    }
+    .Recipes-image-holder {
+      overflow: hidden;
+      &:hover .image {
+        @include transform(scale(1.02));
+      }
+      .image {
+        width: 100%;
+        @include transform(scale(1));
+        @include transition(all 0.6s ease-in-out);
+      }
+    }
+    @include tabtop {
+      .Recipes-caption {
+        padding-left: 5%;
+        margin-top: 20rem;
+        text-align: initial;
+      }
+      .Recipes-image-holder {
+        order: -1;
+        flex: 1.2;
+        padding: 10rem 0 0 3%;
+        &:hover .image {
+          @include transform(scale(1.02));
+        }
+        .image {
+          width: 100%;
+          @include transform(scale(1));
+          @include transition(all 0.6s ease-in-out);
+        }
+      }
     }
   }
 }
-.Recipes-container {
-  margin-top: 2.5rem;
-  @include tabtop {
-  }
-  .Recipes-overlay {
-    background: linear-gradient(
-      to bottom,
-      rgba(0, 0, 0, 0),
-      rgba(0, 0, 0, 0.1)
-    );
-    height: 100%;
-    width: 100%;
-  }
-  .Recipes-image-holder {
-    position: relative;
-    flex: 1;
-    height: 33.3vh;
-    overflow: hidden;
-    @include tablet {
-      height: 40vh;
-    }
-    @include desktop {
-      height: 45vh;
-    }
-    &:hover .image {
-      @include transform(scale(1.03));
-    }
-    .image {
-      background-size: cover !important;
-      background-position: center center !important;
-      background-repeat: no-repeat !important;
-      flex: 1;
-      @include transition(all 0.6s ease-in-out);
-    }
-  }
+.Big-background {
+  @extend .vh;
+  // background-size: cover;
+  background-position: 100% 60%;
 }

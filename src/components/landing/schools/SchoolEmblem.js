@@ -7,7 +7,7 @@ const SchoolEmblem = props => (
       <img
         src={props.school.pic}
         alt={props.school.name}
-        className="image School-emblem"
+        className="image School-emblem light-shadow-round"
       />
     </Link>
   </div>

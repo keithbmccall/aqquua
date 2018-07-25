@@ -99,7 +99,7 @@ main {
 img {
   border-radius: 2px; }
 
-.vh {
+.vh, .Big-background {
   min-height: 100vh; }
 
 .w-vw {
@@ -168,10 +168,10 @@ img {
       flex-direction: row; } }
 
 .text-white {
-  color: white; }
+  color: white !important; }
 
 .text-black {
-  color: black; }
+  color: black !important; }
 
 .opacity-1 {
   opacity: 1 !important; }
@@ -229,6 +229,13 @@ img {
   position: absolute;
   font-size: 1.5rem;
   top: 1rem; }
+
+.light-shadow-round {
+  border-radius: 100%;
+  box-shadow: 0rem 0.5rem 2rem rgba(0, 0, 0, 0.267); }
+
+.text-shadow-light {
+  text-shadow: 0rem 0.5rem 2rem rgba(0, 0, 0, 0.267); }
 
 .swoop-enter {
   position: fixed;
@@ -294,9 +301,8 @@ img {
       .Contact-holder .Contact-form form textarea {
         background: rgba(100, 100, 100, 0.1);
         width: 100%;
-        border: 1px solid #87857d;
-        border-radius: 5px;
-        margin-bottom: 1rem;
+        border: 4px solid #87857d;
+        margin-bottom: 2rem;
         padding-left: 0.5rem;
         font-size: 1rem; }
       .Contact-holder .Contact-form form input {
@@ -326,18 +332,21 @@ img {
           height: 15rem; } }
 
 .Contact-message, .Contact-email, .Contact-fname, .Contact-lname {
-  -moz-transition: background 0.3 ease-in;
-  -o-transition: background 0.3 ease-in;
-  -webkit-transition: background 0.3 ease-in;
-  transition: background 0.3 ease-in; }
+  caret-color: #87857d;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  -webkit-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in; }
+  .Contact-message:hover, .Contact-message:focus, .Contact-email:hover, .Contact-email:focus, .Contact-fname:hover, .Contact-fname:focus, .Contact-lname:hover, .Contact-lname:focus {
+    color: white; }
 .Contact-message:hover, .Contact-message:focus {
-  background: rgba(90, 208, 186, 0.2) !important; }
+  background-color: #5ad0ba !important; }
 .Contact-email:hover, .Contact-email:focus {
-  background: rgba(225, 93, 68, 0.2) !important; }
+  background-color: #e15d44 !important; }
 .Contact-fname:hover, .Contact-fname:focus {
-  background: rgba(77, 68, 138, 0.2) !important; }
+  background-color: #4d448a !important; }
 .Contact-lname:hover, .Contact-lname:focus {
-  background: rgba(195, 68, 122, 0.2) !important; }
+  background-color: #c3447a !important; }
 
 .Products-info {
   flex: 8;
@@ -636,6 +645,7 @@ header {
   font-size: 2em; }
 
 .Section-text {
+  color: white;
   hyphens: none;
   font-size: 1.2rem;
   max-width: 70%;
@@ -643,6 +653,9 @@ header {
   letter-spacing: 0.8px;
   text-align: left;
   margin-bottom: 4rem; }
+  @media only screen and (max-width: 766px) {
+    .Section-text {
+      text-align: center; } }
   @media only screen and (min-width: 767px) {
     .Section-text {
       text-align: justify; } }
@@ -661,6 +674,15 @@ header {
   @media only screen and (min-width: 767px) {
     .Products-fish-holder {
       margin: inherit; } }
+
+.Products-caption {
+  color: black !important; }
+  @media only screen and (min-width: 767px) {
+    .Products-caption {
+      text-align: justify;
+      font-size: 1.2rem;
+      max-width: 55% !important;
+      line-height: 2.4rem; } }
 
 .Products-fish {
   display: flex;
@@ -769,55 +791,68 @@ header {
   transform: scale(1.2);
   cursor: pointer; }
 
-.Recipes-icon-holder {
-  background-size: 100% 100% !important;
-  background-repeat: no-repeat;
+.Recipes-container .Recipes-icon-holder {
   justify-content: center;
-  align-items: center;
-  padding: 5% 0; }
-  .Recipes-icon-holder a {
+  align-items: center; }
+  .Recipes-container .Recipes-icon-holder a {
     display: flex;
     justify-content: center;
     align-items: center; }
-  .Recipes-icon-holder .image {
-    width: 35%; }
   @media only screen and (min-width: 767px) {
-    .Recipes-icon-holder {
+    .Recipes-container .Recipes-icon-holder {
       padding: 3% 0; }
-      .Recipes-icon-holder .image {
+      .Recipes-container .Recipes-icon-holder .image {
         width: 40%; } }
-
-.Recipes-container {
-  margin-top: 2.5rem; }
-  .Recipes-container .Recipes-overlay {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.1));
-    height: 100%;
-    width: 100%; }
-  .Recipes-container .Recipes-image-holder {
-    position: relative;
-    flex: 1;
-    height: 33.3vh;
+.Recipes-container .Recipes-content-container {
+  justify-content: space-between; }
+  .Recipes-container .Recipes-content-container .Recipes-caption {
+    justify-content: center;
+    margin-top: 5rem;
+    text-align: center; }
+  .Recipes-container .Recipes-content-container .Recipes-image-holder {
     overflow: hidden; }
-    @media only screen and (min-width: 767px) and (max-width: 989px) {
-      .Recipes-container .Recipes-image-holder {
-        height: 40vh; } }
-    @media only screen and (min-width: 990px) {
-      .Recipes-container .Recipes-image-holder {
-        height: 45vh; } }
-    .Recipes-container .Recipes-image-holder:hover .image {
-      -moz-transform: scale(1.03);
-      -o-transform: scale(1.03);
-      -webkit-transform: scale(1.03);
-      transform: scale(1.03); }
-    .Recipes-container .Recipes-image-holder .image {
-      background-size: cover !important;
-      background-position: center center !important;
-      background-repeat: no-repeat !important;
-      flex: 1;
+    .Recipes-container .Recipes-content-container .Recipes-image-holder:hover .image {
+      -moz-transform: scale(1.02);
+      -o-transform: scale(1.02);
+      -webkit-transform: scale(1.02);
+      transform: scale(1.02); }
+    .Recipes-container .Recipes-content-container .Recipes-image-holder .image {
+      width: 100%;
+      -moz-transform: scale(1);
+      -o-transform: scale(1);
+      -webkit-transform: scale(1);
+      transform: scale(1);
       -moz-transition: all 0.6s ease-in-out;
       -o-transition: all 0.6s ease-in-out;
       -webkit-transition: all 0.6s ease-in-out;
       transition: all 0.6s ease-in-out; }
+  @media only screen and (min-width: 767px) {
+    .Recipes-container .Recipes-content-container .Recipes-caption {
+      padding-left: 5%;
+      margin-top: 20rem;
+      text-align: initial; }
+    .Recipes-container .Recipes-content-container .Recipes-image-holder {
+      order: -1;
+      flex: 1.2;
+      padding: 10rem 0 0 3%; }
+      .Recipes-container .Recipes-content-container .Recipes-image-holder:hover .image {
+        -moz-transform: scale(1.02);
+        -o-transform: scale(1.02);
+        -webkit-transform: scale(1.02);
+        transform: scale(1.02); }
+      .Recipes-container .Recipes-content-container .Recipes-image-holder .image {
+        width: 100%;
+        -moz-transform: scale(1);
+        -o-transform: scale(1);
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        -moz-transition: all 0.6s ease-in-out;
+        -o-transition: all 0.6s ease-in-out;
+        -webkit-transition: all 0.6s ease-in-out;
+        transition: all 0.6s ease-in-out; } }
+
+.Big-background {
+  background-position: 100% 60%; }
 
 .Header-band {
   border-bottom: solid 5px black; }
@@ -1234,7 +1269,9 @@ header {
     backface-visibility: hidden;
     position: absolute;
     top: 0;
-    left: 0; }
+    left: 0;
+    border-radius: 100%;
+    box-shadow: 0rem 2rem 2rem rgba(0, 0, 0, 0.267); }
   .Eat-fish-front {
     z-index: 2;
     /* for firefox 31 */

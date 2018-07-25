@@ -121,7 +121,7 @@ export default class WeAreCarousel extends Component {
                 .toUpperCase()}
             </span>
           </h2>
-          <div className={`Wa-logo logo`}>
+          <div className={`Wa-logo logo ${this.state.logoMark} `}>
             <SVGC fill="#85dbd7" path={logo} className="image" />
           </div>
         </div>

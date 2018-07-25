@@ -15,7 +15,7 @@ const LandingSection = props => {
   console.log(item.backgroundImage && console.log());
   return (
     <div
-      className={`flex-column Big-section Big-section-${index}`}
+      className={`flex-column Big-section Big-section-${index} ${item.backgroundImage && 'Big-background'}`}
       id={item.id && item.id !== "About" ? item.id : " "}
       style={
         item.backgroundImage
@@ -35,16 +35,12 @@ const LandingSection = props => {
               <SectionText
                 caption={item.caption}
                 headline={item.headline}
-                number={item.number}
-                fish={item.fish}
+                number={item.number && item.number}
+                fish={item.fish && item.fish}
               />
               {item.clickImage && (
                 <Link to={`/${item.id}`}>
-                  <SVGC
-                    path={images.backarrow}
-                    className="back-arrow image"
-                    // fill={props.color}
-                  />
+                  <SVGC path={images.backarrow} className="back-arrow image" />
                 </Link>
               )}
             </div>

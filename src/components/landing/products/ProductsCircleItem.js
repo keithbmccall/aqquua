@@ -12,7 +12,7 @@ const ProductsCircleItem = props => {
           <div className="Products-text flex flex-content-center">
             <SVG path={item.svg} fill="black" className="image" />
           </div>
-          <img src={item.png} className="image" alt={item.fish} />
+          <img src={item.png} className="image light-shadow-round" alt={item.fish} />
         </Link>
       </ProductsAnimation>
     </div>

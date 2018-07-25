@@ -43,9 +43,8 @@
       textarea {
         background: rgba(100, 100, 100, 0.1);
         width: 100%;
-        border: 1px solid $greycolor;
-        border-radius: 5px;
-        margin-bottom: 1rem;
+        border: 4px solid $greycolor;
+        margin-bottom: 2rem;
         padding-left: 0.5rem;
         font-size: 1rem;
         @extend .geo-light;
@@ -99,30 +98,35 @@
   &-email,
   &-fname,
   &-lname {
-    @include transition(background 0.3 ease-in);
+    caret-color: $greycolor;
+    @include transition(all 0.3s ease-in);
+    &:hover,
+    &:focus {
+      color: white;
+    }
   }
   &-message {
     &:hover,
     &:focus {
-      background: rgba($cockatoocolor, 0.2) !important ;
+      background-color: rgba($cockatoocolor, 1) !important ;
     }
   }
   &-email {
     &:hover,
     &:focus {
-      background: rgba($tigercolor, 0.2) !important ;
+      background-color: rgba($tigercolor, 1) !important ;
     }
   }
   &-fname {
     &:hover,
     &:focus {
-      background: rgba($libertycolor, 0.2) !important ;
+      background-color: rgba($libertycolor, 1) !important ;
     }
   }
   &-lname {
     &:hover,
     &:focus {
-      background: rgba($fuschiacolor, 0.2) !important ;
+      background-color: rgba($fuschiacolor, 1) !important ;
     }
   }
 }

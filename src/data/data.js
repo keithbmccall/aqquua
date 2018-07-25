@@ -184,12 +184,7 @@ export const sectionData = [
     content: weAreContent,
     logo: images.logo
   },
-  // {
-  //   title: "Aqquua",
-  //   caption:
-  //     "At aqquua™ we engage in best practices and device technological innovations in RAS and R&D to raise the bar in aquaculture at every level. Our fin-fish products are raised in a controlled environment and are 100% antibiotic and hormone free. We are committed to bring the freshest, highest quality seafood experience to the table."
-  // },
-  // { title: "placeholder" },
+
   {
     id: "About",
 
@@ -197,7 +192,7 @@ export const sectionData = [
     number: 1,
     headline: "WE TAKE OUR JOB SERIOUSLY",
     caption: [
-      "The Aqquua philosophy is that a source of sustainably-farmed, heathful, and antibiotic- and hormone-free fin-fish is not only globally necessary, but financially and technically feasible.",
+      "Our philosophy at Aqquua is that a source of sustainably farmed, healthy, antibiotic and hormone free fin-fish is not only globally necessary, but financially and technically feasible.",
       "Our mission is to develop the innovative and scalable technology and best practices to meet this global need and bring a sublime seafood experience to the customer’s table.",
       "We’ve succeeded."
     ]
@@ -221,13 +216,14 @@ export const sectionData = [
     headline: "WE ARE NON CONFORMISTS",
     caption: [
       "Combatting the full breadth of challenges to creating the next generation of aquaculture meant acknowledging the well-deserved, negative-consumer sentiment toward existing sources of farmed fish.",
-      "Beyond the technical and management innovations necessary for a better farmed product, Aqquua has pioneered unprecedented degrees of transparency at all stages of the aquaculture process.",
-      "Making the transition from a “wild caught” product to a farmed one will ultimately be achieved by earning public trust.",
-      "Our collective health as well as saving of our oceans depends on it."
+      "Beyond the technical and management innovations necessary to grow a better farmed fish, Aqquua has pioneered unprecedented degrees of transparency at all stages of the aquaculture process.",
+      "Making the transition from a “wild caught” fish to a farmed one will ultimately be achieved by earning public trust.",
+      "Our collective health, as well as saving of our oceans depends on it."
     ]
   },
   {
-    caption: "Recipes",
+    caption:
+      "It is a ook like readable English.  editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). ",
     id: "Recipes",
     images: images.recipesImages
   },
@@ -236,7 +232,7 @@ export const sectionData = [
     title: "Eat Fish",
     eatFishTag: images.eatfishicons,
     number: 3,
-    headline: "DOING IT IN STYLE",
+    headline: "WE'RE DOING IT IN STYLE",
     caption: [
       "Showing our true colors in the way we raise our fish is our way to promote authenticity, transparency and traceability.",
       "That’s why we have become proud members of the EATFISH platform, whose sole purpose is to track fish from our farm directly to your table."
@@ -248,7 +244,7 @@ export const sectionData = [
   {
     id: "RD",
     number: 4,
-    headline: "NURTURING LEADERS",
+    headline: "WE NURTURE LEADERS",
     caption: [
       "We are passionate about educating the next leaders in aquaculture. Bringing together academic knowledge and commercial aquaculture experience is the road to the future of aquaculture.",
       "Our strategic partnerships with the University of Miami and Burapha University, Thailand, have helped lay the necessary research foundation that informs our commercial strategy and allows us to be an exemplar of eco-friendly and sustainable business practices."
@@ -269,11 +265,10 @@ export const sectionData = [
   },
   {
     number: 5,
-    headline: "DESIGNING THE FUTURE",
+    headline: "WE ARE DESIGNING THE FUTURE",
     caption: [
       "Conceptualizing and manufacturing a new RAS is at the core of the future of aquaculture. Aqquua is developing a modular RAS that can be constructed in a cost-effective way with the added flexibility to move assets from one site to another, as necessary.",
-
-      "Our experts are exploring innovations to re-circulate water economically and efficiently, while with finding the best procedures to manage waste-water in an environmentally conscious and responsible way."
+      "Our experts are exploring innovations to re-circulate water economically and efficiently, while finding the best procedures to manage waste-water in an environmentally conscious and responsible way."
     ]
   },
   {
@@ -282,9 +277,9 @@ export const sectionData = [
     number: 6,
     headline: "WE ARE INNOVATORS",
     caption: [
-      "We are actively contributing to the development of scientifically comprehensive genetics research.",
+      "We are actively contributing to the development of scientifically comprehensive research.",
       "This work is integral to positioning diversity in fin-fish offerings, and the marine aquaculture industry, as the dominant contributor of environmentally sustainable marine protein worldwide.",
-      "To this end, Aqquuas’ scientific mission is to integrate every genotypic and phenotypic breakthrough achieved, towards improving the commercial viability of the subject species within the local and global aquaculture industry."
+      "To this end, Aqquuas’ scientific mission is to integrate every breakthrough achieved, towards improving the commercial viability of the subject species within the local and global aquaculture industry."
     ]
   },
   {
@@ -299,8 +294,8 @@ export const sectionData = [
     caption: [
       "The earth is warming at an alarming rate and as a consequence seasonal and climate change are a challenge to the “fish food” industry out at sea.",
       "We raise our fish in controlled, clean and self-contained environment, with no external effects.",
-      "Beyond our zero-environmental impact promise, we’ve gone further still, replanting mangroves, in our own back yard.",
-      "To learn how you can contribute to our initiatives, please visit our conservation and environmental improvements page."
+      "Beyond our minimal impact promise, we’ve gone further still, replanting mangroves, in our own back yard.",
+      "To learn how you can contribute to our initiatives, please visit our conservation and environmental improvements page"
     ],
     content: {
       headline: "Mangrove Conservation:",
