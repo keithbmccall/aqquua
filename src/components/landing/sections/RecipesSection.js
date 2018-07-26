@@ -19,7 +19,7 @@ const RecipesSection = props => {
           <TextAndHeadline
             link="https://www.yummly.com/profile/MarvelousCulinaire61283"
             headline="RECIPES"
-            text={props.item.caption}
+            text="Delicious Aqquua Recipes. Powered by Yummly."
             className="text-black"
           />
         </div>
