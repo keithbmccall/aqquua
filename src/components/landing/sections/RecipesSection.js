@@ -16,8 +16,8 @@ const RecipesSection = props => {
     <div className="flex-column Big-section vh flex Recipes-container">
       <div className="flex Recipes-content-container collapse-row-column flex-1">
         <div className="flex-1 Recipes-caption flex">
-          
           <TextAndHeadline
+            link="https://www.yummly.com/profile/MarvelousCulinaire61283"
             headline="RECIPES"
             text={props.item.caption}
             className="text-black"
@@ -25,7 +25,9 @@ const RecipesSection = props => {
         </div>
 
         <div className="Recipes-image-holder">
-          <img src={recipeImage} className="image" alt="Recipes" />
+          <a href="https://www.yummly.com/profile/MarvelousCulinaire61283">
+            <img src={recipeImage} className="image" alt="Recipes" />
+          </a>
         </div>
       </div>
     </div>
