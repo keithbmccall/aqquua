@@ -8,7 +8,6 @@ const Genetics = props => {
 
   return (
     <div className="container">
-      <WaveAnimation color="white" />
       <div className="Genetics-container">
         <BackArrow color={info.titleColor} />
         <LargeTextWithTitle info={info} />

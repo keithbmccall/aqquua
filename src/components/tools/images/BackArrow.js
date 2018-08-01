@@ -4,7 +4,6 @@ import images from "../../../data/images";
 import { withRouter } from "react-router-dom";
 
 const BackArrow = props => {
-  console.log(props);
   return (
     <a
       onClick={

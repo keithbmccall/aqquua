@@ -11,7 +11,6 @@ const Navbar = props => {
       <NavbarLinks
         link={link}
         key={key}
-        scrollTo={props.scrollTo}
         closeMenu={props.closeMenu}
         routing={props.history}
       />

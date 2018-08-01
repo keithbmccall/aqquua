@@ -1,6 +1,7 @@
 import React from "react";
 import Radium from "radium";
-import { Link as ScrollLink } from "react-scroll";
+import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const NavbarLinks = props => {
   const styles = {
@@ -8,29 +9,16 @@ const NavbarLinks = props => {
       ":hover": { backgroundColor: props.link.color }
     }
   };
-  console.log(props.link.link);
+  // console.log(props.link.link, props.link.id, props);
+  const linkOrHash = path =>
+    props.link.link ? (
+      <Link to={`/${props.link.id}`}>{path}</Link>
+    ) : (
+      <HashLink to={`/#${props.link.id}`}>{path}</HashLink>
+    );
   return (
     <li className="Nav-item flex flex-content-center" style={[styles.navItem]}>
-      {props.routing.location.pathname === "/" ? (
-        props.link.link ? (
-          <a href={`/${props.link.id}`}>{props.link.title.toUpperCase()}</a>
-        ) : (
-          <ScrollLink
-            activeclass="active"
-            to={props.link.id}
-            spy={true}
-            smooth={true}
-            duration={1000}
-            onClick={props.closeMenu}
-          >
-            {props.link.title.toUpperCase()}
-          </ScrollLink>
-        )
-      ) : props.link.link ? (
-        <a href={`/${props.link.id}`}>{props.link.title.toUpperCase()}</a>
-      ) : (
-        <a href={`/#${props.link.id}`}>{props.link.title.toUpperCase()}</a>
-      )}
+      {linkOrHash(props.link.title.toUpperCase())}
     </li>
   );
 };

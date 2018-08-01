@@ -12,11 +12,11 @@ import SVGC from "../../tools/images/SVG";
 
 const LandingSection = props => {
   const { item, index } = props;
-  console.log(item.backgroundImage && console.log());
   return (
     <div
-      className={`flex-column Big-section Big-section-${index} ${item.backgroundImage && 'Big-background'}`}
-      id={item.id && item.id !== "About" ? item.id : " "}
+      className={`flex-column Big-section Big-section-${index} ${item.backgroundImage &&
+        "Big-background"}`}
+      id={item.id && item.id}
       style={
         item.backgroundImage
           ? { backgroundImage: `url(${item.backgroundImage})` }
@@ -32,12 +32,14 @@ const LandingSection = props => {
           >
             <div className="collapse-row-column flex-1">
               {item.number && <SectionNumber content={item.number} />}
-              <SectionText
-                caption={item.caption}
-                headline={item.headline}
-                number={item.number && item.number}
-                fish={item.fish && item.fish}
-              />
+              {item.caption && (
+                <SectionText
+                  caption={item.caption ? item.caption : " "}
+                  headline={item.headline ? item.headline : " "}
+                  number={item.number && item.number}
+                  fish={item.fish && item.fish}
+                />
+              )}
               {item.clickImage && (
                 <Link to={`/${item.id}`}>
                   <SVGC path={images.backarrow} className="back-arrow image" />

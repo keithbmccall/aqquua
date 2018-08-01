@@ -1,5 +1,4 @@
 import React from "react";
-import WaveAnimation from "../animations/WaveAnimation";
 import ProductsHeroAnimation from "../animations/ProductsHeroAnimation";
 import BackArrow from "../tools/images/BackArrow";
 
@@ -7,9 +6,8 @@ const Products = props => {
   const { info } = props;
   return (
     <div className="container">
-      <WaveAnimation color="white" />
       <div className="Products-container">
-        <BackArrow color={info.color} path="/#Products"/>
+        <BackArrow color={info.color} path="/#Products" />
         <div className="flex collapse-row-column">
           <div className="Products-info">
             <h1 style={{ color: info.color }}>

@@ -9,8 +9,7 @@ const Sustainability = props => {
 
   return (
     <div className="container">
-      <WaveAnimation color="white" />
-      <div className="Eat-fish-container">
+      <div className="Sus-container">
         <BackArrow color={info.titleColor} />
         <LargeTextWithTitle info={info} />
         <ContentImages info={info} />

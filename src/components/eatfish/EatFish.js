@@ -8,7 +8,6 @@ const EatFish = props => {
 
   return (
     <div className="container">
-      <WaveAnimation color="white" />
       <div className="Eat-fish-container">
         <BackArrow color={info.titleColor} />
         <LargeTextWithTitle info={info} />

@@ -1,5 +1,4 @@
 import React from "react";
-import WaveAnimation from "../../components/animations/WaveAnimation";
 import BackArrow from "../tools/images/BackArrow";
 import ContentImages from "../tools/media/ContentImages";
 //
@@ -7,7 +6,6 @@ const Research = props => {
   const { info } = props;
   return (
     <div className="container">
-      <WaveAnimation color="white" />
       <div className="Research-container">
         <BackArrow color={info.color} />
         <div className="flex collapse-row-column Research-info-holder">

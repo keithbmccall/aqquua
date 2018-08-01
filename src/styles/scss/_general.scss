@@ -24,6 +24,7 @@ ul {
   max-width: 100%;
   height: auto;
 }
+
 #root,
 body {
   @extend .geo-light;
@@ -36,9 +37,7 @@ body {
 .App {
   margin-top: -$navbargap;
 }
-main {
-  width: 100vw;
-}
+
 h1,
 h2,
 h3,
@@ -138,6 +137,9 @@ img {
 }
 .opacity-5 {
   opacity: 0.5 !important;
+}
+.none{
+  display: none;
 }
 .hidden {
   visibility: hidden !important;

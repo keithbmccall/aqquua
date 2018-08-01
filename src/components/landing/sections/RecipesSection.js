@@ -13,10 +13,9 @@ const RecipesSection = props => {
   const recipesImages = props.item.images.images.map(renderImages);
   const recipeImage = props.item.images.images[0];
   return (
-    <div className="flex-column Big-section vh flex Recipes-container">
+    <div className="flex-column Big-section vh flex Recipes-container" id="Recipes">
       <div className="flex Recipes-content-container collapse-row-column flex-1">
         <div className="flex-1 Recipes-caption flex">
-          
           <TextAndHeadline
             headline="RECIPES"
             text={props.item.caption}

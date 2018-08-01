@@ -1,12 +1,17 @@
 import React, { Component, Fragment } from "react";
+import { withRouter } from "react-router-dom";
 
+import PopPageTransition from "../../components/animations/PopPageTransition";
 //
-export default class Layout extends Component {
+class Layout extends Component {
   render() {
     return (
       <Fragment>
-        <main>{this.props.children}</main>
+        <PopPageTransition transition={this.props.transition} />
+        {this.props.children}
       </Fragment>
     );
   }
 }
+
+export default withRouter(Layout);

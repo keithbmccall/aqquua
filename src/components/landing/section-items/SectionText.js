@@ -26,7 +26,7 @@ const SectionText = props => (
 
 export default SectionText;
 
-SectionText.propTypes = {
-  caption: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).required,
-  headline: PropTypes.string.required
-};
+// SectionText.propTypes = {
+//   caption: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).required,
+//   headline: PropTypes.string.required
+// };

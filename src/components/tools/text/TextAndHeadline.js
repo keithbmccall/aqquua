@@ -18,7 +18,7 @@ const TextAndHeadline = props => {
 
 export default TextAndHeadline;
 
-TextAndHeadline.propTypes = {
-  text: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).required,
-  headline: PropTypes.string.required
-};
+// TextAndHeadline.propTypes = {
+//   text: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).required,
+//   headline: PropTypes.string.required
+// };

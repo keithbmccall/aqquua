@@ -40,7 +40,6 @@
   font-size: 2em;
 }
 .Section-text {
-  color: white;
   hyphens: none;
   font-size: 1.2rem;
   max-width: $productscirclewidth;
@@ -199,6 +198,11 @@
     }
   }
 }
+@for $i from 0 through 28 {
+  .Big-section-#{$i} {
+    background: white;
+  }
+}
 #About,
 #Farm,
 #Products,
@@ -282,9 +286,4 @@
       }
     }
   }
-}
-.Big-background {
-  @extend .vh;
-  // background-size: cover;
-  background-position: 100% 60%;
 }
