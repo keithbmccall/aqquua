@@ -382,7 +382,6 @@ export const contactInfo = {
     }
   ]
 };
-export const ribbons = images.ribbons;
 export const researchInfo = {
   um: {
     logo: images.schools.miami,

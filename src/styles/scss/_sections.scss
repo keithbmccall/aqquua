@@ -9,6 +9,7 @@
         padding-right: 10%;
         margin-top: 20rem;
         .Section-text {
+          
           max-width: 100%;
         }
       }
@@ -54,6 +55,7 @@
     text-align: justify;
   }
   p {
+    
     margin-bottom: 1rem;
   }
   h4 {
@@ -198,11 +200,7 @@
     }
   }
 }
-@for $i from 0 through 28 {
-  .Big-section-#{$i} {
-    background: white;
-  }
-}
+
 #About,
 #Farm,
 #Products,
