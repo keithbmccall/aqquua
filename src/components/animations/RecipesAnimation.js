@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Waypoint from "react-waypoint";
 
-export default class ProductsAnimation extends Component {
+export default class RecipesAnimation extends Component {
   constructor() {
     super();
     this.state = {
@@ -10,16 +10,20 @@ export default class ProductsAnimation extends Component {
   }
   bounceIn = () => {
     this.setState({
-      className: "Products-animation"
+      className: "Recipes-animation"
     });
   };
   render() {
     return (
       <Waypoint scrollableAncestor={window} onEnter={this.bounceIn}>
-        <div className={`Products-roll ${this.state.className}`}>
-          <div className={`Products ${this.state.className}`}>
-            {this.props.children}
-          </div>
+        <div
+          className={
+            this.props.type === "image"
+              ? `Recipes-image-holder ${this.state.className}`
+              : `flex-1 Recipes-caption flex ${this.state.className}`
+          }
+        >
+          {this.props.children}
         </div>
       </Waypoint>
     );

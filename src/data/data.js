@@ -222,8 +222,9 @@ export const sectionData = [
     ]
   },
   {
-    caption:
-      "It is a ook like readable English.  editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). ",
+    caption: [
+      "It is a ook like readable English.  editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). "
+    ],
     id: "Recipes",
     images: images.recipesImages
   },
@@ -430,7 +431,7 @@ export const geneticsInfo = {
   images: images.geneticsImages
 };
 export const eatFishInfo = {
-  video:"https://player.vimeo.com/video/210481738?title=0&byline=0&portrait=0",
+  video: "https://player.vimeo.com/video/210481738?title=0&byline=0&portrait=0",
   backgroundColor: "#ff2882",
   titleColor: "#ff2882",
   title: "SEE FOOD FOR WHAT IT IS",

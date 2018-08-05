@@ -1,6 +1,8 @@
 import React, { Component, Fragment } from "react";
 import Waypoint from "react-waypoint";
 import PropTypes from "prop-types";
+import EatFishTagIcon from "../landing/eatfish/EatFishTagIcon";
+//
 export default class SectionAnimation extends Component {
   constructor() {
     super();
@@ -61,7 +63,15 @@ export default class SectionAnimation extends Component {
           >
             {title}
           </h4>
-          {this.props.eatFishTag && this.props.eatFishTag}
+          {this.props.eatFishTag && (
+            <div
+              className={`flex-1 flex-content-center space-10 Eat-fish-tag-container ${
+                this.state.className
+              }`}
+            >
+              <EatFishTagIcon item={this.props.eatFishTag} />
+            </div>
+          )}
         </div>
       );
     };
@@ -81,7 +91,7 @@ export default class SectionAnimation extends Component {
       <Waypoint
         scrollableAncestor={window}
         onEnter={this.bounceIn}
-        bottomOffset={this.props.type === "title" ? "-70%" : "-40%"}
+        bottomOffset={this.props.type === "title" ? "50%" : "30%"}
       >
         {content}
       </Waypoint>

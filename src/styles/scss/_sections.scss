@@ -2,7 +2,8 @@
   justify-content: space-between;
   position: relative;
 
-  .Section-text-holder {
+  .Section-text-holder,
+  .Recipes-caption {
     p {
       text-align: left;
     }
@@ -20,9 +21,9 @@
     .Section-left {
       text-align: right;
       @extend .geo-bold;
-      font-size: 4.4rem;
-      padding-right: 3rem;
-      line-height: 3.4rem;
+      font-size: 4rem;
+      padding-right: 1.5rem;
+      line-height: 3.1rem;
       span {
         @extend .geo-bold-italics;
       }
@@ -50,6 +51,7 @@
     }
     @include tabtop {
       .Section-text {
+        flex: 2;
         margin-bottom: 10rem;
         p {
           padding-right: 8rem;
@@ -57,29 +59,87 @@
       }
     }
   }
-  @include tabtop {
-    .Section-text-holder {
-      .Section-text {
-        @include transform(translate(200%, 200%));
-        opacity: 0;
-        &.Section-animation {
-          opacity: 1;
-          @include transform(translate(0, 10rem));
-        }
-      }
-      .Section-left {
-        @include transform(translate(-200%, 200%));
-        opacity: 0;
-        &.Section-animation {
-          opacity: 1;
-          @include transform(translate(0, 0px));
-        }
-      }
 
-      .Section-left,
+  .Recipes-caption {
+    &.Recipes-animation {
       .Section-text {
-        @include transition(all 0.7s ease-in-out);
+        @include transform(translate(0, 0) scale(2));
       }
+    }
+    .Section-text {
+      color: white !important;
+      @include transition(all 1s cubic-bezier(0.165, 0.84, 0.44, 1));
+      @include transform(translate(70%, 70%));
+      border-radius: 50%;
+      padding: 20%;
+      background: $libertycolor;
+      max-width: 80%;
+      @include mobile {
+        h4,
+        div,
+        p {
+          font-size: 0.5em;
+        }
+      }
+    }
+    @include tabtop {
+      &.Recipes-animation {
+        .Section-text {
+          @include transform(translate(25%, 60%));
+          height: 1000px;
+          width: 1000px;
+        }
+      }
+      .Section-text {
+        @include transform(translate(50%, 120%));
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 0;
+        width: 0;
+        max-width: initial;
+        display: flex;
+        flex-direction: column;
+        border-radius: 50%;
+        padding-top: 20%;
+        padding-left: 30%;
+        div {
+          display: flex;
+          p {
+            padding: 0;
+          }
+        }
+      }
+    }
+  }
+  .Section-text-holder {
+    .Section-text {
+      @include transform(
+        rotate(-10deg) rotateX(65deg) translate3d(60px, 50px, 0)
+      );
+      opacity: 0;
+      &.Section-animation {
+        opacity: 1;
+        @include transform(translate(0, 10rem));
+        @include mobile {
+          @include transform(translate(0, 0));
+        }
+      }
+    }
+    .Section-left {
+      @include transform(
+        rotate(-10deg) rotateX(65deg) translate3d(60px, 50px, 0)
+      );
+      opacity: 0;
+      &.Section-animation {
+        opacity: 1;
+        @include transform(translate(0, 0px));
+      }
+    }
+
+    .Section-left,
+    .Section-text {
+      @include transition(all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1));
     }
   }
 }
@@ -262,17 +322,41 @@
     margin-top: -$navbargap;
   }
 }
-
-.School-emblem {
-  @include transition(transform 0.3s ease-in-out);
-  &:hover {
-    @include transform(scale(1.05));
+.Image-animation {
+  @include mobile {
+    .w-vw {
+      .flex-content-center {
+        padding: 0 5%;
+      }
+    }
+  }
+  .School-emblem {
+    @include transition(all 1s ease-in-out);
+    @include transform(translate(0, 0));
+    opacity: 1;
+    // &:hover {
+    //   @include transform(scale(1.05));
+    // }
   }
 }
+.School-emblem {
+  @include transform(translate(0, 40%));
+  opacity: 0;
+  @include transition(
+    (all 1s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.7s ease-in-out)
+  );
+}
 .Eat-fish-tag-container {
+  @include transform(rotate(-10deg) rotateX(65deg) translate3d(60px, 50px, 0));
+  @include transition(all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1));
+  opacity: 0;
+  &.Section-animation {
+    opacity: 1;
+    @include transform(translate(0, 0));
+  }
   @include tabtop {
     justify-content: flex-end;
-    padding:0 15%;
+    padding: 0 15%;
   }
   .Eat-fish-tag-icon {
     @include transform(scale(1.2));
@@ -305,11 +389,19 @@
       text-align: center;
     }
     .Recipes-image-holder {
+      &.Recipes-animation {
+        @include transform(translate(0, 0));
+        opacity: 1;
+      }
+      @include transform(translate(0, 40%));
+      opacity: 0;
+      @include transition(all 1s cubic-bezier(0.165, 0.84, 0.44, 1));
       overflow: hidden;
       &:hover .image {
         @include transform(scale(1.02));
       }
       .image {
+        @extend .light-shadow-square;
         width: 100%;
         @include transform(scale(1));
         @include transition(all 0.6s ease-in-out);
@@ -329,11 +421,14 @@
           @include transform(scale(1.02));
         }
         .image {
-          width: 100%;
+          width: 80%;
           @include transform(scale(1));
           @include transition(all 0.6s ease-in-out);
         }
       }
     }
   }
+}
+.Recipes-container {
+  overflow: hidden;
 }

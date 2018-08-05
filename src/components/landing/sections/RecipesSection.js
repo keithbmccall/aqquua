@@ -1,5 +1,6 @@
 import React from "react";
 import TextAndHeadline from "../../tools/text/TextAndHeadline";
+import RecipesAnimation from "../../animations/RecipesAnimation";
 
 const RecipesSection = props => {
   const renderImages = (image, key) => {
@@ -13,22 +14,23 @@ const RecipesSection = props => {
   const recipesImages = props.item.images.images.map(renderImages);
   const recipeImage = props.item.images.images[0];
   return (
-    <div className="flex-column Big-section vh flex Recipes-container" id="Recipes">
+    <div
+      className="flex-column Big-section vh flex Recipes-container"
+      id="Recipes"
+    >
       <div className="flex Recipes-content-container collapse-row-column flex-1">
-        <div className="flex-1 Recipes-caption flex">
+        <RecipesAnimation>
           <TextAndHeadline
-            link="https://www.yummly.com/profile/MarvelousCulinaire61283"
             headline="RECIPES"
             text="Delicious Aqquua Recipes. Powered by Yummly."
             className="text-black"
           />
-        </div>
-
-        <div className="Recipes-image-holder">
+        </RecipesAnimation>
+        <RecipesAnimation type="image">
           <a href="https://www.yummly.com/profile/MarvelousCulinaire61283">
             <img src={recipeImage} className="image" alt="Recipes" />
           </a>
-        </div>
+        </RecipesAnimation>
       </div>
     </div>
   );

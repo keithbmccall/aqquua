@@ -25,6 +25,7 @@ const SectionText = props => (
         />
       </Fragment>
     )}
+    
   </div>
 );
 
