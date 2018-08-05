@@ -2,7 +2,6 @@ import React from "react";
 import HeaderSection from "./sections/HeaderSection";
 import SubHeaderSection from "./sections/SubHeaderSection";
 import LandingSection from "./sections/LandingSection";
-import RibbonSection from "./sections/RibbonsSection";
 import ContactContainer from "../../containers/contact/ContactContainer";
 import RecipesSection from "./sections/RecipesSection";
 //
@@ -23,7 +22,6 @@ const Landing = props => {
     <div className="container Landing-container">
       <HeaderSection content={props.headerContent} />
       {sections}
-      {/* <RibbonSection item={props.ribbons} /> */}
       <ContactContainer contactInfo={props.contactInfo} />
     </div>
   );

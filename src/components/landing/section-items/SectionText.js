@@ -1,32 +1,31 @@
-import React from "react";
-import TextAndHeadline from "../../tools/text/TextAndHeadline";
-import TrackingAnimations from "../../animations/TrackingAnimations";
-import PropTypes from "prop-types";
+import React, { Fragment } from "react";
+import SectionAnimation from "../../animations/SectionAnimation";
+
 const SectionText = props => (
   <div
-    className={`flex-1 flex Section-text-holder ${(props.className || "") &&
-      props.className}`}
+    className={`flex-1 flex Section-text-holder collapse-row-column ${props.className ||
+      ""}`}
   >
-    <TrackingAnimations
-      className={`${!props.number && "flex-content-center"}`}
-      type="sectionFade"
-    >
-      <div className="flex flex-content-center">
-        <TextAndHeadline
-          text={props.caption}
-          headline={props.headline}
-          className={`${
-            props.fish ? "Products-caption" : " "
-          } flex-1 flex-column`}
-        />
+    {props.fish ? (
+      <div className="Products-caption flex-1 flex flex-column">
+        {props.caption.map((item, key) => <p key={key}>{item}</p>)}
       </div>
-    </TrackingAnimations>
+    ) : (
+      <Fragment>
+        <SectionAnimation
+          className="Section-left"
+          content={props.headline || ""}
+          type="title"
+          eatFishTag={props.eatFishTag}
+        />
+        <SectionAnimation
+          className="Section-text"
+          content={props.caption}
+          type="text"
+        />
+      </Fragment>
+    )}
   </div>
 );
 
 export default SectionText;
-
-// SectionText.propTypes = {
-//   caption: PropTypes.oneOfType([PropTypes.string, PropTypes.array]).required,
-//   headline: PropTypes.string.required
-// };

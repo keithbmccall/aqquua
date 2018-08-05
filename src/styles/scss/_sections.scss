@@ -1,37 +1,84 @@
 .Big-section {
   justify-content: space-between;
-  .Section-number-holder {
-    justify-content: center;
-    @include tabtop {
-      justify-content: center;
+  position: relative;
 
-      + .Section-text-holder {
-        padding-right: 10%;
-        margin-top: 20rem;
+  .Section-text-holder {
+    p {
+      text-align: left;
+    }
+    .Section-text {
+      max-width: 50%;
+    }
+    .Section-text {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+      line-height: 2rem;
+      p {
+        margin-bottom: 1rem;
+      }
+    }
+    .Section-left {
+      text-align: right;
+      @extend .geo-bold;
+      font-size: 4.4rem;
+      padding-right: 3rem;
+      line-height: 3.4rem;
+      span {
+        @extend .geo-bold-italics;
+      }
+    }
+    @include mobile {
+      &.collapse-row-column {
+        align-items: center;
+        text-align: center;
+        .Section-left {
+          margin-bottom: 2rem;
+          font-size: 2.5rem;
+          padding: 0;
+          line-height: 2rem;
+        }
         .Section-text {
-          
+          font-size: 1.1rem;
+        }
+        .Section-left {
           max-width: 100%;
+        }
+        .Section-text {
+          max-width: 75%;
         }
       }
     }
-
-    .Section-number {
-      @extend .geo-bold;
-
-      font-size: 15rem;
-      padding: 0;
-      // line-height: 5rem;
-      margin: 0 0 -3.5rem 0;
-
-      span {
-        font-size: 8rem;
-        margin-left: -0.5rem;
-      }
-      @include tabtop {
-        font-size: 25rem;
-        span {
-          font-size: 20rem;
+    @include tabtop {
+      .Section-text {
+        margin-bottom: 10rem;
+        p {
+          padding-right: 8rem;
         }
+      }
+    }
+  }
+  @include tabtop {
+    .Section-text-holder {
+      .Section-text {
+        @include transform(translate(200%, 200%));
+        opacity: 0;
+        &.Section-animation {
+          opacity: 1;
+          @include transform(translate(0, 10rem));
+        }
+      }
+      .Section-left {
+        @include transform(translate(-200%, 200%));
+        opacity: 0;
+        &.Section-animation {
+          opacity: 1;
+          @include transform(translate(0, 0px));
+        }
+      }
+
+      .Section-left,
+      .Section-text {
+        @include transition(all 0.7s ease-in-out);
       }
     }
   }
@@ -40,47 +87,45 @@
 .Section-title {
   font-size: 2em;
 }
-.Section-text {
-  hyphens: none;
-  font-size: 1.2rem;
-  max-width: $productscirclewidth;
-  line-height: 30px;
-  letter-spacing: 0.8px;
-  text-align: left;
-  margin-bottom: 4rem;
-  @include mobile {
-    text-align: center;
-  }
-  @include tabtop {
-    text-align: justify;
-  }
-  p {
-    
-    margin-bottom: 1rem;
-  }
-  h4 {
-    @extend .geo-bold-italics;
-    font-size: 1.2rem;
-    text-align: right;
-    margin-bottom: 1.5rem;
-    @include tabtop {
-      font-size: 2.2rem;
-    }
+
+#Products {
+  .space-10 {
+    margin: 4rem 0;
   }
 }
 .Products-fish-holder {
-  margin: 10rem 0;
+  margin: 5rem 0;
+  .Section-text-holder {
+    justify-content: center;
+  }
   @include tabtop {
-    margin: inherit;
+    margin: 10rem 0;
+    margin: initial;
   }
 }
 .Products-caption {
   color: black !important;
+  hyphens: none;
+  letter-spacing: 0.8px;
+  flex: 1 1;
+  font-size: 1.1rem;
+  max-width: 70%;
+  margin-bottom: 2rem;
+  p {
+    margin-bottom: 2rem;
+  }
+  @include mobile {
+    text-align: center;
+    max-width: 75%;
+    &.flex.flex-column {
+      display: block;
+    }
+  }
   @include tabtop {
+    margin-bottom: 5rem;
     text-align: justify;
-    font-size: 1.2rem;
-    max-width: 55% !important;
-    line-height: 2.4rem;
+    max-width: 60% !important;
+    line-height: 2rem;
   }
 }
 .Products-fish {
@@ -99,6 +144,7 @@
     justify-content: space-evenly;
     width: $productscirclewidth;
     padding: 0 0% !important;
+    margin-top: -6rem;
     flex-direction: row;
     .image {
       height: auto;
@@ -223,9 +269,15 @@
     @include transform(scale(1.05));
   }
 }
-.Eat-fish-tag-icon {
-  @include transform(scale(1.2));
-  cursor: pointer;
+.Eat-fish-tag-container {
+  @include tabtop {
+    justify-content: flex-end;
+    padding:0 15%;
+  }
+  .Eat-fish-tag-icon {
+    @include transform(scale(1.2));
+    cursor: pointer;
+  }
 }
 //
 .Recipes-container {

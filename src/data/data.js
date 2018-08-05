@@ -390,9 +390,9 @@ export const researchInfo = {
     title: "Rosenstiel School of Marine and Atmospheric Science",
     images: images.umImages,
     caption: [
-      "OUR COLLABORATIVE RESEARCH AGREEMENT WITH THE UNIVERSITY OF MIAMI IS HELPING TO ADVANCE AQUACULTURE TECHNOLOGY FOR HIGH-VALUE MARINE FISH SUCH AS TUNA AND HIRAME (JAPANESE FLOUNDER) AT THE UM EXPERIMENTAL FISH HATCHERY.",
-      "THE THREE-YEAR AGREEMENT BETWEEN AQQUUA AND THE UM ROSENSTIEL SCHOOL-BASED AQUACULTURE PROGRAM IS AIMED AT IMPROVING HATCHERY AND OTHER AQUACULTURE TECHNOLOGIES OF A NUMBER OF ECONOMICALLY VALUABLE SPECIES THAT HAVE NEVER BEEN DEVELOPED ELSEWHERE IN THE WORLD.",
-      '"THIS RESEARCH AGREEMENT WILL HELP ADVANCE SUSTAINABLE AQUACULTURE RESEARCH AT A TIME WHEN IT IS CRITICALLY NEEDED TO SUPPORT INCREASING DEMAND FOR HIGH-QUALITY PROTEIN TO FEED THE WORLD’S GROWING POPULATION,” SAID UM ROSENSTIEL SCHOOL PROFESSOR DAN BENETTI, DIRECTOR OF THE UM AQUACULTURE PROGRAM. “WE ARE PLEASED BY AQQUUA’S COMMITMENT TO ADVANCE AQUACULTURE TECHNOLOGY IN A SUSTAINABLE WAY."'
+      "Our collaborative research agreement with the University of Miami is helping to advance aquaculture technology for high-value marine fish such as Tuna and Hirame (Japanese flounder) at the UM experimental fish hatchery.",
+      "The agreement between Aqquua and the UM Rosensteil School-based aquaculture program is aimed at improving hatchery and other aquaculture technologies of a number of economically valuable species that have never been developed elsewhere in the world.",
+      "'This research agreement will help advance sustainable aquaculture research at a time when it is critically needed to support increased demand for highly quality protein to feed the worlds growing population,' said UM Rosensteil School professor Dan Benetti, director of the UM aquaculture program. “We are pleased by Aqquuas’ commitment to advance aquaculture technology in a sustainable way."
     ]
   },
   burapha: {
@@ -402,7 +402,9 @@ export const researchInfo = {
     title: "Burapha University",
     images: [],
     caption: [
-      "AQQUUA HAS AN M.O.U. WITH THE UNIVERSITY OF BURAPHA TO HELP US WITH EGG PRODUCING BROODSTOCK AND ADVANCEMENT OF OUR LARVAL REARING EFFORTS IN THAILAND. AQQUUA HAS ALSO PROVIDED SCHOLARSHIPS AND HAS HIRED GRADUATE STUDENTS FROM THE UNIVERSITY OF BURAPHA TO FURTHER THESE EFFORTS."
+      "Aqquua has a Memorandum of Understanding with the University of Burapha to help us with egg producing brood-stock and the advancement of our larval rearing efforts in Thailand.",
+      "Aqquuas’ commitment to nurturing leaders in aquaculture has prompted the company to provide scholarships in aquaculture studies and has also moved to hire graduate students from the University to work at our Aqquua farm. This allows for a smooth transition of a well educated aquaculture work force directly into a state of the art sustainable farming facility.",
+      "Our objective at the Burapha hatchery is to produce locally grown Aqquua Grouper fingerlings that will go directly into our commercial grow-out at the farm. In this way we secure the best quality fingerlings that will guarantee optimal growth of our fish while avoiding any prolonged travel."
     ]
   }
 };

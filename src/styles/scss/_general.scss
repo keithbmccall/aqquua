@@ -34,9 +34,6 @@ body {
   width: 100vw;
   background: $whitebg;
 }
-.App {
-  margin-top: -$navbargap;
-}
 
 h1,
 h2,
@@ -138,21 +135,18 @@ img {
 .opacity-5 {
   opacity: 0.5 !important;
 }
-.none{
+.none {
   display: none;
 }
 .hidden {
   visibility: hidden !important;
 }
-.container {
-  padding-top: $navbargap;
-}
+
 .Research-container,
 .Products-container,
 .Farm-container,
 .Genetics-container,
 .Eat-fish-container {
-  padding-top: $navbargap;
   min-height: 100vh;
   padding-bottom: 3rem;
   background: $whitebg;

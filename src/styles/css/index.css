@@ -44,7 +44,7 @@ body, .Contact-holder .Contact-form form input,
 
 .geo-bold-italics, .Contact-holder h3, .Products-info h1 span, .Content-info-holder .Content-list-holder ul li span,
 .Content-image-holder .Content-list-holder ul li span, .Content-info-holder h1,
-.Content-image-holder h1, .Research-info-holder h1, .Section-text h4 {
+.Content-image-holder h1, .Research-info-holder h1, .Big-section .Section-text-holder .Section-left span {
   font-family: "geomanist-bold-italics", Arial, Helvetica, sans-serif; }
 
 .geo-bold, h1,
@@ -53,7 +53,7 @@ h3,
 h4,
 h5,
 h6, .Contact-holder .Contact-addresses address span, .Products-info h1, .Content-info-holder h2,
-.Content-image-holder h2, .Big-section .Section-number-holder .Section-number, .Wa-container .Wa-2, .Wa-container .Wa-6, .Wa-container .Wa-9, .Wa-container .Wa-10, .Wa-container .Wa-15, .Wa-container .Wa-20, .Wa-container .Wa-24 {
+.Content-image-holder h2, .Big-section .Section-text-holder .Section-left, .Wa-container .Wa-2, .Wa-container .Wa-6, .Wa-container .Wa-9, .Wa-container .Wa-10, .Wa-container .Wa-15, .Wa-container .Wa-20, .Wa-container .Wa-24 {
   font-family: "geomanist-bold", Arial, Helvetica, sans-serif; }
 
 .geo-thin, .Header-section h1, .Wa-container .Wa-0, .Wa-container .Wa-4, .Wa-container .Wa-8, .Wa-container .Wa-11, .Wa-container .Wa-13, .Wa-container .Wa-14, .Wa-container .Wa-17, .Wa-container .Wa-22, .Wa-container .Wa-25, .Wa-container .Wa-26 {
@@ -89,9 +89,6 @@ body {
   font-size: 62.5%;
   width: 100vw;
   background: white; }
-
-.App {
-  margin-top: -6.5em; }
 
 img {
   border-radius: 2px; }
@@ -188,15 +185,11 @@ img {
 .hidden {
   visibility: hidden !important; }
 
-.container {
-  padding-top: 6.5em; }
-
 .Research-container,
 .Products-container,
 .Farm-container,
 .Genetics-container,
 .Eat-fish-container {
-  padding-top: 6.5em;
   min-height: 100vh;
   padding-bottom: 3rem;
   background: white;
@@ -529,13 +522,13 @@ img {
 header {
   top: 0;
   z-index: 100;
-  background: #85dbd7; }
+  background: rgba(0, 0, 0, 0); }
 
 .Nav-container {
   z-index: 100;
   width: 100%;
   height: 6.5em;
-  background: #85dbd7;
+  background: rgba(0, 0, 0, 0);
   padding: 0 4%; }
   .Nav-container .image {
     margin-top: 10%;
@@ -608,71 +601,112 @@ header {
   height: 120vh; }
 
 .Big-section {
-  justify-content: space-between; }
-  .Big-section .Section-number-holder {
-    justify-content: center; }
-    @media only screen and (min-width: 767px) {
-      .Big-section .Section-number-holder {
-        justify-content: center; }
-        .Big-section .Section-number-holder + .Section-text-holder {
-          padding-right: 10%;
-          margin-top: 20rem; }
-          .Big-section .Section-number-holder + .Section-text-holder .Section-text {
-            max-width: 100%; } }
-    .Big-section .Section-number-holder .Section-number {
-      font-size: 15rem;
-      padding: 0;
-      margin: 0 0 -3.5rem 0; }
-      .Big-section .Section-number-holder .Section-number span {
-        font-size: 8rem;
-        margin-left: -0.5rem; }
-      @media only screen and (min-width: 767px) {
-        .Big-section .Section-number-holder .Section-number {
-          font-size: 25rem; }
-          .Big-section .Section-number-holder .Section-number span {
-            font-size: 20rem; } }
+  justify-content: space-between;
+  position: relative; }
+  .Big-section .Section-text-holder p {
+    text-align: left; }
+  .Big-section .Section-text-holder .Section-text {
+    max-width: 50%; }
+  .Big-section .Section-text-holder .Section-text {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    line-height: 2rem; }
+    .Big-section .Section-text-holder .Section-text p {
+      margin-bottom: 1rem; }
+  .Big-section .Section-text-holder .Section-left {
+    text-align: right;
+    font-size: 4.4rem;
+    padding-right: 3rem;
+    line-height: 3.4rem; }
+  @media only screen and (max-width: 766px) {
+    .Big-section .Section-text-holder.collapse-row-column {
+      align-items: center;
+      text-align: center; }
+      .Big-section .Section-text-holder.collapse-row-column .Section-left {
+        margin-bottom: 2rem;
+        font-size: 2.5rem;
+        padding: 0;
+        line-height: 2rem; }
+      .Big-section .Section-text-holder.collapse-row-column .Section-text {
+        font-size: 1.1rem; }
+      .Big-section .Section-text-holder.collapse-row-column .Section-left {
+        max-width: 100%; }
+      .Big-section .Section-text-holder.collapse-row-column .Section-text {
+        max-width: 75%; } }
+  @media only screen and (min-width: 767px) {
+    .Big-section .Section-text-holder .Section-text {
+      margin-bottom: 10rem; }
+      .Big-section .Section-text-holder .Section-text p {
+        padding-right: 8rem; } }
+  @media only screen and (min-width: 767px) {
+    .Big-section .Section-text-holder .Section-text {
+      -moz-transform: translate(200%, 200%);
+      -o-transform: translate(200%, 200%);
+      -webkit-transform: translate(200%, 200%);
+      transform: translate(200%, 200%);
+      opacity: 0; }
+      .Big-section .Section-text-holder .Section-text.Section-animation {
+        opacity: 1;
+        -moz-transform: translate(0, 10rem);
+        -o-transform: translate(0, 10rem);
+        -webkit-transform: translate(0, 10rem);
+        transform: translate(0, 10rem); }
+    .Big-section .Section-text-holder .Section-left {
+      -moz-transform: translate(-200%, 200%);
+      -o-transform: translate(-200%, 200%);
+      -webkit-transform: translate(-200%, 200%);
+      transform: translate(-200%, 200%);
+      opacity: 0; }
+      .Big-section .Section-text-holder .Section-left.Section-animation {
+        opacity: 1;
+        -moz-transform: translate(0, 0px);
+        -o-transform: translate(0, 0px);
+        -webkit-transform: translate(0, 0px);
+        transform: translate(0, 0px); }
+    .Big-section .Section-text-holder .Section-left,
+    .Big-section .Section-text-holder .Section-text {
+      -moz-transition: all 0.7s ease-in-out;
+      -o-transition: all 0.7s ease-in-out;
+      -webkit-transition: all 0.7s ease-in-out;
+      transition: all 0.7s ease-in-out; } }
 
 .Section-title {
   font-size: 2em; }
 
-.Section-text {
-  hyphens: none;
-  font-size: 1.2rem;
-  max-width: 70%;
-  line-height: 30px;
-  letter-spacing: 0.8px;
-  text-align: left;
-  margin-bottom: 4rem; }
-  @media only screen and (max-width: 766px) {
-    .Section-text {
-      text-align: center; } }
-  @media only screen and (min-width: 767px) {
-    .Section-text {
-      text-align: justify; } }
-  .Section-text p {
-    margin-bottom: 1rem; }
-  .Section-text h4 {
-    font-size: 1.2rem;
-    text-align: right;
-    margin-bottom: 1.5rem; }
-    @media only screen and (min-width: 767px) {
-      .Section-text h4 {
-        font-size: 2.2rem; } }
+#Products .space-10 {
+  margin: 4rem 0; }
 
 .Products-fish-holder {
-  margin: 10rem 0; }
+  margin: 5rem 0; }
+  .Products-fish-holder .Section-text-holder {
+    justify-content: center; }
   @media only screen and (min-width: 767px) {
     .Products-fish-holder {
-      margin: inherit; } }
+      margin: 10rem 0;
+      margin: initial; } }
 
 .Products-caption {
-  color: black !important; }
+  color: black !important;
+  hyphens: none;
+  letter-spacing: 0.8px;
+  flex: 1 1;
+  font-size: 1.1rem;
+  max-width: 70%;
+  margin-bottom: 2rem; }
+  .Products-caption p {
+    margin-bottom: 2rem; }
+  @media only screen and (max-width: 766px) {
+    .Products-caption {
+      text-align: center;
+      max-width: 75%; }
+      .Products-caption.flex.flex-column, .Products-caption.flex-column {
+        display: block; } }
   @media only screen and (min-width: 767px) {
     .Products-caption {
+      margin-bottom: 5rem;
       text-align: justify;
-      font-size: 1.2rem;
-      max-width: 55% !important;
-      line-height: 2.4rem; } }
+      max-width: 60% !important;
+      line-height: 2rem; } }
 
 .Products-fish {
   display: flex;
@@ -687,6 +721,7 @@ header {
       justify-content: space-evenly;
       width: 70%;
       padding: 0 0% !important;
+      margin-top: -6rem;
       flex-direction: row; }
       .Products-fish .image {
         height: auto;
@@ -750,93 +785,6 @@ header {
       .Big-section-2 .content {
         flex-direction: row; } }
 
-.Big-section-0 {
-  background: white; }
-
-.Big-section-1 {
-  background: white; }
-
-.Big-section-2 {
-  background: white; }
-
-.Big-section-3 {
-  background: white; }
-
-.Big-section-4 {
-  background: white; }
-
-.Big-section-5 {
-  background: white; }
-
-.Big-section-6 {
-  background: white; }
-
-.Big-section-7 {
-  background: white; }
-
-.Big-section-8 {
-  background: white; }
-
-.Big-section-9 {
-  background: white; }
-
-.Big-section-10 {
-  background: white; }
-
-.Big-section-11 {
-  background: white; }
-
-.Big-section-12 {
-  background: white; }
-
-.Big-section-13 {
-  background: white; }
-
-.Big-section-14 {
-  background: white; }
-
-.Big-section-15 {
-  background: white; }
-
-.Big-section-16 {
-  background: white; }
-
-.Big-section-17 {
-  background: white; }
-
-.Big-section-18 {
-  background: white; }
-
-.Big-section-19 {
-  background: white; }
-
-.Big-section-20 {
-  background: white; }
-
-.Big-section-21 {
-  background: white; }
-
-.Big-section-22 {
-  background: white; }
-
-.Big-section-23 {
-  background: white; }
-
-.Big-section-24 {
-  background: white; }
-
-.Big-section-25 {
-  background: white; }
-
-.Big-section-26 {
-  background: white; }
-
-.Big-section-27 {
-  background: white; }
-
-.Big-section-28 {
-  background: white; }
-
 #About:before,
 #Farm:before,
 #Products:before,
@@ -861,7 +809,11 @@ header {
     -webkit-transform: scale(1.05);
     transform: scale(1.05); }
 
-.Eat-fish-tag-icon {
+@media only screen and (min-width: 767px) {
+  .Eat-fish-tag-container {
+    justify-content: flex-end;
+    padding: 0 15%; } }
+.Eat-fish-tag-container .Eat-fish-tag-icon {
   -moz-transform: scale(1.2);
   -o-transform: scale(1.2);
   -webkit-transform: scale(1.2);
@@ -935,8 +887,7 @@ header {
   background-color: #e15d44;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 0 10% 0 10%;
-  height: 130vh; }
+  padding: 0 10% 0 10%; }
   .Header-section .logo .image {
     max-width: auto;
     height: 100%;
