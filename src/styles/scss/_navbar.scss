@@ -12,19 +12,16 @@ header {
     > a {
       position: absolute;
       width: 3.5rem;
-      top: 50%;
-      z-index: 1;
+      top: 6vh;
+      z-index: 51;
+      
       @include transform(translateY(-50%));
       &.Nav-logo {
-        left: 5%;
+        left: 3vw;
       }
       &.Nav-burger {
-        @include transition(all 1s ease-in 1s);
         width: 2rem;
-        right: 5%;
-        &.Nav-open {
-          z-index: 100;
-        }
+        right: 3vw;
       }
     }
 
@@ -53,9 +50,6 @@ header {
         text-align: right;
         color: white;
         @include transition(all 0.7s ease-in-out);
-        :hover:before {
-          color: pink;
-        }
         &:before {
           content: ".";
         }
@@ -71,7 +65,7 @@ header {
       position: absolute;
       top: -15%;
       right: -3%;
-      background: blue;
+      background: $atollcolor;
       border-radius: 50%;
       height: 5rem;
       width: 5rem;

@@ -21,8 +21,8 @@ const Navbar = props => {
   return (
     <header>
       <div className="Navbar-container">
-        <Link to="/" className="Nav-logo">
-          <SVGC path={props.aqquuaLogo} className=" image" fill="#00b6d9" />
+        <Link to="/" className="Nav-logo ">
+          <SVGC path={props.aqquuaLogo} className="image" fill="#00b6d9" />
         </Link>
         <a
           href="#"
