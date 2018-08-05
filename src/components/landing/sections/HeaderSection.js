@@ -18,9 +18,9 @@ const HeaderSection = props => {
             className="flex-content-center Tracking-fade-in"
           >
             <div className="Header-items flex flex-column flex-content-center">
-              <div className="logo">
+              {/* <div className="logo">
                 <SVGC fill="white" path={content.logo} className="image" />
-              </div>
+              </div> */}
             </div>
           </TrackingAnimations>
           <TrackingAnimations

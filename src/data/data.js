@@ -171,7 +171,10 @@ export const navbarLinks = [
     id: "Contact"
   }
 ];
-export const aqquuaLogo = images.logo;
+export const aqquuaLogo = {
+  word: images.logo,
+  round: images.logoRound
+};
 export const headerContent = {
   title: "We're Wild about Farmed ™",
   caption: "We're wild about farmed fish'",

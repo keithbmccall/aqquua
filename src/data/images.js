@@ -1,6 +1,7 @@
 // plain, -6 , and -9
 import fishPrint from "../assets/images/png/fishprints/fish-print-9.png";
 import logo from "../assets/images/aqquualogo.svg";
+import logoRound from "../assets/images/aqquualogoround.svg";
 //product circle map
 import coraltrout from "../assets/images/png/coraltrout.png";
 import redsnapper from "../assets/images/png/redsnapper.png";
@@ -104,6 +105,7 @@ const sectionals = { sectionalFishTank, sectionalHirame };
 const images = {
   fishPrint,
   logo,
+  logoRound,
   productsFish,
   schools,
   ribbons,

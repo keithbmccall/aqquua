@@ -9,10 +9,13 @@ export default class NavbarContainer extends Component {
       menuOpen: false
     };
   }
-  toggleMenu = e =>
+  toggleMenu = e => {
+    e.preventDefault();
+    console.log("l");
     this.setState({
       menuOpen: !this.state.menuOpen
     });
+  };
   closeMenu = () => {
     this.setState({
       menuOpen: false
@@ -26,7 +29,7 @@ export default class NavbarContainer extends Component {
     return (
       <Navbar
         scrollTo={this.props.scrollTo}
-        aqquuaLogo={aqquuaLogo}
+        aqquuaLogo={aqquuaLogo.round}
         menuOpen={this.state.menuOpen}
         navbarLinks={navbarLinks}
         toggleMenu={this.toggleMenu}

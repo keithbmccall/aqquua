@@ -54,7 +54,7 @@ h3,
 h4,
 h5,
 h6, .Contact-holder .Contact-addresses address span, .Products-info h1, .Content-info-holder h2,
-.Content-image-holder h2, .Big-section .Section-text-holder .Section-left,
+.Content-image-holder h2, header .Navbar-container nav li, .Big-section .Section-text-holder .Section-left,
 .Big-section .Recipes-caption .Section-left, .Wa-container .Wa-2, .Wa-container .Wa-6, .Wa-container .Wa-9, .Wa-container .Wa-10, .Wa-container .Wa-15, .Wa-container .Wa-20, .Wa-container .Wa-24 {
   font-family: "geomanist-bold", Arial, Helvetica, sans-serif; }
 
@@ -193,6 +193,7 @@ img {
 .Genetics-container,
 .Eat-fish-container {
   min-height: 100vh;
+  padding-top: 3rem;
   padding-bottom: 3rem;
   background: white;
   position: relative; }
@@ -528,9 +529,92 @@ header {
   top: 0;
   z-index: 100;
   background: rgba(0, 0, 0, 0);
-  height: 6.5em;
-  padding: 0 4%;
-  width: 100%; }
+  height: 6rem;
+  width: 100%;
+  display: flex; }
+  header .Navbar-container {
+    flex: 1;
+    position: relative; }
+    header .Navbar-container > a {
+      position: absolute;
+      width: 3.5rem;
+      top: 50%;
+      z-index: 1;
+      -moz-transform: translateY(-50%);
+      -o-transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%); }
+      header .Navbar-container > a.Nav-logo {
+        left: 5%; }
+      header .Navbar-container > a.Nav-burger {
+        -moz-transition: all 1s ease-in 1s;
+        -o-transition: all 1s ease-in 1s;
+        -webkit-transition: all 1s ease-in 1s;
+        transition: all 1s ease-in 1s;
+        width: 2rem;
+        right: 5%; }
+        header .Navbar-container > a.Nav-burger.Nav-open {
+          z-index: 100; }
+    header .Navbar-container nav {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      z-index: -50;
+      opacity: 0;
+      top: 100%;
+      left: 100%;
+      -moz-transition: opacity 0.3s ease-in-out 0.3s;
+      -o-transition: opacity 0.3s ease-in-out 0.3s;
+      -webkit-transition: opacity 0.3s ease-in-out 0.3s;
+      transition: opacity 0.3s ease-in-out 0.3s; }
+      header .Navbar-container nav.Nav-open {
+        left: initial;
+        right: 10% !important;
+        z-index: 50;
+        opacity: 1; }
+      header .Navbar-container nav.Nav-closed {
+        opacity: 0; }
+      header .Navbar-container nav li {
+        font-size: 2rem;
+        text-align: right;
+        color: white;
+        -moz-transition: all 0.7s ease-in-out;
+        -o-transition: all 0.7s ease-in-out;
+        -webkit-transition: all 0.7s ease-in-out;
+        transition: all 0.7s ease-in-out; }
+        header .Navbar-container nav li :hover:before {
+          color: pink; }
+        header .Navbar-container nav li:before {
+          content: "."; }
+        @media only screen and (min-width: 767px) {
+          header .Navbar-container nav li {
+            font-size: 5rem;
+            line-height: 4.4rem;
+            letter-spacing: 2px; } }
+    header .Navbar-container .Nav-menu {
+      z-index: 50;
+      position: absolute;
+      top: -15%;
+      right: -3%;
+      background: blue;
+      border-radius: 50%;
+      height: 5rem;
+      width: 5rem;
+      -moz-transition: all 0.7s ease-in;
+      -o-transition: all 0.7s ease-in;
+      -webkit-transition: all 0.7s ease-in;
+      transition: all 0.7s ease-in; }
+      header .Navbar-container .Nav-menu.Nav-open {
+        -moz-transform: scale(100);
+        -o-transform: scale(100);
+        -webkit-transform: scale(100);
+        transform: scale(100); }
+      header .Navbar-container .Nav-menu.Nav-closed {
+        -moz-transform: scale(0);
+        -o-transform: scale(0);
+        -webkit-transform: scale(0);
+        transform: scale(0); }
 
 .Big-section {
   justify-content: space-between;
@@ -587,7 +671,8 @@ header {
     -moz-transform: translate(0, 0) scale(2);
     -o-transform: translate(0, 0) scale(2);
     -webkit-transform: translate(0, 0) scale(2);
-    transform: translate(0, 0) scale(2); }
+    transform: translate(0, 0) scale(2);
+    opacity: 1; }
   .Big-section .Recipes-caption .Section-text {
     color: white !important;
     -moz-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -615,6 +700,8 @@ header {
       transform: translate(25%, 60%);
       height: 1000px;
       width: 1000px; }
+      .Big-section .Recipes-caption.Recipes-animation .Section-text div {
+        opacity: 1; }
     .Big-section .Recipes-caption .Section-text {
       -moz-transform: translate(50%, 120%);
       -o-transform: translate(50%, 120%);
@@ -630,7 +717,8 @@ header {
       flex-direction: column;
       border-radius: 50%;
       padding-top: 20%;
-      padding-left: 30%; }
+      padding-left: 15%;
+      opacity: 0; }
       .Big-section .Recipes-caption .Section-text div {
         display: flex; }
         .Big-section .Recipes-caption .Section-text div p {
@@ -797,8 +885,8 @@ header {
 #Sustainability:before {
   content: "";
   display: block;
-  height: 6.5em;
-  margin-top: -6.5em; }
+  height: 6rem;
+  margin-top: -6rem; }
 
 @media only screen and (max-width: 766px) {
   .Image-animation .w-vw .flex-content-center {
@@ -937,7 +1025,8 @@ header {
   background-color: #e15d44;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 0 10% 0 10%; }
+  padding: 0 10% 0 10%;
+  height: 130vh; }
   .Header-section .logo .image {
     max-width: auto;
     height: 100%;

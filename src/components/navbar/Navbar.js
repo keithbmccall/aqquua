@@ -17,14 +17,25 @@ const Navbar = props => {
     );
   };
   const navLinks = props.navbarLinks.map(renderNavbarLinks);
-  let navMenuOpen = props.menuOpen ? "Nav-menu-open" : "";
+  let isLaunched = props.menuOpen ? "Nav-open" : "Nav-closed";
   return (
-    <header className="border">
-      <Link to="/">
-        <SVGC path={props.aqquuaLogo} className="image" fill="white" />
-      </Link>
-
-      <SVGC path={menu} fill="white" className="image" />
+    <header>
+      <div className="Navbar-container">
+        <Link to="/" className="Nav-logo">
+          <SVGC path={props.aqquuaLogo} className=" image" fill="#00b6d9" />
+        </Link>
+        <a
+          href="#"
+          onClick={props.toggleMenu}
+          className={`Nav-burger ${isLaunched}`}
+        >
+          <SVGC path={menu} fill="white" className="image" />
+        </a>
+        <div className={`Nav-menu ${isLaunched}`} onClick={props.closeMenu} />
+        <nav className={`${isLaunched}`} onClick={props.closeMenu}>
+          {navLinks}
+        </nav>
+      </div>
     </header>
   );
 };

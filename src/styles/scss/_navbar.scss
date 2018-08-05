@@ -4,6 +4,84 @@ header {
   z-index: 100;
   background: rgba(0, 0, 0, 0);
   height: $navbargap;
-  padding: 0 4%;
   width: 100%;
+  display: flex;
+  .Navbar-container {
+    flex: 1;
+    position: relative;
+    > a {
+      position: absolute;
+      width: 3.5rem;
+      top: 50%;
+      z-index: 1;
+      @include transform(translateY(-50%));
+      &.Nav-logo {
+        left: 5%;
+      }
+      &.Nav-burger {
+        @include transition(all 1s ease-in 1s);
+        width: 2rem;
+        right: 5%;
+        &.Nav-open {
+          z-index: 100;
+        }
+      }
+    }
+
+    nav {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      z-index: -50;
+      opacity: 0;
+      top: 100%;
+      left: 100%;
+      @include transition(opacity 0.3s ease-in-out 0.3s);
+      &.Nav-open {
+        left: initial;
+        right: 10% !important;
+        z-index: 50;
+        opacity: 1;
+      }
+      &.Nav-closed {
+        opacity: 0;
+      }
+      li {
+        @extend .geo-bold;
+        font-size: 2rem;
+        text-align: right;
+        color: white;
+        @include transition(all 0.7s ease-in-out);
+        :hover:before {
+          color: pink;
+        }
+        &:before {
+          content: ".";
+        }
+        @include tabtop {
+          font-size: 5rem;
+          line-height: 4.4rem;
+          letter-spacing: 2px;
+        }
+      }
+    }
+    .Nav-menu {
+      z-index: 50;
+      position: absolute;
+      top: -15%;
+      right: -3%;
+      background: blue;
+      border-radius: 50%;
+      height: 5rem;
+      width: 5rem;
+      @include transition((all 0.7s ease-in));
+      &.Nav-open {
+        @include transform(scale(100));
+      }
+      &.Nav-closed {
+        @include transform(scale(0));
+      }
+    }
+  }
 }
