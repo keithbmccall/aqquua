@@ -7,8 +7,8 @@ const ContentImages = props => {
       <div className="Content-image-title collapse-row-column">
         {info.images.map((image, key) => (
           <div className="Content-holder flex flex-column" key={key}>
-            <img src={image} className="image" alt="title" />
-            <h4>IMAGE TITLE dada</h4>
+            <img src={image.image} className="image" alt="title" />
+            <h4>{image.title}</h4>
           </div>
         ))}
       </div>

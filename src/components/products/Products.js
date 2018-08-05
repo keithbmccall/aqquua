@@ -1,13 +1,11 @@
 import React from "react";
 import ProductsHeroAnimation from "../animations/ProductsHeroAnimation";
-import BackArrow from "../tools/images/BackArrow";
 
 const Products = props => {
   const { info } = props;
   return (
     <div className="container">
       <div className="Products-container">
-        <BackArrow color={info.color} path="/#Products" />
         <div className="flex collapse-row-column">
           <div className="Products-info">
             <h1 style={{ color: info.color }}>

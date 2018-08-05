@@ -1,5 +1,4 @@
 import React from "react";
-import BackArrow from "../../components/tools/images/BackArrow";
 import LargeTextWithTitle from "../tools/text/LargeTextWithTitle";
 import ContentList from "../tools/text/ContentList";
 import ContentLargeVideo from "../tools/media/ContentLargeVideo";
@@ -9,9 +8,8 @@ const EatFish = props => {
   return (
     <div className="container">
       <div className="Eat-fish-container">
-        <BackArrow color={info.titleColor} />
         <LargeTextWithTitle info={info} />
-        <ContentList info={info} />
+        {/* <ContentList info={info} /> */}
         <ContentLargeVideo info={info} />
       </div>
     </div>

@@ -8,7 +8,7 @@
   .Pop {
     height: 0;
     width: 0;
-    background: $arubacolor;
+    background: $atollcolor;
     transition: all 0.3s ease-in-out;
     border-radius: 50%;
   }
@@ -45,13 +45,16 @@
     .Landing-animation {
       position: absolute;
       left: 50%;
-      bottom: 50%;
+      top: 50%;
       height: 0rem;
       width: 0rem;
       background: white;
       border-radius: 50%;
       @include transform(translate(-50%, -50%));
       animation: landinganimation 8s ease-in-out;
+      @include mobile {
+        animation: mobileanimation 8s ease-in-out;
+      }
       .image {
         &.animate {
           display: none;
@@ -61,7 +64,7 @@
     .Landing-dot {
       position: absolute;
       left: 50%;
-      bottom: 5%;
+      top: 95%;
       height: 2rem;
       width: 2rem;
       background: white;
@@ -104,18 +107,18 @@
   20% {
     height: 5rem;
     width: 5rem;
-    bottom: 50%;
+    top: 50%;
   }
   25% {
     height: 2rem;
     width: 2rem;
-    bottom: 5%;
+    top: 95%;
     @include transform(translate(-50%, -50%));
   }
   35% {
     height: 5rem;
     width: 5rem;
-    bottom: 5%;
+    top: 95%;
     left: 50%;
     @include transform(translate(-50%, -50%) scale(100));
   }
@@ -124,7 +127,6 @@
     height: 5rem;
     width: 5rem;
     top: 4vh;
-    bottom: initial;
     left: 3vw;
     @include transform(translate(-50%, -50%) scale(100));
   }
@@ -135,7 +137,6 @@
     height: 2rem;
     width: 2rem;
     top: 4vh;
-    bottom: initial;
     left: 3vw;
     opacity: 0;
     display: initial;
@@ -145,7 +146,64 @@
     height: 0rem;
     width: 0rem;
     top: 4vh;
-    bottom: initial;
+    left: 3vw;
+    opacity: 0;
+    display: none;
+    @include transform(translate(0, 0));
+  }
+}
+
+@keyframes mobileanimation {
+  0% {
+    height: 2rem;
+    width: 2rem;
+    top: 95%;
+    left: 50%;
+  }
+  20% {
+    height: 2rem;
+    width: 2rem;
+    top: 50%;
+    left: 50%;
+  }
+  25% {
+    height: 2rem;
+    width: 2rem;
+    top: 95%;
+    left: 50%;
+    @include transform(translate(-50%, -50%));
+  }
+  35% {
+    height: 2rem;
+    width: 2rem;
+    top: 95%;
+    left: 50%;
+    @include transform(translate(-50%, -50%) scale(100));
+  }
+  60% {
+    background: white;
+    height: 2rem;
+    width: 2rem;
+    top: 4vh;
+    left: 3vw;
+    @include transform(translate(-50%, -50%) scale(100));
+  }
+  80% {
+    opacity: 1;
+  }
+  85% {
+    height: 2rem;
+    width: 2rem;
+    top: 4vh;
+    left: 3vw;
+    opacity: 0;
+    display: initial;
+    @include transform(translate(0, 0));
+  }
+  100% {
+    height: 0rem;
+    width: 0rem;
+    top: 4vh;
     left: 3vw;
     opacity: 0;
     display: none;

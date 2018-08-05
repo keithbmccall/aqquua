@@ -10,7 +10,8 @@ export default class LandingAnimation extends Component {
       wordPop: "",
       logoPop: "",
       finishPop: "",
-      dotPop: ""
+      dotPop: "",
+      holderPop: ""
     };
   }
   renderText = (letter, key) =>
@@ -21,10 +22,13 @@ export default class LandingAnimation extends Component {
     ) : (
       <span key={key}>{letter}</span>
     );
+  popHolder = () =>
+    this.setState({
+      holderPop: "animate"
+    });
   popWords = () =>
     this.setState({
-      wordPop: "animate",
-      holderPop: "animate"
+      wordPop: "animate"
     });
   unPopWords = () =>
     this.setState({
@@ -43,6 +47,7 @@ export default class LandingAnimation extends Component {
       dotPop: "animate"
     });
   componentDidMount() {
+    setTimeout(() => this.popHolder(), 4500);
     setTimeout(() => this.popWords(), 2000);
     setTimeout(() => this.unPopWords(), 5500);
     setTimeout(() => this.popLogo(), 1400);

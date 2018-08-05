@@ -113,8 +113,15 @@ img {
 .collapse-row-column {
   display: flex;
   flex-direction: column;
+
   @include tabtop {
     flex-direction: row;
+  }
+  &-tab {
+    flex-direction: column;
+    @include desktop {
+      flex-direction: row;
+    }
   }
 }
 .text-white {
@@ -148,7 +155,7 @@ img {
 .Genetics-container,
 .Eat-fish-container {
   min-height: 100vh;
-  padding-top:3rem;
+  padding-top: 3rem;
   padding-bottom: 3rem;
   background: $whitebg;
   position: relative;
@@ -167,15 +174,7 @@ img {
     height: 100%;
   }
 }
-.back-arrow {
-  cursor: pointer;
-  height: 3rem !important;
-  margin-bottom: 1rem;
-  @include tabtop {
-    left: 0rem;
-    position: absolute;
-  }
-}
+
 .trademark-symbol {
   position: absolute;
   font-size: 1.5rem;

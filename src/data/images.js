@@ -98,10 +98,57 @@ const recipesImages = {
   backgroundImage: recipewave,
   icon: recipeicon
 };
-const geneticsImages = [genetics1, genetics2, genetics3, genetics4, genetics5];
-const sustainabilityImages = [sus1, sus2, sus3, sus4, sus5];
-const umImages = [um1, um3, um4, um5, um6, um8, um7, um2];
+const geneticsImages = [
+  {
+    image: genetics1,
+    title: "Snapper eggs"
+  },
+  {
+    image: genetics2,
+    title: "Mahi-Mahi Larvae"
+  },
+  {
+    image: genetics3,
+    title: "Hirame juvenilles"
+  },
+  {
+    image: genetics4,
+    title: "American Red Snapper eggs"
+  },
+  {
+    image: genetics5,
+    title: "13 day old post hatchery Hybrid Grouper"
+  }
+];
+const sustainabilityImages = [sus5, sus1, sus2, sus3, sus4];
+const umImages = [
+  {
+    image: um3,
+    title: "Mahi-Mahi broodstock"
+  },
+  {
+    image: um4,
+    title: "Live transport"
+  },
+  {
+    image: um6,
+    title: "Dr. Dan Benetti & Zack Daugherty"
+  },
+  {
+    image: um8,
+    title: "First Mini Mahi harvest for canning tryouts"
+  },
+  {
+    image: um7,
+    title: "American Red Snapper broodstock"
+  },
+  {
+    image: um2,
+    title: "Hirame fingerling production"
+  }
+];
 const sectionals = { sectionalFishTank, sectionalHirame };
+
 const images = {
   fishPrint,
   logo,

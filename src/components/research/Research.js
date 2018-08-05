@@ -1,5 +1,4 @@
 import React from "react";
-import BackArrow from "../tools/images/BackArrow";
 import ContentImages from "../tools/media/ContentImages";
 //
 const Research = props => {
@@ -7,7 +6,6 @@ const Research = props => {
   return (
     <div className="container">
       <div className="Research-container">
-        <BackArrow color={info.color} />
         <div className="flex collapse-row-column Research-info-holder">
           <div className="flex flex-content-center Research-logo-holder">
             <img src={info.logo} alt={info.logo} className="image" />
