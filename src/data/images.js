@@ -120,7 +120,28 @@ const geneticsImages = [
     title: "13 day old post hatchery Hybrid Grouper"
   }
 ];
-const sustainabilityImages = [sus5, sus1, sus2, sus3, sus4];
+const sustainabilityImages = [
+  {
+    image: sus5,
+    title: "American Red Snapper eggs"
+  },
+  {
+    image: sus1,
+    title: "American Red Snapper eggs"
+  },
+  {
+    image: sus2,
+    title: "American Red Snapper eggs"
+  },
+  {
+    image: sus3,
+    title: "American Red Snapper eggs"
+  },
+  {
+    image: sus4,
+    title: "American Red Snapper eggs"
+  }
+];
 const umImages = [
   {
     image: um3,
