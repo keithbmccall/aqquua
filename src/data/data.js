@@ -430,6 +430,7 @@ export const geneticsInfo = {
   images: images.geneticsImages
 };
 export const eatFishInfo = {
+  video:"https://player.vimeo.com/video/210481738?title=0&byline=0&portrait=0",
   backgroundColor: "#ff2882",
   titleColor: "#ff2882",
   title: "SEE FOOD FOR WHAT IT IS",

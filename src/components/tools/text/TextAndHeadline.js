@@ -8,6 +8,13 @@ const TextAndHeadline = props => {
     ) : (
       <p>{props.text}</p>
     );
+  const link = props.link ? (
+    <a href={props.link}>
+      <h4>{props.headline}</h4>
+    </a>
+  ) : (
+    <h4>{props.headline}</h4>
+  );
   return (
     <div className={`${props.className ? props.className : " "} Section-text`}>
       <h4>{props.headline}</h4>
