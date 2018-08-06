@@ -239,26 +239,21 @@ img {
   transform: translate(-50%, -50%);
   z-index: 2000; }
   .Pop-holder .Pop {
-    position: relative;
     height: 0;
     width: 0;
     background: #85dbd7;
     transition: all 0.3s ease-in-out;
     border-radius: 50%; }
     .Pop-holder .Pop .image {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      -moz-transform: translate(-50%, -50%);
-      -o-transform: translate(-50%, -50%);
-      -webkit-transform: translate(-50%, -50%);
-      transform: translate(-50%, -50%);
-      width: 50%; }
+      width: 100%; }
 
 .Pop-holder-appear .Pop-animation {
   height: 1vh;
   width: 1vh;
   transform: scale(250); }
+  .Pop-holder-appear .Pop-animation .image {
+    transform: scale(0.2) translateY(-50%);
+    margin-top: -50%; }
 
 .swoop-exit-active {
   position: fixed !important;
