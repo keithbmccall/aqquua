@@ -3,6 +3,7 @@ import ContentImages from "../tools/media/ContentImages";
 //
 const Research = props => {
   const { info } = props;
+
   return (
     <div className="container">
       <div className="Research-container">
@@ -15,7 +16,10 @@ const Research = props => {
             {info.caption.map((p, key) => <p key={key}>{p}</p>)}
           </div>
         </div>
-        <ContentImages info={info} />
+        {info.bigImage && (
+          <img src={info.bigImage} className="image Research-big" />
+        )}
+        {info.images && <ContentImages info={info} />}
       </div>
     </div>
   );

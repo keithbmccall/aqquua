@@ -14,7 +14,7 @@ header {
       width: 3.5rem;
       top: 6vh;
       z-index: 51;
-      
+
       @include transform(translateY(-50%));
       &.Nav-logo {
         left: 3vw;
@@ -65,7 +65,7 @@ header {
       position: absolute;
       top: -15%;
       right: -3%;
-      background: $atollcolor;
+      background: $arubacolor;
       border-radius: 50%;
       height: 5rem;
       width: 5rem;

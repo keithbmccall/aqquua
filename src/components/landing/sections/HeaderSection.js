@@ -1,5 +1,4 @@
 import React from "react";
-import TrackingAnimations from "../../animations/TrackingAnimations";
 import SVGC from "../../tools/images/SVG";
 
 const HeaderSection = props => {
@@ -10,8 +9,7 @@ const HeaderSection = props => {
         className="flex-1 Header-section relative"
         style={{ backgroundImage: `url(${content.background})` }}
       >
-        
-        ls
+        <SVGC path={content.logo} className="image centered" fill="white" />
       </div>
     </div>
   );

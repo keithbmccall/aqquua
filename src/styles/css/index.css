@@ -36,7 +36,8 @@
   font-style: normal; }
 .geo-light, #root,
 body, .Contact-holder .Contact-form form input,
-.Contact-holder .Contact-form form textarea, .Header-section, .Wa-container .Wa-1, .Wa-container .Wa-7, .Wa-container .Wa-16, .Wa-container .Wa-18, .Wa-container .Wa-21 {
+.Contact-holder .Contact-form form textarea, .Big-section .Section-text-holder .Section-left,
+.Big-section .Recipes-caption .Section-left, .Header-section, .Wa-container .Wa-1, .Wa-container .Wa-7, .Wa-container .Wa-16, .Wa-container .Wa-18, .Wa-container .Wa-21 {
   font-family: "geomanist-light", Arial, Helvetica, sans-serif; }
 
 .geo-ultra, .Wa-container .Wa-h2 h2 {
@@ -44,8 +45,7 @@ body, .Contact-holder .Contact-form form input,
 
 .geo-bold-italics, .Contact-holder h3, .Products-info h1 span, .Content-info-holder .Content-list-holder ul li span,
 .Content-image-holder .Content-list-holder ul li span, .Content-info-holder h1,
-.Content-image-holder h1, .Research-info-holder h1, .Big-section .Section-text-holder .Section-left span,
-.Big-section .Recipes-caption .Section-left span {
+.Content-image-holder h1, .Research-info-holder h1 {
   font-family: "geomanist-bold-italics", Arial, Helvetica, sans-serif; }
 
 .geo-bold, h1,
@@ -54,8 +54,8 @@ h3,
 h4,
 h5,
 h6, .Contact-holder .Contact-addresses address span, .Products-info h1, .Content-info-holder h2,
-.Content-image-holder h2, header .Navbar-container nav li, .Big-section .Section-text-holder .Section-left,
-.Big-section .Recipes-caption .Section-left, .Wa-container .Wa-2, .Wa-container .Wa-6, .Wa-container .Wa-9, .Wa-container .Wa-10, .Wa-container .Wa-15, .Wa-container .Wa-20, .Wa-container .Wa-24 {
+.Content-image-holder h2, header .Navbar-container nav li, .Big-section .Section-text-holder .Section-left span,
+.Big-section .Recipes-caption .Section-left span, .Wa-container .Wa-2, .Wa-container .Wa-6, .Wa-container .Wa-9, .Wa-container .Wa-10, .Wa-container .Wa-15, .Wa-container .Wa-20, .Wa-container .Wa-24 {
   font-family: "geomanist-bold", Arial, Helvetica, sans-serif; }
 
 .geo-thin, .Header-section h1, .Wa-container .Wa-0, .Wa-container .Wa-4, .Wa-container .Wa-8, .Wa-container .Wa-11, .Wa-container .Wa-13, .Wa-container .Wa-14, .Wa-container .Wa-17, .Wa-container .Wa-22, .Wa-container .Wa-25, .Wa-container .Wa-26 {
@@ -239,11 +239,21 @@ img {
   transform: translate(-50%, -50%);
   z-index: 2000; }
   .Pop-holder .Pop {
+    position: relative;
     height: 0;
     width: 0;
-    background: #00b6d9;
+    background: #85dbd7;
     transition: all 0.3s ease-in-out;
     border-radius: 50%; }
+    .Pop-holder .Pop .image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 50%; }
 
 .Pop-holder-appear .Pop-animation {
   height: 1vh;
@@ -362,9 +372,9 @@ img {
     -o-transform: translate(-50%, -50%) scale(100);
     -webkit-transform: translate(-50%, -50%) scale(100);
     transform: translate(-50%, -50%) scale(100); }
-  80% {
+  65% {
     opacity: 1; }
-  85% {
+  75% {
     height: 2rem;
     width: 2rem;
     top: 4vh;
@@ -425,9 +435,9 @@ img {
     -o-transform: translate(-50%, -50%) scale(100);
     -webkit-transform: translate(-50%, -50%) scale(100);
     transform: translate(-50%, -50%) scale(100); }
-  80% {
+  65% {
     opacity: 1; }
-  85% {
+  75% {
     height: 2rem;
     width: 2rem;
     top: 4vh;
@@ -531,10 +541,10 @@ img {
 
 .Products-info {
   flex: 8;
-  padding: 15% 10% 0 10%; }
+  padding: 8rem 10% 0 10%; }
   @media only screen and (min-width: 767px) {
     .Products-info {
-      padding: 15% 1% 0 10%;
+      padding: 8rem 0 0 10%;
       flex: 10; } }
   @media only screen and (min-width: 990px) {
     .Products-info {
@@ -555,6 +565,7 @@ img {
 
 .Products-hero-holder {
   order: -1;
+  padding-left: 1%;
   justify-content: center;
   flex: 17; }
   .Products-hero-holder .Products-hero {
@@ -719,6 +730,8 @@ img {
 
 .Research-container {
   align-items: center; }
+  .Research-container .Research-big.image {
+    width: 100%; }
 
 .Research-info-holder .Research-logo-holder {
   flex: 1;
@@ -808,7 +821,7 @@ header {
       position: absolute;
       top: -15%;
       right: -3%;
-      background: #00b6d9;
+      background: #85dbd7;
       border-radius: 50%;
       height: 5rem;
       width: 5rem;
@@ -1046,43 +1059,43 @@ header {
 .Big-section-1 {
   background: #00b6d9; }
 
-.Big-section-6 {
+.Big-section-7 {
   background: #ea5924; }
 
-.Big-section-3 {
+.Big-section-4 {
   background: #f32e37; }
 
-.Big-section-9 {
+.Big-section-11 {
   background: linear-gradient(to bottom right, #210420, #490847, #620c5f, #620c5f, #770574, #9b0096); }
 
-.Big-section-8 {
+.Big-section-9 {
   background: linear-gradient(to bottom right, #f79d04, #f79d04, #f79d04, #f7aa04, #ffb30f, #f7ba04, #ffc31c, #f7c604, #f7c604); }
 
-.Big-section-7,
-.Big-section-10 {
-  background-size: cover;
-  height: 50vh; }
+.Big-background {
+  min-height: initial; }
+  .Big-background .image {
+    width: 100%; }
 
-.Big-section-5 {
+.Big-section-6 {
   background: #ff2882; }
 
-.Big-section-11 {
+.Big-section-13 {
   background: linear-gradient(to bottom right, #1b7a06, #21af01, #24b500, #28c900, #28c900, #33ef09, #9ce881); }
 
-.Big-section-2 {
+.Big-section-3 {
   background: white; }
   @media only screen and (max-width: 766px) {
-    .Big-section-2 .space-10 {
+    .Big-section-3 .space-10 {
       margin: initial !important; } }
-  .Big-section-2 .content {
+  .Big-section-3 .content {
     max-width: 200px;
     flex-wrap: wrap;
     justify-content: space-evenly; }
     @media only screen and (min-width: 767px) and (max-width: 989px) {
-      .Big-section-2 .content {
+      .Big-section-3 .content {
         flex-direction: row; } }
     @media only screen and (min-width: 990px) {
-      .Big-section-2 .content {
+      .Big-section-3 .content {
         flex-direction: row; } }
 
 #About:before,
@@ -1097,31 +1110,6 @@ header {
   display: block;
   height: 6rem;
   margin-top: -6rem; }
-
-@media only screen and (max-width: 766px) {
-  .Image-animation .w-vw .flex-content-center {
-    padding: 0 5%; } }
-.Image-animation .School-emblem {
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out;
-  -moz-transform: translate(0, 0);
-  -o-transform: translate(0, 0);
-  -webkit-transform: translate(0, 0);
-  transform: translate(0, 0);
-  opacity: 1; }
-
-.School-emblem {
-  -moz-transform: translate(0, 40%);
-  -o-transform: translate(0, 40%);
-  -webkit-transform: translate(0, 40%);
-  transform: translate(0, 40%);
-  opacity: 0;
-  -moz-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.7s ease-in-out;
-  -o-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.7s ease-in-out;
-  -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.7s ease-in-out;
-  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.7s ease-in-out; }
 
 .Eat-fish-tag-container {
   -moz-transform: rotate(-10deg) rotateX(65deg) translate3d(60px, 50px, 0);
@@ -1150,72 +1138,38 @@ header {
     transform: scale(1.2);
     cursor: pointer; }
 
-.Recipes-container .Recipes-icon-holder {
-  justify-content: center;
-  align-items: center; }
-  .Recipes-container .Recipes-icon-holder a {
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  @media only screen and (min-width: 767px) {
-    .Recipes-container .Recipes-icon-holder {
-      padding: 3% 0; }
-      .Recipes-container .Recipes-icon-holder .image {
-        width: 40%; } }
-.Recipes-container .Recipes-content-container {
-  justify-content: space-between; }
-  .Recipes-container .Recipes-content-container .Recipes-caption {
-    justify-content: center;
-    margin-top: 5rem;
-    text-align: center; }
-  .Recipes-container .Recipes-content-container .Recipes-image-holder {
-    -moz-transform: translate(0, 40%);
-    -o-transform: translate(0, 40%);
-    -webkit-transform: translate(0, 40%);
-    transform: translate(0, 40%);
-    opacity: 0;
-    -moz-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-    -o-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-    -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-    overflow: hidden; }
-    .Recipes-container .Recipes-content-container .Recipes-image-holder.Recipes-animation {
-      -moz-transform: translate(0, 0);
-      -o-transform: translate(0, 0);
-      -webkit-transform: translate(0, 0);
-      transform: translate(0, 0);
-      opacity: 1; }
-    .Recipes-container .Recipes-content-container .Recipes-image-holder:hover .image {
-      -moz-transform: scale(1.02);
-      -o-transform: scale(1.02);
-      -webkit-transform: scale(1.02);
-      transform: scale(1.02); }
-    .Recipes-container .Recipes-content-container .Recipes-image-holder .image {
-      width: 100%;
-      -moz-transform: scale(1);
-      -o-transform: scale(1);
-      -webkit-transform: scale(1);
-      transform: scale(1);
-      -moz-transition: all 0.6s ease-in-out;
-      -o-transition: all 0.6s ease-in-out;
-      -webkit-transition: all 0.6s ease-in-out;
-      transition: all 0.6s ease-in-out; }
-  @media only screen and (min-width: 767px) {
+.Recipes-container {
+  min-height: 80vh; }
+  .Recipes-container .Recipes-content-container {
+    justify-content: space-between; }
     .Recipes-container .Recipes-content-container .Recipes-caption {
-      padding-left: 5%;
-      margin-top: 20rem;
-      text-align: initial; }
+      justify-content: center;
+      margin-top: 5rem;
+      text-align: center; }
     .Recipes-container .Recipes-content-container .Recipes-image-holder {
-      order: -1;
-      flex: 1.2;
-      padding: 10rem 0 0 3%; }
+      -moz-transform: translate(0, 40%);
+      -o-transform: translate(0, 40%);
+      -webkit-transform: translate(0, 40%);
+      transform: translate(0, 40%);
+      opacity: 0;
+      -moz-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+      -o-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+      -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+      overflow: hidden; }
+      .Recipes-container .Recipes-content-container .Recipes-image-holder.Recipes-animation {
+        -moz-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+        opacity: 1; }
       .Recipes-container .Recipes-content-container .Recipes-image-holder:hover .image {
         -moz-transform: scale(1.02);
         -o-transform: scale(1.02);
         -webkit-transform: scale(1.02);
         transform: scale(1.02); }
       .Recipes-container .Recipes-content-container .Recipes-image-holder .image {
-        width: 80%;
+        width: 100%;
         -moz-transform: scale(1);
         -o-transform: scale(1);
         -webkit-transform: scale(1);
@@ -1223,10 +1177,100 @@ header {
         -moz-transition: all 0.6s ease-in-out;
         -o-transition: all 0.6s ease-in-out;
         -webkit-transition: all 0.6s ease-in-out;
-        transition: all 0.6s ease-in-out; } }
+        transition: all 0.6s ease-in-out; }
+    @media only screen and (min-width: 767px) {
+      .Recipes-container .Recipes-content-container .Recipes-caption {
+        padding-left: 5%;
+        margin-top: 20rem;
+        text-align: initial; }
+      .Recipes-container .Recipes-content-container .Recipes-image-holder {
+        order: -1;
+        flex: 1.2;
+        padding: 10rem 0 10rem 3%; }
+        .Recipes-container .Recipes-content-container .Recipes-image-holder:hover .image {
+          -moz-transform: scale(1.02);
+          -o-transform: scale(1.02);
+          -webkit-transform: scale(1.02);
+          transform: scale(1.02); }
+        .Recipes-container .Recipes-content-container .Recipes-image-holder .image {
+          width: 50%;
+          -moz-transform: scale(1);
+          -o-transform: scale(1);
+          -webkit-transform: scale(1);
+          transform: scale(1);
+          -moz-transition: all 0.6s ease-in-out;
+          -o-transition: all 0.6s ease-in-out;
+          -webkit-transition: all 0.6s ease-in-out;
+          transition: all 0.6s ease-in-out; } }
 
 .Recipes-container {
   overflow: hidden; }
+
+@media only screen and (max-width: 766px) {
+  .Image-animation .w-vw .flex-content-center {
+    padding: 0 5%; } }
+.Image-animation .Recipes-icon,
+.Image-animation .Sus-section-image.image,
+.Image-animation .School-emblem {
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -moz-transform: translate(0, 0);
+  -o-transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+  opacity: 1; }
+
+.Recipes-icon {
+  opacity: 0;
+  -moz-transform: translate(0, 40%);
+  -o-transform: translate(0, 40%);
+  -webkit-transform: translate(0, 40%);
+  transform: translate(0, 40%);
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
+  @media only screen and (max-width: 766px) {
+    .Recipes-icon {
+      width: 100%; } }
+  @media only screen and (min-width: 767px) {
+    .Recipes-icon {
+      position: absolute;
+      right: 5%;
+      top: 25%;
+      width: 30%; } }
+
+.Sus-section-image.image {
+  position: absolute;
+  left: 10%;
+  bottom: 5%;
+  width: 30%;
+  opacity: 0;
+  -moz-transform: translate(0, 40%);
+  -o-transform: translate(0, 40%);
+  -webkit-transform: translate(0, 40%);
+  transform: translate(0, 40%);
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out; }
+  @media only screen and (max-width: 766px) {
+    .Sus-section-image.image {
+      position: static;
+      width: 100%; } }
+
+.School-emblem {
+  -moz-transform: translate(0, 40%);
+  -o-transform: translate(0, 40%);
+  -webkit-transform: translate(0, 40%);
+  transform: translate(0, 40%);
+  opacity: 0;
+  -moz-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.7s ease-in-out;
+  -o-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.7s ease-in-out;
+  -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.7s ease-in-out;
+  transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.7s ease-in-out; }
 
 .Header-band {
   border-bottom: solid 5px black; }
@@ -1237,17 +1281,13 @@ header {
   background-repeat: no-repeat;
   padding: 0 10% 0 10%;
   height: 130vh; }
-  .Header-section .logo .image {
+  .Header-section .image {
     max-width: auto;
     height: 100%;
-    width: 100%; }
-  @media only screen and (min-width: 767px) {
-    .Header-section .logo {
-      width: 100%; }
-      .Header-section .logo .image {
-        max-width: 100%;
-        height: 100%;
-        width: 80em; } }
+    width: 75%; }
+    @media only screen and (min-width: 767px) {
+      .Header-section .image {
+        max-width: 100%; } }
   .Header-section h1 {
     color: white;
     font-size: 3rem !important;

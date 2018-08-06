@@ -22,7 +22,7 @@ const Navbar = props => {
     <header>
       <div className="Navbar-container">
         <Link to="/" className="Nav-logo ">
-          <SVGC path={props.aqquuaLogo} className="image" fill="#00b6d9" />
+          <SVGC path={props.aqquuaLogo} className="image" fill="#85dbd7" />
         </Link>
         <a
           href="#"

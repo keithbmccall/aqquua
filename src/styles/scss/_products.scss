@@ -1,12 +1,11 @@
 .Products-container {
-  
 }
 .Products-info {
   flex: 8; //  9/24 ~ Products-hero-holder
-  padding: 15% 10% 0 10%;
+  padding: 8rem 10% 0 10%;
 
   @include tabtop {
-    padding: 15% 1% 0 10%;
+    padding: 8rem 0 0 10%;
     flex: 10; //  9/24 ~ Products-hero-holder
   }
   @include desktop {
@@ -22,7 +21,6 @@
       letter-spacing: 1px;
       @extend .geo-bold-italics;
       font-size: 1rem;
-      //   padding-left: 3%;
     }
   }
   p {
@@ -34,6 +32,7 @@
 }
 .Products-hero-holder {
   order: -1;
+  padding-left: 1%;
   justify-content: center;
   flex: 17; //  15/24 ~ Products-info
   .Products-hero {
@@ -41,7 +40,6 @@
     .image {
     }
   }
-
   @include tabtop {
     order: 2;
     flex: 14; //  19/24 ~ Products-info
@@ -56,7 +54,6 @@
         max-width: initial !important;
         height: 50rem;
         left: 0;
-        // @include transform(translateX(50%))
       }
     }
   }

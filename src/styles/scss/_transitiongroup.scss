@@ -6,11 +6,19 @@
   z-index: 2000;
 
   .Pop {
+    position: relative;
     height: 0;
     width: 0;
-    background: $atollcolor;
+    background: $arubacolor;
     transition: all 0.3s ease-in-out;
     border-radius: 50%;
+    .image {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      @include transform(translate(-50%, -50%));
+      width: 50%;
+    }
   }
 }
 .Pop-holder-appear {
@@ -130,10 +138,10 @@
     left: 3vw;
     @include transform(translate(-50%, -50%) scale(100));
   }
-  80% {
+  65% {
     opacity: 1;
   }
-  85% {
+  75% {
     height: 2rem;
     width: 2rem;
     top: 4vh;
@@ -188,10 +196,10 @@
     left: 3vw;
     @include transform(translate(-50%, -50%) scale(100));
   }
-  80% {
+  65% {
     opacity: 1;
   }
-  85% {
+  75% {
     height: 2rem;
     width: 2rem;
     top: 4vh;

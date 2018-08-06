@@ -20,12 +20,12 @@
     }
     .Section-left {
       text-align: right;
-      @extend .geo-bold;
+      @extend .geo-light;
       font-size: 4rem;
       padding-right: 1.5rem;
       line-height: 3.1rem;
       span {
-        @extend .geo-bold-italics;
+        @extend .geo-bold;
       }
     }
     @include mobile {
@@ -235,16 +235,17 @@
     }
   }
 }
+
 .Big-section-1 {
   background: $atollcolor;
 }
-.Big-section-6 {
+.Big-section-7 {
   background: $festivecolor;
 }
-.Big-section-3 {
+.Big-section-4 {
   background: $poppycolor;
 }
-.Big-section-9 {
+.Big-section-11 {
   background: linear-gradient(
     to bottom right,
     #210420,
@@ -255,7 +256,7 @@
     #9b0096
   );
 }
-.Big-section-8 {
+.Big-section-9 {
   background: linear-gradient(
     to bottom right,
     #f79d04,
@@ -269,17 +270,18 @@
     #f7c604
   );
 }
-.Big-section-7,
-.Big-section-10 {
-  background-size: cover;
-  height: 50vh;
+.Big-background {
+  min-height: initial;
+  .image {
+    width: 100%;
+  }
 }
-.Big-section-5 {
+.Big-section-6 {
   background: $pinkcolor;
 }
 .Big-section-10 {
 }
-.Big-section-11 {
+.Big-section-13 {
   background: linear-gradient(
     to bottom right,
     #1b7a06,
@@ -291,7 +293,7 @@
     #9ce881
   );
 }
-.Big-section-2 {
+.Big-section-3 {
   background: white;
   .space-10 {
     @include mobile {
@@ -327,30 +329,7 @@
     margin-top: -$navbargap;
   }
 }
-.Image-animation {
-  @include mobile {
-    .w-vw {
-      .flex-content-center {
-        padding: 0 5%;
-      }
-    }
-  }
-  .School-emblem {
-    @include transition(all 1s ease-in-out);
-    @include transform(translate(0, 0));
-    opacity: 1;
-    // &:hover {
-    //   @include transform(scale(1.05));
-    // }
-  }
-}
-.School-emblem {
-  @include transform(translate(0, 40%));
-  opacity: 0;
-  @include transition(
-    (all 1s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.7s ease-in-out)
-  );
-}
+
 .Eat-fish-tag-container {
   @include transform(rotate(-10deg) rotateX(65deg) translate3d(60px, 50px, 0));
   @include transition(all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1));
@@ -370,22 +349,7 @@
 }
 //
 .Recipes-container {
-  .Recipes-icon-holder {
-    justify-content: center;
-    align-items: center;
-    a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-
-    @include tabtop {
-      padding: 3% 0;
-      .image {
-        width: 40%;
-      }
-    }
-  }
+  min-height: 80vh;
   .Recipes-content-container {
     justify-content: space-between;
     .Recipes-caption {
@@ -421,12 +385,12 @@
       .Recipes-image-holder {
         order: -1;
         flex: 1.2;
-        padding: 10rem 0 0 3%;
+        padding: 10rem 0 10rem 3%;
         &:hover .image {
           @include transform(scale(1.02));
         }
         .image {
-          width: 80%;
+          width: 50%;
           @include transform(scale(1));
           @include transition(all 0.6s ease-in-out);
         }
@@ -436,4 +400,60 @@
 }
 .Recipes-container {
   overflow: hidden;
+}
+
+.Image-animation {
+  @include mobile {
+    .w-vw {
+      .flex-content-center {
+        padding: 0 5%;
+      }
+    }
+  }
+  .Recipes-icon,
+  .Sus-section-image.image,
+  .School-emblem {
+    @include transition(all 1s ease-in-out);
+    @include transform(translate(0, 0));
+    opacity: 1;
+  }
+}
+.Recipes-icon-holder {
+  
+}
+.Recipes-icon {
+  opacity: 0;
+  @include transform(translate(0, 40%));
+  @include transition(all 1s ease-in-out);
+  @include mobile {
+    width: 100%;
+  }
+  @include tabtop {
+    position: absolute;
+    right: 5%;
+    top: 25%;
+    width: 30%;
+    // @include transform(translateY(-50%));
+  }
+}
+
+.Sus-section-image.image {
+  position: absolute;
+  left: 10%;
+  bottom: 5%;
+  width: 30%;
+  opacity: 0;
+  @include transform(translate(0, 40%));
+  @include transition(all 1s ease-in-out);
+  @include mobile {
+    position: static;
+    width: 100%;
+  }
+}
+.School-emblem {
+  @include transform(translate(0, 40%));
+  opacity: 0;
+  @include transition(
+    (all 1s cubic-bezier(0.165, 0.84, 0.44, 1), transform 0.7s ease-in-out)
+  );
 }

@@ -44,11 +44,12 @@ import sus3 from "../assets/images/png/sus/twogirls.png";
 import sus4 from "../assets/images/png/sus/largegroup.png";
 import sus5 from "../assets/images/png/sus/flatbed.png";
 //
-import um1 from "../assets/images/png/um/boattank.png";
+import bu1 from "../assets/images/png/burapha/handfish.png";
+//
 import um2 from "../assets/images/png/um/clearfish.png";
 import um3 from "../assets/images/png/um/fishintank.png";
 import um4 from "../assets/images/png/um/boattank2.png";
-import um5 from "../assets/images/png/um/twoshirts.png";
+import um5 from "../assets/images/png/um/ruler.png";
 import um6 from "../assets/images/png/um/twoguys.png";
 import um7 from "../assets/images/png/um/schooloffish.png";
 import um8 from "../assets/images/png/um/twofish.png";
@@ -56,6 +57,8 @@ import um8 from "../assets/images/png/um/twofish.png";
 import recipewave from "../assets/images/png/food/recipesectionwave.gif";
 import recipeicon from "../assets/images/png/food/recipeicon.png";
 //
+import sectionalMangroves from "../assets/images/png/fishprints/sectional-mangroves.png";
+import sectionalGrouper from "../assets/images/png/fishprints/sectional-grouper.png";
 import sectionalFishTank from "../assets/images/png/fishprints/sectional-fishtank.png";
 import sectionalHirame from "../assets/images/png/fishprints/sectional-hirame.png";
 //
@@ -142,33 +145,43 @@ const sustainabilityImages = [
     title: "American Red Snapper eggs"
   }
 ];
-const umImages = [
-  {
-    image: um3,
-    title: "Mahi-Mahi broodstock"
-  },
-  {
-    image: um4,
-    title: "Live transport"
-  },
-  {
-    image: um6,
-    title: "Dr. Dan Benetti & Zack Daugherty"
-  },
-  {
-    image: um8,
-    title: "First Mini Mahi harvest for canning tryouts"
-  },
-  {
-    image: um7,
-    title: "American Red Snapper broodstock"
-  },
-  {
-    image: um2,
-    title: "Hirame fingerling production"
-  }
-];
-const sectionals = { sectionalFishTank, sectionalHirame };
+const buraphaImages = {
+  bigImage: bu1
+};
+const umImages = {
+  bigImage: "",
+  images: [
+    {
+      image: um5,
+      title: "Hirame"
+    },
+    {
+      image: um3,
+      title: "Mahi-Mahi broodstock"
+    },
+    {
+      image: um4,
+      title: "Live transport"
+    },
+    {
+      image: um6,
+      title: "Dr. Dan Benetti & Zack Daugherty"
+    },
+    {
+      image: um8,
+      title: "First Mini Mahi harvest for canning tryouts"
+    },
+    {
+      image: um7,
+      title: "American Red Snapper broodstock"
+    },
+    {
+      image: um2,
+      title: "Hirame fingerling production"
+    }
+  ]
+};
+const sectionals = { sectionalFishTank, sectionalHirame, sectionalGrouper,sectionalMangroves };
 
 const images = {
   fishPrint,
@@ -184,6 +197,7 @@ const images = {
   geneticsImages,
   sustainabilityImages,
   umImages,
+  buraphaImages,
   sectionals
 };
 

@@ -1,29 +1,20 @@
 import React, { Fragment } from "react";
 import ProductsCircleMap from "../products/ProductsCircleMap";
 import SchoolEmblem from "../schools/SchoolEmblem";
-import SectionNumber from "../section-items/SectionNumber";
 import SectionText from "../section-items/SectionText";
-import TrackingAnimations from "../../animations/TrackingAnimations";
-import { withRouter, Link } from "react-router-dom";
-// test
-import images from "../../../data/images";
-import SVGC from "../../tools/images/SVG";
+import { withRouter } from "react-router-dom";
 import AnyImageAnimation from "../../animations/AnyImageAnimation";
 
 const LandingSection = props => {
   const { item, index } = props;
+  console.log(item);
   return (
     <div
       className={`flex-column Big-section vh Big-section-${index} ${item.backgroundImage &&
         "Big-background"}`}
       id={item.id || " "}
-      style={
-        item.backgroundImage
-          ? { backgroundImage: `url(${item.backgroundImage})` }
-          : {}
-      }
     >
-      {!item.backgroundImage && (
+      {!item.backgroundImage ? (
         <div className="flex-1 flex-content-center space-10">
           <div
             className={`flex-content-center flex-column ${
@@ -33,10 +24,14 @@ const LandingSection = props => {
             <SectionText
               caption={item.caption || ""}
               headline={item.headline || ""}
-              number={item.number && item.number}
               fish={item.fish && item.fish}
               eatFishTag={item.eatFishTag || null}
             />
+            {/* {item.susImage && (
+              <AnyImageAnimation bO="20%">
+                <img src={item.susImage} className="image Sus-section-image light-shadow-square" />
+              </AnyImageAnimation>
+            )} */}
             {item.schoolEmblems && (
               <AnyImageAnimation>
                 <div className="flex space-10 w-vw">
@@ -49,6 +44,8 @@ const LandingSection = props => {
             {item.fish && <ProductsCircleMap fish={item.fish} />}
           </div>
         </div>
+      ) : (
+        <img src={item.backgroundImage} className="image" />
       )}
     </div>
   );

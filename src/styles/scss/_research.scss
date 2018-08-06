@@ -1,5 +1,10 @@
 .Research-container {
   align-items: center;
+  .Research-big{
+    &.image{
+      width:100%;
+    }
+  }
 }
 
 .Research-info-holder {

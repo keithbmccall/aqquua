@@ -200,7 +200,9 @@ export const sectionData = [
       "We’ve succeeded."
     ]
   },
-
+  {
+    backgroundImage: images.sectionals.sectionalGrouper
+  },
   {
     id: "Products",
     title: "Our Products",
@@ -238,11 +240,8 @@ export const sectionData = [
     number: 3,
     headline: "WE'RE DOING IT IN STYLE",
     caption: [
-      "Aqquua has become a proud member of EATFISH™ The platform is the first hardware/software supply chain tool to not only trace, but verify a product from source to destination in a manner designed to boost consumer and retailer faith in their distribution partners as well as to drive sales through consumer education.",
-      "The platform is empowering as an authentication tool that lets the customer, verify, learn and enjoy their fish purchase in a truly new and innovative way. It successfully provides them with 100% transparency, sustainability and traceability information.  This level of authenticity is made possible by photographing, time/date stamping, if desired, and the weighing of each individual fish at time of processing.",
-      "EATFISH™ provides customizable tools to consumers at every level to be able to go as deep as they wish into the story of their purchase, from the moment of harvest, to the point of sale, and every stop in between.",
-      "This sets EATFISH apart from any other traceability platform currently on the market and why we decided to join.",
-      "The sole purpose of EATFISH™ is to efficiently track fish from the farm all the way to the end users kitchen while adding an easy to use and convenient way to provide the best seafood cooking experience."
+      "Showing our true colors in the way we raise our fish is our way to promote authenticity, transparency and traceability.",
+      "That’s why we have become proud members of the EATFISH platform, whose sole purpose is to track fish from our farm directly to your table."
     ],
     content:
       "The EATFISH platform is useful as an educational tool that lets our customer verify, learn and enjoy their purchase in a truly and innovative way by successfully providing them with 100% transparency, sustainability and traceability information. Eat Fish sole purpose is to efficiently track fish from our farm all the way to our end users table. Eat Fish enables our customer to scan the Eat Fish tag attached to our fish, which has a QR and serial code. After scanning any given fish at the retailer, our customers will find an actual image of their specific fish potential purchase, nutritional facts and farm and country of origin. It also provides a recipe api leading our customers to great food recipes for the specific fish purchase. Once at home you can submit a video of your sea-food cooking experience from your very own kitchen. This allows us to connect to our customers and get immediate reviews that can help us to best serve them in the future. We sell our products under the trade mark “Sea food for what it is”… We don’t sell you a story, we prefer to hear yours!"
@@ -279,6 +278,9 @@ export const sectionData = [
     ]
   },
   {
+    backgroundImage: images.sectionals.sectionalHirame
+  },
+  {
     clickImage: " ",
     id: "Genetics",
     number: 6,
@@ -290,7 +292,7 @@ export const sectionData = [
     ]
   },
   {
-    backgroundImage: images.sectionals.sectionalHirame
+    backgroundImage: images.sectionals.sectionalMangroves
   },
 
   {
@@ -369,7 +371,7 @@ export const fishProductsInfo = {
   }
 };
 export const contactInfo = {
-  title: "Contact Us",
+  title: "Hello",
   caption:
     "AQQUUA IS AN OPEN DOOR OPERATION. WHETHER YOU ARE A SEAFOOD CUSTOMER, RETAILER, CHEF, MEMBER OF THE PRESS OR MEDIA, OR EDUCATOR LOOKING FOR MORE INFORMATION ABOUT AQQUUA, WE CAN BE REACHED THROUGH SOCIAL MEDIA OR WITH THE BELOW INFO. WE WELCOME ALL KINDS OF INQUIRIES.",
   addresses: [
@@ -395,10 +397,12 @@ export const researchInfo = {
     name: "um",
     color: "#f37224",
     title: "Rosenstiel School of Marine and Atmospheric Science",
-    images: images.umImages,
+    images: images.umImages.images,
+    bigImage: images.umImages.bigImage,
     caption: [
-      "Aqquua has engaged the University of Miami’s Rosenstiel School of Marine and Atmospheric Science (RSMAS) and its Aquaculture Program to help develop sustainable marina aquaculture in the United States. Through this partnership, Aqquua has strategically positioned itself to meet ever increasing demand for high quality seafood. The University of Miami Experimental Hatchery (UMEH) has commercial production capacity for a number of different marine finfish species, and has proven hatchery production methods for Japanese flounder and mahi-mahi that are ready for commercialization. Full cycle production of Japanese flounder, from egg to market, has been conducted at UMEH and samples have been sent out to chefs around the country for test marketing of the product. Aqquua and UM have been working on developing new markets for mahi-mahi that capitalize on the extraordinary growth rates of this species. At UMEH, juvenile mahi-mahi (~45 days old) have been harvested and prepared as a canned sardine alternative while 90 day old individuals have been well received by local chefs as a new plate size fish offering. The next step with these species for Aqquua and UM is to identify economically viable methods for commercial-scale growout in the United States. One aspect of this initiative could include implementation of an economically viable land-based recirculating aquaculture system (RAS) for the production of these species. UM and Aqquua continue to collaborate on efforts to improve the economic and ecological efficiency of growing marine fish in the US and abroad, including recent work by the UM Aquaculture nutritionist who has been assisting Aqquua’s Thailand operation with a custom grouper feed formulation to help improve the aquaculture performance of the fish.",
-      "Aqquua is also looking to the future with research aimed at developing new marine species for commercial production by addressing a major industry bottleneck: consistent availability of marine finfish juveniles for growout. Currently two new state of the art RAS maturation tanks for American red snapper and blackfin tuna broodstock are about to come online at UMEH. Once successful spawning begins, the eggs will be collected, stocked for hatching, and subsequent larval rearing trials will be conducted. Among other things, UMEH will investigate the effectiveness of different live prey items at first feeding, optimal photoperiod, and commercially-viable live feeds regimes for these species. The end goal is to establish repeatable protocols that allow for the consistent production of commercial quantities of red snapper and blackfin tuna."
+      "Our collaborative research agreement with the University of Miami is helping to advance aquaculture technology for high-value marine fish such as Tuna and Hirame (Japanese flounder) at the UM experimental fish hatchery.",
+      "The agreement between Aqquua and the UM Rosensteil School-based aquaculture program is aimed at improving hatchery and other aquaculture technologies of a number of economically valuable species that have never been developed elsewhere in the world.",
+      "'This research agreement will help advance sustainable aquaculture research at a time when it is critically needed to support increased demand for highly quality protein to feed the worlds growing population,' said UM Rosensteil School professor Dan Benetti, director of the UM aquaculture program. “We are pleased by Aqquuas’ commitment to advance aquaculture technology in a sustainable way."
     ]
   },
   burapha: {
@@ -406,6 +410,7 @@ export const researchInfo = {
     name: "burapha",
     color: "#ffdf10",
     title: "Burapha University",
+    bigImage: images.buraphaImages.bigImage,
     images: [],
     caption: [
       "Aqquua has a Memorandum of Understanding with the University of Burapha to help us with egg producing brood-stock and the advancement of our larval rearing efforts in Thailand.",
@@ -429,8 +434,8 @@ export const farmInfo = {
 export const geneticsInfo = {
   title: "DIVERSITY IN FIN FISH IS THE FUTURE OF AQUACULTURE",
   caption: [
-    "dreamcatcher swag YOLO occupy vegan cray wayfarers mumblecore keytar whatever Austin vinyl fingerstache Banksy pop-up organic ugh leggings roof party try-hard keffiyeh disrupt photo booth viral Williamsburg Pitchfork tofu stumptown McSweeney's pickled seitan tote bag artisan biodiesel shabby chic pour-over Thundercats Shoreditch plaid Tonx food truck mustache quinoa sriracha aesthetic bicycle rights bitters fixie squid raw denim kitsch cliche forage Helvetica brunch Etsy",
-    "post-ironic farm-to-table chillwave four loko polaroid paleo meh actually Tumblr tousled small batch cornhole pug synth Kickstarter twee literally lomo Schlitz Portland chambray sartorial put a bird on it PBR&B mixtape wolf normcore XOXO heirloom DIY church-key direct trade  sustainable Intelligentsia gentrify craft beer umami 8-bit selvage gluten-free ennui Wes Anderson narwhal flexitarian deep v cred beard kale chips bespoke single-origin coffee hoodie PBR chia before they sold out skateboard blog butcher jean shorts selfies tattooed art party readymade master cleanse VHS retro kogi Marfa yr Godard Cosby sweater authentic Truffaut salvia cardigan you probably haven't heard of them lo-fi Carles gastropub asymmetrical Brooklyn fashion axe High Life Pinterest Vice street art iPhone semiotics scenester locavore Neutra letterpress 3 wolf moon crucifix banjo ethical hashtag Blue Bottle hella pork belly mlkshk drinking vinegar slow-carb irony fap +1 trust fund messenger bag American Apparel banh mi meggings freegan fanny pack next level Echo Park Bushwick 90's typewriter distillery flannel Odd"
+    "Aqquua has engaged the University of Miami’s Rosenstiel School of Marine and Atmospheric Science (RSMAS) and its Aquaculture Program to help develop sustainable marina aquaculture in the United States. Through this partnership, Aqquua has strategically positioned itself to meet ever increasing demand for high quality seafood. The University of Miami Experimental Hatchery (UMEH) has commercial production capacity for a number of different marine finfish species, and has proven hatchery production methods for Japanese flounder and mahi-mahi that are ready for commercialization. Full cycle production of Japanese flounder, from egg to market, has been conducted at UMEH and samples have been sent out to chefs around the country for test marketing of the product. Aqquua and UM have been working on developing new markets for mahi-mahi that capitalize on the extraordinary growth rates of this species. At UMEH, juvenile mahi-mahi (~45 days old) have been harvested and prepared as a canned sardine alternative while 90 day old individuals have been well received by local chefs as a new plate size fish offering. The next step with these species for Aqquua and UM is to identify economically viable methods for commercial-scale growout in the United States. One aspect of this initiative could include implementation of an economically viable land-based recirculating aquaculture system (RAS) for the production of these species. UM and Aqquua continue to collaborate on efforts to improve the economic and ecological efficiency of growing marine fish in the US and abroad, including recent work by the UM Aquaculture nutritionist who has been assisting Aqquua’s Thailand operation with a custom grouper feed formulation to help improve the aquaculture performance of the fish.",
+    "Aqquua is also looking to the future with research aimed at developing new marine species for commercial production by addressing a major industry bottleneck: consistent availability of marine finfish juveniles for growout. Currently two new state of the art RAS maturation tanks for American red snapper and blackfin tuna broodstock are about to come online at UMEH. Once successful spawning begins, the eggs will be collected, stocked for hatching, and subsequent larval rearing trials will be conducted. Among other things, UMEH will investigate the effectiveness of different live prey items at first feeding, optimal photoperiod, and commercially-viable live feeds regimes for these species. The end goal is to establish repeatable protocols that allow for the consistent production of commercial quantities of red snapper and blackfin tuna."
   ],
   titleColor: "#620c5f",
   images: images.geneticsImages
@@ -442,7 +447,11 @@ export const eatFishInfo = {
   title: "SEE FOOD FOR WHAT IT IS",
   subTitle: "WE DON’T SELL YOU A STORY, WE PREFER TO HEAR YOURS!",
   caption: [
-    "The Eat Fish platform is useful as an educational tool that lets you the customer verify, learn and enjoy your purchase in a truly and innovative way by successfully providing you with 100% transparency, sustainability and traceability information.  EATFISH's sole purpose is to efficiently track fish from our farm all the way to your table."
+    "Aqquua has become a proud member of EATFISH™ The platform is the first hardware/software supply chain tool to not only trace, but verify a product from source to destination in a manner designed to boost consumer and retailer faith in their distribution partners as well as to drive sales through consumer education.",
+    "The platform is empowering as an authentication tool that lets the customer, verify, learn and enjoy their fish purchase in a truly new and innovative way. It successfully provides them with 100% transparency, sustainability and traceability information.  This level of authenticity is made possible by photographing, time/date stamping, if desired, and the weighing of each individual fish at time of processing.",
+    "EATFISH™ provides customizable tools to consumers at every level to be able to go as deep as they wish into the story of their purchase, from the moment of harvest, to the point of sale, and every stop in between.",
+    "This sets EATFISH apart from any other traceability platform currently on the market and why we decided to join.",
+    "The sole purpose of EATFISH™ is to efficiently track fish from the farm all the way to the end users kitchen while adding an easy to use and convenient way to provide the best seafood cooking experience."
   ],
   list: {
     title: "This is how it works:",
