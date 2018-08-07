@@ -261,13 +261,6 @@ img {
       transform: translate(-50%, -50%);
       width: 0.2vw; }
 
-.Pop-holder-appear {
-  display: block; }
-  .Pop-holder-appear .Pop-animation {
-    height: 1vh;
-    width: 1vh;
-    transform: scale(100); }
-
 @keyframes pop {
   0% {
     -moz-transform: translate(-50%, -50%) scale(1);
@@ -1333,7 +1326,6 @@ header {
   background-color: #e15d44;
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 0 10% 0 10%;
   height: 100vh; }
   .Header-section .image {
     max-width: auto;
@@ -1356,7 +1348,7 @@ header {
       white-space: nowrap; }
   .Header-section .absolute, .Header-section .Wa-container h3, .Wa-container .Header-section h3, .Header-section .Wa-container .Wa-h2, .Wa-container .Header-section .Wa-h2 {
     width: 100%;
-    bottom: 0;
+    bottom: initial;
     left: 50%;
     height: 50%;
     -moz-transform: translate(-50%, 0);

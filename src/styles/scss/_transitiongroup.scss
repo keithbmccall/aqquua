@@ -25,16 +25,6 @@
     }
   }
 }
-.Pop-holder-appear {
-  display: block;
-  .Pop-animation {
-    height: 1vh;
-    width: 1vh;
-    transform: scale(100);
-    .image {
-    }
-  }
-}
 @keyframes pop {
   0% {
     @include transform(translate(-50%, -50%) scale(1));
