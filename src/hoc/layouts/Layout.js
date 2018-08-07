@@ -14,5 +14,4 @@ class Layout extends Component {
     );
   }
 }
-
 export default withRouter(Layout);

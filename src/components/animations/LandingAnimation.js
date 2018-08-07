@@ -49,7 +49,7 @@ export default class LandingAnimation extends Component {
   componentDidMount() {
     setTimeout(() => this.popHolder(), 4500);
     setTimeout(() => this.popWords(), 2000);
-    setTimeout(() => this.unPopWords(), 5500);
+    setTimeout(() => this.unPopWords(), 5000);
     setTimeout(() => this.popLogo(), 1400);
     setTimeout(() => this.popFinish(), 7000);
     setTimeout(() => this.popDot(), 2000);

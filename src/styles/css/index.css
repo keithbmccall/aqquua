@@ -431,7 +431,7 @@ img {
   0% {
     height: 2rem;
     width: 2rem;
-    top: 95%;
+    top: 50%;
     left: 50%; }
   20% {
     height: 2rem;
@@ -920,6 +920,7 @@ header {
       .Big-section .Section-text-holder.collapse-row-column .Section-left,
       .Big-section .Recipes-caption.collapse-row-column .Section-left {
         margin-bottom: 2rem;
+        text-align: center;
         font-size: 2.5rem;
         padding: 0;
         line-height: 2rem; }
@@ -1275,7 +1276,8 @@ header {
   .Recipes-content-container .Image-animation {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex: 1; }
     .Recipes-content-container .Image-animation .Recipes-icon-holder {
       width: 60%;
       padding: 10%; } }
