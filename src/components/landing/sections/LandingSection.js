@@ -27,11 +27,7 @@ const LandingSection = props => {
               fish={item.fish && item.fish}
               eatFishTag={item.eatFishTag || null}
             />
-            {/* {item.susImage && (
-              <AnyImageAnimation bO="20%">
-                <img src={item.susImage} className="image Sus-section-image light-shadow-square" />
-              </AnyImageAnimation>
-            )} */}
+
             {item.schoolEmblems && (
               <AnyImageAnimation>
                 <div className="flex space-10 w-vw">

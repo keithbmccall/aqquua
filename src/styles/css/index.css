@@ -43,9 +43,7 @@ body, .Contact-holder .Contact-form form input,
 .geo-ultra, .Wa-container .Wa-h2 h2 {
   font-family: "geomanist-ultra", Arial, Helvetica, sans-serif; }
 
-.geo-bold-italics, .Contact-holder h3, .Products-info h1 span, .Content-info-holder .Content-list-holder ul li span,
-.Content-image-holder .Content-list-holder ul li span, .Content-info-holder h1,
-.Content-image-holder h1, .Research-info-holder h1 {
+.geo-bold-italics {
   font-family: "geomanist-bold-italics", Arial, Helvetica, sans-serif; }
 
 .geo-bold, h1,
@@ -53,8 +51,10 @@ h2,
 h3,
 h4,
 h5,
-h6, .Contact-holder .Contact-addresses address span, .Products-info h1, .Content-info-holder h2,
-.Content-image-holder h2, header .Navbar-container nav li, .Big-section .Section-text-holder .Section-left span,
+h6, .Contact-holder h3, .Contact-holder .Contact-addresses address span, .Products-info h1, .Products-info h1 span, .Content-info-holder .Content-list-holder ul li span,
+.Content-image-holder .Content-list-holder ul li span, .Content-info-holder h1,
+.Content-image-holder h1, .Content-info-holder h2,
+.Content-image-holder h2, .Research-info-holder h1, header .Navbar-container nav li, .Big-section .Section-text-holder .Section-left span,
 .Big-section .Recipes-caption .Section-left span, .Wa-container .Wa-2, .Wa-container .Wa-6, .Wa-container .Wa-9, .Wa-container .Wa-10, .Wa-container .Wa-15, .Wa-container .Wa-20, .Wa-container .Wa-24 {
   font-family: "geomanist-bold", Arial, Helvetica, sans-serif; }
 
@@ -236,25 +236,61 @@ img {
   position: fixed;
   top: 50%;
   left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-  z-index: 2000; }
+  z-index: -1; }
+  .Pop-holder.animation {
+    z-index: 2000; }
+    .Pop-holder.animation .Pop {
+      animation: pop 1.15s ease-in-out; }
   .Pop-holder .Pop {
-    height: 0;
-    width: 0;
+    position: relative;
+    height: 1vh;
+    width: 1vh;
     background: #85dbd7;
-    transition: all 0.3s ease-in-out;
     border-radius: 50%; }
     .Pop-holder .Pop .image {
-      width: 100%; }
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      width: 0.2vw; }
 
-.Pop-holder-appear .Pop-animation {
-  height: 1vh;
-  width: 1vh;
-  transform: scale(250); }
-  .Pop-holder-appear .Pop-animation .image {
-    transform: scale(0.2) translateY(-50%);
-    margin-top: -50%; }
+.Pop-holder-appear {
+  display: block; }
+  .Pop-holder-appear .Pop-animation {
+    height: 1vh;
+    width: 1vh;
+    transform: scale(100); }
 
+@keyframes pop {
+  0% {
+    -moz-transform: translate(-50%, -50%) scale(1);
+    -o-transform: translate(-50%, -50%) scale(1);
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1); }
+  25% {
+    -moz-transform: translate(-50%, -50%) scale(220);
+    -o-transform: translate(-50%, -50%) scale(220);
+    -webkit-transform: translate(-50%, -50%) scale(220);
+    transform: translate(-50%, -50%) scale(220); }
+  75% {
+    -moz-transform: translate(-50%, -50%) scale(220);
+    -o-transform: translate(-50%, -50%) scale(220);
+    -webkit-transform: translate(-50%, -50%) scale(220);
+    transform: translate(-50%, -50%) scale(220); }
+  99% {
+    -moz-transform: translate(-50%, -50%) scale(5);
+    -o-transform: translate(-50%, -50%) scale(5);
+    -webkit-transform: translate(-50%, -50%) scale(5);
+    transform: translate(-50%, -50%) scale(5); }
+  100% {
+    display: none; } }
 .swoop-exit-active {
   position: fixed !important;
   z-index: 10 !important; }
@@ -461,7 +497,8 @@ img {
     margin: 0 1.5rem 3.5rem 1.5rem; }
   .Contact-holder h3 {
     font-size: 2rem;
-    margin-bottom: 1rem; }
+    margin-bottom: 1rem;
+    text-align: center; }
   .Contact-holder .Contact-caption {
     margin-bottom: 2rem; }
   .Contact-holder .Contact-addresses {
@@ -723,6 +760,23 @@ img {
       .Content-image-title .Content-holder img {
         width: 100% !important; } }
 
+.Headline-animation {
+  -moz-transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -o-transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -webkit-transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+  transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
+  -moz-transform: rotate(-10deg) rotateX(65deg) translate3d(60px, 50px, 0);
+  -o-transform: rotate(-10deg) rotateX(65deg) translate3d(60px, 50px, 0);
+  -webkit-transform: rotate(-10deg) rotateX(65deg) translate3d(60px, 50px, 0);
+  transform: rotate(-10deg) rotateX(65deg) translate3d(60px, 50px, 0);
+  opacity: 0; }
+  .Headline-animation.animation {
+    opacity: 1;
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); }
+
 .Research-container {
   align-items: center; }
   .Research-container .Research-big.image {
@@ -808,8 +862,8 @@ header {
           content: "."; }
         @media only screen and (min-width: 767px) {
           header .Navbar-container nav li {
-            font-size: 5rem;
-            line-height: 4.4rem;
+            font-size: 4rem;
+            line-height: 3.5rem;
             letter-spacing: 2px; } }
     header .Navbar-container .Nav-menu {
       z-index: 50;
@@ -1188,7 +1242,7 @@ header {
           -webkit-transform: scale(1.02);
           transform: scale(1.02); }
         .Recipes-container .Recipes-content-container .Recipes-image-holder .image {
-          width: 50%;
+          width: 100%;
           -moz-transform: scale(1);
           -o-transform: scale(1);
           -webkit-transform: scale(1);
@@ -1217,25 +1271,28 @@ header {
   transform: translate(0, 0);
   opacity: 1; }
 
-.Recipes-icon {
-  opacity: 0;
-  -moz-transform: translate(0, 40%);
-  -o-transform: translate(0, 40%);
-  -webkit-transform: translate(0, 40%);
-  transform: translate(0, 40%);
-  -moz-transition: all 1s ease-in-out;
-  -o-transition: all 1s ease-in-out;
-  -webkit-transition: all 1s ease-in-out;
-  transition: all 1s ease-in-out; }
-  @media only screen and (max-width: 766px) {
-    .Recipes-icon {
-      width: 100%; } }
-  @media only screen and (min-width: 767px) {
-    .Recipes-icon {
+@media only screen and (max-width: 766px) {
+  .Recipes-content-container .Image-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .Recipes-content-container .Image-animation .Recipes-icon-holder {
+      width: 60%;
+      padding: 10%; } }
+@media only screen and (min-width: 767px) {
+  .Recipes-content-container .Image-animation {
+    position: relative;
+    width: 50%; }
+    .Recipes-content-container .Image-animation .Recipes-icon-holder {
       position: absolute;
-      right: 5%;
-      top: 25%;
-      width: 30%; } }
+      top: 50%;
+      left: 50%;
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%); }
+      .Recipes-content-container .Image-animation .Recipes-icon-holder .Recipes-icon {
+        width: 100%; } }
 
 .Sus-section-image.image {
   position: absolute;

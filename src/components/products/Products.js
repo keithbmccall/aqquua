@@ -8,6 +8,7 @@ const Products = props => {
       <div className="Products-container">
         <div className="flex collapse-row-column">
           <div className="Products-info">
+          
             <h1 style={{ color: info.color }}>
               {info.fish.toUpperCase()}
               <span>{`(${info.scienceName})`}</span>

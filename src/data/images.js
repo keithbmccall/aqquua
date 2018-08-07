@@ -126,23 +126,23 @@ const geneticsImages = [
 const sustainabilityImages = [
   {
     image: sus5,
-    title: "American Red Snapper eggs"
+    title: ""
   },
   {
     image: sus1,
-    title: "American Red Snapper eggs"
-  },
-  {
-    image: sus2,
-    title: "American Red Snapper eggs"
-  },
-  {
-    image: sus3,
-    title: "American Red Snapper eggs"
+    title: ""
   },
   {
     image: sus4,
-    title: "American Red Snapper eggs"
+    title: ""
+  },
+  {
+    image: sus2,
+    title: ""
+  },
+  {
+    image: sus3,
+    title: ""
   }
 ];
 const buraphaImages = {
@@ -181,7 +181,12 @@ const umImages = {
     }
   ]
 };
-const sectionals = { sectionalFishTank, sectionalHirame, sectionalGrouper,sectionalMangroves };
+const sectionals = {
+  sectionalFishTank,
+  sectionalHirame,
+  sectionalGrouper,
+  sectionalMangroves
+};
 
 const images = {
   fishPrint,

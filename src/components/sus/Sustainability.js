@@ -9,7 +9,10 @@ const Sustainability = props => {
   return (
     <div className="container">
       <div className="Sus-container">
-        <LargeTextWithTitle info={info} image={image[0].image} />
+        <LargeTextWithTitle info={info} />
+
+        <img src={image[0].image} className="image Research-big" />
+
         <ContentImages info={info} />
       </div>
     </div>

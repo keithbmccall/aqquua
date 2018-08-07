@@ -6,7 +6,7 @@ import { HashLink } from "react-router-hash-link";
 const NavbarLinks = props => {
   const styles = {
     navItem: {
-      ":hover": { backgroundColor: props.link.color }
+      ":hover": { color: props.link.color }
     }
   };
   // console.log(props.link.link, props.link.id, props);

@@ -2,32 +2,56 @@
   position: fixed;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 2000;
-
+  @include transform(translate(-50%, -50%));
+  z-index: -1;
+  &.animation {
+    z-index: 2000;
+    .Pop {
+      animation: pop 1.15s ease-in-out;
+    }
+  }
   .Pop {
-    height: 0;
-    width: 0;
+    position: relative;
+    height: 1vh;
+    width: 1vh;
     background: $arubacolor;
-    transition: all 0.3s ease-in-out;
     border-radius: 50%;
     .image {
-      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      @include transform(translate(-50%, -50%));
+      width: 0.2vw;
     }
   }
 }
 .Pop-holder-appear {
+  display: block;
   .Pop-animation {
     height: 1vh;
     width: 1vh;
-    transform: scale(250);
+    transform: scale(100);
     .image {
-      transform: scale(0.2) translateY(-50%);
-      margin-top: -50%;
     }
   }
 }
-
+@keyframes pop {
+  0% {
+    @include transform(translate(-50%, -50%) scale(1));
+  }
+  25% {
+    @include transform(translate(-50%, -50%) scale(220));
+  }
+  75% {
+    @include transform(translate(-50%, -50%) scale(220));
+  }
+  99% {
+    @include transform(translate(-50%, -50%) scale(5));
+  }
+  100% {
+    display: none;
+  }
+}
 .swoop-exit-active {
   position: fixed !important;
   z-index: 10 !important;

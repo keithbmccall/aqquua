@@ -12,7 +12,7 @@ import EatFishContainer from "./containers/eatfish/EatFishContainer";
 import SustainabilityContainer from "./containers/sus/SustainabilityContainer";
 //
 
-const transitionTime = 700;
+const transitionTime = 1000;
 class App extends Component {
   constructor() {
     super();

@@ -1,4 +1,5 @@
 import React from "react";
+import HeadlineAnimation from "../../animations/HeadlineAnimation";
 
 const LargeTextWithTitle = props => {
   const { info } = props;
@@ -6,7 +7,11 @@ const LargeTextWithTitle = props => {
     <div className="flex Content-info-holder collapse-row-column-tab">
       <div className="Content-info  flex-1">
         <div>
-          <h1 style={{ color: info.titleColor }}>{info.title.toUpperCase()}</h1>
+          <HeadlineAnimation>
+            <h1 style={{ color: info.titleColor }}>
+              {info.title.toUpperCase()}
+            </h1>
+          </HeadlineAnimation>
           {info.subTitle && <h2>{info.subTitle}</h2>}
           {info.caption.map((p, key) => <p key={key}>{p}</p>)}
         </div>

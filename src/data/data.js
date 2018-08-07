@@ -444,7 +444,7 @@ export const eatFishInfo = {
   video: "https://player.vimeo.com/video/210481738?title=0&byline=0&portrait=0",
   backgroundColor: "#ff2882",
   titleColor: "#ff2882",
-  title: "SEE FOOD FOR WHAT IT IS",
+  title: "SEA FOOD FOR WHAT IT IS",
   subTitle: "WE DON’T SELL YOU A STORY, WE PREFER TO HEAR YOURS!",
   caption: [
     "Aqquua has become a proud member of EATFISH™ The platform is the first hardware/software supply chain tool to not only trace, but verify a product from source to destination in a manner designed to boost consumer and retailer faith in their distribution partners as well as to drive sales through consumer education.",
