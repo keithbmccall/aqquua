@@ -474,5 +474,7 @@ export const sustainabilityInfo = {
     "Aqquua has undergone a mangrove planting restoration project, planting more than 80 mangrove trees on our property alone. Our mission is to spearhead an effort to get our farming neighbors to do the same along their coast-line.",
     "To make donations to the Aqquua mangrove initiative please donate here: "
   ],
-  images: images.sustainabilityImages
+  bigImage: images.sustainabilityImages.bigImage,
+  titleImage: images.sustainabilityImages.titleImage,
+  images: images.sustainabilityImages.images
 };

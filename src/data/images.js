@@ -123,28 +123,28 @@ const geneticsImages = [
     title: "13 day old post hatchery Hybrid Grouper"
   }
 ];
-const sustainabilityImages = [
-  {
-    image: sus5,
-    title: ""
-  },
-  {
-    image: sus1,
-    title: ""
-  },
-  {
-    image: sus4,
-    title: ""
-  },
-  {
-    image: sus2,
-    title: ""
-  },
-  {
-    image: sus3,
-    title: ""
-  }
-];
+const sustainabilityImages = {
+  // bigImage: sus4,
+  titleImage: sus5,
+  images: [
+    {
+      image: sus4,
+      title: ""
+    },
+    {
+      image: sus1,
+      title: ""
+    },
+    {
+      image: sus2,
+      title: ""
+    },
+    {
+      image: sus3,
+      title: ""
+    }
+  ]
+};
 const buraphaImages = {
   bigImage: bu1
 };

@@ -1,8 +1,10 @@
 .Research-container {
   align-items: center;
-  .Research-big{
-    &.image{
-      width:100%;
+  .Research-big {
+    .full-size-img {
+      &.image {
+        width: 100%;
+      }
     }
   }
 }
@@ -14,7 +16,8 @@
   }
   .Research-info {
     align-items: center;
-    p,h1 {
+    p,
+    h1 {
       max-width: 80%;
     }
   }
@@ -29,7 +32,6 @@
     }
     .Research-info {
       flex: 2;
-      
     }
   }
   h1 {

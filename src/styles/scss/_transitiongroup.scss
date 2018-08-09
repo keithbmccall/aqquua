@@ -7,7 +7,7 @@
   &.animation {
     z-index: 2000;
     .Pop {
-      animation: pop 1.15s ease-in-out;
+      animation: pop 1.04s ease-in-out;
     }
   }
   .Pop {
@@ -72,9 +72,9 @@
       background: white;
       border-radius: 50%;
       @include transform(translate(-50%, -50%));
-      animation: landinganimation 8s ease-in-out;
+      animation: landinganimation 6s ease-in-out;
       @include mobile {
-        animation: mobileanimation 8s ease-in-out;
+        animation: mobileanimation 6s ease-in-out;
       }
       .image {
         &.animate {

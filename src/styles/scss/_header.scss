@@ -12,21 +12,21 @@
   .image {
     max-width: auto;
     height: 100%;
-    width: 75%;
+    width: 60%;
 
     @include tabtop {
       max-width: 100%;
- 
     }
   }
   h1 {
     @extend .geo-thin;
     color: white;
-    font-size: 3rem !important;
+    font-size: 7vw;
     text-align: center;
     letter-spacing: 2px;
+    width: 100%;
+    @include transform(translate(-50%, 200%));
     @include tabtop {
-      font-size: 4.5rem !important;
       text-align: center;
       letter-spacing: 2px;
     }

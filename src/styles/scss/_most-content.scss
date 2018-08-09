@@ -16,7 +16,8 @@
     .image {
       width: 100%;
       @include desktop {
-        width: 80%;
+        width: 100%;
+        padding-top: 7rem;
       }
     }
   }

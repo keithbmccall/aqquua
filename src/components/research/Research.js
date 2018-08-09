@@ -17,7 +17,7 @@ const Research = props => {
           </div>
         </div>
         {info.bigImage && (
-          <img src={info.bigImage} className="image Research-big" />
+          <img src={info.bigImage} className="image Research-big full-size-img" />
         )}
         {info.images && <ContentImages info={info} />}
       </div>

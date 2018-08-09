@@ -48,7 +48,6 @@ img {
 }
 .vh {
   min-height: 100vh;
-  
 }
 .w-vw {
   width: 100vw;
@@ -191,4 +190,7 @@ img {
 }
 .text-shadow-light {
   text-shadow: 0rem 0.5rem 2rem rgba(0, 0, 0, 0.267);
+}
+.full-size-img.image {
+  width: 100%;
 }

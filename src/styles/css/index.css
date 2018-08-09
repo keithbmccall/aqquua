@@ -232,6 +232,9 @@ img {
 .text-shadow-light {
   text-shadow: 0rem 0.5rem 2rem rgba(0, 0, 0, 0.267); }
 
+.full-size-img.image {
+  width: 100%; }
+
 .Pop-holder {
   position: fixed;
   top: 50%;
@@ -244,7 +247,7 @@ img {
   .Pop-holder.animation {
     z-index: 2000; }
     .Pop-holder.animation .Pop {
-      animation: pop 1.15s ease-in-out; }
+      animation: pop 1.04s ease-in-out; }
   .Pop-holder .Pop {
     position: relative;
     height: 1vh;
@@ -314,10 +317,10 @@ img {
       -o-transform: translate(-50%, -50%);
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-      animation: landinganimation 8s ease-in-out; }
+      animation: landinganimation 6s ease-in-out; }
       @media only screen and (max-width: 766px) {
         .Landing-animation-holder > div .Landing-animation {
-          animation: mobileanimation 8s ease-in-out; } }
+          animation: mobileanimation 6s ease-in-out; } }
       .Landing-animation-holder > div .Landing-animation .image.animate {
         display: none; }
     .Landing-animation-holder > div .Landing-dot {
@@ -638,7 +641,8 @@ img {
     width: 100%; }
     @media only screen and (min-width: 990px) {
       .Content-info-holder .Content-info-image .image {
-        width: 80%; } }
+        width: 100%;
+        padding-top: 7rem; } }
 @media only screen and (max-width: 766px) {
   .Content-info-holder {
     display: flex;
@@ -772,7 +776,7 @@ img {
 
 .Research-container {
   align-items: center; }
-  .Research-container .Research-big.image {
+  .Research-container .Research-big .full-size-img.image {
     width: 100%; }
 
 .Research-info-holder .Research-logo-holder {
@@ -780,7 +784,8 @@ img {
   margin-bottom: 1rem; }
 .Research-info-holder .Research-info {
   align-items: center; }
-  .Research-info-holder .Research-info p, .Research-info-holder .Research-info h1 {
+  .Research-info-holder .Research-info p,
+  .Research-info-holder .Research-info h1 {
     max-width: 80%; }
 @media only screen and (min-width: 767px) {
   .Research-info-holder {
@@ -1275,10 +1280,25 @@ header {
       width: 60%;
       padding: 10%; } }
 @media only screen and (min-width: 767px) {
-  .Recipes-content-container .Image-animation {
+  .Recipes-content-container .Image-animation-holder {
     position: relative;
-    width: 50%; }
-    .Recipes-content-container .Image-animation .Recipes-icon-holder {
+    width: 50%;
+    opacity: 0;
+    -moz-transform: translate(0, 50%);
+    -o-transform: translate(0, 50%);
+    -webkit-transform: translate(0, 50%);
+    transform: translate(0, 50%);
+    -moz-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -o-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
+    transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1); }
+    .Recipes-content-container .Image-animation-holder.Image-animation {
+      opacity: 1;
+      -moz-transform: translate(0, 0);
+      -o-transform: translate(0, 0);
+      -webkit-transform: translate(0, 0);
+      transform: translate(0, 0); }
+    .Recipes-content-container .Image-animation-holder .Recipes-icon-holder {
       position: absolute;
       top: 50%;
       left: 50%;
@@ -1286,7 +1306,7 @@ header {
       -o-transform: translate(-50%, -50%);
       -webkit-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%); }
-      .Recipes-content-container .Image-animation .Recipes-icon-holder .Recipes-icon {
+      .Recipes-content-container .Image-animation-holder .Recipes-icon-holder .Recipes-icon {
         width: 100%; } }
 
 .Sus-section-image.image {
@@ -1330,18 +1350,22 @@ header {
   .Header-section .image {
     max-width: auto;
     height: 100%;
-    width: 75%; }
+    width: 60%; }
     @media only screen and (min-width: 767px) {
       .Header-section .image {
         max-width: 100%; } }
   .Header-section h1 {
     color: white;
-    font-size: 3rem !important;
+    font-size: 7vw;
     text-align: center;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    width: 100%;
+    -moz-transform: translate(-50%, 200%);
+    -o-transform: translate(-50%, 200%);
+    -webkit-transform: translate(-50%, 200%);
+    transform: translate(-50%, 200%); }
     @media only screen and (min-width: 767px) {
       .Header-section h1 {
-        font-size: 4.5rem !important;
         text-align: center;
         letter-spacing: 2px; } }
     .Header-section h1 span {

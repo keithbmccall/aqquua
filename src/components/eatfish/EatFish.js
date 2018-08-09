@@ -9,7 +9,7 @@ const EatFish = props => {
     <div className="container">
       <div className="Eat-fish-container">
         <LargeTextWithTitle info={info} />
-        {/* <ContentList info={info} /> */}
+        <ContentList info={info} />
         <ContentLargeVideo info={info} />
       </div>
     </div>
