@@ -180,26 +180,28 @@
     width: 2rem;
     top: 50%;
     left: 50%;
+    @include transform(translate(0, 0));
   }
   20% {
     height: 2rem;
     width: 2rem;
     top: 50%;
     left: 50%;
+    @include transform(translate(0, 0));
   }
   25% {
     height: 2rem;
     width: 2rem;
     top: 95%;
     left: 50%;
-    @include transform(translate(-50%, 50%));
+    @include transform(translate(-50%, -50%));
   }
   35% {
     height: 2rem;
     width: 2rem;
     top: 95%;
     left: 50%;
-    @include transform(translate(-50%, 50%) scale(100));
+    @include transform(translate(-50%, -50%) scale(100));
   }
   60% {
     background: white;
@@ -207,7 +209,7 @@
     width: 2rem;
     top: 4vh;
     left: 3vw;
-    @include transform(translate(-50%, 50%) scale(100));
+    @include transform(translate(-50%, -50%) scale(100));
   }
   65% {
     opacity: 1;
