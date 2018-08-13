@@ -36,6 +36,7 @@
     @include transform(translate(-50%, -50%) scale(220));
   }
   99% {
+    
     @include transform(translate(-50%, -50%) scale(5));
   }
   100% {
