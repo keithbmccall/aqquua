@@ -86,6 +86,7 @@ ul li {
 
 #root,
 body {
+  position: relative;
   overflow-x: hidden !important;
   display: flex;
   font-size: 62.5%;
@@ -237,21 +238,24 @@ img {
 
 .Pop-holder {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  -moz-transform: translate(-50%, -50%);
-  -o-transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  z-index: -1; }
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  border: 10px dotted grey; }
+  .Pop-holder > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
   .Pop-holder.animation {
     z-index: 2000; }
     .Pop-holder.animation .Pop {
-      animation: pop 1.04s ease-in-out; }
+      animation: pop 10.04s ease-in-out; }
   .Pop-holder .Pop {
     position: relative;
-    height: 1vh;
-    width: 1vh;
+    height: 2rem;
+    width: 2rem;
     background: #85dbd7;
     border-radius: 50%; }
     .Pop-holder .Pop .image {
@@ -262,7 +266,7 @@ img {
       -o-transform: translate(-50%, -50%) scale(1);
       -webkit-transform: translate(-50%, -50%) scale(1);
       transform: translate(-50%, -50%) scale(1);
-      width: 0.2vw; }
+      width: 0.1rem; }
 
 @keyframes pop {
   0% {
@@ -271,20 +275,20 @@ img {
     -webkit-transform: translate(-50%, -50%) scale(1);
     transform: translate(-50%, -50%) scale(1); }
   25% {
-    -moz-transform: translate(-50%, -50%) scale(220);
-    -o-transform: translate(-50%, -50%) scale(220);
-    -webkit-transform: translate(-50%, -50%) scale(220);
-    transform: translate(-50%, -50%) scale(220); }
+    -moz-transform: translate(-50%, -50%) scale(200);
+    -o-transform: translate(-50%, -50%) scale(200);
+    -webkit-transform: translate(-50%, -50%) scale(200);
+    transform: translate(-50%, -50%) scale(200); }
   75% {
-    -moz-transform: translate(-50%, -50%) scale(220);
-    -o-transform: translate(-50%, -50%) scale(220);
-    -webkit-transform: translate(-50%, -50%) scale(220);
-    transform: translate(-50%, -50%) scale(220); }
+    -moz-transform: translate(-50%, -50%) scale(200);
+    -o-transform: translate(-50%, -50%) scale(200);
+    -webkit-transform: translate(-50%, -50%) scale(200);
+    transform: translate(-50%, -50%) scale(200); }
   99% {
-    -moz-transform: translate(-50%, -50%) scale(5);
-    -o-transform: translate(-50%, -50%) scale(5);
-    -webkit-transform: translate(-50%, -50%) scale(5);
-    transform: translate(-50%, -50%) scale(5); }
+    -moz-transform: translate(-50%, -50%) scale(1);
+    -o-transform: translate(-50%, -50%) scale(1);
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1); }
   100% {
     display: none; } }
 .swoop-exit-active {
@@ -318,9 +322,6 @@ img {
       -webkit-transform: translate(-50%, -50%) scale(1);
       transform: translate(-50%, -50%) scale(1);
       animation: landinganimation 6s ease-in-out; }
-      @media only screen and (max-width: 766px) {
-        .Landing-animation-holder > div .Landing-animation {
-          animation: mobileanimation 6s ease-in-out; } }
       .Landing-animation-holder > div .Landing-animation .image.animate {
         display: none; }
     .Landing-animation-holder > div .Landing-dot {
@@ -382,10 +383,10 @@ img {
     transform: translate(-50%, -50%) scale(5); }
   25% {
     top: 95%;
-    -moz-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
+    -moz-transform: translate(-50%, -50%) scale(1);
+    -o-transform: translate(-50%, -50%) scale(1);
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1); }
   35% {
     top: 95%;
     left: 50%;

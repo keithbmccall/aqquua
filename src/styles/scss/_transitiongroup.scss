@@ -1,19 +1,27 @@
 .Pop-holder {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  @include transform(translate(-50%, -50%));
+  width: 100vw;
+  height: 100vh;
   z-index: -1;
+  border: 10px dotted grey;
+  > div {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   &.animation {
     z-index: 2000;
     .Pop {
-      animation: pop 1.04s ease-in-out;
+      animation: pop 10.04s ease-in-out;
+      // @include transform(translate(-50%, -50%) scale(50));
     }
   }
   .Pop {
     position: relative;
-    height: 1vh;
-    width: 1vh;
+    height: 2rem;
+    width: 2rem;
     background: $arubacolor;
     border-radius: 50%;
     .image {
@@ -21,7 +29,7 @@
       top: 50%;
       left: 50%;
       @include transform(translate(-50%, -50%) scale(1));
-      width: 0.2vw;
+      width: 0.1rem;
     }
   }
 }
@@ -30,13 +38,13 @@
     @include transform(translate(-50%, -50%) scale(1));
   }
   25% {
-    @include transform(translate(-50%, -50%) scale(220));
+    @include transform(translate(-50%, -50%) scale(200));
   }
   75% {
-    @include transform(translate(-50%, -50%) scale(220));
+    @include transform(translate(-50%, -50%) scale(200));
   }
   99% {
-    @include transform(translate(-50%, -50%) scale(5));
+    @include transform(translate(-50%, -50%) scale(1));
   }
   100% {
     display: none;
@@ -63,7 +71,6 @@
     position: relative;
     width: 100%;
     height: 100%;
-    // border: 10px solid grey;
     .Landing-animation {
       position: absolute;
       left: 50%;
@@ -74,9 +81,6 @@
       border-radius: 50%;
       @include transform(translate(-50%, -50%) scale(1));
       animation: landinganimation 6s ease-in-out;
-      @include mobile {
-        animation: mobileanimation 6s ease-in-out;
-      }
       .image {
         &.animate {
           display: none;
@@ -134,7 +138,7 @@
   }
   25% {
     top: 95%;
-    @include transform(translate(-50%, -50%));
+    @include transform(translate(-50%, -50%) scale(1));
   }
   35% {
     top: 95%;

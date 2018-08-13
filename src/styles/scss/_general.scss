@@ -27,6 +27,7 @@ ul {
 
 #root,
 body {
+  position: relative;
   @extend .geo-light;
   overflow-x: hidden !important;
   display: flex;
