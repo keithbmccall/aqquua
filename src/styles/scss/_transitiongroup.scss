@@ -192,7 +192,7 @@
     width: 2rem;
     top: 95%;
     left: 50%;
-    @include transform(translate(-50%, 50%%));
+    @include transform(translate(-50%, 50%));
   }
   35% {
     height: 2rem;

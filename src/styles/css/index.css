@@ -439,29 +439,29 @@ img {
     width: 2rem;
     top: 95%;
     left: 50%;
-    -moz-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
+    -moz-transform: translate(-50%, 50%);
+    -o-transform: translate(-50%, 50%);
+    -webkit-transform: translate(-50%, 50%);
+    transform: translate(-50%, 50%); }
   35% {
     height: 2rem;
     width: 2rem;
     top: 95%;
     left: 50%;
-    -moz-transform: translate(-50%, -50%) scale(100);
-    -o-transform: translate(-50%, -50%) scale(100);
-    -webkit-transform: translate(-50%, -50%) scale(100);
-    transform: translate(-50%, -50%) scale(100); }
+    -moz-transform: translate(-50%, 50%) scale(100);
+    -o-transform: translate(-50%, 50%) scale(100);
+    -webkit-transform: translate(-50%, 50%) scale(100);
+    transform: translate(-50%, 50%) scale(100); }
   60% {
     background: white;
     height: 2rem;
     width: 2rem;
     top: 4vh;
     left: 3vw;
-    -moz-transform: translate(-50%, -50%) scale(100);
-    -o-transform: translate(-50%, -50%) scale(100);
-    -webkit-transform: translate(-50%, -50%) scale(100);
-    transform: translate(-50%, -50%) scale(100); }
+    -moz-transform: translate(-50%, 50%) scale(100);
+    -o-transform: translate(-50%, 50%) scale(100);
+    -webkit-transform: translate(-50%, 50%) scale(100);
+    transform: translate(-50%, 50%) scale(100); }
   65% {
     opacity: 1; }
   75% {
