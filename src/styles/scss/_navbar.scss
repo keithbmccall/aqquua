@@ -12,7 +12,7 @@ header {
     > a {
       position: absolute;
       width: 8vw;
-      top: 6vh;
+      top: 8vh;
       z-index: 51;
       @include transform(translateY(-50%));
       &.Nav-logo {
