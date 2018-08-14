@@ -10,7 +10,7 @@ const HeaderSection = props => {
         style={{ backgroundImage: `url(${content.background})` }}
       >
         <SVGC path={content.logo} className="image centered" fill="white" />
-        <h1 className="centered">WE'RE WILD ABOUT FISH &trade;</h1>
+        <h1 className="centered">WE'RE WILD ABOUT FISH <span>&trade;</span></h1>
       </div>
     </div>
   );

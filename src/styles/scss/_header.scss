@@ -31,7 +31,7 @@
       letter-spacing: 2px;
     }
     span {
-      white-space: nowrap;
+      @extend .geo-thin;
     }
   }
   .absolute {
