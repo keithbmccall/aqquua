@@ -833,7 +833,7 @@ header {
     position: relative; }
     header .Navbar-container > a {
       position: absolute;
-      width: 3.5rem;
+      width: 8vw;
       top: 6vh;
       z-index: 51;
       -moz-transform: translateY(-50%);
@@ -843,7 +843,7 @@ header {
       header .Navbar-container > a.Nav-logo {
         left: 3vw; }
       header .Navbar-container > a.Nav-burger {
-        width: 2rem;
+        width: 6vw;
         right: 3vw; }
     header .Navbar-container nav {
       position: absolute;
