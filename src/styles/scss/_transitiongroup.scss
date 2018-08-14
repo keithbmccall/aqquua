@@ -1,5 +1,8 @@
 .Pop-holder {
   position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   top: 50%;
   left: 50%;
   @include transform(translate(-50%, -50%));
@@ -7,39 +10,50 @@
   &.animation {
     z-index: 2000;
     .Pop {
-      animation: pop 1.04s ease-in-out;
+      animation: pop 1s ease-in-out;
     }
   }
   .Pop {
-    position: relative;
-    height: 1vh;
-    width: 1vh;
+    visibility: hidden;
+    height: 200vh;
+    width: 200vh;
     background: $arubacolor;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .image {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      @include transform(translate(-50%, -50%));
-      width: 0.2vw;
+      width: 40vw;
     }
   }
 }
 @keyframes pop {
   0% {
-    @include transform(translate(-50%, -50%) scale(1));
+    visibility: initial;
+    @include transform(scale(0.001));
+  }
+  1% {
+    visibility: initial;
+    @include transform(scale(0.001));
   }
   25% {
-    @include transform(translate(-50%, -50%) scale(220));
+    visibility: initial;
+    @include transform(scale(1));
   }
   75% {
-    @include transform(translate(-50%, -50%) scale(220));
+    visibility: initial;
+
+    @include transform(scale(1));
   }
   99% {
-    @include transform(translate(-50%, -50%) scale(5));
+    visibility: initial;
+
+    @include transform(scale(0.001));
   }
   100% {
+    @include transform(scale(0.001));
     display: none;
+    z-index: -1;
   }
 }
 .swoop-exit-active {
@@ -151,7 +165,7 @@
     left: 3vw;
     @include transform(translate(-50%, -50%) scale(100));
   }
-  65% { 
+  65% {
     opacity: 1;
   }
   75% {
