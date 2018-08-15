@@ -15,7 +15,7 @@ export default class ProductsAnimation extends Component {
   };
   render() {
     return (
-      <Waypoint scrollableAncestor={window} onEnter={this.bounceIn}>
+      <Waypoint onEnter={this.bounceIn}>
         <div className={`Products-roll ${this.state.className}`}>
           <div className={`Products ${this.state.className}`}>
             {this.props.children}

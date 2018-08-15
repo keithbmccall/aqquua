@@ -19,7 +19,7 @@ export default class HeadlineAnimation extends Component {
   };
   render() {
     return (
-      <Waypoint scrollableAncestor={window} onEnter={this.bounceIn}>
+      <Waypoint onEnter={this.bounceIn}>
         <div
           className={`Headline-animation ${this.props.className} ${
             this.state.className

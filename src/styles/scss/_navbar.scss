@@ -36,16 +36,20 @@ header {
       @include transition(opacity 0.3s ease-in-out 0.3s);
       &.Nav-open {
         left: initial;
+        top: 7rem;
         right: 10% !important;
         z-index: 50;
         opacity: 1;
+        @include tabtop {
+          top: 20rem;
+        }
       }
       &.Nav-closed {
         opacity: 0;
       }
       li {
         @extend .geo-bold;
-        font-size: 2rem;
+        font-size: 2.2rem;
         text-align: right;
         color: white;
         @include transition(all 0.7s ease-in-out);
@@ -53,8 +57,8 @@ header {
           content: ".";
         }
         @include tabtop {
-          font-size: 4rem;
-          line-height: 3.5rem;
+          font-size: 7rem;
+          line-height: 6.5rem;
           letter-spacing: 2px;
         }
       }

@@ -15,7 +15,7 @@ export default class RecipesAnimation extends Component {
   };
   render() {
     return (
-      <Waypoint scrollableAncestor={window} onEnter={this.bounceIn}>
+      <Waypoint  onEnter={this.bounceIn}>
         <div
           className={
             this.props.type === "image"

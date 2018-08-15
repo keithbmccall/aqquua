@@ -81,7 +81,9 @@ export default class SectionAnimation extends Component {
           this.state.className
         }`}
       >
-        {this.props.content.map((item, key) => <p key={key}>{item}</p>)}
+        {this.props.content.map((item, key) => (
+          <p key={key}>{item}</p>
+        ))}
       </div>
     );
     const content =
@@ -89,7 +91,6 @@ export default class SectionAnimation extends Component {
 
     return (
       <Waypoint
-        scrollableAncestor={window}
         onEnter={this.bounceIn}
         bottomOffset={this.props.type === "title" ? "50%" : "30%"}
       >
