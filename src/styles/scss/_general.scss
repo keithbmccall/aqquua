@@ -25,10 +25,13 @@ ul {
   height: auto;
 }
 html,
-#root,
-body {
-  @extend .geo-light;
+#root{
   height: 100%;
+}
+body {
+  height: 100%;
+  @extend .geo-light;
+  overflow-x: hidden;
   display: flex;
   font-size: 90.5%;
   width: 100vw;

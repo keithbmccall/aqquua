@@ -39,13 +39,18 @@ class App extends Component {
                     })
                   }
                   onExited={() => {
-                    this.setState(
-                      {
-                        transition: false
-                      },
-                      () =>
-                        this.props.location.hash ? false : window.scrollTo(0, 0)
-                    );
+                    this.setState({
+                      transition: false
+                    });
+
+                    () =>
+                      setTimeout(
+                        () =>
+                          this.props.location.hash
+                            ? false
+                            : window.scrollTo(0, 0),
+                        500
+                      );
                   }}
                 >
                   <Switch location={location}>

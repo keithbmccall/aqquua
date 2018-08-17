@@ -34,9 +34,7 @@
   src: url("../../assets/fonts/Geomanist-Book/geomanist-book-webfont.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/Geomanist-Book/geomanist-book-webfont.woff2") format("woff2"), url("../../assets/fonts/Geomanist-Book/geomanist-book-webfont.woff") format("woff"), url("../../assets/fonts/Geomanist-Book/geomanist-book-webfont.ttf") format("truetype"), url("../../assets/fonts/Geomanist-Book/geomanist-book-webfont.svg#geomanistregular") format("svg");
   font-weight: normal;
   font-style: normal; }
-.geo-light, html,
-#root,
-body, .Contact-holder .Contact-form form input,
+.geo-light, body, .Contact-holder .Contact-form form input,
 .Contact-holder .Contact-form form textarea, .Big-section .Section-text-holder .Section-left,
 .Big-section .Recipes-caption .Section-left, .Header-section, .Wa-container .Wa-1, .Wa-container .Wa-7, .Wa-container .Wa-16, .Wa-container .Wa-18, .Wa-container .Wa-21 {
   font-family: "geomanist-light", Arial, Helvetica, sans-serif; }
@@ -86,9 +84,12 @@ ul li {
   height: auto; }
 
 html,
-#root,
+#root {
+  height: 100%; }
+
 body {
   height: 100%;
+  overflow-x: hidden;
   display: flex;
   font-size: 90.5%;
   width: 100vw;
@@ -303,10 +304,6 @@ img {
     transform: scale(0.001);
     display: none;
     z-index: -1; } }
-.swoop-exit-active {
-  position: fixed !important;
-  z-index: 10 !important; }
-
 .Landing-animation-holder {
   z-index: 1000;
   position: fixed;
@@ -873,7 +870,7 @@ header {
         transition: all 0.7s ease-in-out; }
       header .Navbar-container nav.Nav-open {
         left: initial;
-        top: 10rem;
+        top: 100%;
         right: 10% !important;
         z-index: 50;
         opacity: 1; }
@@ -905,8 +902,8 @@ header {
           content: "."; }
         @media only screen and (min-width: 767px) {
           header .Navbar-container nav li {
-            font-size: 5rem;
-            line-height: 4.5rem;
+            font-size: 6vw;
+            line-height: 8vh;
             letter-spacing: 2px; } }
     header .Navbar-container .Nav-menu {
       z-index: 50;
