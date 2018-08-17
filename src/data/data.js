@@ -199,7 +199,7 @@ export const sectionData = [
     number: 1,
     headline: "WE TAKE OUR JOB SERIOUSLY",
     caption: [
-      "Our philosophy at Aqquua is that a source of sustainably farmed, healthy, antibiotic and hormone free fin-fish is not only globally necessary, but financially and technically feasible.",
+      "Our philosophy at Aqquua is that producing a source of sustainably farmed, healthy, antibiotic and microplastic free fin-fish is not only globally necessary, but financially and technically feasible.",
       "Our mission is to develop the innovative and scalable technology and best practices to meet this global need and bring a sublime seafood experience to the customer’s table.",
       "We’ve succeeded."
     ]
