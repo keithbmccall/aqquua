@@ -10,7 +10,8 @@ import {
   farmInfo,
   geneticsInfo,
   eatFishInfo,
-  sustainabilityInfo
+  sustainabilityInfo,
+  recipesTipsInfo
 } from "./data";
 
 export {
@@ -25,5 +26,6 @@ export {
   farmInfo,
   geneticsInfo,
   eatFishInfo,
-  sustainabilityInfo
+  sustainabilityInfo,
+  recipesTipsInfo
 };

@@ -173,12 +173,13 @@ export const navbarLinks = [
 ];
 export const aqquuaLogo = {
   word: images.logo,
-  round: images.logoRound
+  round: images.logoRound,
+  tagLine: images.tagline
 };
 export const headerContent = {
   title: "We're Wild about Farmed ™",
   caption: "We're wild about farmed fish'",
-  logo: images.logo,
+  logo: aqquuaLogo,
   background: images.fishPrint
 };
 export const sectionData = [
@@ -477,4 +478,62 @@ export const sustainabilityInfo = {
   bigImage: images.sustainabilityImages.bigImage,
   titleImage: images.sustainabilityImages.titleImage,
   images: images.sustainabilityImages.images
+};
+export const recipesTipsInfo = {
+  title: "Five Must-Try Techniques",
+  content: [
+    {
+      headline: "Pan Searing",
+      caption: [
+        "Searing gives fish a tasty, caramelized crust on the outside while the interior stays moist. It’s ideal for skin-on fillets since high heat and oil crisp up the skin nicely, making it particularly tasty. Searing is best done in a skillet over direct heat on the stovetop; it’s simple and speedy. You’ll want a thin layer of oil or fat in the pan to keep the fish from sticking.",
+        "Starting with a very hot pan is key: Your oil should be so hot it almost smokes. Put fillets in skin-side down. Once the fish is in, give your pan a shake by the handle just strong enough to jiggle the fish — this will help keep it from sticking. Cook it until the skin is crispy and the sides of the fish have turned mostly opaque before flipping; you might need to turn the heat down so it doesn't overcook.",
+        "Aqquua Hirame, Aqquua Grouper, trout fillets and salmon."
+      ]
+    },
+    {
+      headline: "Roasting",
+      caption: [
+        "Roasting uses the dry heat of your oven to cook fish. Temperature is easy to control during roasting, and the heat is even and consistent, making it one of the easiest techniques for cooking fish. It’s ideal for thicker, denser fillets as well as for whole fish. Another bonus: There’s no spattering, so cleanup is a snap.",
+        "Using a heavy, oven-proof skillet, brown your fish first on the stove-top, then let it finish cooking through inside the stove. This gives you the best of both worlds: A crunchy, browned exterior and evenly cooked interior. If you’re roasting a whole fish, a few slashes cut into the fish’s sides help it cook more evenly.",
+        "Aqquua Grouper, mahi-mahi, salmon, halibut, monkfish, or any whole fish."
+      ]
+    },
+    {
+      headline: "Steaming",
+      caption: [
+        "Moist heat circulates around the fish during steaming, helping to keep it tender and juicy. I like this technique for the way the pure flavor and texture of the fish is preserved. It also requires no added fat, so you get an exceptionally lean finished dish.",
+        "A good trick is to put flavoring right into the water you’re steaming over. I like to use aromatic ingredients like star anise, wine, soy sauce, lemongrass and herbs. The aroma will be fantastic, and your fish will be subtly flavored.",
+        "Aqquua Grouper, cod, Aqquua Hirame, or any small whole fish like whole snapper or black sea bass."
+      ]
+    },
+    {
+      headline: "Grilling",
+      caption: [
+        "Grilling has you cooking directly over your heat source, and it’s fantastic for imparting subtle smoky flavor while giving you a crisp exterior. A very hot grill is ideal, although you don’t want to cook fish over the very hottest area: Place fish on a slightly cooler section to prevent charring and flare-ups.",
+        "Keep fish from sticking by first making sure your grates are very clean, then brushing them lightly with oil or drizzling oil directly on your fish. For great grill marks, let the fish sit on the grill for 1 to 2 minutes, then rotate it a quarter turn. After you flip the fish, do the same on the other side.",
+        "Tuna, swordfish, salmon, bluefish, striped bass, whole snapper or just about any whole fish."
+      ]
+    },
+    {
+      headline: "Cook it tonight",
+      caption: [
+        "Poaching has you cooking your fish directly in liquid. This keeps it very tender and infuses it with a huge amount of flavor. As an added bonus, your poaching liquid can be your sauce. This technique is tops for delicate fish that needs to be cooked with extra love to preserve their texture.",
+        "To keep fillets from curling during poaching, use a sharp knife to score the skin-side of each fillet, making very shallow cuts at about 1-inch intervals. And be sure to poach with the liquid at a low simmer — not a rolling boil — for even cooking.",
+        "Try it with: Aqquua Hirame,sole, salmon, halibut, cod."
+      ]
+    }
+  ],
+  title2: "Two More Secrets for Delicious Fish",
+  content2: [
+    {
+      headline: "Know When It’s Done",
+      caption:
+        "It’s easy: Just use a skewer or cake tester to poke your fish — if it goes through with no resistance it’s done. If you want a slightly more rare fillet (for salmon or tuna, for instance), your fish will be medium when the skewer meets just a bit of resistance at the center. Start testing a little before your recipe’s recommended cooking time is up."
+    },
+    {
+      headline: "Flip it Right",
+      caption:
+        "Use a good spatula: A long, wide spatula fits easily under most fillets, and one that’s a little flexible will slip under the fish easily. If you’re flipping a whole fish or a really big fillet, try using two spatulas, one under each half. Flip fish just once so there’s less chance it’ll break."
+    }
+  ]
 };

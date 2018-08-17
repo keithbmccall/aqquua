@@ -2,6 +2,7 @@ import React from "react";
 import TextAndHeadline from "../../tools/text/TextAndHeadline";
 import RecipesAnimation from "../../animations/RecipesAnimation";
 import AnyImageAnimation from "../../animations/AnyImageAnimation";
+import { Link } from "react-router-dom";
 
 const RecipesSection = props => {
   const renderImages = (image, key) => {
@@ -31,6 +32,13 @@ const RecipesSection = props => {
               alt="Recipes"
             />
           </a>
+          <Link to="/recipes/tips" className="Recipes-icon-holder Recipe-tips">
+            <img
+              src={props.item.images.tips}
+              className="image Recipes-icon  light-shadow-round"
+              alt="Recipes"
+            />
+          </Link>
         </AnyImageAnimation>
         <RecipesAnimation type="image">
           <a href="https://www.yummly.com/profile/MarvelousCulinaire61283">

@@ -10,6 +10,7 @@ import FarmContainer from "./containers/farm/FarmContainer";
 import GeneticsContainer from "./containers/genetics/GeneticsContainer";
 import EatFishContainer from "./containers/eatfish/EatFishContainer";
 import SustainabilityContainer from "./containers/sus/SustainabilityContainer";
+import RecipesContainer from "./containers/recipes/RecipesContainer";
 //
 
 const transitionTime = 1000;
@@ -87,6 +88,11 @@ class App extends Component {
                       exact
                       path="/eatfish"
                       render={props => <EatFishContainer {...props} />}
+                    />
+                    <Route
+                      exact
+                      path="/recipes/tips"
+                      render={props => <RecipesContainer {...props} />}
                     />
                     <Route path="/" render={() => <Redirect to="/" />} />
                   </Switch>

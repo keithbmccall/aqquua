@@ -2,6 +2,7 @@
 import fishPrint from "../assets/images/png/fishprints/fish-print-9.png";
 import logo from "../assets/images/aqquualogo.svg";
 import logoRound from "../assets/images/aqquualogoround.svg";
+import tagline from "../assets/images/tagline.svg";
 //product circle map
 import coraltrout from "../assets/images/png/coraltrout.png";
 import redsnapper from "../assets/images/png/redsnapper.png";
@@ -56,6 +57,7 @@ import um8 from "../assets/images/png/um/twofish.png";
 //
 import recipewave from "../assets/images/png/food/recipesectionwave.gif";
 import recipeicon from "../assets/images/png/food/recipeicon.png";
+import recipetips from "../assets/images/png/food/recipetipsicon.png";
 //
 import sectionalMangroves from "../assets/images/png/fishprints/sectional-mangroves.png";
 import sectionalGrouper from "../assets/images/png/fishprints/sectional-grouper.png";
@@ -99,7 +101,8 @@ const heroImages = {
 const recipesImages = {
   images: [recipes3, recipes2, recipes1],
   backgroundImage: recipewave,
-  icon: recipeicon
+  icon: recipeicon,
+  tips: recipetips
 };
 const geneticsImages = [
   {
@@ -192,6 +195,7 @@ const images = {
   fishPrint,
   logo,
   logoRound,
+  tagline,
   productsFish,
   schools,
   ribbons,

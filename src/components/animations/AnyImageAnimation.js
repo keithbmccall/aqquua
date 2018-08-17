@@ -16,11 +16,12 @@ export default class AnyImageAnimation extends Component {
   render() {
     return (
       <Waypoint
-    
         onEnter={this.bounceIn}
         bottomOffset={this.props.bO ? this.props.bO : "50%"}
       >
-        <div className={`Image-animation-holder ${this.state.className}`}>{this.props.children}</div>
+        <div className={`Image-animation-holder ${this.state.className}`}>
+          {this.props.children}
+        </div>
       </Waypoint>
     );
   }

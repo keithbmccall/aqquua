@@ -404,6 +404,12 @@
 }
 .Recipes-container {
   overflow: hidden;
+  @include desktop {
+    min-height: 100vh;
+  }
+  @include tablet {
+    min-height: 80vh;
+  }
 }
 
 .Image-animation {
@@ -448,8 +454,11 @@
       }
       .Recipes-icon-holder {
         position: absolute;
-        top: 50%;
+        top: 25%;
         left: 50%;
+        &.Recipe-tips {
+          top: 75%;
+        }
         @include transform(translate(-50%, -50%));
         .Recipes-icon {
           width: 100%;

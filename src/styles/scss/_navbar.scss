@@ -29,23 +29,38 @@ header {
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      z-index: -50;
+      z-index: 50;
       opacity: 0;
       top: 100%;
       left: 100%;
       @include transition(opacity 0.3s ease-in-out 0.3s);
+      .Nav-item {
+        @include transform(
+          rotate(-10deg) rotateX(65deg) translate3d(60px, 50px, 0)
+        );
+        opacity: 0;
+        @include transition(all 0.7s ease-in-out);
+      }
       &.Nav-open {
         left: initial;
         top: 7rem;
         right: 10% !important;
         z-index: 50;
         opacity: 1;
+        .Nav-item {
+          opacity: 1;
+          @include transform(translate(0, 0));
+        }
         @include tabtop {
           top: 20rem;
         }
       }
       &.Nav-closed {
-        opacity: 0;
+        left: initial;
+        top: 7rem;
+        right: 10% !important;
+        z-index: 50;
+        opacity: 1;
       }
       li {
         @extend .geo-bold;

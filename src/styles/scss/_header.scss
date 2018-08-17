@@ -18,27 +18,9 @@
       max-width: 100%;
     }
   }
-  h1 {
-    @extend .geo-book;
-    color: white;
-    font-size: 5vw;
-    text-align: center;
-    letter-spacing: 2px;
-    width: 100%;
-    @include transform(translate(-50%, 200%));
-    @include tabtop {
-      text-align: center;
-      letter-spacing: 2px;
-    }
-    span {
-      @extend .geo-thin;
-    }
+  .tagline{
+    width: 88%;
+    @include transform(translate(-50%, -30%));
   }
-  .absolute {
-    width: 100%;
-    bottom: initial;
-    left: 50%;
-    height: 50%;
-    @include transform(translate(-50%, 0));
-  }
+
 }
