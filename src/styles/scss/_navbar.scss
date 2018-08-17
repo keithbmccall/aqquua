@@ -21,6 +21,7 @@ header {
       &.Nav-burger {
         width: 6vw;
         right: 3vw;
+        
       }
     }
 
@@ -43,7 +44,7 @@ header {
       }
       &.Nav-open {
         left: initial;
-        top: 7rem;
+        top: 10rem;
         right: 10% !important;
         z-index: 50;
         opacity: 1;
@@ -52,19 +53,21 @@ header {
           @include transform(translate(0, 0));
         }
         @include tabtop {
-          top: 20rem;
+          top: 10rem;
         }
       }
       &.Nav-closed {
         left: initial;
-        top: 7rem;
-        right: 10% !important;
+        top: 10rem;
+        left: 100%;
+        // right: 10% !important;
         z-index: 50;
         opacity: 1;
       }
       li {
         @extend .geo-bold;
-        font-size: 2.2rem;
+        font-size: 3rem;
+        line-height: 2.8rem;
         text-align: right;
         color: white;
         @include transition(all 0.7s ease-in-out);
@@ -72,8 +75,8 @@ header {
           content: ".";
         }
         @include tabtop {
-          font-size: 7rem;
-          line-height: 6.5rem;
+          font-size: 5rem;
+          line-height: 4.5rem;
           letter-spacing: 2px;
         }
       }

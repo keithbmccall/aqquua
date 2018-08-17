@@ -38,12 +38,12 @@
   }
   25% {
     visibility: initial;
-    @include transform(scale(1));
+    @include transform(scale(1.2));
   }
   75% {
     visibility: initial;
 
-    @include transform(scale(1));
+    @include transform(scale(1.2));
   }
   99% {
     visibility: initial;
@@ -143,6 +143,7 @@
     height: 5rem;
     width: 5rem;
     top: 50%;
+    @include transform(translate(-50%, -50%) scale(6));
   }
   25% {
     height: 2rem;

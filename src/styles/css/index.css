@@ -89,7 +89,6 @@ html,
 #root,
 body {
   height: 100%;
-  overflow-x: hidden !important;
   display: flex;
   font-size: 90.5%;
   width: 100vw;
@@ -281,16 +280,16 @@ img {
     transform: scale(0.001); }
   25% {
     visibility: initial;
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1); }
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
   75% {
     visibility: initial;
-    -moz-transform: scale(1);
-    -o-transform: scale(1);
-    -webkit-transform: scale(1);
-    transform: scale(1); }
+    -moz-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2); }
   99% {
     visibility: initial;
     -moz-transform: scale(0.001);
@@ -388,7 +387,11 @@ img {
   20% {
     height: 5rem;
     width: 5rem;
-    top: 50%; }
+    top: 50%;
+    -moz-transform: translate(-50%, -50%) scale(6);
+    -o-transform: translate(-50%, -50%) scale(6);
+    -webkit-transform: translate(-50%, -50%) scale(6);
+    transform: translate(-50%, -50%) scale(6); }
   25% {
     height: 2rem;
     width: 2rem;
@@ -870,7 +873,7 @@ header {
         transition: all 0.7s ease-in-out; }
       header .Navbar-container nav.Nav-open {
         left: initial;
-        top: 7rem;
+        top: 10rem;
         right: 10% !important;
         z-index: 50;
         opacity: 1; }
@@ -882,15 +885,16 @@ header {
           transform: translate(0, 0); }
         @media only screen and (min-width: 767px) {
           header .Navbar-container nav.Nav-open {
-            top: 20rem; } }
+            top: 10rem; } }
       header .Navbar-container nav.Nav-closed {
         left: initial;
-        top: 7rem;
-        right: 10% !important;
+        top: 10rem;
+        left: 100%;
         z-index: 50;
         opacity: 1; }
       header .Navbar-container nav li {
-        font-size: 2.2rem;
+        font-size: 3rem;
+        line-height: 2.8rem;
         text-align: right;
         color: white;
         -moz-transition: all 0.7s ease-in-out;
@@ -901,8 +905,8 @@ header {
           content: "."; }
         @media only screen and (min-width: 767px) {
           header .Navbar-container nav li {
-            font-size: 7rem;
-            line-height: 6.5rem;
+            font-size: 5rem;
+            line-height: 4.5rem;
             letter-spacing: 2px; } }
     header .Navbar-container .Nav-menu {
       z-index: 50;
@@ -1248,8 +1252,7 @@ header {
       -moz-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
       -o-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
       -webkit-transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-      transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1);
-      overflow: hidden; }
+      transition: all 1s cubic-bezier(0.165, 0.84, 0.44, 1); }
       .Recipes-container .Recipes-content-container .Recipes-image-holder.Recipes-animation {
         -moz-transform: translate(0, 0);
         -o-transform: translate(0, 0);

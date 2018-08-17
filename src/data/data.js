@@ -137,7 +137,7 @@ export const navbarLinks = [
   },
   {
     title: "Recipes",
-    color: "#573b30",
+    color: "#ea5924",
     id: "Recipes"
   },
   {
@@ -167,7 +167,7 @@ export const navbarLinks = [
 
   {
     title: "Contact",
-    color: "#4D448A",
+    color: "#ffc702",
     id: "Contact"
   }
 ];

@@ -369,7 +369,7 @@
       @include transform(translate(0, 40%));
       opacity: 0;
       @include transition(all 1s cubic-bezier(0.165, 0.84, 0.44, 1));
-      overflow: hidden;
+      // overflow: hidden;
       &:hover .image {
         @include transform(scale(1.02));
       }
