@@ -136,16 +136,9 @@ const sustainabilityImages = {
       image: sus4,
       title: ""
     },
-    {
-      image: sus1,
-      title: ""
-    },
+
     {
       image: sus2,
-      title: ""
-    },
-    {
-      image: sus3,
       title: ""
     }
   ]

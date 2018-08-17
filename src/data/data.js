@@ -295,9 +295,6 @@ export const sectionData = [
       "To this end, Aqquuas’ scientific mission is to integrate every breakthrough achieved, towards improving the commercial viability of the subject species within the local and global aquaculture industry."
     ]
   },
-  {
-    backgroundImage: images.sectionals.sectionalMangroves
-  },
 
   {
     id: "Sustainability",
@@ -308,13 +305,16 @@ export const sectionData = [
       "The earth is warming at an alarming rate and as a consequence seasonal and climate change are a challenge to the “fish food” industry out at sea.",
       "We raise our fish in controlled, clean and self-contained environment, with no external effects.",
       "Beyond our minimal impact promise, we’ve gone further still, replanting mangroves, in our own back yard.",
-      "To learn how you can contribute to our initiatives, please visit our conservation and environmental improvements page"
+      "To learn how you can contribute to our initiatives, please visit our sustainability page."
     ],
     content: {
       headline: "Mangrove Conservation:",
       text:
         "Mangrove forests, along with the animal species they shelter, represent globally significant sources of biodiversity and provide humanity with valuable ecosystem services. They are used by mammals, reptiles and migratory birds as feeding and breeding grounds, and provide crucial habitats for fish and crustacean species of commercial importance. The roots of the mangrove physically buffer shorelines from the erosive impacts of ocean waves and storms. Additionally, they protect riparian zones by absorbing floodwaters and slowing down the flow of sediment-loaded river water. This allows sediments to drop to the bottom where they are held in place, thus containing potentially toxic waste products and improving the quality of water and sanitation in coastal communities. Aqquua has undergone a mangrove planting restoration project, planting more than 80 mangrove trees on our property alone and helping our farming neighbors to do the same. "
     }
+  },
+  {
+    backgroundImage: images.sectionals.sectionalMangroves
   }
 ];
 export const fishProductsInfo = {
