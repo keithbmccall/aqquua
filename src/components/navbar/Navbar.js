@@ -18,11 +18,29 @@ const Navbar = props => {
   };
   const navLinks = props.navbarLinks.map(renderNavbarLinks);
   let isLaunched = props.menuOpen ? "Nav-open" : "Nav-closed";
+  console.log("nav", props.location.pathname.split(""));
   return (
     <header>
       <div className="Navbar-container">
-        <Link to="/" className="Nav-logo ">
-          <SVGC path={props.aqquuaLogo} className="image" fill="#85dbd7" />
+        <Link to="/" className="Nav-logo">
+          <div className="Eat-fish-flip-container">
+            <div className="Eat-fish-flipper">
+              <div className="Eat-fish-front">
+                <SVGC
+                  path={props.aqquuaLogo}
+                  className="image Eat-fish-tag-icon"
+                  fill="#85dbd7"
+                />
+              </div>
+              <div className="Eat-fish-back">
+                <SVGC
+                  path={props.backButton}
+                  className="image Eat-fish-tag-icon"
+                  fill="#85dbd7"
+                />
+              </div>
+            </div>
+          </div>
         </Link>
         <a
           href="#"

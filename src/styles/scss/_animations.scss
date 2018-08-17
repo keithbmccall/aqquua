@@ -86,3 +86,18 @@
     @include transform(rotateY(180deg));
   }
 }
+.Nav-logo {
+  .Eat-fish {
+    &-flip-container,
+    &-front,
+    &-back {
+      width: 8vw;
+      height: 8vw;
+     
+    }
+    &-front,
+    &-back {
+      @extend .light-shadow-round;
+    }
+  }
+}

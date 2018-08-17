@@ -3,7 +3,6 @@ import ContentImages from "../tools/media/ContentImages";
 //
 const Research = props => {
   const { info } = props;
-
   return (
     <div className="container">
       <div className="Research-container">
@@ -13,11 +12,16 @@ const Research = props => {
           </div>
           <div className="Research-info flex flex-column">
             <h1 style={{ color: info.color }}>{info.title.toUpperCase()}</h1>
-            {info.caption.map((p, key) => <p key={key}>{p}</p>)}
+            {info.caption.map((p, key) => (
+              <p key={key}>{p}</p>
+            ))}
           </div>
         </div>
         {info.bigImage && (
-          <img src={info.bigImage} className="image Research-big full-size-img" />
+          <img
+            src={info.bigImage}
+            className="image Research-big full-size-img"
+          />
         )}
         {info.images && <ContentImages info={info} />}
       </div>

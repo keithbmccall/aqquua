@@ -26,10 +26,12 @@ export default class NavbarContainer extends Component {
     window.addEventListener("resize", () => this.closeMenu());
   }
   render() {
+    console.log(aqquuaLogo)
     return (
       <Navbar
         scrollTo={this.props.scrollTo}
         aqquuaLogo={aqquuaLogo.round}
+        backButton={aqquuaLogo.back}
         menuOpen={this.state.menuOpen}
         navbarLinks={navbarLinks}
         toggleMenu={this.toggleMenu}

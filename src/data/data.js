@@ -174,7 +174,8 @@ export const navbarLinks = [
 export const aqquuaLogo = {
   word: images.logo,
   round: images.logoRound,
-  tagLine: images.tagline
+  tagLine: images.tagline,
+  back: images.backbutton
 };
 export const headerContent = {
   title: "We're Wild about Farmed ™",
@@ -188,7 +189,9 @@ export const sectionData = [
     content: weAreContent,
     logo: images.logo
   },
-
+  {
+    backgroundImage: images.sectionals.sectionalRaceways
+  },
   {
     id: "About",
 

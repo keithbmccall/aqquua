@@ -11,7 +11,7 @@ import {
   geneticsInfo,
   eatFishInfo,
   sustainabilityInfo,
-  recipesTipsInfo
+  recipesTipsInfo,
 } from "./data";
 
 export {

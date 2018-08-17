@@ -225,7 +225,7 @@ img {
   font-size: 1.5rem;
   top: 1rem; }
 
-.light-shadow-round {
+.light-shadow-round, .Nav-logo .Eat-fish-front, .Nav-logo .Eat-fish-back {
   border-radius: 100%;
   box-shadow: 0rem 0.5rem 2rem rgba(0, 0, 0, 0.267); }
 
@@ -843,7 +843,7 @@ header {
       header .Navbar-container > a.Nav-logo {
         left: 3vw; }
       header .Navbar-container > a.Nav-burger {
-        width: 6vw;
+        width: 3.5vw;
         right: 3vw; }
     header .Navbar-container nav {
       position: absolute;
@@ -1150,19 +1150,19 @@ header {
         .Products-fish .Products-fish-square:hover .Products-text {
           opacity: 1; } }
 
-.Big-section-1 {
+.Big-section-2 {
   background: #00b6d9; }
 
-.Big-section-7 {
+.Big-section-8 {
   background: #ea5924; }
 
-.Big-section-4 {
+.Big-section-5 {
   background: #f32e37; }
 
-.Big-section-11 {
+.Big-section-12 {
   background: linear-gradient(to bottom right, #210420, #490847, #620c5f, #620c5f, #770574, #9b0096); }
 
-.Big-section-9 {
+.Big-section-10 {
   background: linear-gradient(to bottom right, #f79d04, #f79d04, #f79d04, #f7aa04, #ffb30f, #f7ba04, #ffc31c, #f7c604, #f7c604); }
 
 .Big-background {
@@ -1170,26 +1170,26 @@ header {
   .Big-background .image {
     width: 100%; }
 
-.Big-section-6 {
+.Big-section-7 {
   background: #ff2882; }
 
-.Big-section-13 {
+.Big-section-14 {
   background: linear-gradient(to bottom right, #1b7a06, #21af01, #24b500, #28c900, #28c900, #33ef09, #9ce881); }
 
-.Big-section-3 {
+.Big-section-4 {
   background: white; }
   @media only screen and (max-width: 766px) {
-    .Big-section-3 .space-10 {
+    .Big-section-4 .space-10 {
       margin: initial !important; } }
-  .Big-section-3 .content {
+  .Big-section-4 .content {
     max-width: 200px;
     flex-wrap: wrap;
     justify-content: space-evenly; }
     @media only screen and (min-width: 767px) and (max-width: 989px) {
-      .Big-section-3 .content {
+      .Big-section-4 .content {
         flex-direction: row; } }
     @media only screen and (min-width: 990px) {
-      .Big-section-3 .content {
+      .Big-section-4 .content {
         flex-direction: row; } }
 
 #About:before,
@@ -1802,5 +1802,9 @@ header {
     -o-transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     transform: rotateY(180deg); }
+
+.Nav-logo .Eat-fish-flip-container, .Nav-logo .Eat-fish-front, .Nav-logo .Eat-fish-back {
+  width: 8vw;
+  height: 8vw; }
 
 /*# sourceMappingURL=index.css.map */

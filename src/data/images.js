@@ -3,6 +3,7 @@ import fishPrint from "../assets/images/png/fishprints/fish-print-9.png";
 import logo from "../assets/images/aqquualogo.svg";
 import logoRound from "../assets/images/aqquualogoround.svg";
 import tagline from "../assets/images/tagline.svg";
+import backbutton from "../assets/images/fishboneback.svg";
 //product circle map
 import coraltrout from "../assets/images/png/coraltrout.png";
 import redsnapper from "../assets/images/png/redsnapper.png";
@@ -63,6 +64,7 @@ import sectionalMangroves from "../assets/images/png/fishprints/sectional-mangro
 import sectionalGrouper from "../assets/images/png/fishprints/sectional-grouper.png";
 import sectionalFishTank from "../assets/images/png/fishprints/sectional-fishtank.png";
 import sectionalHirame from "../assets/images/png/fishprints/sectional-hirame.png";
+import sectionalRaceways from "../assets/images/png/fishprints/sectional-raceways.png";
 //
 const schools = { miami, burapha };
 const productsFish = [
@@ -188,10 +190,12 @@ const sectionals = {
   sectionalFishTank,
   sectionalHirame,
   sectionalGrouper,
-  sectionalMangroves
+  sectionalMangroves,
+  sectionalRaceways
 };
 
 const images = {
+  backbutton,
   fishPrint,
   logo,
   logoRound,
