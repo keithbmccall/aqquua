@@ -129,7 +129,6 @@ const geneticsImages = [
   }
 ];
 const sustainabilityImages = {
-  // bigImage: sus4,
   titleImage: sus5,
   images: [
     {

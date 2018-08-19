@@ -14,6 +14,7 @@ export default class LandingAnimation extends Component {
       holderPop: ""
     };
   }
+
   renderText = (letter, key) =>
     letter === "-" ? (
       <span key={key} style={{ visibility: "hidden" }}>
@@ -49,13 +50,13 @@ export default class LandingAnimation extends Component {
   componentDidMount() {
     setTimeout(() => this.popHolder(), 3500);
     setTimeout(() => this.popWords(), 1700);
-    setTimeout(() => this.unPopWords(), 3500);
+    setTimeout(() => this.unPopWords(), 3800);
     setTimeout(() => this.popLogo(), 1400);
     setTimeout(() => this.popFinish(), 6000);
     setTimeout(() => this.popDot(), 2000);
   }
   render() {
-    const text = "WE'RE-WILD-ABOUT-FARMED".split("").map(this.renderText);
+    console.log("rock", aqquuaLogo);
     return (
       <div
         className={`Landing-animation-holder ${this.state.holderPop} ${
@@ -71,7 +72,15 @@ export default class LandingAnimation extends Component {
             />
           </div>
           <div className={`Landing-dot ${this.state.dotPop}`} />
-          <h1 className={this.state.wordPop}>{text}</h1>
+          <h1 className={this.state.wordPop}>
+            <span>
+              <SVGC
+                path={aqquuaLogo.tagLine}
+                className="image"
+                fill="#f32e37"
+              />
+            </span>
+          </h1>
         </div>
       </div>
     );
