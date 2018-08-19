@@ -1,5 +1,6 @@
 import React from "react";
 import HeadlineAnimation from "../../animations/HeadlineAnimation";
+import ContentImageAnimation from "../../animations/ContentImageAnimation";
 
 const LargeTextWithTitle = props => {
   const { info } = props;
@@ -13,12 +14,14 @@ const LargeTextWithTitle = props => {
             </h1>
           </HeadlineAnimation>
           {info.subTitle && <h2>{info.subTitle}</h2>}
-          {info.caption.map((p, key) => <p key={key}>{p}</p>)}
+          {info.caption.map((p, key) => (
+            <p key={key}>{p}</p>
+          ))}
         </div>
       </div>
-      <div className="Content-info-image flex-1">
+      <ContentImageAnimation>
         <img src={props.image} className="image" />
-      </div>
+      </ContentImageAnimation>
     </div>
   );
 };

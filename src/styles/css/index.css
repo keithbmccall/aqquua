@@ -601,15 +601,16 @@ img {
     .Content-media {
       width: 100vw; } }
 
-.Content-info-holder .Content-info-image {
+.Content-info-holder .Content-image-animation {
+  flex: 1;
   width: 100%;
   flex: 2;
   padding-top: 5%;
   padding-left: 1rem; }
-  .Content-info-holder .Content-info-image .image {
+  .Content-info-holder .Content-image-animation .image {
     width: 100%; }
     @media only screen and (min-width: 990px) {
-      .Content-info-holder .Content-info-image .image {
+      .Content-info-holder .Content-image-animation .image {
         width: 100%;
         padding-top: 7rem; } }
 @media only screen and (max-width: 766px) {
@@ -617,7 +618,7 @@ img {
     display: flex;
     align-items: center;
     margin-top: 8rem; }
-    .Content-info-holder .Content-info-image {
+    .Content-info-holder .Content-image-animation {
       max-width: 70%;
       padding-top: 5rem; } }
 
@@ -731,12 +732,29 @@ img {
   -o-transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
   -webkit-transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
   transition: all 0.7s cubic-bezier(0.165, 0.84, 0.44, 1);
-  -moz-transform: rotate(-10deg) rotateX(65deg) translate3d(60px, 50px, 0);
-  -o-transform: rotate(-10deg) rotateX(65deg) translate3d(60px, 50px, 0);
-  -webkit-transform: rotate(-10deg) rotateX(65deg) translate3d(60px, 50px, 0);
-  transform: rotate(-10deg) rotateX(65deg) translate3d(60px, 50px, 0);
+  -moz-transform: rotate(10deg) rotateX(80deg) translate3d(-120px, 50px, 0);
+  -o-transform: rotate(10deg) rotateX(80deg) translate3d(-120px, 50px, 0);
+  -webkit-transform: rotate(10deg) rotateX(80deg) translate3d(-120px, 50px, 0);
+  transform: rotate(10deg) rotateX(80deg) translate3d(-120px, 50px, 0);
   opacity: 0; }
   .Headline-animation.animation {
+    opacity: 1;
+    -moz-transform: translate(0, 0);
+    -o-transform: translate(0, 0);
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0); }
+
+.Content-image-animation {
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  -moz-transform: translate(0, 50%);
+  -o-transform: translate(0, 50%);
+  -webkit-transform: translate(0, 50%);
+  transform: translate(0, 50%);
+  opacity: 0; }
+  .Content-image-animation.animation {
     opacity: 1;
     -moz-transform: translate(0, 0);
     -o-transform: translate(0, 0);
