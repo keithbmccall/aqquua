@@ -16,6 +16,7 @@ export default class AnyImageAnimation extends Component {
   render() {
     return (
       <Waypoint
+        scrollableAncestor={window}
         onEnter={this.bounceIn}
         bottomOffset={this.props.bO ? this.props.bO : "50%"}
       >

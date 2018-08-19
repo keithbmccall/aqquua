@@ -38,13 +38,14 @@ import genetics1 from "../assets/images/png/genetics/petridish.png";
 import genetics2 from "../assets/images/png/genetics/closeview.png";
 import genetics3 from "../assets/images/png/genetics/fossilish.png";
 import genetics4 from "../assets/images/png/genetics/flask.png";
-import genetics5 from "../assets/images/png/genetics/baby.png";
 //
 import sus1 from "../assets/images/png/sus/girl.png";
 import sus2 from "../assets/images/png/sus/picking.png";
 import sus3 from "../assets/images/png/sus/twogirls.png";
 import sus4 from "../assets/images/png/sus/largegroup.png";
 import sus5 from "../assets/images/png/sus/flatbed.png";
+//
+import farm1 from "../assets/images/png/farm/farmwide.png";
 //
 import bu1 from "../assets/images/png/burapha/handfish.png";
 //
@@ -65,6 +66,7 @@ import sectionalGrouper from "../assets/images/png/fishprints/sectional-grouper.
 import sectionalFishTank from "../assets/images/png/fishprints/sectional-fishtank.png";
 import sectionalHirame from "../assets/images/png/fishprints/sectional-hirame.png";
 import sectionalRaceways from "../assets/images/png/fishprints/sectional-raceways.png";
+import sectionalBaby from "../assets/images/png/fishprints/sectional-baby.png";
 //
 const schools = { miami, burapha };
 const productsFish = [
@@ -122,10 +124,6 @@ const geneticsImages = [
   {
     image: genetics4,
     title: "American Red Snapper eggs"
-  },
-  {
-    image: genetics5,
-    title: "13 day old post hatchery Hybrid Grouper"
   }
 ];
 const sustainabilityImages = {
@@ -183,10 +181,12 @@ const sectionals = {
   sectionalHirame,
   sectionalGrouper,
   sectionalMangroves,
-  sectionalRaceways
+  sectionalRaceways,
+  sectionalBaby
 };
-
+const farmImages = { farm1 };
 const images = {
+  farmImages,
   backbutton,
   fishPrint,
   logo,

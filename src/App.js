@@ -33,23 +33,18 @@ class App extends Component {
                   key={location.key}
                   classNames="swoop"
                   timeout={transitionTime}
-                  onEnter={() =>
+                  onEnter={() => {
                     this.setState({
                       transition: true
-                    })
-                  }
+                    });
+                    return this.props.location.hash
+                      ? false
+                      : window.scrollTo(0, 0);
+                  }}
                   onExited={() => {
                     this.setState({
                       transition: false
                     });
-
-                    setTimeout(
-                      () =>
-                        this.props.location.hash
-                          ? false
-                          : window.scrollTo(0, 0),
-                      500
-                    );
                   }}
                 >
                   <Switch location={location}>

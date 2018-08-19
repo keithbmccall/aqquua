@@ -18,7 +18,7 @@
       width: 100%;
       @include desktop {
         width: 100%;
-        padding-top: 7rem;
+        padding-top: 4rem;
       }
     }
   }
@@ -126,7 +126,8 @@
   }
 }
 .Content-image-title {
-  .Content-holder {
+  .Content-holder,
+  .Content-images-animation {
     margin-bottom: 3rem;
     img {
       width: 100%;
@@ -140,7 +141,8 @@
     justify-content: center;
     padding: 0 3rem;
     flex-wrap: wrap;
-    .Content-holder {
+    .Content-holder,
+    .Content-images-animation {
       width: 33.3%;
       padding: 0 1vw;
       img {
@@ -159,6 +161,17 @@
   }
 }
 .Content-image-animation {
+  @include transition(all 1s ease-in-out);
+  @include transform(translate(0, 50%));
+  opacity: 0;
+  &.animation {
+    opacity: 1;
+    @include transform(translate(0, 0));
+  }
+}
+.Content-images-animation {
+  display: flex;
+  flex-direction: column;
   @include transition(all 1s ease-in-out);
   @include transform(translate(0, 50%));
   opacity: 0;

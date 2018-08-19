@@ -12,7 +12,7 @@ const NavbarLinks = props => {
   // console.log(props.link.link, props.link.id, props);
   const linkOrHash = path =>
     props.link.link ? (
-      <Link to={`/${props.link.id}`}>{path}</Link>
+      <HashLink to={`/${props.link.id}`}>{path}</HashLink>
     ) : (
       <HashLink to={`/#${props.link.id}`}>{path}</HashLink>
     );

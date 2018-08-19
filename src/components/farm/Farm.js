@@ -7,7 +7,7 @@ const Farm = props => {
   return (
     <div className="container">
       <div className="Farm-container">
-        <LargeTextWithTitle info={info} />
+        <LargeTextWithTitle info={info} image={info.titleImage} />
         <ContentLargeVideo info={info} />
       </div>
     </div>
