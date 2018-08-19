@@ -1,6 +1,5 @@
 import React from "react";
 import Radium from "radium";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const NavbarLinks = props => {

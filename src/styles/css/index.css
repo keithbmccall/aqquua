@@ -849,7 +849,7 @@ header {
       align-items: flex-end;
       z-index: 50;
       opacity: 0;
-      top: 100%;
+      top: 200%;
       left: 100%;
       -moz-transition: opacity 0.3s ease-in-out 0.3s;
       -o-transition: opacity 0.3s ease-in-out 0.3s;
@@ -867,7 +867,7 @@ header {
         transition: all 0.7s ease-in-out; }
       header .Navbar-container nav.Nav-open {
         left: initial;
-        top: 100%;
+        top: 200%;
         right: 10% !important;
         z-index: 50;
         opacity: 1; }
@@ -879,7 +879,7 @@ header {
           transform: translate(0, 0); }
         @media only screen and (min-width: 767px) {
           header .Navbar-container nav.Nav-open {
-            top: 100%; } }
+            top: 200%; } }
       header .Navbar-container nav.Nav-closed {
         left: initial;
         top: 10rem;

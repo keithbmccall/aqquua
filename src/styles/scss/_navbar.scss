@@ -34,7 +34,7 @@ header {
       align-items: flex-end;
       z-index: 50;
       opacity: 0;
-      top: 100%;
+      top: 200%;
       left: 100%;
       @include transition(opacity 0.3s ease-in-out 0.3s);
       .Nav-item {
@@ -46,7 +46,7 @@ header {
       }
       &.Nav-open {
         left: initial;
-        top: 100%;
+        top: 200%;
         right: 10% !important;
         z-index: 50;
         opacity: 1;
@@ -55,7 +55,7 @@ header {
           @include transform(translate(0, 0));
         }
         @include tabtop {
-          top: 100%;
+          top: 200%;
         }
       }
       &.Nav-closed {
