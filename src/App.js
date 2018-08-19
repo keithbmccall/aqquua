@@ -37,9 +37,13 @@ class App extends Component {
                     this.setState({
                       transition: true
                     });
-                    return this.props.location.hash
-                      ? false
-                      : window.scrollTo(0, 0);
+                    setTimeout(
+                      () =>
+                        this.props.location.hash
+                          ? false
+                          : window.scrollTo(0, 0),
+                      500
+                    );
                   }}
                   onExited={() => {
                     this.setState({

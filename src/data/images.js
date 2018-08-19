@@ -38,6 +38,7 @@ import genetics1 from "../assets/images/png/genetics/petridish.png";
 import genetics2 from "../assets/images/png/genetics/closeview.png";
 import genetics3 from "../assets/images/png/genetics/fossilish.png";
 import genetics4 from "../assets/images/png/genetics/flask.png";
+import genetics5 from "../assets/images/png/genetics/baby.png";
 //
 import sus1 from "../assets/images/png/sus/girl.png";
 import sus2 from "../assets/images/png/sus/picking.png";
@@ -66,7 +67,7 @@ import sectionalGrouper from "../assets/images/png/fishprints/sectional-grouper.
 import sectionalFishTank from "../assets/images/png/fishprints/sectional-fishtank.png";
 import sectionalHirame from "../assets/images/png/fishprints/sectional-hirame.png";
 import sectionalRaceways from "../assets/images/png/fishprints/sectional-raceways.png";
-import sectionalBaby from "../assets/images/png/fishprints/sectional-baby.png";
+import sectionalRuler from "../assets/images/png/fishprints/sectional-ruler.png";
 //
 const schools = { miami, burapha };
 const productsFish = [
@@ -108,24 +109,27 @@ const recipesImages = {
   icon: recipeicon,
   tips: recipetips
 };
-const geneticsImages = [
-  {
-    image: genetics1,
-    title: "Snapper eggs"
-  },
-  {
-    image: genetics2,
-    title: "Mahi-Mahi Larvae"
-  },
-  {
-    image: genetics3,
-    title: "Hirame juvenilles"
-  },
-  {
-    image: genetics4,
-    title: "American Red Snapper eggs"
-  }
-];
+const geneticsImages = {
+  bigImage: genetics5,
+  images: [
+    {
+      image: genetics1,
+      title: "Snapper eggs"
+    },
+    {
+      image: genetics2,
+      title: "Mahi-Mahi Larvae"
+    },
+    {
+      image: genetics3,
+      title: "Hirame juvenilles"
+    },
+    {
+      image: genetics4,
+      title: "American Red Snapper eggs"
+    }
+  ]
+};
 const sustainabilityImages = {
   titleImage: sus5,
   images: [
@@ -182,7 +186,7 @@ const sectionals = {
   sectionalGrouper,
   sectionalMangroves,
   sectionalRaceways,
-  sectionalBaby
+  sectionalRuler
 };
 const farmImages = { farm1 };
 const images = {

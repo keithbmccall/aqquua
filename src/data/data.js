@@ -251,7 +251,7 @@ export const sectionData = [
       "The EATFISH platform is useful as an educational tool that lets our customer verify, learn and enjoy their purchase in a truly and innovative way by successfully providing them with 100% transparency, sustainability and traceability information. Eat Fish sole purpose is to efficiently track fish from our farm all the way to our end users table. Eat Fish enables our customer to scan the Eat Fish tag attached to our fish, which has a QR and serial code. After scanning any given fish at the retailer, our customers will find an actual image of their specific fish potential purchase, nutritional facts and farm and country of origin. It also provides a recipe api leading our customers to great food recipes for the specific fish purchase. Once at home you can submit a video of your sea-food cooking experience from your very own kitchen. This allows us to connect to our customers and get immediate reviews that can help us to best serve them in the future. We sell our products under the trade mark “Sea food for what it is”… We don’t sell you a story, we prefer to hear yours!"
   },
   {
-    backgroundImage: images.sectionals.sectionalBaby
+    backgroundImage: images.sectionals.sectionalRuler
   },
   {
     id: "RD",
@@ -445,7 +445,8 @@ export const geneticsInfo = {
     "Aqquua is also looking to the future with research aimed at developing new marine species for commercial production by addressing a major industry bottleneck: consistent availability of marine finfish juveniles for growout. Currently two new state of the art RAS maturation tanks for American red snapper and blackfin tuna broodstock are about to come online at UMEH. Once successful spawning begins, the eggs will be collected, stocked for hatching, and subsequent larval rearing trials will be conducted. Among other things, UMEH will investigate the effectiveness of different live prey items at first feeding, optimal photoperiod, and commercially-viable live feeds regimes for these species. The end goal is to establish repeatable protocols that allow for the consistent production of commercial quantities of red snapper and blackfin tuna."
   ],
   titleColor: "#620c5f",
-  images: images.geneticsImages
+  titleImage: images.geneticsImages.bigImage,
+  images: images.geneticsImages.images
 };
 export const eatFishInfo = {
   video: "https://player.vimeo.com/video/210481738?title=0&byline=0&portrait=0",

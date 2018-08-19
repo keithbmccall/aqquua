@@ -7,7 +7,7 @@ const Genetics = props => {
   return (
     <div className="container">
       <div className="Genetics-container">
-        <LargeTextWithTitle info={info} />
+        <LargeTextWithTitle info={info} image={info.titleImage} />
         <ContentImages info={info} />
       </div>
     </div>
