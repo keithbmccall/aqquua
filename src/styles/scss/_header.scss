@@ -18,9 +18,17 @@
       max-width: 100%;
     }
   }
-  .tagline{
+  .tagline {
     width: 88%;
     @include transform(translate(-50%, -30%));
   }
-
+}
+.Logo-animation {
+  path {
+    fill: none;
+    stroke: white;
+    stroke-width: 1;
+    stroke-linecap: round;
+    stroke-miterlimit: 6;
+  }
 }

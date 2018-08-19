@@ -1415,6 +1415,13 @@ header {
     -webkit-transform: translate(-50%, -30%);
     transform: translate(-50%, -30%); }
 
+.Logo-animation path {
+  fill: none;
+  stroke: white;
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-miterlimit: 6; }
+
 .Wa-container {
   white-space: nowrap; }
   .Wa-container h3 {
