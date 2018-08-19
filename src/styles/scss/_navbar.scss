@@ -19,9 +19,11 @@ header {
         left: 3vw;
       }
       &.Nav-burger {
-        width: 3.5vw;
+        width: 5.5vw;
         right: 3vw;
-        
+        @include tabtop {
+          width: 3.5vw;
+        }
       }
     }
 
@@ -53,7 +55,7 @@ header {
           @include transform(translate(0, 0));
         }
         @include tabtop {
-          top: 10rem;
+          top: 100%;
         }
       }
       &.Nav-closed {
@@ -66,8 +68,8 @@ header {
       }
       li {
         @extend .geo-bold;
-        font-size: 3rem;
-        line-height: 2.8rem;
+        font-size: 6vw;
+        line-height: 5vw;
         text-align: right;
         color: white;
         @include transition(all 0.7s ease-in-out);
@@ -76,7 +78,12 @@ header {
         }
         @include tabtop {
           font-size: 6vw;
-          line-height:8vh;
+          line-height: 5vw;
+          letter-spacing: 2px;
+        }
+        @include desktop {
+          font-size: 6vw;
+          line-height: 5vw;
           letter-spacing: 2px;
         }
       }

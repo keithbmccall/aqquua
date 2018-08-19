@@ -56,7 +56,6 @@ export default class LandingAnimation extends Component {
     setTimeout(() => this.popDot(), 2000);
   }
   render() {
-    console.log("rock", aqquuaLogo);
     return (
       <div
         className={`Landing-animation-holder ${this.state.holderPop} ${

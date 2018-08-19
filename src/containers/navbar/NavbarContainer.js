@@ -11,7 +11,6 @@ export default class NavbarContainer extends Component {
   }
   toggleMenu = e => {
     e.preventDefault();
-    console.log("l");
     this.setState({
       menuOpen: !this.state.menuOpen
     });
@@ -26,7 +25,6 @@ export default class NavbarContainer extends Component {
     window.addEventListener("resize", () => this.closeMenu());
   }
   render() {
-    console.log(aqquuaLogo)
     return (
       <Navbar
         scrollTo={this.props.scrollTo}

@@ -7,7 +7,6 @@ import AnyImageAnimation from "../../animations/AnyImageAnimation";
 
 const LandingSection = props => {
   const { item, index } = props;
-  console.log(item);
   return (
     <div
       className={`flex-column Big-section vh Big-section-${index} ${item.backgroundImage &&

@@ -22,7 +22,7 @@ const Navbar = props => {
   return (
     <header>
       <div className="Navbar-container">
-        <Link to="/" className="Nav-logo">
+        <Link to="/" className="Nav-logo" onClick={props.closeMenu}>
           <div className="Eat-fish-flip-container">
             <div className="Eat-fish-flipper">
               <div className="Eat-fish-front">
@@ -42,11 +42,7 @@ const Navbar = props => {
             </div>
           </div>
         </Link>
-        <a
-          href="#"
-          onClick={props.toggleMenu}
-          className={`Nav-burger ${isLaunched}`}
-        >
+        <a onClick={props.toggleMenu} className={`Nav-burger ${isLaunched}`}>
           <SVGC path={menu} fill="white" className="image" />
         </a>
         <div className={`Nav-menu ${isLaunched}`} onClick={props.closeMenu} />
