@@ -43,14 +43,13 @@ class App extends Component {
                       transition: false
                     });
 
-                    () => console.log("window: ", window);
-                    // setTimeout(
-                    //   () =>
-                    //     this.props.location.hash
-                    //       ? false
-                    //       : window.scrollTo(0, 0),
-                    //   500
-                    // );
+                    setTimeout(
+                      () =>
+                        this.props.location.hash
+                          ? false
+                          : window.scrollTo(0, 0),
+                      500
+                    );
                   }}
                 >
                   <Switch location={location}>

@@ -89,9 +89,11 @@ html,
 #root {
   height: 100%; }
 
+main {
+  overflow-x: hidden; }
+
 body {
   height: 100%;
-  overflow-x: hidden;
   display: flex;
   font-size: 90.5%;
   width: 100vw;
@@ -306,6 +308,16 @@ img {
     transform: scale(0.001);
     display: none;
     z-index: -1; } }
+.swoop-enter {
+  animation: enter 0.5s linear; }
+
+@keyframes enter {
+  0% {
+    opacity: 0; }
+  99% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
 .Landing-animation-holder {
   z-index: 1000;
   position: fixed;
@@ -412,69 +424,6 @@ img {
     background: white;
     height: 5rem;
     width: 5rem;
-    top: 4vh;
-    left: 3vw;
-    -moz-transform: translate(-50%, -50%) scale(100);
-    -o-transform: translate(-50%, -50%) scale(100);
-    -webkit-transform: translate(-50%, -50%) scale(100);
-    transform: translate(-50%, -50%) scale(100); }
-  65% {
-    opacity: 1; }
-  75% {
-    height: 2rem;
-    width: 2rem;
-    top: 4vh;
-    left: 3vw;
-    opacity: 0;
-    display: initial;
-    -moz-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); }
-  100% {
-    height: 0rem;
-    width: 0rem;
-    top: 4vh;
-    left: 3vw;
-    opacity: 0;
-    display: none;
-    -moz-transform: translate(0, 0);
-    -o-transform: translate(0, 0);
-    -webkit-transform: translate(0, 0);
-    transform: translate(0, 0); } }
-@keyframes mobileanimation {
-  0% {
-    height: 2rem;
-    width: 2rem;
-    top: 50%;
-    left: 50%; }
-  20% {
-    height: 2rem;
-    width: 2rem;
-    top: 50%;
-    left: 50%; }
-  25% {
-    height: 2rem;
-    width: 2rem;
-    top: 95%;
-    left: 50%;
-    -moz-transform: translate(-50%, -50%);
-    -o-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
-  35% {
-    height: 2rem;
-    width: 2rem;
-    top: 95%;
-    left: 50%;
-    -moz-transform: translate(-50%, -50%) scale(100);
-    -o-transform: translate(-50%, -50%) scale(100);
-    -webkit-transform: translate(-50%, -50%) scale(100);
-    transform: translate(-50%, -50%) scale(100); }
-  60% {
-    background: white;
-    height: 2rem;
-    width: 2rem;
     top: 4vh;
     left: 3vw;
     -moz-transform: translate(-50%, -50%) scale(100);
@@ -1255,6 +1204,8 @@ header {
       margin-top: 5rem;
       text-align: center; }
     .Recipes-container .Recipes-content-container .Recipes-image-holder {
+      display: flex;
+      align-items: center;
       -moz-transform: translate(0, 40%);
       -o-transform: translate(0, 40%);
       -webkit-transform: translate(0, 40%);

@@ -12,7 +12,6 @@ const RecipesSection = props => {
       </div>
     );
   };
-  console.log(props);
   const recipesImages = props.item.images.images.map(renderImages);
   const recipeImage = props.item.images.images[0];
   return (

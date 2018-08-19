@@ -365,6 +365,8 @@
       text-align: center;
     }
     .Recipes-image-holder {
+      display: flex;
+      align-items: center;
       &.Recipes-animation {
         @include transform(translate(0, 0));
         opacity: 1;

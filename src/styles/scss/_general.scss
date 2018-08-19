@@ -29,10 +29,12 @@ html,
 #root {
   height: 100%;
 }
+main{
+  overflow-x: hidden;
+}
 body {
   height: 100%;
   @extend .geo-light;
-  overflow-x: hidden;
   display: flex;
   font-size: 90.5%;
   width: 100vw;
