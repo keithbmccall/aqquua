@@ -3,7 +3,6 @@ import SVGC from "../../tools/images/SVG";
 
 const HeaderSection = props => {
   const { content } = props;
-  console.log(content);
   return (
     <div className="vh flex-column Big-section relative" id="home">
       <div

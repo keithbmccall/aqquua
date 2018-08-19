@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import NavbarLinks from "./NavbarLinks";
 import menu from "../../assets/images/svgs/menu.svg";
 import { withRouter } from "react-router-dom";
@@ -18,11 +18,20 @@ const Navbar = props => {
   };
   const navLinks = props.navbarLinks.map(renderNavbarLinks);
   let isLaunched = props.menuOpen ? "Nav-open" : "Nav-closed";
-  console.log("nav", props.location.pathname.split(""));
+  let linkLocation =
+    props.location.pathname.split("/")[1] === "products"
+      ? "/#products"
+      : props.location.pathname.split("/")[1] === "university-research"
+        ? "/#RD"
+        : "/#home";
   return (
     <header>
       <div className="Navbar-container">
-        <Link to="/" className="Nav-logo" onClick={props.closeMenu}>
+        <HashLink
+          to={linkLocation}
+          className="Nav-logo"
+          onClick={props.closeMenu}
+        >
           <div className="Eat-fish-flip-container">
             <div className="Eat-fish-flipper">
               <div className="Eat-fish-front">
@@ -41,7 +50,7 @@ const Navbar = props => {
               </div>
             </div>
           </div>
-        </Link>
+        </HashLink>
         <a onClick={props.toggleMenu} className={`Nav-burger ${isLaunched}`}>
           <SVGC path={menu} fill="white" className="image" />
         </a>

@@ -192,7 +192,7 @@
     }
   }
   @include tabtop {
-    margin-bottom: 6rem;
+    margin-bottom: 7rem;
     text-align: justify;
     line-height: 2rem;
   }
@@ -354,6 +354,9 @@
 //
 .Recipes-container {
   min-height: 80vh;
+  @include bigtablet {
+    min-height: 50vh;
+  }
   .Recipes-content-container {
     justify-content: space-between;
     .Recipes-caption {
@@ -443,7 +446,10 @@
   }
   @include tabtop {
     .Image-animation-holder {
-      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       width: 50%;
       opacity: 0;
       @include transform(translate(0, 50%));
@@ -453,16 +459,8 @@
         @include transform(translate(0, 0));
       }
       .Recipes-icon-holder {
-        position: absolute;
-        top: 25%;
-        left: 50%;
-        &.Recipe-tips {
-          top: 75%;
-        }
-        @include transform(translate(-50%, -50%));
-        .Recipes-icon {
-          width: 100%;
-        }
+        margin: 5% 0;
+        width: 50%;
       }
     }
   }
