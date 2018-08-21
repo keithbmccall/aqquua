@@ -18,9 +18,15 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      transition: false
+      transition: false,
+      landingCount: 0
     };
   }
+  countLandingMounts = () => {
+    this.setState({
+      landingCount: this.state.landingCount + 1
+    },console.log(this.state.landingCount));
+  };
   render() {
     let routes = (
       <Route
@@ -55,11 +61,23 @@ class App extends Component {
                     <Route
                       exact
                       path="/"
-                      render={props => <LandingContainer {...props} />}
+                      render={props => (
+                        <LandingContainer
+                          {...props}
+                          countLandingMounts={this.countLandingMounts}
+                          landingCount={this.state.landingCount}
+                        />
+                      )}
                     />
                     <Route
                       path="/#"
-                      render={props => <LandingContainer {...props} />}
+                      render={props => (
+                        <LandingContainer
+                          {...props}
+                          countLandingMounts={this.countLandingMounts}
+                          landingCount={this.state.landingCount}
+                        />
+                      )}
                     />
                     <Route
                       exact

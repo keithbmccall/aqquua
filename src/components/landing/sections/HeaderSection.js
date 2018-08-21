@@ -10,7 +10,7 @@ const HeaderSection = props => {
         className="flex-1 Header-section"
         style={{ backgroundImage: `url(${content.background})` }}
       >
-        <LogoAnimation />
+        <LogoAnimation landingCount={props.landingCount} />
         <SVGC
           path={content.logo.tagLine}
           className="image centered tagline"

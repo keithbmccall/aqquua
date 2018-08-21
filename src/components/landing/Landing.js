@@ -20,7 +20,10 @@ const Landing = props => {
   const sections = sectionData.map(renderSections);
   return (
     <div className="container Landing-container">
-      <HeaderSection content={props.headerContent} />
+      <HeaderSection
+        content={props.headerContent}
+        landingCount={props.landingCount}
+      />
       {sections}
       <ContactContainer contactInfo={props.contactInfo} />
     </div>
