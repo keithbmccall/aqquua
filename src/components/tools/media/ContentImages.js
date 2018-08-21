@@ -3,7 +3,6 @@ import ContentImagesAnimation from "../../animations/ContentImagesAnimation";
 
 const ContentImages = props => {
   const { info } = props;
-  console.log(info);
   return (
     <div className="Content-image-holder flex">
       <div className="Content-image-title collapse-row-column">
