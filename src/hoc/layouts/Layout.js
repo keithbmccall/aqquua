@@ -7,8 +7,8 @@ class Layout extends Component {
   render() {
     return (
       <Fragment>
-        <LandingAnimation />
-        <PopPageTransition transition={this.props.transition} />
+        {/* <LandingAnimation /> */}
+        {/* <PopPageTransition transition={this.props.transition} /> */}
         {this.props.children}
       </Fragment>
     );
