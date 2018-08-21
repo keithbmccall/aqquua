@@ -15,22 +15,7 @@ const LogoAnimation = props => {
         viewBox="0.884 1.433 346.347 85.967"
         className="image centered"
       >
-        <Anime
-          easing="easeOutQuad"
-          duration={5000}
-          loop={false}
-          delay={8000}
-          strokeDashoffset={el => {
-            var pathLength = 0;
-            if (el.getTotalLength) {
-              pathLength = el.getTotalLength();
-              el.setAttribute("stroke-dasharray", pathLength);
-            }
-            return [pathLength, 0];
-          }}
-        >
-          <Path />
-        </Anime>
+        <Path />
       </svg>
     </div>
   );
@@ -38,7 +23,20 @@ const LogoAnimation = props => {
 export default LogoAnimation;
 
 const Path = () => (
-  <Fragment>
+  <Anime
+    easing="easeOutQuad"
+    duration={5000}
+    loop={false}
+    delay={4400}
+    strokeDashoffset={el => {
+      var pathLength = 0;
+      if (el.getTotalLength) {
+        pathLength = el.getTotalLength();
+        el.setAttribute("stroke-dasharray", pathLength);
+      }
+      return [pathLength, 0];
+    }}
+  >
     <path
       d="M219.829,12.561v13.734v29.657c0,1.096-1.096,1.988-2.188,1.988c-1.194,0-2.188-0.896-2.188-1.988V47.69
 c-3.583,6.567-9.854,11.246-17.812,11.246c-12.739,0-19.807-10.25-19.807-21V12.561c0-0.995,0.896-1.99,2.188-1.99
@@ -106,5 +104,5 @@ M165.327,33.958c0-10.648-8.261-20.7-20.402-20.7c-11.94,0-20.399,10.052-20.399,20
 C156.967,54.758,165.327,44.604,165.327,33.958"
     />
     <path d="M170.701,23.375" />
-  </Fragment>
+  </Anime>
 );

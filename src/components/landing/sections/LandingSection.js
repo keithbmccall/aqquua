@@ -1,4 +1,4 @@
-import React, { Fragment } from "react";
+import React from "react";
 import ProductsCircleMap from "../products/ProductsCircleMap";
 import SchoolEmblem from "../schools/SchoolEmblem";
 import SectionText from "../section-items/SectionText";
