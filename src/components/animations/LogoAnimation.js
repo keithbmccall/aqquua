@@ -27,7 +27,7 @@ const AnimatedPath = () => (
     easing="easeOutQuad"
     duration={5000}
     loop={false}
-    delay={0}
+    delay={4400}
     strokeDashoffset={el => {
       var pathLength = 0;
       if (el.getTotalLength) {
