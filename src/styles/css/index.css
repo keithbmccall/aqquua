@@ -880,6 +880,9 @@ header {
         @media only screen and (min-width: 767px) {
           header .Navbar-container nav.Nav-open {
             top: 200%; } }
+        @media only screen and (min-width: 990px) {
+          header .Navbar-container nav.Nav-open {
+            top: 150%; } }
       header .Navbar-container nav.Nav-closed {
         left: initial;
         top: 10rem;

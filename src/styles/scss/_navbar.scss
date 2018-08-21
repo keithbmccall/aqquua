@@ -57,6 +57,9 @@ header {
         @include tabtop {
           top: 200%;
         }
+        @include desktop{
+          top: 150%;
+        }
       }
       &.Nav-closed {
         left: initial;
