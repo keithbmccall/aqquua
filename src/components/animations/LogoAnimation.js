@@ -15,7 +15,7 @@ const LogoAnimation = props => {
         viewBox="-2.993 1.433 350.223 85.966"
         className="image centered"
       >
-        {props.landingCount <= 1 ? <AnimatedPath /> : <NormalPath />}
+        {props.landingCount == 1 ? <AnimatedPath /> : <NormalPath />}
       </svg>
     </div>
   );
@@ -27,7 +27,7 @@ const AnimatedPath = () => (
     easing="easeOutQuad"
     duration={5000}
     loop={false}
-    delay={4400}
+    delay={0}
     strokeDashoffset={el => {
       var pathLength = 0;
       if (el.getTotalLength) {
