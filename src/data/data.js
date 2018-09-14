@@ -193,6 +193,16 @@ export const sectionData = [
     backgroundImage: images.sectionals.sectionalRaceways
   },
   {
+    id: "Products",
+    title: "Our Products",
+    caption: [
+      "Our desire to push the boundaries of what has been possible in aquaculture is motivated by growing global protein needs and the challenges this growth brings.",
+      "We want to live in a world where healthful and delicious fish are produced sustainably and accessible to families, across the globe.",
+      "Aqquua has surpassed existing standards of aquaculture to produce a truly chemical- and hormone-free farm-raised fish, at low cost and with zero environmental impact. This achievement is a reflection of both our mission and the team of smart and dedicated people, across the world, we've built to fulfill it."
+    ],
+    fish: images.productsFish
+  },
+  {
     id: "About",
 
     title: "Our Products",
@@ -207,16 +217,7 @@ export const sectionData = [
   {
     backgroundImage: images.sectionals.sectionalGrouper
   },
-  {
-    id: "Products",
-    title: "Our Products",
-    caption: [
-      "Our desire to push the boundaries of what has been possible in aquaculture is motivated by growing global protein needs and the challenges this growth brings.",
-      "We want to live in a world where healthful and delicious fish are produced sustainably and accessible to families, across the globe.",
-      "Aqquua has surpassed existing standards of aquaculture to produce a truly chemical- and hormone-free farm-raised fish, at low cost and with zero environmental impact. This achievement is a reflection of both our mission and the team of smart and dedicated people, across the world, we've built to fulfill it."
-    ],
-    fish: images.productsFish
-  },
+  
   {
     clickImage: " ",
     id: "Farm",

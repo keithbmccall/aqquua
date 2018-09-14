@@ -26,6 +26,7 @@
     "start": "sass src/styles/scss:src/styles/css;gulp;react-scripts start;gulp",
     "build": "gulp && react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "smok": "git add .;git commit -m 'do it'"
   }
 }

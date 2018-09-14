@@ -74,7 +74,7 @@ export default class WeAreCarousel extends Component {
                     text: this.setText(this.state.counter),
                     counter: this.state.counter + 1
                   }),
-      750 //1500
+      550 //1500
     );
   };
   pushTitle = () => {
