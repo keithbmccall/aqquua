@@ -18,8 +18,9 @@
     "react-scripts": "^1.1.4",
     "react-svg": "^4.1.6",
     "react-track": "^0.4.4",
-    "react-transition-group": "^2.4.0",
-    "react-waypoint": "^8.0.2"
+    "react-waypoint": "^8.0.2",
+    "react-transition-group": "^2.4.0"
+    
   },
   "scripts": {
     "sass": "sass --watch src/styles/scss:src/styles/css",
